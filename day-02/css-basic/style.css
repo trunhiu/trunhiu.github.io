@@ -1,0 +1,41 @@
+
+        h2{
+            color: blue;
+            background-color: aqua;
+        }
+
+        #heading {
+            color: coral;
+            background-color: darkmagenta;
+            text-transform: uppercase;
+        }
+        .para{
+            font-style: italic;
+            font-size: 20px;
+            color: darksalmon;
+        }
+
+        .text-red {
+            color: red;            
+        }
+
+        .text-center{
+            align-items: center;
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+
+        .text-big {
+            font-size: 32px;
+        }
+
+        h2.text-big.text-red {
+            color: chartreuse;
+        }
+
+        .box p {
+            color: darkmagenta;
+            font-size: 20px;
+        }
