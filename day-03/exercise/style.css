@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: hidden;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-right: 70%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-time {
+    color: white;
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+    
+}
+
+.card-year {
+    background-color: #2682f2;
+    text-align: center;
+    padding: 5px;
+}
+
+.card-datetime {
+    background-color: #4b96f2;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.card-date {
+    font-size: 35px;
+    line-height: 0.9;
+}
+
+.card-info {
+    border-radius: 4px;
+    padding: 0px 20px 10px 20px;
+    
+}
+
+.card-title-link {
+    font-weight: 400;
+    text-decoration: none;
+    color: #303338;
+
+}
+
+.timetable {
+    line-height: 1.8;
+    padding: 0px 0px 6px 0px;
+    color: #757575;
+    border-bottom: 1px solid #cacaca;
+}
+
+.card-bottom {
+    padding: 8px 10px 0px 6px;
+}
+
+.card-bottom-item {
+    color: #7578e9;
+    text-decoration: none;
+}
