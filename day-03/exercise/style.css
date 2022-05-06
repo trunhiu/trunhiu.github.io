@@ -10,7 +10,8 @@
     font-family: Roboto,sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    margin-right: 70%;
+    width: 400px;
+    height: 400px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -47,14 +48,14 @@
 .card-title-link {
     font-weight: 400;
     text-decoration: none;
-    color: #303338;
+    color: #464646;
 
 }
 
 .timetable {
     line-height: 1.8;
     padding: 0px 0px 6px 0px;
-    color: #757575;
+    color: #464694;
     border-bottom: 1px solid #cacaca;
 }
 
