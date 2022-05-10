@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoá học Techmaster</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
     <!-- Link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +18,93 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="https://techmaster.vn/">
+                <img src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="side-bar">
+            <div class="menu">
+                <ul>
+                    <li class="menu-item">
+                        LỘ TRÌNH
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+
+                        <ul class="sub-menu">
+                            <a href="https://frontend.techmaster.vn/">
+                                <li class="sub-menu-item">Web Front End + React.js</li>
+                            </a>
+                            <a href="https://java.techmaster.vn/">
+                                <li class="sub-menu-item">Java Spring Boot FullStack</li>
+                            </a>
+                            <a href="https://devops.techmaster.vn/">
+                                <li class="sub-menu-item">DevOps</li>
+                            </a>
+                            <a href="https://aws.techmaster.vn/">
+                                <li class="sub-menu-item">Amazon Web Service</li>
+                            </a>
+                            <a href="https://flutter.techmaster.vn/">
+                                <li class="sub-menu-item">Google Flutter</li>
+                            </a>
+                            <a href="https://ios.techmaster.vn/">
+                                <li class="sub-menu-item">Apple iOS</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="menu-item">DOANH NGHIỆP</li>
+                    <li class="menu-item">
+                        KHÓA HỌC
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+                        
+                        <ul class="sub-menu">
+                            <a href="./index.html">
+                                <li class="sub-menu-item">Onlab</li>
+                            </a>
+                            <a href="https://techmaster.vn/khoa-hoc/online">
+                                <li class="sub-menu-item">Trực tuyến</li>
+                            </a>
+                        </ul>
+                        
+                    </li>
+                    <li class="menu-item">SẢN PHẨM HỌC VIÊN</li>
+                    <li class="menu-item">KHAI GIẢNG</li>
+                    <li class="menu-item">Blog</li>
+                    <li class="menu-item">Trải nghiệm</li>
+                    <li class="menu-item">
+                        Chúng tôi 
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+
+                        <ul class="sub-menu">
+                            <a href="https://techmaster.vn/trungtam/trung-tam">
+                                <li class="sub-menu-item">Trung tâm</li>
+                            </a>
+                            <a href="https://techmaster.vn/trungtam/quy-dinh-chung">
+                                <li class="sub-menu-item">Quy định chung</li>
+                            </a>
+                            <a href="https://techmaster.vn/trungtam/giang-vien">
+                                <li class="sub-menu-item">Giảng viên</li>
+                            </a>
+                            <a href="https://techmaster.vn/trungtam/huong-dan-mua-khoa-hoc">
+                                <li class="sub-menu-item">Hướng dẫn đăng ký học</li>
+                            </a>
+                        </ul>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="cart">
+                <span class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+                <span class="cart-cound">0</span>
+            </div>
+            <div class="avatar">
+                <img src="https://media.techmaster.vn/api/static/yBLag1pR/LCbCHv4m" alt="avatar">
+            </div>
+        </div>
+    </header>
     <div class="cards">
         <div class="card-wrapper">
             <div class="card">
@@ -121,11 +211,11 @@
                 <li>
                     <a href="https://techmaster.vn/" target="_blank" class="footer-item_link">Công ty TNHH TechMaster Vietnam Ltd</a>
                 </li>
-                <li><span>Số ĐKDN: 0105392153</span></li>
-                <li><span>Ngày cấp: 4-7-2011</span></li>
-                <li><span>Nơi cấp: Sở kế hoạch - đầu tư Hà nội</span></li>
-                <li><span>Người đại diện pháp luật: Lê Minh Thu</span></li>
-                <li><span>Phụ trách nội dung: Trịnh Minh Cường</span></li>
+                <li><span class="text-footer">Số ĐKDN: 0105392153</span></li>
+                <li><span class="text-footer">Ngày cấp: 4-7-2011</span></li>
+                <li><span class="text-footer">Nơi cấp: Sở kế hoạch - đầu tư Hà nội</span></li>
+                <li><span class="text-footer">Người đại diện pháp luật: Lê Minh Thu</span></li>
+                <li><span class="text-footer">Phụ trách nội dung: Trịnh Minh Cường</span></li>
             </ul>
         </div>
         <div class="footer-item">
@@ -172,7 +262,7 @@
                 <li>
                     <a href="mailto:huong@techmaster.vn" target="_blank" class="footer-item_link">huong@techmaster.vn</a>
                 </li>
-                <li><span>TƯ VẤN ĐÀO TẠO DOANH NGHIỆP</span></li>
+                <li><span class="text-footer">TƯ VẤN ĐÀO TẠO DOANH NGHIỆP</span></li>
                 <li>
                     <a href="tel:0902209011" target="_blank" class="footer-item_link">0902209011 - </a>
                      

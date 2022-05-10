@@ -14,10 +14,125 @@ a {
     text-decoration: none;
 }
 
-i {
-    color: #ffd600;
+u {
+    list-style-type: none;
 }
 
+
+/* header */
+
+header {
+    height: 60px;
+    background-color:#30598c;
+    padding: 0 20px;
+    font-family: roboto,sans-serif;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.side-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.menu > ul {
+    display: flex;
+}
+
+.menu-item {
+    height: 60px;
+    font-size: 14.4px;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu-item > span {
+    margin: 6px;
+    padding: 0px 3px;
+}
+
+.sub-menu {
+    width: 200px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    background-color:#fff;
+    line-height: 1.5;
+    list-style-type: none;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    display:none;
+}
+
+.sub-menu-item {
+    font-size: 15px;
+    color: #464646;
+    padding:11px 16px;
+    text-align: center;
+}
+
+.sub-menu-item:hover{
+    background-color: #c4c4c4;
+    color: #fff;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.logo img {
+    width:100px
+}
+
+.avatar img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+.cart{
+    color: #fff;
+    position:relative;
+    padding-right: 16px;
+    font-size: 22px;
+
+}
+
+.cart-icon{
+    cursor: pointer;
+    margin: 0px 3px;
+}
+
+.cart-cound {
+    color: #fff;
+    background-color: #26a69a;
+    cursor: pointer;
+
+    position:absolute;
+    left: 19px;
+    top: -4px;
+    padding: 0px 4px;
+    display: inline-block;
+    font-size:75%;
+    font-weight: 700;
+    line-height: 1;
+    border-radius:4px;
+}
+
+/* body  */
 
 .cards {
     display: flex;
@@ -49,6 +164,10 @@ i {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.fa-star {
+    color: #ffd600;
 }
 
 .card-info {
@@ -102,7 +221,7 @@ h2 {
     flex: 1;
     
 }
-span {
+.text-footer {
     color: white;
     line-height: 2rem;
     font-family: Roboto,sans-serif;
