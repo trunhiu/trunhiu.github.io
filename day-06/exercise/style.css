@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.card {
+    width: 400px;
+    height: 530px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 10px rgb(0 0 0 / 25%);
+    margin: 3rem auto; 
+    font-family: Roboto,sans-serif;
+    overflow: hidden;
+
+    position: relative;
+    
+}
+
+.card-image {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+
+    position: relative;
+
+    transition: all 0.5s;
+}
+
+
+.image-top {
+    background-color: tomato;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    color: white;
+    font-family: roboto,sans-serif;
+    font-size: 12px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.image-top p{
+    padding: 10px;
+    text-align: center;
+
+}
+
+.image-bot p {
+    padding: 10px;
+    text-align: center;
+}
+
+.image-bot {
+    background-color: tomato;
+    width: 100px;
+    height: 34px;
+    color: white;
+    font-family: roboto,sans-serif;
+    font-size: 16px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    transition: all 0.5s;
+}
+
+.content {
+
+    padding: 24px;
+    overflow: hidden;
+}
+
+.content-info {
+    line-height: 1.4;
+}
+
+.content-info h1 {
+    font-weight: 700;
+    color: #2e2c2c;
+}
+
+.content-info h2 {
+    font-weight: 400;
+    color: rgba(211, 31, 18, 0.993);
+    margin-bottom: 20px;
+}
+
+.content-info .info p {
+    background-color: #fff;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+    transform: translateY(250px);
+    transition: all 0.5s;
+}
+
+.footer {
+    background-color: #fff;
+    width: 100%;
+    margin-top: 0px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
+
+.card:hover .card-image {
+    height: 40%;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.2);
+}
+
+.card:hover .info p {
+    transform: translateY(0);
+}
