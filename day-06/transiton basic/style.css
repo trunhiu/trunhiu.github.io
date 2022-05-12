@@ -1,0 +1,43 @@
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: purple;
+
+    /* transition-property: width, height;
+    transition-duration: 1s, 2s;
+    transition-delay: 1s; */
+
+    transition: all 1s 1s linear;
+}
+
+.box:hover {
+    width: 400px;
+    height: 300px;
+    background-color: red;
+}
+
+.text {
+    width:400px;
+    padding: 20px;
+    background-color: aqua;
+    margin: auto;
+    overflow: hidden;
+}
+
+.text p {
+    transform: translateX(-450px);
+    transition: all 1s;
+}
+
+.text:hover p{
+    transform: translateX(0);
+}
+
+.text h2 {
+    transform: translateY(-100px);
+    transition: all 1s;
+}
+
+.text:hover h2{
+    transform: translateY(0);
+}
