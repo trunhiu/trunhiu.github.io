@@ -127,6 +127,10 @@ img {
     bottom: 2px;
 }
 
+.footer-item {
+    opacity: 0.5;
+}
+
 .card:hover .card-image {
     height: 40%;
 }
