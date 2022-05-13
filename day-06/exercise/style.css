@@ -120,6 +120,7 @@ img {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    opacity: 0.5;
 
     position: absolute;
     left: 2px;
