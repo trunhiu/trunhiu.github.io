@@ -1,0 +1,9 @@
+h1 .animate__fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+p {
+    font-size: 30px;
+}

@@ -1,0 +1,15 @@
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container a {
+    flex-basis: 390px;
+}

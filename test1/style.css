@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+    /* header  */
+
+.header {
+    width: 1349px;
+    height: 555px;
+
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: 555px;
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-menu {
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 120px;
+    color: #fff;
+    padding: 20px;
+
+    position: absolute;
+    top: 0;
+}
+
+.header-menu:hover {
+    background-color: #1b1b1b;
+    opacity: 1;
+}
+
+.header-logo {
+    font-size:40px;
+    letter-spacing: 11px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu {
+    font-weight: 700;
+    font-size: 11px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    margin: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.menu-click {
+    height: 43px;
+    flex: 1;
+    text-align: center;
+}
+
+.menu-click a {
+    color: #fff;
+}
+
+.select-menus {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    background-color:#fff;
+    line-height: 1.5;
+    
+
+    position: absolute;
+    top: 100%;
+    
+    display: none;
+}
+
+.select-menu {
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+    cursor: pointer;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+    font-size: 13px;
+    color: #757575;
+    padding: 8px 0px 12px 0px;
+    width: 200px;
+    height: 300px;
+
+    position: relative;
+}
+
+.select-menu-item {
+    color: #000;
+    margin-top: 20px;
+    width: 100%;
+    height: 27px;
+    
+
+    position: relative;
+}
+
+.select-small-item {
+    height:300px;
+    width: 100%;
+
+    position: absolute;
+    left: 100%;
+    top: 0px;
+}
+
+.small-item {
+    width: 100%;
+    height: 27px;
+    padding: 0px 8px;
+}
+
+.menu-click:hover .select-menus {
+    display: block;
+}   
+
+.header-title {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    color: #fff;
+    font-family: center,sans-serif;
+
+    position: absolute;
+    top: 50%;
+}
+
+.header-title .header-title1 {
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.header-title .header-title2 {
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+
+    /* body  */
+
+     /* card item  */
+
+.card-body {
+
+}
+
+.card-body-title {
+    margin: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #d3941f;
+
+    animation: title 5s infinite;
+}
+
+@keyframes title {
+    0% {
+        color: #d3941f;
+    }
+
+    20% {
+        color: #b1db17;
+    }
+
+    40% {
+        color: #1bb6b6;
+    }
+
+    60% {
+        color: #831ba3;
+    }
+
+    80% {
+        color: #c917b1;
+    }
+
+    100% {
+        color: #d41919;
+    }
+
+
+}
+
+.card-body-container {
+    width: 1349px;
+    padding: 10px;
+    cursor: pointer;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-body-item {
+    background-color: #e7e7e7;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    
+}
+
+.card-body-item img {
+    cursor: pointer;
+}
+
+.card-body-content p {
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+     /* info product */
+.body {
+    margin-bottom: 20px;
+}
+
+.body-items {
+    width: 1320px;
+}
+
+.items {
+    background-color: #e7e7e7;
+    width: 100%;
+    height: 2600px;
+    margin: 10px 0px 2px 15px;
+
+}
+
+.item {
+    padding: 50px;
+}
+
+.item-info {
+    width: 1200px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 40px 0;
+}
+
+.item-info .item-info-text1 {
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+
+.item-info .item-info-text2 {
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-family: Roboto,sans-serif;
+}
+
+.item .item-info .item-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    margin-top: 20px;
+}
+
+    /* footer */
+
+.footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: Roboto,sans-serif;
+    line-height: 2;  
+}
+
+.footer-container {
+    padding: 50px 60px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-info h3 {
+    font-size: 25px;
+}
+
+.footer-info ul>li {
+    font-size: 14px;
+}
+
+.footer-info ul>li>a {
+    color: #fff;
+}

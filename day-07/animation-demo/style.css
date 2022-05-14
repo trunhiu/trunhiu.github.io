@@ -1,0 +1,46 @@
+.box {
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+
+    /* animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse; */
+
+    animation: animation 2s infinite reverse;
+    
+    position: relative;
+}
+
+@keyframes animation {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: violet;
+    }
+
+    25% {
+        top: 0;
+        left: 300px ;
+        background-color: Purple;
+    }
+
+    50% {
+        top: 300px;
+        left: 300px;
+        background-color: Purple;
+    }
+
+    75% {
+        top: 300px;
+        left: 0;
+        background-color: Purple;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: violet;
+    }
+}

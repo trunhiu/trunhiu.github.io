@@ -1,0 +1,67 @@
+.banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.banner h2 {
+    position: relative;
+    left: -400px;
+    opacity: 0;
+
+    animation: fade 2s forwards infinite;
+}
+
+@keyframes fade {
+    0% {
+        left: -400px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.banner p {
+    position: relative;
+    right: -400px;
+    opacity: 0;
+    
+    animation: fade1 2s forwards infinite;
+}
+
+@keyframes fade1 {
+    0% {
+        right: -400;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.banner button {
+    position: relative;
+    bottom: -100px;
+    opacity: 0;
+
+    animation: fade2 2s forwards infinite;
+}
+
+@keyframes fade2 {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
