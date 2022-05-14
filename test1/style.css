@@ -21,14 +21,12 @@ ul {
     /* header  */
 
 .header {
-    width: 1349px;
     height: 555px;
 
     position: relative;
 }
 
 .header-image {
-    width: 100%;
     height: 555px;
     overflow: hidden;
 }
