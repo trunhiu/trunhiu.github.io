@@ -236,6 +236,7 @@ console.log(Math.sqrt(9)); // 3
 ```
 
 Ngoài ra còn rất nhiều phương thức khác của đối tượng Math. Các bạn có thể tham khảo tại đây:
+
 https://www.w3schools.com/js/js_math.asp
 
 
