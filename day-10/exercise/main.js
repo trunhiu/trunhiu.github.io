@@ -9,7 +9,7 @@ function division(a) {
     }
 }
 
-division(5);
+division(15);
 
 //Bài tập 2: Viết function giải phương trình bậc nhất (ax + b= 0)
 function linearQuation(a, b) {
@@ -24,7 +24,7 @@ function linearQuation(a, b) {
     }
 }
 
-linearQuation(0, 3);
+linearQuation(2, 6);
 
 //Bài tập 3: Viết function giải phương trình bậc hai (ax^2 + bx + c = 0)
 
@@ -52,7 +52,7 @@ function quadraticEquation(a, b, c) {
     }
 }
 
-quadraticEquation(2, 20, 3);
+quadraticEquation(2, 0, 0);
 
 //Bài tập 4:Viết function truyền vào 1 năm bất kỳ. Kiểm tra xem năm đó có là năm nhuận hay không?
 
@@ -87,4 +87,4 @@ function degreeC(c) {
     return fahrenheit;
 }
 
-console.log(degreeC(20));
+console.log(degreeC(40) + '°F'); 
