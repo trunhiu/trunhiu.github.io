@@ -57,13 +57,8 @@ quadraticEquation(2, 0, 0);
 //Bài tập 4:Viết function truyền vào 1 năm bất kỳ. Kiểm tra xem năm đó có là năm nhuận hay không?
 
 function leapYear(year) {
-    if(year % 4 == 0) {
+    if(year % 4 == 0 && year % 400 == 0 || year % 100 != 0) {
         console.log('Là năm nhuận');
-        if(year % 400 == 0 || year % 100 != 0) {
-            console.log('Là năm nhuận');
-        } else {
-            console.log('Không là năm nhuận')
-        }
     } else {
         console.log('Không là năm nhuận');       
     }
