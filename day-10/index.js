@@ -7,7 +7,7 @@ console.log (b);
 console.log (!a);
 console.log (!b);
 
-// Hàm boolean
+// Hàm boolean: giúp xác thực biểu thức đúng hay sai
 console.log (Boolean(10));
 console.log (Boolean(10 > 5));
 console.log (Boolean(5 > 10));
@@ -16,7 +16,7 @@ console.log (Boolean(undefined));
 console.log (Boolean(''));
 console.log (Boolean(NaN));
 
-// truly & falsy values
+// truthy & falsy values
 console.log(Boolean(false)); // false
 
 console.log(Boolean(0)); // false
