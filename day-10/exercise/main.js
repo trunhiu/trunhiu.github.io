@@ -9,7 +9,7 @@ function division(a) {
     }
 }
 
-division(15);
+division(20);
 
 //Bài tập 2: Viết function giải phương trình bậc nhất (ax + b= 0)
 function linearQuation(a, b) {
@@ -24,7 +24,7 @@ function linearQuation(a, b) {
     }
 }
 
-linearQuation(2, 6);
+linearQuation(4, 5);
 
 //Bài tập 3: Viết function giải phương trình bậc hai (ax^2 + bx + c = 0)
 
@@ -57,14 +57,14 @@ quadraticEquation(2, 0, 0);
 //Bài tập 4:Viết function truyền vào 1 năm bất kỳ. Kiểm tra xem năm đó có là năm nhuận hay không?
 
 function leapYear(year) {
-    if(year % 4 == 0 && year % 400 == 0 || year % 100 != 0) {
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
         console.log('Là năm nhuận');
     } else {
         console.log('Không là năm nhuận');       
     }
 }
 
-leapYear(2000);
+leapYear(1996);
 
 //Bài tập 5: Viết function truyền vào 2 giá trị, đại diện cho cân nặng và chiều cao. Tính chỉ số BMI tương ứng
 
@@ -73,7 +73,7 @@ function weightHeight(kg,m) {
     return division;
 }
 
-console.log(weightHeight(62, 1.7));
+console.log(weightHeight(47, 1.45));
 
 //Bài tập 6:Viết function truyền vào giá trị độ C. Tính giá trị độ F tương ứng
 
