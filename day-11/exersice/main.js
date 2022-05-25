@@ -95,7 +95,6 @@ function sum(n) {
     return res;
 }
 
-console.log(sum(6));
 function isPrimeNumber(n) {
 	if (n <= 1) {
     	return false;
@@ -108,6 +107,7 @@ function isPrimeNumber(n) {
     return true;
 }
 
+console.log(sum(6));
 //Bài 9:Cho 1 số nguyên dương, viết hàm tính tổng tất cả các ước số của số đó.
 function sum(n) {
 	let res = 0;
