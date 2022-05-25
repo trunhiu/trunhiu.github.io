@@ -96,6 +96,17 @@ function sum(n) {
 }
 
 console.log(sum(6));
+function isPrimeNumber(n) {
+	if (n <= 1) {
+    	return false;
+    }
+    for (let i = 2; i < n; i++) {
+    	if (n % i == 0) {
+        	return false;
+        }
+    }
+    return true;
+}
 
 //Bài 9:Cho 1 số nguyên dương, viết hàm tính tổng tất cả các ước số của số đó.
 function sum(n) {
