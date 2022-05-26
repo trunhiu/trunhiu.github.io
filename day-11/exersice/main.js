@@ -42,7 +42,7 @@ function sum() {
   return res;
 }
 
-console.log(sum(6));
+console.log(sum(1));
 
 //Bài 5: Viết hàm tính thể tích hình cầu, với tham số truyền vào là bán kính của hình cầu.
 function volume(s) {
@@ -73,8 +73,8 @@ function count(n) {
   if (n < 2) {
     return false;
   }
-  let count = 0;
-  for (let i = 2; i < n - 1; i++) {
+  let res = 0;
+  for (let i = 2; i < n ; i++) {
     if (n % i == 0) {
       return false;
     }
@@ -82,7 +82,7 @@ function count(n) {
   return true;
 }
 
-console.log(count(17));
+console.log(count(11));
 
 //Bài 8: Cho 1 số nguyên dương bất kỳ. Tính tổng tất cả các số nguyên tố mà nhỏ hơn hoặc bằng tham số truyền vào.
 function sum2(n) {
@@ -111,7 +111,7 @@ console.log(sum2(5));
 //Bài 9:Cho 1 số nguyên dương, viết hàm tính tổng tất cả các ước số của số đó.
 function sum3(n) {
 	let res = 0;
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1; i <= n ; i++) {
       if (n % i == 0) {
       	res+= i
       }
