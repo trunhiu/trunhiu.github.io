@@ -53,7 +53,7 @@ function volume(s) {
 console.log(volume(4));
 
 //Bài 6: Viết hàm truyền vào 2 số nguyên, tính tổng tất cả các số nguyên nằm giữa chúng. Ví dụ với tham số 3 và 8 ta có kết quả là 22 (bằng 4 + 5 + 6 + 7).
-function sum(n1, n2) {
+function sum1(n1, n2) {
   let res = 0;
   if (n1 > n2) {
     let temp = n1;
@@ -66,7 +66,7 @@ function sum(n1, n2) {
   return res;
 }
 
-console.log(sum(3, 5));
+console.log(sum1(3, 5));
 
 //Bài 7: Cho 1 số, kiểm tra xem số đó có phải là số nguyên tố hay không, kết quả trả về true hoặc false.
 function count(n) {
@@ -85,7 +85,7 @@ function count(n) {
 console.log(count(17));
 
 //Bài 8: Cho 1 số nguyên dương bất kỳ. Tính tổng tất cả các số nguyên tố mà nhỏ hơn hoặc bằng tham số truyền vào.
-function sum(n) {
+function sum2(n) {
 	let res = 0;
     for (let i = 2; i <= n; i++) {
       if (isPrimeNumber(i)) {
@@ -107,9 +107,9 @@ function isPrimeNumber(n) {
     return true;
 }
 
-console.log(sum(5));
+console.log(sum2(5));
 //Bài 9:Cho 1 số nguyên dương, viết hàm tính tổng tất cả các ước số của số đó.
-function sum(n) {
+function sum3(n) {
 	let res = 0;
     for (let i = 1; i <= n; i++) {
       if (n % i == 0) {
@@ -119,4 +119,4 @@ function sum(n) {
     return res;
 }
 
-console.log(sum(4));
+console.log(sum3(4));
