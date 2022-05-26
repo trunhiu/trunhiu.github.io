@@ -12,7 +12,7 @@ console.log(repeatString1("a"));
 //Bài 2. Viết function truyền vào 1 chuỗi bất kỳ, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang.
 function repeatString2(s) {
   let res = s;
-  for (let day = 1; day <= 9; day++) {
+  for (let i = 1; i <= 9; i++) {
     res += "-" + s;
   }
   return res;
@@ -107,7 +107,7 @@ function isPrimeNumber(n) {
     return true;
 }
 
-console.log(sum(6));
+console.log(sum(5));
 //Bài 9:Cho 1 số nguyên dương, viết hàm tính tổng tất cả các ước số của số đó.
 function sum(n) {
 	let res = 0;
