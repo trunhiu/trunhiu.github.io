@@ -29,7 +29,7 @@ function repeatString(s, n) {
   return res;
 }
 
-console.log(repeatString("a", 5));
+console.log(repeatString("a", 10));
 
 //Bài 4. Tính tổng các số chia hết cho 5 từ 0 -> 100
 function sum() {
@@ -66,7 +66,7 @@ function sum1(n1, n2) {
   return res;
 }
 
-console.log(sum1(3, 5));
+console.log(sum1(5, 6));
 
 //Bài 7: Cho 1 số, kiểm tra xem số đó có phải là số nguyên tố hay không, kết quả trả về true hoặc false.
 function count(n) {
