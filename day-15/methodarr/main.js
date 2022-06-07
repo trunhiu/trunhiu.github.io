@@ -1,7 +1,6 @@
 // ******************Map***********************
 function modul2(arr) {
-    let result = arr.map(ele =>  ele % 2);
-    return result;
+    return arr.map(ele =>  ele % 2);    
 }
 
 console.log(modul2([1,2,3,4,5]))

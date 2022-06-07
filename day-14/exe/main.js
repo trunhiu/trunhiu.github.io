@@ -1,28 +1,35 @@
 // Bài 1. Viết function vào 1 mảng tên học viên, sắp xếp lại mảng này theo chiều ngược của bảng chữ cái.
 
 // sortStudents([‘Nam’, ‘Hoa’, ‘Tuấn’]) => [‘Tuấn’, ‘Nam’, ‘Hoa’]
+// function sortStudents(arr) {
+//   let studentsName = arr;
+//   for (let arr of studentsName) {
+//     studentsName.sort().reverse();
+//   }
+//   return studentsName;
+// }
+// console.log(sortStudents(["Nam", "Hoa", "Tuan"]));
 function sortStudents(arr) {
-  let studentsName = arr;
-  for (let arr of studentsName) {
-    studentsName.sort().reverse();
-  }
-  return studentsName;
+  return arr.sort().reverse();
 }
-console.log(sortStudents(["Nam", "Hoa", "Tuan"]));
+console.log(sortStudents(["Nam", "Hoa", "Tuan"]))
 
 // Bài 2: Viết function đổi chỗ ngẫu nhiên vị trí của các phần tử trong mảng
 
 // shuffle([1,2,3,4,5]) => [2,3,4,1,5]
 // shuffle([1,2,3,4,5]) => [4,2,3,5,1]
 function shuffleArray(array) {
-  let num = array;
-  for (let i = 0; i < num.length; i++) {
-    let j = Math.floor(Math.random() * (i + 1));
-    temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-  return num;
+//   let num = array;
+//   for (let i = 0; i < num.length; i++) {
+//     let j = Math.floor(Math.random() * (i + 1));
+//     temp = array[i];
+//     array[i] = array[j];
+//     array[j] = temp;
+//   }
+//   return num;
+// }
+
+return array.sort(() => 0.5 - Math.random())
 }
 
 console.log(shuffleArray([1, 2, 3, 4, 5]));

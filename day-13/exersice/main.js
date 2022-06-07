@@ -1,7 +1,7 @@
 //Bài 1: Tìm số lớn nhất trong mảng
 function findMaxArr(arr) {
-    let max = 0;
-    for (let i = 0; i < arr.length; i++) {
+    let max = [];
+    for (let i = 0; i < arr.length - 2; i++) {
         if (arr[i] > max) {
             max = arr[i];
         }
@@ -41,11 +41,21 @@ function findBalances(arr) {
 console.log(findBalances([2, 5, 6, 3, 7, 8, 9]));
 
 // Bài 4: Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần
-function repeatString(s) {
-    return s.repeat(10);
+// function repeatString(s) {
+//     return s.repeat(10);
+// }
+
+// console.log(repeatString('a'));
+
+function repeatString(str, num) {
+    let result = [];
+    for(let i = 0; i < num; i++) {
+        result.push(str);
+    }
+    return result.join('');
 }
 
-console.log(repeatString('a'));
+console.log(repeatString('a', 10));
 
 
 // Bài 5: Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang.

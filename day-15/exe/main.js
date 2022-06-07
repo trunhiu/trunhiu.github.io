@@ -37,6 +37,7 @@ const showInfoproduct = arr => {
 
 showInfoproduct(products);
 
+
 // 2. Tính tổng tiền tất cả sản phẩm trong giỏ hàng
 // Tổng tiền mỗi sản phẩm = price * count
 const getTotalMoney = arr => {
@@ -60,6 +61,7 @@ const findPriceProduct = (arr, price) => {
 }
 
 console.log(findPriceProduct(products, 20000000));
+
 
 // 5. Tìm các sản phẩm có chữ "pro" trong tên (Không phân biệt hoa thường)
 const findProductByName = (arr, name) => {
@@ -92,18 +94,20 @@ const deleteProduct = (arr, product) => {
 
 console.log(deleteProduct(products, 'Samsung'));
 
+
 // 8. Sắp xếp giỏ hàng theo price tăng dần
 const sortPrice = arr => {
     arr.sort((a,b) => a.price - b.price);
-    arr.forEach(product => console.log(product.price))
+    arr.forEach(product => console.log(product))
 }
 
 sortPrice(products)
 
+
 // 9. Sắp xếp giỏ hàng theo count giảm dần
 const sortPrice1 = arr => {
-    arr.sort((a,b) => b.price - a.price);
-    arr.forEach(product => console.log(product.price));
+    arr.sort((a,b) => b.count - a.count);
+    arr.forEach(product => console.log(product));
 }
 
 sortPrice1(products)

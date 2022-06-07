@@ -17,6 +17,7 @@ const averageRankClass = arr => {
 }
 
 console.log(averageRankClass(grades));
+
 //2.Viết function tính thứ hạng trung bình của nam trong lớp
 const averageRankMale = arr => {
     let findMale = arr.filter(ele => ele.sex === 'M')
@@ -24,6 +25,7 @@ const averageRankMale = arr => {
 }
 
 console.log(averageRankMale(grades));
+
 //3.Viết function tính thứ hạng trung bình của Nữ trong lớp
 const averageRankFemale = arr => {
     let findFemale = arr.filter(ele => ele.sex === 'F');
@@ -33,17 +35,15 @@ const averageRankFemale = arr => {
 console.log(averageRankFemale(grades));
 //4.Viết function tìm học viên Nam có thứ hạng cao nhất trong lớp
 const topRankMale = arr => {
-    let findMale = arr.filter(ele => ele.sex === 'M')
-    let topMale = Math.max.apply(Math,findMale.map(i => i.grade));
-    console.log(topMale);
+    let findMale = arr.filter(ele => ele.sex === 'M');
+    return Math.max.apply(Math, findMale.map(e => e.grade));
 }
 
-(topRankMale(grades));
-
+console.log(topRankMale(grades))
 //5.Viết function tìm học viên Nữ có thứ hạng cao nhất trong lớp
 const topRankFemale = arr => {
     let findFemale = arr.filter(ele => ele.sex === 'F');
-    let topFemale = Math.max.apply(Math,findFemale.map(i => i.grade));
+    let topFemale = Math.max.apply(Math,findFemale.map(e => e.grade));
     console.log(topFemale);
 }
 
@@ -101,6 +101,7 @@ const sortNameClass = arr => {
     arr.forEach(student => console.log(student))
 }
 sortNameClass(grades)
+
 //12.Viết function sắp xếp thứ hạng học viên theo chiều giảm dần
 const sortNameClass1 = arr => {
     arr.sort((a,b) => {
