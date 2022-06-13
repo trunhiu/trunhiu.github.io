@@ -1,0 +1,18 @@
+#frame{
+    background-color: red;
+    width: 500px;
+    height:500px;
+    margin:0 auto;
+   }
+   #errorText{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+   }
+   .labeltext{
+    color: white;
+   }
+   #btnDangnhap{
+    margin-left: 100px;
+  
+   }

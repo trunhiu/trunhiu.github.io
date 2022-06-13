@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <title>VALIDATE FORM</title>
+
+ <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div id="frame">
+
+  <form id='form' action="">
+
+   <h1 align='center' style="color:white">ĐĂNG KÝ NGƯỜI DÙNG</h1>
+
+   <div align='center' id='errorText'></div>
+
+     <table align='center' cellspacing="0px" cellpadding="20px" border="0">
+     <tr>
+      <td  class='labeltext'>Tên đăng nhập:</td>
+      <td>
+
+       <input id='tendn' type="text" value='' name="dn" placeholder="Nhập tên đăng nhập" onblur="this.placeholder='Nhập tên đăng hhập'" onfocus="this.placeholder='Nhập tên đăng nhập'">
+
+      </td>
+
+     </tr>
+
+     <tr>
+
+      <td  class='labeltext'>Mật khẩu:</td>
+
+      <td>
+
+       <input id='mk' type="password" value='' name="mk" placeholder="Nhập mật khẩu" onblur="this.placeholder='Nhập mật khẩu'" onfocus="this.placeholder='Nhập mật khẩu'">
+
+      </td>
+
+     </tr>
+
+     <tr>
+
+      <td class='labeltext'>Email:</td>
+
+      <td>
+
+       <input id='email' type="email" value='' name="email" placeholder="Nhập tên đăng nhập" onblur="this.placeholder='Nhập tên đăng hhập'" onfocus="this.placeholder='Nhập tên đăng nhập'">
+
+      </td>
+
+     </tr>
+
+     <tr>
+
+      <td class='labeltext'>Nghề nghiệp</td>
+
+      <td>
+
+       <select id='nghenghiep'>
+
+        <option  id='id1' value="1">Chọn nghề</option>
+
+        <option  value="2">IT</option>
+
+        <option  value="3">Design</option>
+
+        <option  value="4">Teacher</option>
+
+       </select>
+
+      </td>
+
+     </tr>
+
+     <tr>
+
+      <td class='labeltext'>Tuổi:</td>
+
+      <td>
+
+       <input id='tuoi' type="text" value='' name="tuoi" placeholder="Nhập tuổi" onblur="this.placeholder='Nhập tuổi'" onfocus="this.placeholder='Nhập tuổi'">
+
+      </td>
+
+     </tr>
+
+     <tr>
+
+      <td colspan="2">
+
+       <input id='btnDangnhap' type="submit" value='Đăng nhập' name="">
+
+      </td>
+
+      
+
+     </tr>
+
+    </table>
+
+  </form>
+
+  </div>
+
+<script type="text/javascript" src='script.js'></script>
+</body>
+
+</html>
