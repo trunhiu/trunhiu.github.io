@@ -7,7 +7,6 @@ const resutl = para.innerText.split(' ').map(ele =>
 ).join(' ');
 
 
-console.log(resutl)
 para.innerHTML = resutl;
 
 
@@ -23,16 +22,17 @@ count.innerText = `Đoạn văn này có ${para.innerText.split(' ').length} t�
 
 // 4. Thay thế các ký hiệu ? => 🤔, ! => 😲
 
-let resutl1 = para.innerText.split('').map(ele => 
-    (!ele.indexOf('?') ? `🤔` : ele)
-).join('');
+// let emoji = para.innerText.split('').map(e => 
+//     (!e.indexOf('?') ? `🤔` : e)
+// ).join('');
 
-para.innerText = resutl1;
+// para.innerHTML = emoji;
 
-let resutl2 = para.innerText.split('').map(ele => 
-    (ele.includes('!') ? `😲` : ele)
-).join('');
+// let emoji2 = para.innerText.split('').map(e => 
+//     (e.includes('!') ? `😲` : e)
+// ).join('');
 
-para.innerText = resutl2;
-
+// para.innerHTML = emoji2;
+para.innerHTML = para.innerHTML.replace(/\?/g, '🤔')
+para.innerHTML = para.innerHTML.replace(/\!/g, '😲')
 

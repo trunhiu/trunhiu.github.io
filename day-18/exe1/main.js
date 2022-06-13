@@ -39,15 +39,11 @@ btnLoginEle.addEventListener("click", function () {
         alert("Vui lòng điền mật khẩu vào");
         return false;
     } else if (usernameEle !== "" && passwordEle !== "") {
-        let usernames = users.map(e => e.username)
-        let passwords = users.map((e) => e.password)
-        if (usernames == usernameEle && passwords == passwordEle) {
+        if (users.map(e => e.username) == usernameEle && users.map(e => e.password) == passwordEle) {
             alert("Dang nhap thanh cong");
         }
     } else {
         alert("Tai khoan hoac mat khau khong chinh xac")
     }
-
-
 });
 
