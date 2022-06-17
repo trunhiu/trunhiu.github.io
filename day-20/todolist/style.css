@@ -162,3 +162,10 @@ h1 {
     font-style: italic;
 }
 
+#btn-add {
+    display: inline-block;
+}
+
+#btn-update {
+    display: none;
+}

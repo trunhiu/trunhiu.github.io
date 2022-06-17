@@ -76,13 +76,18 @@ const changeTodo = (id) => {
         }
     }
 
-    btnAdd.innerText = 'Cập Nhật'
+    btnChange.style.display = 'inline-block';
+    btnAdd.style.display = 'none';
     todoInputEl.value = title;
     todoInputEl.focus();
 
     isUpdate = true;
     idUpdate = id;
 }
+
+btnChange.addEventListener('click', function(){
+    addTodo();
+})
 
 // Xoá công việc
 
@@ -154,7 +159,8 @@ const addTodo = () => {
             }
         }
         
-        btnAdd.innerText = 'Thêm'
+        btnAdd.style.display = 'inline-block';
+        btnChange.style.display = 'none';
         
         isUpdate = false;
         idUpdate = null;
