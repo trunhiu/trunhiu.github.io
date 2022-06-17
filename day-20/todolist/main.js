@@ -70,11 +70,11 @@ const renderTodo = arr => {
 
 const changeTodo = (id) => {
     let title
-    for (let i = 0; i < todos.length; i++) {
-        if (todos[i].id == id) {
-            title = todos[i].title;
+    todos.find(ele => {
+        if (ele.id == id) {
+            title = ele.title;
         }
-    }
+    })
 
     btnChange.style.display = 'inline-block';
     btnAdd.style.display = 'none';
@@ -153,11 +153,11 @@ const addTodo = () => {
         return;
     }
     if (isUpdate) {
-        for (let i = 0; i < todos.length; i++) {
-            if (todos[i].id === idUpdate) {
-                todos[i].title = title;
+        todos.find(ele => {
+            if(ele.id === idUpdate) {
+                ele.title = title;
             }
-        }
+        })
         
         btnAdd.style.display = 'inline-block';
         btnChange.style.display = 'none';
@@ -175,9 +175,6 @@ const addTodo = () => {
 
         // Thêm công việc mới vào mảng để quản lý
         todos.push(newTodo);
-
-
-
     }
 
     setDataToLocalStorage(todos);
