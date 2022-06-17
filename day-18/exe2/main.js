@@ -31,7 +31,7 @@ const button = document.createElement('button');
 const input = document.createElement('input');
 
 button.innerText = 'Add'
-document.body.insertAdjacentElement('afterbegin', button);
+document.body.insertAdjacentElement('beforeend', button);
 button.insertAdjacentElement('afterend', input);
 button.addEventListener('click', function () {
     if (input.value == '') {
@@ -41,6 +41,7 @@ button.addEventListener('click', function () {
         liN.innerText = input.value;
         ul2.insertAdjacentElement('beforeend', liN);
     }
+    input.value = '';
 })
 
 
@@ -51,8 +52,10 @@ input.insertAdjacentElement('afterend', buttonRemove);
 const ul = document.getElementById('list')
 
 buttonRemove.addEventListener('click', function () {
-    let liLast = document.querySelector('li:last-child');
-    ul.removeChild(liLast);
+       let liLast = document.querySelector('li:last-child');
+       if (liLast) {
+        ul.removeChild(liLast);    
+       }   
 })
 
 // 3. Thêm 1 nút Hide trên đầu của danh sách ul
