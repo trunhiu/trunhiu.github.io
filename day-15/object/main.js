@@ -54,15 +54,15 @@ student.showInfo();
 console.log(Object.keys(student));
 
 //Duyệt keys để in ra values tương ứng.
-let keys = Object.keys(student);
-keys.forEach( key => {
-    console.log(student[key]);
-});
+// let keys = Object.keys(student);
+// keys.forEach( key => {
+//     console.log(student[key]);
+// });
 
 //Sử dụng for ... in
-// for (const key in user) {
-//     console.log(user[key]);
-// }
+for (const key in student) {
+    console.log(student[key]);
+}
 
 //2. Lấy danh sách values 
 console.log(Object.values(student));
