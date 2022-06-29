@@ -30,6 +30,8 @@ btnRemove.click(() => {
 
 // Thêm 1 nút Hide trên đầu của danh sách ul
 $("ul").before(`<button>Hide</button>`);
+// Khi bấm vào Hide thì ul sẽ ẩn. Đồng thời label của nút Hide => Show
+// Và ngược lại, khi bấm vào Show thì ul sẽ hiện. Đồng thời label của nút Show => Hide
 const btnHide = $("button:last");
 btnHide.click(() => {
     $("ul").toggle(1000);
@@ -42,5 +44,3 @@ btnHide.click(() => {
     }
 });
 
-// Khi bấm vào Hide thì ul sẽ ẩn. Đồng thời label của nút Hide => Show
-// Và ngược lại, khi bấm vào Show thì ul sẽ hiện. Đồng thời label của nút Show => Hide
