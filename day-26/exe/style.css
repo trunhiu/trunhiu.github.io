@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.menu {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    width: 70%;
+}
+
+.menu-item ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item ul li {
+    text-align: center;
+    width: 100%;
+    color: #111111;
+    font-size: 18px;
+    margin: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu-icon1 {
+    font-size: 40px;
+    display: none;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.menu-icon {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    opacity: 0.4;
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+}
+
+.body {
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    height: 420px;
+    background-color: #292d33;
+    padding: 50px 30px 30px 30px;
+}
+
+.container-layout h1 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-item {
+    width: 90%;
+    margin: auto;
+}
+
+.card-item-layouts {
+    display: flex;  
+    flex-wrap: wrap;
+    margin-top: -240px;
+}
+
+.card-item-layout {
+    padding: 0 15px;
+    flex-basis: 33.33%;
+    text-align: center;
+}
+
+.card-image {
+    height: 285px;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.card-image .text {
+    position: absolute;
+    bottom: -5;
+    left: 50px;
+}
+
+.content {
+    padding: 30px 15px 50px 15px;
+    background-color: #f2f2f2;
+}
+
+.text {    
+    background-color: #ffbc87; 
+    padding: 18px 0;
+    margin: -38px auto 0;
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif ;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-link {
+    margin-top: 20px;
+}
+
+.content-link a {
+    color: #0f0f0f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+footer {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+   color: #111111;
+   font-size: 20px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.footer a {
+    color: #57c65b;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    .card-item-layout {
+        flex-basis: 50%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .menu-item ul {
+        display: none;
+    }
+
+    .menu-icon1 {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-item ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        overflow: hidden;
+        opacity: 0.9;
+
+        background-color: #111;
+        z-index: 1001;
+
+        flex-direction: column;
+        transition: all 0.5s;
+    }
+
+    .menu-item ul li {
+        padding: 10px;
+        margin-left: 0;
+        transition: all 0.2s;
+        color: #fff;
+    }
+
+    .menu-item ul li:hover {
+        color: #4b4949;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-item-layout {
+        flex-basis: 100%;
+    }
+
+    .menu-icon1 {
+        display: block;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .menu-item ul {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        overflow: hidden;
+
+        background-color: #111;
+        z-index: 1001;
+
+        flex-direction: column;
+        transition: all 0.5s;
+    }
+
+    .menu-item ul li {
+        padding: 10px;
+        margin-left: 0;
+        transition: all 0.2s;
+        color: #fff;
+    }
+
+    .menu-item ul li:hover {
+        color: #4b4949;
+        cursor: pointer;
+    }
+
+    .menu-icon1:hover {
+        color: #4b4949;
+        cursor: pointer;
+    }
+}
