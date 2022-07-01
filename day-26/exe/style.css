@@ -253,6 +253,11 @@ footer {
         color: #4b4949;
         cursor: pointer;
     }
+
+    .menu-icon1:hover {
+        color: #4b4949;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 768px) {
