@@ -212,6 +212,10 @@ footer {
         display: block;
     }
 
+    .menu-icon:hover {
+        color: tomato;
+    }
+
     .menu-item ul {
         display: block;
         position: fixed;
@@ -222,7 +226,7 @@ footer {
         overflow: hidden;
         opacity: 0.9;
 
-        background-color: #111;
+        background-color: #000000;
         z-index: 1001;
 
         flex-direction: column;
@@ -263,7 +267,7 @@ footer {
         height: 100vh;
         overflow: hidden;
 
-        background-color: #111;
+        background-color: #000000;
         z-index: 1001;
 
         flex-direction: column;
