@@ -32,6 +32,10 @@ header {
     align-items: center;
 }
 
+.menu-logo {
+    cursor: pointer;
+}
+
 .menu-item {
     width: 70%;
 }
@@ -49,6 +53,10 @@ header {
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     white-space: nowrap;
+}
+
+.menu-item ul li:hover {
+    color: tomato;
 }
 
 .menu-icon1 {
@@ -153,6 +161,7 @@ header {
     font-size: 30px;
     font-weight: 400;
     font-family: 'Playfair Display', serif ;
+    cursor: pointer;
 }
 
 .content p {
