@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+  #get-started h2 {
+    font-size: 40px;
+  }
+
+  #get-started p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #get-started p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  #get-started h2 {
+    font-size: 32px;
+  }
+}
