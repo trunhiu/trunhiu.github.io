@@ -156,7 +156,7 @@ header {
 
 .header-image {
   position: absolute;
-  bottom: -30%;
+  bottom: 0;
   left: 25%;
 }
 
