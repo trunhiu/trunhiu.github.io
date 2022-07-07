@@ -72,7 +72,7 @@ header {
 
 .header-search {
   text-align: center;
-  padding: 128px 0 220px;
+  padding: 128px 0 200px;
 }
 
 .header-search h1 {
@@ -156,7 +156,7 @@ header {
 
 .header-image {
   position: absolute;
-  bottom: -30%;
+  bottom: -20%;
   left: 25%;
 }
 
