@@ -564,7 +564,7 @@ footer {
 .footer-image {
   width: 160px;
   height: 30px;
-  margin: 64px 0 20px;
+  margin: 64px 0 30px;
 }
 
 .footer-image img {
@@ -623,4 +623,5 @@ footer {
 
 footer h3 {
   padding-top: 60px;
+  margin-bottom: 40px;
 }
