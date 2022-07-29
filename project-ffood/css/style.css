@@ -337,7 +337,7 @@ header {
 
 #shortcut {
   height: 726px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .shortcut-container {
@@ -430,6 +430,9 @@ header {
 }
 
 /***********************feedback ***************************/
+#feedback {
+  margin-top: 80px;
+}
 
 .feedback-image {
   position: relative;
