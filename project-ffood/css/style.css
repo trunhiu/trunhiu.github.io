@@ -411,7 +411,7 @@ header {
 
 .shortcut-item:hover .shortcut-overlay {
   width: 370px;
-  height: 270px;
+  height: 300px;
   opacity: 0.9;
   top: 25px;
   left: 25px;
