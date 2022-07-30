@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa hàng</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/project-ffood/lib/font/font.css" />
+    <link rel="stylesheet" href="/project-ffood/lib/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="/project-ffood/css/store.css" />
+  </head>
+  <body>
+
+    <header>
+        <div class="header">
+          <div class="logo">
+            <img src="/project-ffood/img/Logo_black.webp" alt="logo" />
+          </div>
+          <ul>
+            <a href="">
+              <li>Trang chủ</li>
+            </a>
+            <a href="">
+              <li>Cửa hàng</li>
+            </a>
+            <a href="">
+              <li>Giới thiệu</li>
+            </a>
+            <a href="">
+              <li>Tin tức</li>
+            </a>
+            <a href="">
+              <li>Liên hệ</li>
+            </a>
+          </ul>
+          <div class="header-icon">
+            <div class="header-item">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="header-item">
+              <span><i class="fa-solid fa-user-tie"></i></span>
+            </div>
+            <div class="header-item">
+              <span><i class="fa-solid fa-cart-shopping"></i></i></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="banner">
+        <div class="banner-item">
+          <div class="banner-image">
+            <img src="/project-ffood/img/banner-10.webp" alt="banner1">
+            <div class="header-text">             
+              <h1>Cửa hàng</h1>
+              <div>
+                  <p>Trang chủ</p>
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <p>Cửa hàng</p>
+              </div>     
+            </div>
+          </div> 
+        </div>
+        
+      </div>
+      <div id="products">
+        <div class="products-container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="fillter">
+                        <div class="fillter-remove"><button>Xoá nhanh</button></div>
+                        <div class="fillter-title">   
+                            <div></div>
+                            <p>Các sản phẩm</p>
+                        </div>
+                        <p>Đồ ăn nhanh</p>
+                        <p>Đồ uống</p>
+                        <p>Sinh tố</p>
+                        <p>Combo</p>
+                        <div class="fillter-title">   
+                            <div></div>
+                            <p>Giá</p>
+                        </div>
+                        <div class="fillter-checkbox">
+                            <input type="checkbox">
+                            <label>10.000 vnđ - 50.000 vnđ</label>
+                        </div>
+                        <div class="fillter-checkbox">
+                            <input type="checkbox">
+                            <label>50.000 vnđ - 100.000 vnđ</label>
+                        </div>
+                        <div class="fillter-checkbox">
+                            <input type="checkbox">
+                            <label>100.000 vnđ - 150.000 vnđ</label>
+                        </div>
+                        <div class="fillter-checkbox">
+                            <input type="checkbox">
+                            <label>150.000 vnđ - 200.000 vnđ</label>
+                        </div>
+                        <div class="fillter-checkbox">
+                            <input type="checkbox">
+                            <label>200.000 vnđ - 250.000 vnđ</label>
+                        </div>
+                        <div class="fillter-title">   
+                            <div></div>
+                            <p>Kích thước</p>
+                        </div>
+                        <div class="fillter-size"><button>Cỡ nhỏ</button><button>Cỡ vừa</button><button>Cỡ lớn</button></div>
+                        <div class="fillter-title">   
+                            <div></div>
+                            <p>Các thẻ</p>
+                        </div>
+                        <div class="fillter-size"><button>Burger</button><button>Combo</button><button>Đồ uống</button><button>Sinh tố</button></div>
+                        <div class="fillter-title">   
+                            <div></div>
+                            <p>Thương hiệu</p>
+                        </div>
+                        <p>FFood - Fast Food & Trunhiiu Restaurant</p>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="products-image">
+                        <img src="/project-ffood/img/banner-65.jpg" alt="products image">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/burgersieuto.webp" alt="burgersieuto">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Burgur siêu to Khổng lồ</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/Comboburgersieuto.webp" alt="Comboburgersieuto">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Big Mac Combo</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/burgerphomai.webp" alt="burgerphomai">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Burgur phô mai</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/combophomai.webp" alt="Comboburgerphomai">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Burgur phô mai combo</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/CombogaNugget.webp" alt="CombogaNuggets">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Combo gà Nuggets</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/Combobanhkep.webp" alt="Combobanhkep">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Combo bánh kẹp gà</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/banhkepga.webp" alt="banhkepga">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Bánh kẹp gà</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/burgerx2phomai.webp" alt="burgerx2phomai">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Burgur phô mai x2</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/quarterx2phomai.webp" alt="quarterx2phomai">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Quarter Pounder x2</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/socolanong.webp" alt="socolanong">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Socola nóng</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/sinhtoxoaidua.webp" alt="sinh to xoai">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Sinh tố xoài dứa</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/quater.webp" alt="quater">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Quarter Pounder</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image">
+                                  <img src="/project-ffood/img/quatervoiphomai.webp" alt="quatervoiphomai">
+                                  <div class="product-icon">
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                  </div>
+                                </div>
+                                <div class="product-content">
+                                  <h3>Quarter Pounder phô mai</h3>
+                                  <p>50.000 vnđ</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <div class="footer-image">
+                <img src="/project-ffood/img/Logo_black.webp" alt="logo">
+              </div>
+              <div class="footer-content">
+                <p>Theo dõi chúng tôi để được giảm giá 30%</p>
+                <div class="footer-input">
+                  <div><input type="text" placeholder="Email của bạn..."></div>
+                  <button><span><i class="fa-solid fa-paper-plane"></i></span></button>
+                </div>
+                <div><span><i class="fa-brands fa-twitter"></i></span><span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-youtube"></i></span></div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <h3>Trụ sở chính FFOOD</h3>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <p>0845.069.061</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p>buihieu3008@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <h3>Trụ sở chính FFOOD</h3>
+              <p>Chính sách thanh toán</p>
+              <p>Chính sách đổi trả</p>
+              <p>Chính sách vận chuyển</p>   
+              <p>Chính sách bảo mật</p>     
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <h3>Trụ sở chính FFOOD</h3>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-facebook-f"></i></i></span>
+                <p>Facebook</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-instagram"></i></i></span>
+                <p>Instagram</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-youtube"></i></i></span>
+                <p>Youtube</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <p>Twitter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/project-ffood/lib/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/project-ffood/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/project-ffood/js/store.js"></script>
+  </body>
+</html>
