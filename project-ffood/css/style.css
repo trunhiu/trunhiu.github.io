@@ -149,13 +149,63 @@ header {
   color: #fff;
   border: 1px solid #fff;
   transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
 }
 
 .header-text a:hover {
   background-color: #fff;
   color: #222;
+}
+
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .header-text p:nth-child(3) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header-text a {
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-text {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .header-text p:nth-child(3) {
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+
+  .header-text a {
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+  }
 }
 
 /***********************************logo****************************/
@@ -221,6 +271,12 @@ header {
   font-size: 13px;
   font-weight: 500;
   transition: all 0.5s;
+}
+
+@media (max-width: 500px) {
+  .products-title button {
+    margin-bottom: 20px;
+  }
 }
 
 .products-title button:hover {
@@ -337,7 +393,7 @@ header {
 /***********************************Short cut *****************************/
 
 #shortcut {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .shortcut-container {
@@ -345,7 +401,7 @@ header {
 }
 
 .shortcut-item {
-  margin-bottom: 20px;
+  margin: 10px 10px 10px 10px;
 }
 
 .shortcut-image {
@@ -497,6 +553,73 @@ header {
   font-weight: 700;
 }
 
+@media (max-width: 500px) {
+  .feedback-info {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+  }
+
+  .feedback-info h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .feedback-info .feedback-line {
+    margin-bottom: 10px;
+  }
+
+  .feedback-info p {
+    color: #fff;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .feedback-info span i {
+    display: none;
+  }
+  .image-user img {
+    display: none;
+  }
+
+  .feedback-info h4 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-info {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+  }
+
+  .feedback-info h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .feedback-info .feedback-line {
+    margin-bottom: 10px;
+  }
+
+  .feedback-info p {
+    color: #fff;
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+  .feedback-info span i {
+    margin-bottom: 20px;
+  }
+  .image-user {
+    margin-bottom: 20px;
+  }
+
+  .feedback-info h4 {
+  }
+}
+
 /********************************hot prodcuct******************************/
 
 #hotproduct {
@@ -527,6 +650,7 @@ header {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .news-info p {
@@ -541,6 +665,7 @@ header {
   border: 1px solid #ff871d;
   width: 167px;
   transition: all 0.3s linear;
+  margin-bottom: 20px;
 }
 
 .news-info a:hover {
@@ -635,6 +760,7 @@ footer {
 }
 
 footer h3 {
+  font-size: 24px;
   padding-top: 60px;
   margin-bottom: 40px;
 }
