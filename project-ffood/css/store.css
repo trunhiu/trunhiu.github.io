@@ -298,6 +298,7 @@ header {
   font-size: 20px;
   color: #222;
   transition: all 0.3s;
+  height: 50px;
 }
 
 .product-content h3:hover {

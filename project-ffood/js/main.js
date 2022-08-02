@@ -1,5 +1,8 @@
 $(document).ready(function () {
     $('#banner').slick({
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
         isFinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -8,7 +11,7 @@ $(document).ready(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true
@@ -17,7 +20,7 @@ $(document).ready(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: true
                 }
@@ -89,7 +92,7 @@ $(document).ready(function () {
         isFinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
                 breakpoint: 992,
@@ -97,7 +100,7 @@ $(document).ready(function () {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    arrows: true
                 }
             },
             {
@@ -106,7 +109,7 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    arrows: true
                 }
             },
             {
@@ -115,7 +118,43 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    arrows: true
+                }
+            }
+        ]
+    });
+});
+$(document).ready(function () {
+    $('.hotproduct-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
                 }
             }
         ]
