@@ -39,7 +39,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 .logo {
@@ -60,6 +60,103 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
+}
+
+.menu-sidebar {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1100;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #111;
+  opacity: 0.4;
+  display: none;
+
+  z-index: 1005;
+  transition: all 1s ease-in-out;
+}
+
+.menu-sidebar-top {
+  display: flex;
+  border-right: 1px solid #111;
+}
+
+.menu-sidebar-top .menu-sidebar-top-list {
+  color: #ffffff;
+  display: flex;
+  padding: 18px 23px 0;
+  width: 50%;
+  background-color: #111111;
+}
+
+.menu-sidebar-top .menu-sidebar-top-list span {
+  margin-right: 10px;
+}
+
+.menu-sidebar-top .menu-sidebar-top-login {
+  display: flex;
+  padding: 18px 23px 0;
+  width: 50%;
+}
+
+.menu-sidebar-top .menu-sidebar-top-login span {
+  margin-right: 10px;
+}
+
+.menu-sidebar-mid {
+  width: 100%;
+}
+
+.menu-sidebar-mid div {
+  padding: 16px 0px 16px 32px;
+  border-bottom: 1px solid #111;
+  border-right: 1px solid #111;
+  width: 100%;
+}
+
+.menu-sidebar-mid div a:hover {
+  color: #ff871d;
+}
+
+.menu-sidebar-mid div:nth-child(1) {
+  border-top: 1px solid #111;
+}
+
+.menu-sidebar-mid div a {
+  color: #161616;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.menu-sidebar-bottom button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  color: #fff;
+  background-color: #111111;
+  border: 1px solid #111111;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.menu-sidebar-bottom button:hover {
+  background-color: #ff871d;
+  border: 1px solid #ff871d;
 }
 
 .header ul a {
@@ -84,6 +181,29 @@ header {
 
 .header-shoppingcart {
   cursor: pointer;
+}
+
+.logo-menu span i {
+  font-size: 30px;
+  transition: all 0.2s;
+  display: none;
+}
+
+.logo-menu span i:hover {
+  color: #ff871d;
+}
+
+@media (max-width: 992px) {
+  .header ul {
+    display: none;
+  }
+  .header-icon {
+    display: none;
+  }
+
+  .logo-menu span i {
+    display: block;
+  }
 }
 
 .header-overlay {

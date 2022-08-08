@@ -161,6 +161,22 @@ $(document).ready(function () {
     });
 });
 
+/************menu******************/
+$(".logo-menu").click(function () {
+    $(".menu-sidebar").css("left", "0");
+    $(".overlay").css("display", "block");
+})
+$(".overlay").click(function () {
+    $(".menu-sidebar").css("left", "-350");
+    $(".overlay").css("display", "none");
+})
+
+$(".btn-menu-cancel").click(function () {
+    $(".menu-sidebar").css("left", "-350");
+    $(".overlay").css("display", "none");
+})
+
+
 
 /************************ShoppingCart*************************/
 $(".header-shoppingcart").click(function () {
@@ -188,11 +204,12 @@ $(".header-login").click(function () {
     $(".login-content").css("top", "50px");
 })
 
-$(".login-overlay").click(function (e) {
+$(".login-overlay").click(function () {
     $(".login-overlay").css("opacity", "0");
     $(".login-overlay").css("pointer-events", "none");
     $(".login-content").css("opacity", "0");
     $(".login-content").css("pointer-events", "none");
+    $(".login-content").css("top", "0px");
 })
 
 $(".btn-login-cancel").click(function () {
@@ -200,4 +217,5 @@ $(".btn-login-cancel").click(function () {
     $(".login-overlay").css("pointer-events", "none");
     $(".login-content").css("opacity", "0");
     $(".login-content").css("pointer-events", "none");
+    $(".login-content").css("top", "0px");
 })
