@@ -62,6 +62,10 @@ header {
   margin-bottom: 0;
 }
 
+.header ul a:nth-child(2) {
+  color: #ff871d;
+}
+
 .menu-sidebar {
   position: fixed;
   top: 0;
@@ -117,6 +121,10 @@ header {
 
 .menu-sidebar-mid {
   width: 100%;
+}
+
+.menu-sidebar-mid div:nth-child(2) a {
+  color: #ff871d;
 }
 
 .menu-sidebar-mid div {
@@ -244,6 +252,10 @@ header {
   font-size: 25px;
 }
 
+.shopping-cart-sidebar-top .btn-cancel span i {
+  cursor: pointer;
+}
+
 .shopping-cart-sidebar-top div p {
   height: 100%;
   display: flex;
@@ -265,6 +277,12 @@ header {
 .shopping-cart-mid-item {
   padding: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.shopping-cart-mid-item .row .col-lg-1 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .shopping-cart-sidebar {
@@ -302,6 +320,7 @@ header {
   width: 50%;
   background: #2a2a2a;
   transition: all 0.5s linear;
+  cursor: pointer;
 }
 
 .shopping-cart-bottom .shopping-cart-bottom-button .btn-view-cart:hover {
@@ -314,6 +333,7 @@ header {
   width: 50%;
   background: #111111;
   transition: all 0.5s linear;
+  cursor: pointer;
 }
 
 .shopping-cart-bottom .shopping-cart-bottom-button .btn-buy:hover {
@@ -484,6 +504,22 @@ header {
 
 .header-text div p:nth-child(3) {
   margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .banner-item .banner-image .header-text h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 428px) {
+  .banner-item .banner-image .header-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-item .banner-image .header-text div {
+    font-size: 14px;
+  }
 }
 
 /**********************************products***********************************/
