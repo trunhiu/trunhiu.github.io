@@ -1,22 +1,3 @@
-$(document).ready(function () {
-    $('.quickview').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.quickview-slider',
-    });
-    $('.quickview-slider').slick({
-        slidesToShow: 3,
-        asNavFor: '.quickview',
-        arrows: false,
-        dots: false,
-
-        focusOnSelect: true,
-    });
-
-});
-
 /************menu******************/
 $(".logo-menu").click(function () {
     $(".menu-sidebar").css("left", "0");
@@ -166,19 +147,51 @@ $(".forgotpw-sidebar-mid-register").click(function () {
     $(".forgotpw-sidebar-mid").css("display", "none");
 })
 
-/****************quickview*****************/
-$(".product-icon-quickview").click(function () {
-    $(".quickview-overlay").css("opacity", "1");
-    $(".quickview-overlay").css("pointer-events", "all");
-    $(".short-view-content").css("opacity", "1");
-    $(".short-view-content").css("pointer-events", "all");
-    $(".short-view-content").css("top", "20%");
-})
+$(document).ready(function () {
+    $('.another-new-bottom').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
+                }
+            },
 
-$(".quickview-overlay").click(function () {
-    $(".quickview-overlay").css("opacity", "0");
-    $(".quickview-overlay").css("pointer-events", "none");
-    $(".short-view-content").css("opacity", "0");
-    $(".short-view-content").css("pointer-events", "none");
-    $(".short-view-content").css("top", "0px");
-})
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
+                }
+            }
+        ]
+    });
+});

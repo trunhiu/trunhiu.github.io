@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức 4 </title>
+    <!-- /************favicon***********/ -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/project-ffood/img/your-logo.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/project-ffood/lib/font/font.css" />
+    <link
+      rel="stylesheet"
+      href="/project-ffood/lib/bootstrap/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../css/bai-viet-4.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div class="logo">
+            <a href="index.html"><img src="../img/Logo_black.webp" alt="logo" /></a>
+          </div>
+          <ul>
+            <a href="../index.html">
+              <li>Trang chủ</li>
+            </a>
+            <a href="store.html">
+              <li>Cửa hàng</li>
+            </a>
+            <a href="../page/gioi-thieu.html">
+              <li>Giới thiệu</li>
+            </a>
+            <a href="../page/tin-tuc.html">
+              <li>Tin tức</li>
+            </a>
+            <a href="../page/lien-he.html">
+              <li>Liên hệ</li>
+            </a>
+          </ul>
+          <div class="logo-menu">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>  
+          <div class="header-icon">
+            <div class="header-item header-search">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="header-item header-login">
+              <span><i class="fa-solid fa-user-tie"></i></span>
+            </div>
+            <div class="header-item header-shoppingcart">
+                <span><i class="fa-solid fa-cart-shopping"></i></i></span>
+              </div>  
+          </div>       
+        </div>
+      <div class="menu-sidebar">
+        <div class="menu-sidebar-top">
+          <div class="menu-sidebar-top-list">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <p class="menu-sidebar-list">Danh sách</p>
+          </div>
+          <div class="menu-sidebar-top-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
+            <p class="menu-sidebar-login">Đăng nhập</p>
+          </div>
+        </div>
+        <div class="menu-sidebar-mid">
+          <div><a href="../index.html">Trang chủ</a></div>
+          <div><a href="store.html">Cửa hàng</a></div>
+          <div><a href="../page/gioi-thieu.html">Giới thiệu</a></div>
+          <div><a href="../page/tin-tuc.html">Tin tức</a></div>
+          <div><a href="../page/lien-he.html">Liên hệ</a></div>
+        </div>
+        <div class="login-sidebar-mid">
+          <input type="text" placeholder="Địa chỉ email của bạn">
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
+          <button class="btn-login-sidebar-mid">Đăng nhập</button>
+          <div class="login-sidebar-mid-line">
+              <div>Hoặc</div>
+          </div>
+          <div class="login-sidebar-mid-register">Đăng ký ngay</div>
+    
+        </div>
+        <div class="register-sidebar-mid">
+          <h3>Đăng ký</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn">
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <button class="btn-register-sidebar-mid">Đăng nhập</button>
+          <div class="register-sidebar-mid-line">
+              <div>Hoặc</div>
+          </div>
+          <div class="register-sidebar-mid-register">Quay trở lại</div>
+    
+        </div>
+        <div class="forgotpw-sidebar-mid">
+          <h3>Lấy lại mật khẩu</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn">
+          <button class="btn-forgotpw-sidebar-mid">Gửi</button>
+          <div class="forgotpw-sidebar-mid-register">Hủy</div>
+    
+        </div>
+        <div class="menu-sidebar-bottom">
+          <button class="btn-menu-cancel">Đóng</button>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="header-shopping-cart">
+              <div class="shopping-cart-sidebar">
+                <div class="shopping-cart-sidebar-top">
+                  <div class="btn-cancel">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                  <div>
+                    <p>Giỏ hàng</p>
+                  </div>
+                  <div class="shopping-cart-sidebar-top-number">
+                    <p>2</p>
+                  </div>
+                </div>
+                <div class="shopping-cart-mid">
+                  <div class="shopping-cart-mid-container">
+                    <div class="shopping-cart-mid-item">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="shopping-cart-image">
+                            <img src="../img/burgersieuto.webp" alt="burgersieuto">
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <p>burger siêu to khổng lồ</p>
+                          <p>Số lượng: 1</p>
+                          <p>100.000 vn</p>
+                        </div>
+                        <div class="col-1">
+                          <span><i class="fa-solid fa-trash-can"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shopping-cart-mid-item">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="shopping-cart-image">
+                            <img src="../img/banhkepga.webp" alt="burgersieuto">
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <p>bánh kẹp gà</p>
+                          <p>Số lượng: 1</p>
+                          <p>80.000 vn</p>
+                        </div>
+                        <div class="col-1">
+                          <span><i class="fa-solid fa-trash-can"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopping-cart-bottom">
+                  <div class="total">
+                    <p>Tổng:</p>
+                    <p>180.000 vnđ</p>
+                  </div>
+                  <div class="shopping-cart-bottom-button">
+                    <div class="btn-view-cart">
+                      <a href="">Xem giỏ hàng</a>
+                    </div>
+                    <div class="btn-buy">
+                      <a href="">Thanh toán ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+      <div class="login">
+              <div class="login-overlay"></div>
+              <div class="login-content">
+                  <div class="login-content-container">
+                    <div class="login-page">
+                      <div class="btn-login-cancel">
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                      </div>
+                      <div class="login-image">
+                        <img src="../img/Logo_black.webp" alt="logo">
+                      </div>
+                      <div class="login-line"></div>
+                      <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <input type="password" placeholder="Mật khẩu của bạn">
+                      <p class="forgot-pw">Bạn quên mật khẩu?</p>
+                      <button class="btn-login">Đăng nhập</button>
+                      <div class="login-register">
+                        <span>Bạn không có tải khoản? </span>
+                        <div class="goto-register">Đăng ký ngay</div>
+                      </div>
+                    </div>
+                    <div class="register-page">   
+                      <h2>Đăng ký tài khoản</h2>          
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <input type="text" placeholder="Mật khẩu của bạn">
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <input type="password" placeholder="Mật khẩu của bạn">
+                      <button class="btn-register">Đăng nhập</button>
+                      <button class="btn-goback">Quay lại trang đăng nhập</button>
+                    </div>
+                    <div class="forgot-password">
+                      <h2>Đăng ký tài khoản</h2>          
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <button class="btn-sendemail">Gửi</button>
+                      <button class="btn-forgotpw-goback">Hủy</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      <div class="header-overlay"></div>   
+      </header> 
+      <div id="directional">
+        <a href="../index.html">Trang chủ</a>
+        <span><i class="fa-solid fa-angle-right"></i></span>
+        <a href="tin-tuc.html">Tin tức</a>
+        <span><i class="fa-solid fa-angle-right"></i></span>
+        <div>Burger King muốn ngừng bán gà bị ngược đãi
+        </div>
+    </div>
+      <div id="new">
+        <div class="new-container">
+            <div class="new-image">
+                <img src="../img/instagram6.webp" alt="news1">
+            </div>
+            <div class="new-info">
+                <h2>Burger King muốn ngừng bán gà bị ngược đãi
+                </h2>
+                <div class="new-info-icon">
+                    <div class="icon-user">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <p>Trung hiếu</p>
+                    </div>
+                    <div class="icon-comment">
+                        <span><i class="fa-solid fa-comment"></i></span>
+                        <p>0 bình luận</p>
+                    </div>                  
+                </div>
+                <p class="new-info-text-top">Thương hiệu thức ăn nhanh cho biết đang lên kế hoạch để tất cả các nhà hàng trong hệ thống tại Bắc Mỹ sẽ hoàn toàn ngừng sử dụng gà bị ngược đãi vào 2024.
+                </p>
+                <p class="new-info-text-top">Restaurant Brands International - chủ sở hữu thương hiệu Burger King cho biết tất cả các nhà hàng trong chuỗi thức ăn nhanh này sẽ chỉ mua gà từ các trang trại đạt tiêu chuẩn, được công nhận bởi tổ chức phúc lợi động vật Global Animal Partnership (GAP) vào 2024. Công ty này sẽ thuê một bên thứ ba để giám sát sự tuân thủ của các trang trại.
+                </p>
+                <p class="new-info-text-top">Các tiêu chuẩn được đưa ra liên quan đến mật độ, điều kiện sống và vệ sinh trong trang trại. Gà cũng phải được gây mê trước khi bị giết để giảm thiểu đau đớn. Mercy for Animals – một tổ chức ủng hộ việc đối xử nhân đạo với gia súc gia cầm đã làm việc với Burger King trong 6 tháng để có được quyết định này.
+                </p>
+                <p class="new-info-text-top">Mercy for Animals cho rằng, gà là vật nuôi bị ngược đãi nhất hành tinh. Một báo cáo của tổ chức này nhận xét, gà trong trang trại thường bị vỗ béo cho lớn quá nhanh khiến chúng không thể di chuyển nổi và bị hành hạn bởi đau chân. “Việc tiếp xúc với rác rưởi ẩm thấp trong chuồng nuôi khiến chúng bị rụng lông, lở loét trên cơ thể và chân. Thậm chí, việc hít thở cũng có thể trở nên đau đớn khi không khí đậm đặc mùi khai và hôi thối”, Mercy for Animals kết luận và cho biết các con gà thường có ý thức đầy đủ tới khi chúng bị giết bằng cách lộn ngược và cắt cổ.
+                </p>
+                <p class="new-info-text-top">Thậm chí, vào tháng 11/2016, một tổ chức có tên Compassion Over Killing còn phanh phui hành vi bạo lực của một hệ thống trang trại tại bang Virginia (Mỹ) ở công đoạn chuẩn bị giết mổ. Các con gà được thu gom một cách thô bạo, quăng mạnh vào lồng chứa, bị bẻ cổ, đập đầu và xỏ các thanh nhựa vào mũi.
+                </p>
+                <p class="new-info-text-top">Brent Cox - Phó chủ tịch Mercy for Animals cho rằng, cam kết của Burger King sẽ làm giảm sự đau khổ cho hàng triệu con gà mỗi năm. “Hành động này cần được truyền cảm hứng đến các chuỗi nhà hàng thức ăn nhanh khác để những cải tiến về phúc lợi động vật được đồng bộ”, vị này nói thêm.
+                </p>
+                <p class="new-info-text-top">Thực tế, việc thực hiện các tiêu chuẩn của GAP như kế hoạch của Burger King cũng không hoàn toàn mới lạ. Tại Bắc Mỹ, nhiều chuỗi thức ăn, đồ uống lớn đã tự nguyện tuân thủ như: Chipotle, Quiznos, Red Robin, Panera Bread hay Starbucks. Bên cạnh đó còn có hệ thống siêu thị Whole Foods, nhà cung cấp thực phẩm Compass Group USA, Aramark và các nhà cung cấp thịt như Applegate, Wellshire và Farms Thompson. Hiện nay, ngay trên trang web của đối thủ Burger King là McDonald's cũng có bảng hướng dẫn về phúc lợi động vật dành cho gà. Một trong những điểm được nhấn mạnh là cần làm choáng con vật trước khi giết để nó bớt thấy đau đớn.
+                </p>
+                <p class="new-info-text-top">Sau khi thuyết phục được Burger King, Mercy for Animals đang ra sức kêu gọi một hệ thống cửa hàng burger khác tại Mỹ là Wendy phải quan tâm đến phúc lợi động vật. Theo cáo buộc của tổ chức này, Wendy tiêu thụ các con gà được nuôi trong bóng tối và vỗ béo cho tăng trọng đến mức không thể nào di chuyển được.
+                </p>
+            </div>
+        </div>
+    </div>
+      <div id="tags">
+        <div>TAG:</div>
+        <div class="tags-icon">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-youtube"></i></span>
+        </div>
+    </div>
+    <div id="another-new">
+        <div class="another-new-container">
+            <div class="another-new-top">
+                <h3>Bài viết khác</h3>
+                <div class="another-new-top-line"></div>
+            </div>
+            <div class="another-new-bottom">
+                <div class="another-new-item">
+                    <div class="another-new-image">
+                        <a href="bai-viet-1.html"><img src="../img/instagram4.webp" alt="bai-viet-2"></a>
+                    </div>
+                    <div class="another-new-content">
+                        <div class="another-new-content-container">
+                            <p class="another-new-content-top">mới</p>
+                            <a href="bai-viet-1.html">
+                              <h4>Top 10 địa điểm bán Hamburger ngon nhất tại Sài Gòn</h4>
+                            </a>
+                            <div class="another-new-content-line"></div>
+                            <div class="another-new-content-readmore">
+                                <a href="bai-viet-1.html">Xem thêm</a>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="another-new-item">
+                    <div class="another-new-image">
+                        <a href="bai-viet-2.html"><img src="../img/blog-1_1024x1024.webp" alt="bai-viet-3"></a>
+                    </div>
+                    <div class="another-new-content">
+                        <div class="another-new-content-container">
+                            <p class="another-new-content-top">mới</p>
+                            <a href="bai-viet-2.html">
+                              <h4>Burger King tạo sức ép lên thị trường thức ăn nhanh</h4>
+                            </a>
+                            <div class="another-new-content-line"></div>
+                            <div class="another-new-content-readmore">
+                                <a href="bai-viet-2.html">Xem thêm</a>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="another-new-item">
+                    <div class="another-new-image">
+                        <a href="bai-viet-3.html"><img src="../img/blog-4_1024x1024.webp" alt="bai-viet-4"></a>
+                    </div>
+                    <div class="another-new-content">
+                        <div class="another-new-content-container">
+                            <p class="another-new-content-top">mới</p>
+                            <a href="bai-viet-3.html">
+                              <h4>Hãng đồ ăn nhanh đề nghị gắn tên với CLB lừng danh của Nga</h4>
+                            </a>
+                            <div class="another-new-content-line"></div>
+                            <div class="another-new-content-readmore">
+                                <a href="bai-viet-3.html">Xem thêm</a>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="another-new-item">
+                    <div class="another-new-image">
+                        <a href="bai-viet-5.html"><img src="../img/blog-2_1024x1024.webp" alt="bai-viet-5"></a>
+                    </div>
+                    <div class="another-new-content">
+                        <div class="another-new-content-container">
+                            <p class="another-new-content-top">mới</p>
+                            <a href="bai-viet-5.html">
+                              <h4>Các chuỗi pizza, burger kinh doanh thế nào</h4>
+                            </a>
+                            <div class="another-new-content-line"></div>
+                            <div class="another-new-content-readmore">
+                                <a href="bai-viet-5.html">Xem thêm</a>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-item">
+                <div class="footer-image">
+                  <a href=""><img src="/project-ffood/img/Logo_black.webp " alt="logo"></a>
+                </div>
+                <p>Theo dõi chúng tôi để được giảm giá 30%</p>
+                
+                <div class="footer-content">
+                  
+                  <div class="footer-input">
+                    <div><input type="text" placeholder="Email của bạn..."></div>
+                    <button><span><i class="fa-solid fa-paper-plane"></i></span></button>
+                  </div>
+                  <div><span><i class="fa-brands fa-twitter"></i></span><span><i
+                        class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i
+                        class="fa-brands fa-youtube"></i></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h3>Trụ sở chính FFOOD</h3>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <p>0845.069.061</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p>buihieu3008@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h3>Trụ sở chính FFOOD</h3>
+              <p>Chính sách thanh toán</p>
+              <p>Chính sách đổi trả</p>
+              <p>Chính sách vận chuyển</p>
+              <p>Chính sách bảo mật</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h3>Trụ sở chính FFOOD</h3>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-facebook-f"></i></i></span>
+                <p>Facebook</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-instagram"></i></i></span>
+                <p>Instagram</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-youtube"></i></i></span>
+                <p>Youtube</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <p>Twitter</p>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        </div>
+      </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/project-ffood/lib/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/project-ffood/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/bai-viet-4.js"></script>
+</body>
+</html>
