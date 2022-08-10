@@ -1118,6 +1118,117 @@ header {
   padding-top: 30px;
 }
 
+/***********************quickview********************************/
+
+.product-icon-quickview {
+  cursor: pointer;
+}
+
+.quickview-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1002;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.short-view-content-container {
+  padding: 20px;
+}
+
+.short-view-content {
+  height: 500px;
+  background-color: #ffffff;
+  width: 50%;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  z-index: 1003;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.quickview {
+  margin-bottom: 10px;
+}
+
+.quickview-iamge {
+}
+
+.quickview-slider-image {
+  margin: 5px;
+}
+
+.quickview-info {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+
+.quickview-info .quickview-price {
+  color: #ff871d;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.quickview-info .quick-view-info-line {
+  border: 1px solid #e7e7e7;
+  margin-bottom: 30px;
+}
+
+.quickview-info .quickview-text {
+  color: #8a8a8a;
+  margin-bottom: 40px;
+}
+
+.quickview-info .quickview-buy {
+  display: flex;
+}
+
+.quickview-info .quickview-buy .quickview-amount {
+  display: flex;
+  width: 30%;
+  margin-right: 30px;
+}
+
+.quickview-info .quickview-buy .quickview-amount .number {
+  padding: 0px 20px;
+  border: 1px solid #111111;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.quickview-info .quickview-buy .quickview-amount .icon span i {
+  font-size: 12px;
+  display: flex;
+  padding: 7px 20px;
+  border: 1px solid #111111;
+}
+
+.quickview-info .quickview-buy .btn-quickview-add {
+  color: #ffffff;
+  background-color: #ff871d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ff871d;
+  transition: all 0.3s;
+}
+
+.quickview-info .quickview-buy .btn-quickview-add:hover {
+  background-color: #161616;
+  border: 1px solid #161616;
+}
+
 /***********************************Short cut *****************************/
 
 #shortcut {

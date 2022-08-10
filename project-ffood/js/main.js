@@ -161,6 +161,25 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.quickview').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.quickview-slider',
+    });
+    $('.quickview-slider').slick({
+        slidesToShow: 3,
+        asNavFor: '.quickview',
+        arrows: false,
+        dots: false,
+
+        focusOnSelect: true,
+    });
+
+});
+
 /************menu******************/
 $(".logo-menu").click(function () {
     $(".menu-sidebar").css("left", "0");
@@ -353,3 +372,20 @@ $(".forgotpw-sidebar-mid-register").click(function () {
     $(".forgotpw-sidebar-mid").css("display", "none");
 })
 
+
+/****************quickview*****************/
+$(".product-icon-quickview").click(function () {
+    $(".quickview-overlay").css("opacity", "1");
+    $(".quickview-overlay").css("pointer-events", "all");
+    $(".short-view-content").css("opacity", "1");
+    $(".short-view-content").css("pointer-events", "all");
+    $(".short-view-content").css("top", "20%");
+})
+
+$(".quickview-overlay").click(function () {
+    $(".quickview-overlay").css("opacity", "0");
+    $(".quickview-overlay").css("pointer-events", "none");
+    $(".short-view-content").css("opacity", "0");
+    $(".short-view-content").css("pointer-events", "none");
+    $(".short-view-content").css("top", "0px");
+})
