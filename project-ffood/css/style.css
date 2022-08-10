@@ -263,7 +263,7 @@ header {
 }
 
 .login-sidebar-mid {
-  display: block;
+  display: none;
 }
 
 .register-sidebar-mid {
@@ -271,7 +271,7 @@ header {
 }
 
 .menu-sidebar-mid {
-  display: none;
+  display: block;
 }
 
 .menu-sidebar-mid {
@@ -345,6 +345,7 @@ header {
   font-size: 30px;
   transition: all 0.2s;
   display: none;
+  cursor: pointer;
 }
 
 .logo-menu span i:hover {

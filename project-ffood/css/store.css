@@ -103,6 +103,11 @@ header {
   padding: 18px 23px 0;
   width: 50%;
   background-color: #111111;
+  cursor: pointer;
+}
+
+.menu-sidebar-top .menu-sidebar-top-login {
+  cursor: pointer;
 }
 
 .menu-sidebar-top .menu-sidebar-top-list span {
@@ -117,6 +122,156 @@ header {
 
 .menu-sidebar-top .menu-sidebar-top-login span {
   margin-right: 10px;
+}
+
+.login-sidebar-mid {
+  border-top: 1px solid #111111;
+  width: 100%;
+  padding: 50px 15px;
+}
+
+.login-sidebar-mid input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  color: #a8a8a8;
+}
+
+.login-sidebar-mid-forgot {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-login-sidebar-mid {
+  color: #ffffff;
+  background-color: #111111;
+  border: 1px solid #111111;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 50px;
+}
+
+.login-sidebar-mid-line {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+  margin-bottom: 30px;
+}
+
+.login-sidebar-mid-line div {
+  padding: 0 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -12px;
+  z-index: 100;
+  font-style: italic;
+}
+
+.login-sidebar-mid-register {
+  text-align: center;
+  cursor: pointer;
+}
+
+.register-sidebar-mid {
+  border-top: 1px solid #111111;
+  width: 100%;
+  padding: 50px 15px;
+}
+
+.register-sidebar-mid h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-sidebar-mid input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  color: #a8a8a8;
+}
+
+.btn-register-sidebar-mid {
+  color: #ffffff;
+  background-color: #111111;
+  border: 1px solid #111111;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.register-sidebar-mid-line {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+  margin-bottom: 30px;
+}
+
+.register-sidebar-mid-line div {
+  padding: 0 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -12px;
+  z-index: 100;
+  font-style: italic;
+}
+
+.register-sidebar-mid-register {
+  text-align: center;
+  cursor: pointer;
+}
+
+.forgotpw-sidebar-mid {
+  border-top: 1px solid #111111;
+  width: 100%;
+  padding: 50px 15px;
+}
+
+.forgotpw-sidebar-mid h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.forgotpw-sidebar-mid input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  color: #a8a8a8;
+}
+
+.btn-forgotpw-sidebar-mid {
+  color: #ffffff;
+  background-color: #111111;
+  border: 1px solid #111111;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.forgotpw-sidebar-mid-register {
+  text-align: center;
+  cursor: pointer;
+}
+
+.forgotpw-sidebar-mid {
+  display: none;
+}
+
+.login-sidebar-mid {
+  display: none;
+}
+
+.register-sidebar-mid {
+  display: none;
+}
+
+.menu-sidebar-mid {
+  display: block;
 }
 
 .menu-sidebar-mid {
@@ -154,17 +309,12 @@ header {
   left: 0;
   font-weight: 700;
   color: #fff;
-  background-color: #111111;
-  border: 1px solid #111111;
+  background-color: #ff871d;
+  border: 1px solid #ff871d;
   width: 100%;
   padding: 20px 0;
   text-align: center;
   transition: all 0.3s;
-}
-
-.menu-sidebar-bottom button:hover {
-  background-color: #ff871d;
-  border: 1px solid #ff871d;
 }
 
 .header ul a {
@@ -195,6 +345,7 @@ header {
   font-size: 30px;
   transition: all 0.2s;
   display: none;
+  cursor: pointer;
 }
 
 .logo-menu span i:hover {
@@ -202,15 +353,27 @@ header {
 }
 
 @media (max-width: 992px) {
+  .logo {
+    order: 2;
+  }
   .header ul {
     display: none;
   }
   .header-icon {
+    order: 3;
+  }
+
+  .header-search {
+    display: none;
+  }
+
+  .header-login {
     display: none;
   }
 
   .logo-menu span i {
     display: block;
+    order: 1;
   }
 }
 
@@ -340,6 +503,8 @@ header {
   background-color: #ff871d;
 }
 
+/*****************login****************/
+
 .login-overlay {
   position: fixed;
   top: 0;
@@ -352,7 +517,12 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.login-page {
+  display: block;
+}
+
 .login-content {
+  height: 670px;
   background-color: #ffffff;
   width: 40%;
   position: fixed;
@@ -426,6 +596,12 @@ header {
 
   color: #a8a8a8;
   margin-bottom: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-content .forgot-pw:hover {
+  color: #ff871d;
 }
 
 .login-content .btn-login {
@@ -453,9 +629,118 @@ header {
   width: 100%;
 }
 
-.login-content .login-register a {
+.login-content .login-register .goto-register {
   margin-left: 10px;
   color: #a8a8a8;
+  cursor: pointer;
+}
+
+/***************************Register***************************/
+.register-page {
+  display: none;
+}
+
+.register-page h2 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.login-content input {
+  font-size: 14px;
+  line-height: 15px;
+
+  color: #a8a8a8;
+
+  padding: 20px 0 15px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-content .btn-register {
+  line-height: 19px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: #111111;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #111111;
+  transition: all 0.5s;
+}
+
+.login-content .btn-register:hover {
+  background-color: #ff871d;
+  border: 1px solid #ff871d;
+}
+
+.login-content .btn-goback {
+  line-height: 19px;
+  margin-bottom: 20px;
+  color: #161616;
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #111111;
+  transition: all 0.5s;
+}
+
+.login-content .btn-goback:hover {
+  color: #ff871d;
+}
+
+/***************************forgot password***************************/
+.forgot-password {
+  display: none;
+}
+
+.forgot-password h2 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.login-content input {
+  font-size: 14px;
+  line-height: 15px;
+
+  color: #a8a8a8;
+
+  padding: 20px 0 15px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-content .btn-sendemail {
+  line-height: 19px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: #111111;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #111111;
+  transition: all 0.5s;
+}
+
+.login-content .btn-sendemail:hover {
+  background-color: #ff871d;
+  border: 1px solid #ff871d;
+}
+
+.login-content .btn-forgotpw-goback {
+  line-height: 19px;
+  margin-bottom: 20px;
+  color: #161616;
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #111111;
+  transition: all 0.5s;
+}
+
+.login-content .btn-forgotpw-goback:hover {
+  color: #ff871d;
 }
 /****************************** banner ********************************************/
 

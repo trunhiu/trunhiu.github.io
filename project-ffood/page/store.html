@@ -36,22 +36,22 @@
     <header>
       <div class="header">
         <div class="logo">
-          <a href="index.html"><img src="/project-ffood/img/Logo_black.webp" alt="logo" /></a>
+          <a href="index.html"><img src="../img/Logo_black.webp" alt="logo" /></a>
         </div>
         <ul>
-          <a href="/project-ffood/index.html">
+          <a href="../index.html">
             <li>Trang chủ</li>
           </a>
           <a href="#">
             <li>Cửa hàng</li>
           </a>
-          <a href="/project-ffood/page/gioi-thieu.html">
+          <a href="../page/gioi-thieu.html">
             <li>Giới thiệu</li>
           </a>
-          <a href="/project-ffood/page/tin-tuc.html">
+          <a href="../page/tin-tuc.html">
             <li>Tin tức</li>
           </a>
-          <a href="/project-ffood/page/lien-he.html">
+          <a href="../page/lien-he.html">
             <li>Liên hệ</li>
           </a>
         </ul>
@@ -59,7 +59,7 @@
           <span><i class="fa-solid fa-bars"></i></span>
         </div>  
         <div class="header-icon">
-          <div class="header-item">
+          <div class="header-item header-search">
             <span><i class="fa-solid fa-magnifying-glass"></i></span>
           </div>
           <div class="header-item header-login">
@@ -74,19 +74,48 @@
       <div class="menu-sidebar-top">
         <div class="menu-sidebar-top-list">
           <span><i class="fa-solid fa-bars"></i></span>
-          <p>Danh sách</p>
+          <p class="menu-sidebar-list">Danh sách</p>
         </div>
         <div class="menu-sidebar-top-login">
           <span><i class="fa-solid fa-user-tie"></i></span>
-          <p>Đăng nhập</p>
+          <p class="menu-sidebar-login">Đăng nhập</p>
         </div>
       </div>
       <div class="menu-sidebar-mid">
-        <div><a href="/project-ffood/index.html">Trang chủ</a></div>
+        <div><a href="../index.html">Trang chủ</a></div>
         <div><a href="#">Cửa hàng</a></div>
-        <div><a href="/project-ffood/page/gioi-thieu.html">Giới thiệu</a></div>
-        <div><a href="/project-ffood/page/tin-tuc.html">Tin tức</a></div>
-        <div><a href="/project-ffood/page/lien-he.html">Liên hệ</a></div>
+        <div><a href="../page/gioi-thieu.html">Giới thiệu</a></div>
+        <div><a href="../page/tin-tuc.html">Tin tức</a></div>
+        <div><a href="../page/lien-he.html">Liên hệ</a></div>
+      </div>
+      <div class="login-sidebar-mid">
+        <input type="text" placeholder="Địa chỉ email của bạn">
+        <input type="password" placeholder="Mật khẩu của bạn">
+        <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
+        <button class="btn-login-sidebar-mid">Đăng nhập</button>
+        <div class="login-sidebar-mid-line">
+            <div>Hoặc</div>
+        </div>
+        <div class="login-sidebar-mid-register">Đăng ký ngay</div>
+  
+      </div>
+      <div class="register-sidebar-mid">
+        <h3>Đăng ký</h3>
+        <input type="text" placeholder="Địa chỉ email của bạn">
+        <input type="password" placeholder="Mật khẩu của bạn">
+        <button class="btn-register-sidebar-mid">Đăng nhập</button>
+        <div class="register-sidebar-mid-line">
+            <div>Hoặc</div>
+        </div>
+        <div class="register-sidebar-mid-register">Quay trở lại</div>
+  
+      </div>
+      <div class="forgotpw-sidebar-mid">
+        <h3>Lấy lại mật khẩu</h3>
+        <input type="text" placeholder="Địa chỉ email của bạn">
+        <button class="btn-forgotpw-sidebar-mid">Gửi</button>
+        <div class="forgotpw-sidebar-mid-register">Hủy</div>
+  
       </div>
       <div class="menu-sidebar-bottom">
         <button class="btn-menu-cancel">Đóng</button>
@@ -110,34 +139,34 @@
                 <div class="shopping-cart-mid-container">
                   <div class="shopping-cart-mid-item">
                     <div class="row">
-                      <div class="col-lg-4">
+                      <div class="col-4">
                         <div class="shopping-cart-image">
-                          <img src="/project-ffood/img/burgersieuto.webp" alt="burgersieuto">
+                          <img src="../img/burgersieuto.webp" alt="burgersieuto">
                         </div>
                       </div>
-                      <div class="col-lg-7">
+                      <div class="col-7">
                         <p>burger siêu to khổng lồ</p>
                         <p>Số lượng: 1</p>
                         <p>100.000 vn</p>
                       </div>
-                      <div class="col-lg-1">
+                      <div class="col-1">
                         <span><i class="fa-solid fa-trash-can"></i></span>
                       </div>
                     </div>
                   </div>
                   <div class="shopping-cart-mid-item">
                     <div class="row">
-                      <div class="col-lg-4">
+                      <div class="col-4">
                         <div class="shopping-cart-image">
-                          <img src="/project-ffood/img/banhkepga.webp" alt="burgersieuto">
+                          <img src="../img/banhkepga.webp" alt="burgersieuto">
                         </div>
                       </div>
-                      <div class="col-lg-7">
+                      <div class="col-7">
                         <p>bánh kẹp gà</p>
                         <p>Số lượng: 1</p>
                         <p>80.000 vn</p>
                       </div>
-                      <div class="col-lg-1">
+                      <div class="col-1">
                         <span><i class="fa-solid fa-trash-can"></i></span>
                       </div>
                     </div>
@@ -164,21 +193,38 @@
             <div class="login-overlay"></div>
             <div class="login-content">
                 <div class="login-content-container">
-                  <div class="btn-login-cancel">
-                    <span><i class="fa-solid fa-xmark"></i></span>
+                  <div class="login-page">
+                    <div class="btn-login-cancel">
+                      <span><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                    <div class="login-image">
+                      <img src="../img/Logo_black.webp" alt="logo">
+                    </div>
+                    <div class="login-line"></div>
+                    <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
+                    <input type="text" placeholder="Địa chỉ email của bạn">
+                    <input type="password" placeholder="Mật khẩu của bạn">
+                    <p class="forgot-pw">Bạn quên mật khẩu?</p>
+                    <button class="btn-login">Đăng nhập</button>
+                    <div class="login-register">
+                      <span>Bạn không có tải khoản? </span>
+                      <div class="goto-register">Đăng ký ngay</div>
+                    </div>
                   </div>
-                  <div class="login-image">
-                    <img src="/project-ffood/img/Logo_black.webp" alt="logo">
+                  <div class="register-page">   
+                    <h2>Đăng ký tài khoản</h2>          
+                    <input type="text" placeholder="Địa chỉ email của bạn">
+                    <input type="text" placeholder="Mật khẩu của bạn">
+                    <input type="text" placeholder="Địa chỉ email của bạn">
+                    <input type="password" placeholder="Mật khẩu của bạn">
+                    <button class="btn-register">Đăng nhập</button>
+                    <button class="btn-goback">Quay lại trang đăng nhập</button>
                   </div>
-                  <div class="login-line"></div>
-                  <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
-                  <input type="text" placeholder="Địa chỉ email của bạn">
-                  <input type="password" placeholder="Mật khẩu của bạn">
-                  <p class="forgot-pw">Bạn quên mật khẩu?</p>
-                  <button class="btn-login">Đăng nhập</button>
-                  <div class="login-register">
-                    <span>Bạn không có tải khoản? </span>
-                    <a href="#">Đăng ký ngay</a>
+                  <div class="forgot-password">
+                    <h2>Đăng ký tài khoản</h2>          
+                    <input type="text" placeholder="Địa chỉ email của bạn">
+                    <button class="btn-sendemail">Gửi</button>
+                    <button class="btn-forgotpw-goback">Hủy</button>
                   </div>
                 </div>
               </div>
