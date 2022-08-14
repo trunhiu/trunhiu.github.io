@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- /************favicon***********/ -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/project-ffood/img/your-logo.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/project-ffood/lib/font/font.css" />
+    <link
+      rel="stylesheet"
+      href="/project-ffood/lib/bootstrap/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../css/thanh-toan.css" />
+  </head>
+  <body>
+    <div class="checkout">
+      <div class="checkout-container">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="checkout-main">
+              <div class="checkout-main-header">
+                <a href="../index.html"
+                  >FFood - Fast Food & Trunhiiu Restaurant</a
+                >
+                <div class="breadcrumb">
+                  <a href="#">Sản phẩm 1</a>
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <a href="#">Giỏ hàng</a>
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                  <span>Thanh toán</span>
+                </div>
+              </div>
+              <div class="checkout-main-content">
+                <div class="checkout-main-content-contact">
+                  <h3>Thông tin liên lạc</h3>
+                  <input type="text" placeholder="Email hoặc số điện thoại" />
+                </div>
+                <div class="checkout-main-content-shipping">
+                  <h3>Địa chỉ giao hàng</h3>
+                  <input type="text" placeholder="Họ và tên" />
+                  <input type="text" placeholder="Địa chỉ chi tiết" />
+                  <div class="checkout-main-content-shipping-location">
+                    <div>
+                      <select
+                        name="shipping-location-city"
+                        id="shipping-location-city"
+                      >
+                        <option>Tỉnh/Thành</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select
+                        name="shipping-location-district"
+                        id="shipping-location-district"
+                      >
+                        <option>Quận/Huyện</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select
+                        name="shipping-location-ward"
+                        id="shipping-location-ward"
+                      >
+                        <option>Xã/Phường</option>
+                      </select>
+                    </div>
+                  </div>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Ghi chú"
+                  ></textarea>
+                </div>
+                <div class="shipping-rate">
+                  <h3>Phương thức vận chuyển</h3>
+                  <div>
+                    <input type="radio" />
+                    <span>Giao hàng tận nơi</span>
+                  </div>
+                </div>
+                <div class="payment-methods">
+                  <h3>Phương thức thanh toán</h3>
+                  <div class="payment-methods-item">
+                    <input type="radio" />
+                    <div class="payment-methods-image">
+                      <img src="../img/vnpay_new.svg" alt="vnpay" />
+                    </div>
+                    <span
+                      >Thanh toán online qua (ATM/Visa/MasterCard/JCB/QR Pay
+                      trên Mobile Banking)</span
+                    >
+                  </div>
+                  <div class="payment-methods-item">
+                    <input type="radio" />
+                    <div class="payment-methods-image">
+                      <img src="../img/other.svg" alt="Banking" />
+                    </div>
+                    <span>Chuyển khoản qua ngân hàng</span>
+                  </div>
+                  <div class="payment-methods-item">
+                    <input type="radio" />
+                    <div class="payment-methods-image">
+                      <img src="../img/cod.svg" alt="cod" />
+                    </div>
+                    <span>Thanh toán khi giao hàng (COD)</span>
+                  </div>
+                  <div class="payment-methods-item">
+                    <input type="radio" />
+                    <div class="payment-methods-image">
+                      <img src="../img/shopeepay_new.svg" alt="shopeepay" />
+                    </div>
+                    <span>Ví ShopeePay</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/project-ffood/lib/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/project-ffood/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/thanh-toan.js"></script>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <!-- /************favicon***********/ -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/project-ffood/img/your-logo.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/project-ffood/lib/font/font.css" />
+    <link
+      rel="stylesheet"
+      href="/project-ffood/lib/bootstrap/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/project-ffood/lib/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../css/gio-hang.css">
+  </head>
+  <body>
+    <header>
+        <div class="header">
+          <div class="logo">
+            <a href="index.html"><img src="../img/Logo_black.webp" alt="logo" /></a>
+          </div>
+          <ul>
+            <a href="../index.html">
+              <li>Trang chủ</li>
+            </a>
+            <a href="store.html">
+              <li>Cửa hàng</li>
+            </a>
+            <a href="../page/gioi-thieu.html">
+              <li>Giới thiệu</li>
+            </a>
+            <a href="../page/tin-tuc.html">
+              <li>Tin tức</li>
+            </a>
+            <a href="../page/lien-he.html">
+              <li>Liên hệ</li>
+            </a>
+          </ul>
+          <div class="logo-menu">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>  
+          <div class="header-icon">
+            <div class="header-item header-search">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="header-item header-login">
+              <span><i class="fa-solid fa-user-tie"></i></span>
+            </div>
+            <div class="header-item header-shoppingcart">
+                <span><i class="fa-solid fa-cart-shopping"></i></i></span>
+              </div>  
+          </div>       
+        </div>
+      <div class="menu-sidebar">
+        <div class="menu-sidebar-top">
+          <div class="menu-sidebar-top-list">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <p class="menu-sidebar-list">Danh sách</p>
+          </div>
+          <div class="menu-sidebar-top-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
+            <p class="menu-sidebar-login">Đăng nhập</p>
+          </div>
+        </div>
+        <div class="menu-sidebar-mid">
+          <div><a href="../index.html">Trang chủ</a></div>
+          <div><a href="store.html">Cửa hàng</a></div>
+          <div><a href="../page/gioi-thieu.html">Giới thiệu</a></div>
+          <div><a href="../page/tin-tuc.html">Tin tức</a></div>
+          <div><a href="../page/lien-he.html">Liên hệ</a></div>
+        </div>
+        <div class="login-sidebar-mid">
+          <input type="text" placeholder="Địa chỉ email của bạn">
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
+          <button class="btn-login-sidebar-mid">Đăng nhập</button>
+          <div class="login-sidebar-mid-line">
+              <div>Hoặc</div>
+          </div>
+          <div class="login-sidebar-mid-register">Đăng ký ngay</div>
+    
+        </div>
+        <div class="register-sidebar-mid">
+          <h3>Đăng ký</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn">
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <button class="btn-register-sidebar-mid">Đăng nhập</button>
+          <div class="register-sidebar-mid-line">
+              <div>Hoặc</div>
+          </div>
+          <div class="register-sidebar-mid-register">Quay trở lại</div>
+    
+        </div>
+        <div class="forgotpw-sidebar-mid">
+          <h3>Lấy lại mật khẩu</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn">
+          <button class="btn-forgotpw-sidebar-mid">Gửi</button>
+          <div class="forgotpw-sidebar-mid-register">Hủy</div>
+    
+        </div>
+        <div class="menu-sidebar-bottom">
+          <button class="btn-menu-cancel">Đóng</button>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="header-shopping-cart">
+              <div class="shopping-cart-sidebar">
+                <div class="shopping-cart-sidebar-top">
+                  <div class="btn-cancel">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                  </div>
+                  <div>
+                    <p>Giỏ hàng</p>
+                  </div>
+                  <div class="shopping-cart-sidebar-top-number">
+                    <p>2</p>
+                  </div>
+                </div>
+                <div class="shopping-cart-mid">
+                  <div class="shopping-cart-mid-container">
+                    <div class="shopping-cart-mid-item">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="shopping-cart-image">
+                            <img src="../img/burgersieuto.webp" alt="burgersieuto">
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <p>burger siêu to khổng lồ</p>
+                          <p>Số lượng: 1</p>
+                          <p>100.000 vn</p>
+                        </div>
+                        <div class="col-1">
+                          <span><i class="fa-solid fa-trash-can"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shopping-cart-mid-item">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="shopping-cart-image">
+                            <img src="../img/banhkepga.webp" alt="burgersieuto">
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <p>bánh kẹp gà</p>
+                          <p>Số lượng: 1</p>
+                          <p>80.000 vn</p>
+                        </div>
+                        <div class="col-1">
+                          <span><i class="fa-solid fa-trash-can"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopping-cart-bottom">
+                  <div class="total">
+                    <p>Tổng:</p>
+                    <p>180.000 vnđ</p>
+                  </div>
+                  <div class="shopping-cart-bottom-button">
+                    <div class="btn-view-cart">
+                      <a href="">Xem giỏ hàng</a>
+                    </div>
+                    <div class="btn-buy">
+                      <a href="">Thanh toán ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+      <div class="login">
+              <div class="login-overlay"></div>
+              <div class="login-content">
+                  <div class="login-content-container">
+                    <div class="login-page">
+                      <div class="btn-login-cancel">
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                      </div>
+                      <div class="login-image">
+                        <img src="../img/Logo_black.webp" alt="logo">
+                      </div>
+                      <div class="login-line"></div>
+                      <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <input type="password" placeholder="Mật khẩu của bạn">
+                      <p class="forgot-pw">Bạn quên mật khẩu?</p>
+                      <button class="btn-login">Đăng nhập</button>
+                      <div class="login-register">
+                        <span>Bạn không có tải khoản? </span>
+                        <div class="goto-register">Đăng ký ngay</div>
+                      </div>
+                    </div>
+                    <div class="register-page">   
+                      <h2>Đăng ký tài khoản</h2>          
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <input type="text" placeholder="Mật khẩu của bạn">
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <input type="password" placeholder="Mật khẩu của bạn">
+                      <button class="btn-register">Đăng nhập</button>
+                      <button class="btn-goback">Quay lại trang đăng nhập</button>
+                    </div>
+                    <div class="forgot-password">
+                      <h2>Đăng ký tài khoản</h2>          
+                      <input type="text" placeholder="Địa chỉ email của bạn">
+                      <button class="btn-sendemail">Gửi</button>
+                      <button class="btn-forgotpw-goback">Hủy</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      <div class="header-overlay"></div>   
+      </header>
+    <div id="directional">
+        <a href="../index.html">Trang chủ</a>
+        <span><i class="fa-solid fa-angle-right"></i></span>
+        <p>Giỏ hàng</p>
+    </div>
+    <form action="">
+        <div class="form-container">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th class="text-center">Số lượng</th>
+                            <th class="text-center">Giá</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="shopping-cart-title">
+                                <div class="shopping-cart-image">
+                                    <img src="../img/banhkepga.webp" alt="banhkepga">                                   
+                                </div>
+                                 <p>Bánh kẹp gà</p>
+                            </th>
+                            <th>
+                                <div class="shopping-cart-amount">
+                                    <div class="number">1</div>
+                                    <div class="icon">
+                                      <span><i class="fa-solid fa-caret-up"></i></span>
+                                      <span><i class="fa-solid fa-caret-down"></i></span>
+                                    </div>
+                                  </div>
+                            </th>
+                            <th class="text-center">
+                                <a href="">100.000 vnđ</a>
+                            </th>
+                            <th class="text-center">
+                                <span><i class="fa-solid fa-trash-can"></i></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="shopping-cart-title">
+                                <div class="shopping-cart-image">
+                                    <img src="../img/banhkepga.webp" alt="banhkepga">                                   
+                                </div>
+                                 <p>Bánh kẹp gà</p>
+                            </th>
+                            <th>
+                                <div class="shopping-cart-amount">
+                                    <div class="number">1</div>
+                                    <div class="icon">
+                                      <span><i class="fa-solid fa-caret-up"></i></span>
+                                      <span><i class="fa-solid fa-caret-down"></i></span>
+                                    </div>
+                                  </div>
+                            </th>
+                            <th class="text-center">
+                                <a href="">100.000 vnđ</a>
+                            </th>
+                            <th class="text-center">
+                                <span><i class="fa-solid fa-trash-can"></i></span>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="shopping-cart-button">
+                <button class="continue-shopping">Tiếp tục vào cửa hàng</button>
+            </div>
+            <div class="shopping-cart-checkout">
+                <div class="shopping-cart-checkout-title">
+                    <span>Tổng tất cả hoá đơn của bạn</span>
+                </div>
+                <div class="shopping-cart-checkout-total">
+                    <span>Tổng</span>
+                    <span>100.000 vnđ</span>
+                </div>
+            </div>
+            <button class="proceed-to-checkout">Đến trang thanh toán</button>
+        </div>
+    </form>
+      <footer>
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-item">
+                <div class="footer-image">
+                  <a href=""><img src="/project-ffood/img/Logo_black.webp " alt="logo"></a>
+                </div>
+                <p>Theo dõi chúng tôi để được giảm giá 30%</p>
+                
+                <div class="footer-content">
+                  
+                  <div class="footer-input">
+                    <div><input type="text" placeholder="Email của bạn..."></div>
+                    <button><span><i class="fa-solid fa-paper-plane"></i></span></button>
+                  </div>
+                  <div><span><i class="fa-brands fa-twitter"></i></span><span><i
+                        class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i
+                        class="fa-brands fa-youtube"></i></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h3>Trụ sở chính FFOOD</h3>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <p>0845.069.061</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p>buihieu3008@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h3>Trụ sở chính FFOOD</h3>
+              <p>Chính sách thanh toán</p>
+              <p>Chính sách đổi trả</p>
+              <p>Chính sách vận chuyển</p>
+              <p>Chính sách bảo mật</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h3>Trụ sở chính FFOOD</h3>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-facebook-f"></i></i></span>
+                <p>Facebook</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-instagram"></i></i></span>
+                <p>Instagram</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-youtube"></i></i></span>
+                <p>Youtube</p>
+              </div>
+              <div class="footer-location">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <p>Twitter</p>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        </div>
+      </footer>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/project-ffood/lib/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/project-ffood/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/gio-hang.js"></script>
+  </body>
+</html>
