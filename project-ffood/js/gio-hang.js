@@ -1,3 +1,129 @@
+const productList = document.querySelector(".product-list");
+
+
+// Lấy ra sản phẩm có trong giỏ hàng
+let items = getDataFromLocalStorage();
+
+//  Hiển thị danh sách ra ngoài giao diện
+const renderProduct = () => {
+  // Kiểm tra giỏ hàng rỗng hay không
+//   if (items.length == 0) {
+//     productList.classList.add("d-none");
+//   } else {
+//     message.classList.add("d-none");
+//   }
+
+  // Nếu có sản phẩm thì hiển thị
+  let html = "";
+
+  items.forEach((p) => {
+    html += `<tr>
+    <th class="shopping-cart-title">
+        <div class="shopping-cart-image">
+            <img src="${p.image}" alt="${p.name}">                                   
+        </div>
+         <p>${p.name} (${p.size})</p>
+    </th>
+    <th>
+        <div class="shopping-cart-amount">
+            <div class="number">${p.count}</div>
+            <div class="icon">
+              <span onclick="(plusCount(${p.id}, '${p.size}'))"><i class="fa-solid fa-caret-up"></i></span>
+              <span onclick="(minusCount(${p.id}, '${p.size}'))"><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+          </div>
+    </th>
+    <th class="text-center">
+        <div class="sub-total-money">${formatMoney(p.price)}</div>
+    </th>
+    <th class="text-center">
+        <span><i class="fa-solid fa-trash-can" onclick="(deleteProduct(${p.id}, '${p.size}'))"></i></span>
+    </th>
+</tr>`;
+  });
+
+  productList.innerHTML = html;
+};
+
+
+
+// Thay đổi số lượng
+// Tăng số lượng
+const plusCount = (id, size) => {
+    // Lấy ra sản phẩm tương ứng
+    let product = items.find((p) => p.id == id && p.size == size);
+  
+    // Tăng số lượng
+    product.count++;
+  
+    // Lưu lại vào localStorage
+    setDataFromLocalStorage(items);
+  
+    // Hiển thị lại giao diện
+    renderProduct(items);
+  };
+  
+  // Giảm số lượng
+  const minusCount = (id, size) => {
+    // Lấy ra sản phẩm tương ứng
+    let product = items.find((p) => p.id == id && p.size == size);
+  
+    // Tăng số lượng
+    product.count--;
+  
+    if (product.count < 1) {
+      product.count = 1;
+    }
+  
+    // Lưu lại vào localStorage
+    setDataFromLocalStorage(items);
+  
+    // Hiển thị lại giao diện
+    renderProduct(items);
+  
+  };
+
+//  Xóa sản phẩm
+const deleteProduct = (id, size) => {
+    let isConfirm = confirm("Bạn có muốn xóa không?");
+  
+    if (isConfirm) {
+      // Tìm kiếm sản phẩm trùng id và size
+      items = items.filter((p) => p.id != id || p.size != size);
+  
+      // Lưu lại vào localStorage
+      setDataFromLocalStorage(items);
+  
+      // Cập nhật lại số lượng
+      updateTotalCart();
+  
+      // Hiển thị lại giao diện
+      renderProduct(items);
+    }
+  };
+
+  // Format tiền VND
+const formatMoney = (number) => {
+    return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
+  };
+
+  renderProduct(items);
+
+//Tính tiền
+const totalMoney = document.querySelector(".total-money");
+
+const totalProduct = () => {
+    let total = 0;
+    items.map(e => {
+      total += e.count * e.price
+    })
+    console.log(total);
+    totalMoney.innerText = formatMoney(total);
+    
+  }
+  totalProduct();
+  
+
 /************menu******************/
 $(".logo-menu").click(function () {
     $(".menu-sidebar").css("left", "0");

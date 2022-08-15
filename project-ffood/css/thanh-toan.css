@@ -18,8 +18,12 @@ a {
 }
 
 .checkout-container {
-  width: 80%;
+  width: 85%;
   margin: auto;
+}
+
+.checkout-main {
+  padding: 50px 0;
 }
 
 .checkout-main-header > a {
@@ -27,6 +31,11 @@ a {
   line-height: 33px;
 
   color: #161616;
+}
+
+.breadcrumb {
+  margin-bottom: 60px;
+  margin-top: 10px;
 }
 
 .breadcrumb a {
@@ -107,6 +116,7 @@ a {
 .checkout-main-content-shipping textarea {
   width: 100%;
   height: 150px;
+  padding: 20px;
 }
 
 .shipping-rate div {
@@ -115,4 +125,196 @@ a {
   width: 100%;
   border: 1px solid #161616;
   border-radius: 4px;
+}
+
+.shipping-rate h3 {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  margin-bottom: 20px;
+  color: #161616;
+}
+
+.payment-methods h3 {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  margin-bottom: 20px;
+  color: #161616;
+}
+
+.payment-methods-item .payment-methods-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.payment-methods-item .payment-methods-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.payment-methods-item {
+  display: flex;
+  padding: 10px 20px;
+  border: 1px solid #161616;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.payment-methods-item input {
+  margin-right: 10px;
+}
+
+.checkout-main-button {
+  width: 100%;
+  display: flex;
+}
+
+.btn-continue-shopping {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 100%;
+  color: #ff871d;
+  background-color: #fff;
+}
+
+.btn-continue-shopping:hover {
+}
+
+.btn-pay-now {
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 50px;
+  color: #fff;
+  background-color: #ff871d;
+  border: 1px solid #ff871d;
+}
+
+/*****************************************checkoutsidebar********************/
+.checkout-sidebar {
+  height: 100%;
+}
+
+.checkout-sidebar-container {
+  padding: 50px 50px;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.checkout-sidebar-content-image {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.checkout-sidebar-content-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.checkout-sidebar-content-image span {
+  position: absolute;
+  font-size: 12px;
+  top: -10px;
+  right: -10px;
+  padding: 2px 8px;
+  background-color: rgba(114, 114, 114, 0.9);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.checkout-sidebar-content-image span i {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.checkout-sidebar-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.checkout-sidebar-content-products {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.checkout-sidebar-content-products-content {
+  display: flex;
+}
+
+.checkout-sidebar-content-products-content span {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-sidebar-content-products-price {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-sidebar-code {
+  padding: 40px 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+.checkout-sidebar-code input {
+  padding: 15px 0 15px 20px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.checkout-sidebar-code button {
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff871d;
+  border: 1px solid #ff871d;
+  width: 30%;
+  white-space: nowrap;
+}
+
+.checkout-sidebar-price {
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.checkout-sidebar-price-subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.checkout-sidebar-price-shipping {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-sidebar-total {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .checkout-sidebar-container {
+    border: none;
+  }
 }

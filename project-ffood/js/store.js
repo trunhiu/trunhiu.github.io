@@ -182,3 +182,47 @@ $(".quickview-overlay").click(function () {
     $(".short-view-content").css("pointer-events", "none");
     $(".short-view-content").css("top", "0px");
 })
+
+
+/**********************Truy cập vào các phần tử *****************************/
+const productsListEl = document.querySelector(".products-list")
+console.log(productsListEl);
+
+/*******************Hiển thị danh sách sản phẩm********************/
+
+const renderProduct = (arr) => {
+    productsListEl.innerHTML = "";
+
+    // Hiển thị sản phẩm nếu có 
+    let html = "";
+    arr.forEach((p) => {
+        html += `<div class="col-6 col-md-4 col-lg-3">
+        <div class="product-item">
+            <div class="product-image">
+              <a href="chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
+              <div class="product-icon">
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+              </div>
+            </div>
+            <div class="product-content">
+              <a href="chi-tiet-sp.html">
+                <h3>${p.name}</h3>
+              </a>
+              <p>${formatMoney(p.price)}</p>
+            </div>
+          </div>
+    </div>`
+    });
+    productsListEl.innerHTML = html;
+};
+
+// 3. Format tiền VND
+const formatMoney = (number) => {
+    return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
+  };
+  
+  renderProduct(products);
+
+
+renderProduct(products);

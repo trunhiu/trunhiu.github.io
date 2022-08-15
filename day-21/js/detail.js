@@ -42,9 +42,9 @@ if (id) {
 
 // 2. Hiển thị thông tin sản phẩm
 const renderProduct = (obj) => {
-  nameEl.innerText = obj.name;
-  priceEl.innerText = `${formatMoney(obj.price)}`;
-  descriptionEl.innerText = obj.description;
+  nameEl.innerHTML = obj.name;
+  priceEl.innerHTML = `${formatMoney(obj.price)}`;
+  descriptionEl.innerHTML = obj.description;
 
   // Hiển thị size
   let html1 = "";

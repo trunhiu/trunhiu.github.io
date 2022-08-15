@@ -40,7 +40,7 @@
     <div class="checkout">
       <div class="checkout-container">
         <div class="row">
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-lg-6">
             <div class="checkout-main">
               <div class="checkout-main-header">
                 <a href="../index.html"
@@ -49,7 +49,7 @@
                 <div class="breadcrumb">
                   <a href="#">Sản phẩm 1</a>
                   <span><i class="fa-solid fa-angle-right"></i></span>
-                  <a href="#">Giỏ hàng</a>
+                  <a href="gio-hang.html">Giỏ hàng</a>
                   <span><i class="fa-solid fa-angle-right"></i></span>
                   <span>Thanh toán</span>
                 </div>
@@ -70,8 +70,6 @@
                         id="shipping-location-city"
                       >
                         <option>Tỉnh/Thành</option>
-                        <option>2001</option>
-                        <option>2002</option>
                       </select>
                     </div>
                     <div>
@@ -109,7 +107,11 @@
                 <div class="payment-methods">
                   <h3>Phương thức thanh toán</h3>
                   <div class="payment-methods-item">
-                    <input type="radio" />
+                    <input
+                      type="radio"
+                      name="payment-methods"
+                      id="payment-methods"
+                    />
                     <div class="payment-methods-image">
                       <img src="../img/vnpay_new.svg" alt="vnpay" />
                     </div>
@@ -119,31 +121,102 @@
                     >
                   </div>
                   <div class="payment-methods-item">
-                    <input type="radio" />
+                    <input
+                      type="radio"
+                      name="payment-methods"
+                      id="payment-methods"
+                    />
                     <div class="payment-methods-image">
                       <img src="../img/other.svg" alt="Banking" />
                     </div>
                     <span>Chuyển khoản qua ngân hàng</span>
                   </div>
                   <div class="payment-methods-item">
-                    <input type="radio" />
+                    <input
+                      type="radio"
+                      name="payment-methods"
+                      id="payment-methods"
+                    />
                     <div class="payment-methods-image">
                       <img src="../img/cod.svg" alt="cod" />
                     </div>
                     <span>Thanh toán khi giao hàng (COD)</span>
                   </div>
                   <div class="payment-methods-item">
-                    <input type="radio" />
+                    <input
+                      type="radio"
+                      name="payment-methods"
+                      id="payment-methods"
+                    />
                     <div class="payment-methods-image">
                       <img src="../img/shopeepay_new.svg" alt="shopeepay" />
                     </div>
                     <span>Ví ShopeePay</span>
                   </div>
                 </div>
+                <div class="checkout-main-button">
+                  <a href="./store.html" class="btn-continue-shopping">
+                    Tiếp tục mua hàng
+                  </a>
+                  <button class="btn-pay-now">Thanh toán ngay</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-5"></div>
+          <div class="col-12 col-lg-6">
+            <div class="checkout-sidebar">
+              <div class="checkout-sidebar-container">
+                <div class="checkout-sidebar-content">
+                  <div class="checkout-sidebar-content-products">
+                    <div class="checkout-sidebar-content-products-content">
+                      <div class="checkout-sidebar-content-image">
+                        <img src="../img/banhkepga.webp" alt="banhkepga" />
+                        <div class="checkout-sidebar-content-image-count">
+                          <span>1</span>
+                        </div>
+                      </div>
+                      <span>Bánh kẹp gà</span>
+                    </div>
+                    <span class="checkout-sidebar-content-products-price"
+                      >100.000 vnđ</span
+                    >
+                  </div>
+                  <div class="checkout-sidebar-content-products">
+                    <div class="checkout-sidebar-content-products-content">
+                      <div class="checkout-sidebar-content-image">
+                        <img src="../img/banhkepga.webp" alt="banhkepga" />
+                        <div class="checkout-sidebar-content-image-count">
+                          <span>1</span>
+                        </div>
+                      </div>
+                      <span>Bánh kẹp gà</span>
+                    </div>
+                    <span class="checkout-sidebar-content-products-price"
+                      >80.000 vnđ</span
+                    >
+                  </div>
+                </div>
+                <div class="checkout-sidebar-code">
+                  <input type="text" placeholder="Áp dụng mã giảm giá" />
+                  <button>Sử dụng</button>
+                </div>
+                <div class="checkout-sidebar-price">
+                  <div class="checkout-sidebar-price-subtotal">
+                    <div>Tạm tính</div>
+                    <div>180.000 vnđ</div>
+                  </div>
+                  <div class="checkout-sidebar-price-shipping">
+                    <div>Phí vận chuyển</div>
+                    <div>Miễn phí</div>
+                  </div>
+                </div>
+                <div class="checkout-sidebar-total">
+                  <div>Tổng cộng</div>
+                  <div>180.000 vnđ</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

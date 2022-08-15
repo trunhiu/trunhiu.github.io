@@ -389,3 +389,5 @@ $(".quickview-overlay").click(function () {
     $(".short-view-content").css("pointer-events", "none");
     $(".short-view-content").css("top", "0px");
 })
+
+
