@@ -139,54 +139,21 @@
                 </div>
               </div>
               <div class="shopping-cart-mid">
-                <div class="shopping-cart-mid-container">
-                  <div class="shopping-cart-mid-item">
-                    <div class="row">
-                      <div class="col-4">
-                        <div class="shopping-cart-image">
-                          <img src="../img/burgersieuto.webp" alt="burgersieuto">
-                        </div>
-                      </div>
-                      <div class="col-7">
-                        <p>burger siêu to khổng lồ</p>
-                        <p>Số lượng: 1</p>
-                        <p>100.000 vn</p>
-                      </div>
-                      <div class="col-1">
-                        <span><i class="fa-solid fa-trash-can"></i></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="shopping-cart-mid-item">
-                    <div class="row">
-                      <div class="col-4">
-                        <div class="shopping-cart-image">
-                          <img src="../img/banhkepga.webp" alt="burgersieuto">
-                        </div>
-                      </div>
-                      <div class="col-7">
-                        <p>bánh kẹp gà</p>
-                        <p>Số lượng: 1</p>
-                        <p>80.000 vn</p>
-                      </div>
-                      <div class="col-1">
-                        <span><i class="fa-solid fa-trash-can"></i></span>
-                      </div>
-                    </div>
-                  </div>
+                <div class="shopping-cart-mid-container product-lists">
+                  
                 </div>
               </div>
               <div class="shopping-cart-bottom">
                 <div class="total">
                   <p>Tổng:</p>
-                  <p>180.000 vnđ</p>
+                  <p class="total-moneys">180.000 vnđ</p>
                 </div>
                 <div class="shopping-cart-bottom-button">
                   <div class="btn-view-cart">
-                    <a href="../page/gio-hang.html">Xem giỏ hàng</a>
+                    <a href="gio-hang.html">Xem giỏ hàng</a>
                   </div>
                   <div class="btn-buy">
-                    <a href="../page/thanh-toan.html">Thanh toán ngay</a>
+                    <a href="thanh-toan.html">Thanh toán ngay</a>
                   </div>
                 </div>
               </div>
@@ -262,10 +229,22 @@
                             <div></div>
                             <p>Các sản phẩm</p>
                         </div>
-                        <p>Đồ ăn nhanh</p>
-                        <p>Đồ uống</p>
-                        <p>Sinh tố</p>
-                        <p>Combo</p>
+                        <div>
+                          <input type="checkbox" id="checkbox1" value="Đồ ăn nhanh" class="checkbox-category">
+                          <label for="checkbox1">Đồ ăn nhanh</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox2" value="Đồ uống" class="checkbox-category">
+                          <label for="checkbox2">Đồ uống</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox3" value="Sinh tố" class="checkbox-category">
+                          <label for="checkbox3">Sinh tố</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox4" value="Combo" class="checkbox-category">
+                          <label for="checkbox4">Combo</label>
+                        </div>
                         <div class="fillter-title">   
                             <div></div>
                             <p>Giá</p>
@@ -292,14 +271,9 @@
                         </div>
                         <div class="fillter-title">   
                             <div></div>
-                            <p>Kích thước</p>
-                        </div>
-                        <div class="fillter-size"><button>Cỡ nhỏ</button><button>Cỡ vừa</button><button>Cỡ lớn</button></div>
-                        <div class="fillter-title">   
-                            <div></div>
                             <p>Các thẻ</p>
                         </div>
-                        <div class="fillter-size"><button>Burger</button><button>Combo</button><button>Đồ uống</button><button>Sinh tố</button></div>
+                        <div class="fillter-size"><button class="btn-tags" value="Burger">Burger</button><button class="btn-tags" value="Combo">Combo</button><button class="btn-tags" value="Đồ uống">Đồ uống</button><button class="btn-tags" value="Sinh tố">Sinh tố</button></div>
                         <div class="fillter-title">   
                             <div></div>
                             <p>Thương hiệu</p>
@@ -310,6 +284,14 @@
                 <div class="col-lg-9">
                     <div class="products-image">
                         <img src="/project-ffood/img/banner-65.jpg" alt="products image">
+                    </div>
+                    <div class="products-sort">
+                      <label for="option">Sắp xếp giá:</label>
+                      <select class="select-sort" id="option">
+                        <option value="0">Mặc định</option>
+                        <option value="1">Từ thấp đến cao</option>
+                        <option value="2">Từ cao đến thấp</option>
+                      </select>
                     </div>
                     <div class="row products-list">
                         

@@ -863,14 +863,9 @@ header {
   margin-right: 10px;
 }
 
-.fillter p {
-  margin-bottom: 10px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-.fillter p:hover {
-  color: #ff871d;
+.fillter div .checkbox-category {
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .fillter-checkbox {
@@ -939,6 +934,24 @@ header {
   width: 100%;
   object-fit: cover;
   transition: all 0.5s;
+}
+
+.products-sort {
+  text-align: right;
+  margin: 40px 0 20px;
+}
+
+.products-sort label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.products-sort select {
+  background-color: #ff871d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 10px;
 }
 
 .product-item:hover img {

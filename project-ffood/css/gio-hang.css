@@ -831,16 +831,13 @@ header {
 .shopping-cart-button button {
   margin: 30px 0 40px;
   padding: 20px 30px;
-  color: #ff871d;
   background-color: #fff;
   border: 1px solid #ff871d;
   transition: all 0.3s;
 }
 
-.shopping-cart-button button:hover {
-  color: #fff;
-  background-color: #111111;
-  border: 1px solid #111111;
+.continue-shopping a {
+  color: #ff871d;
 }
 
 .shopping-cart-checkout {
@@ -880,6 +877,10 @@ header {
   margin: 0 0 100px;
   padding: 20px 35px;
   transition: all 0.3s;
+}
+
+.proceed-to-checkout a {
+  color: #fff;
 }
 
 .proceed-to-checkout:hover {

@@ -1,4 +1,5 @@
 const productList = document.querySelector(".product-list");
+const productLists = document.querySelector(".product-lists");
 
 
 // Lấy ra sản phẩm có trong giỏ hàng
@@ -43,6 +44,30 @@ const renderProduct = () => {
   });
 
   productList.innerHTML = html;
+
+  let html1 = "";
+  items.forEach((p) => {
+      html1 += `<div class="shopping-cart-mid-item">
+      <div class="row">
+        <div class="col-4">
+          <div class="shopping-cart-image">
+            <img src="${p.image}" alt="${p.name}">
+          </div>
+        </div>
+        <div class="col-7">
+          <p>${p.name} (${p.size})</p>
+          <p>Số lượng: ${p.count}</p>
+          <p>${formatMoney(p.price)}</p>
+        </div>
+        <div class="col-1">
+          <span><i class="fa-solid fa-trash-can" onclick="(deleteProducts(${p.id}, '${p.size}'))"></i></span>
+        </div>
+      </div>
+    </div>`;
+    });
+  
+    productLists.innerHTML = html1;
+  
 };
 
 
@@ -61,12 +86,15 @@ const plusCount = (id, size) => {
   
     // Hiển thị lại giao diện
     renderProduct(items);
+
+    totalProduct();
   };
   
   // Giảm số lượng
   const minusCount = (id, size) => {
     // Lấy ra sản phẩm tương ứng
     let product = items.find((p) => p.id == id && p.size == size);
+
   
     // Tăng số lượng
     product.count--;
@@ -80,6 +108,8 @@ const plusCount = (id, size) => {
   
     // Hiển thị lại giao diện
     renderProduct(items);
+
+    totalProduct();
   
   };
 
@@ -99,6 +129,8 @@ const deleteProduct = (id, size) => {
   
       // Hiển thị lại giao diện
       renderProduct(items);
+
+      totalProduct();
     }
   };
 
@@ -107,10 +139,33 @@ const formatMoney = (number) => {
     return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
   };
 
-  renderProduct(items);
+
+//  Xóa sản phẩm
+const deleteProducts = (id, size) => {
+    let isConfirm = confirm("Bạn có muốn xóa không?");
+  
+    if (isConfirm) {
+      // Tìm kiếm sản phẩm trùng id và size
+      items = items.filter((p) => p.id != id || p.size != size);
+  
+      // Lưu lại vào localStorage
+      setDataFromLocalStorage(items);
+  
+      // Cập nhật lại số lượng
+      updateTotalCart();
+  
+      // Hiển thị lại giao diện
+      renderProduct(items);
+
+      totalProduct();
+    }
+  };
+
+renderProduct(items);
 
 //Tính tiền
 const totalMoney = document.querySelector(".total-money");
+const totalMoneys = document.querySelector(".total-moneys");
 
 const totalProduct = () => {
     let total = 0;
@@ -119,10 +174,13 @@ const totalProduct = () => {
     })
     console.log(total);
     totalMoney.innerText = formatMoney(total);
+    totalMoneys.innerText = formatMoney(total);
     
   }
   totalProduct();
   
+
+
 
 /************menu******************/
 $(".logo-menu").click(function () {

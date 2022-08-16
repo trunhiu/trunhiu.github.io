@@ -1,3 +1,198 @@
+/**********************Truy cập vào các phần tử *****************************/
+const productsListEl = document.querySelector(".products-list")
+console.log(productsListEl);
+
+/*******************Hiển thị danh sách sản phẩm********************/
+
+const renderProduct = (arr) => {
+    productsListEl.innerHTML = "";
+
+    // Hiển thị sản phẩm nếu có 
+    let html = "";
+    arr.forEach((p) => {
+        html += `<div class="col-6 col-md-4 col-lg-3">
+        <div class="product-item">
+            <div class="product-image">
+              <a href="chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
+              <div class="product-icon">
+                <div class="product-icon-addtocart"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+              </div>
+            </div>
+            <div class="product-content">
+              <a href="chi-tiet-sp.html">
+                <h3>${p.name}</h3>
+              </a>
+              <p>${formatMoney(p.price)}</p>
+            </div>
+          </div>
+    </div>`
+    });
+    productsListEl.innerHTML = html;
+};
+
+// 3. Format tiền VND
+const formatMoney = (number) => {
+    return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
+  };
+  
+  renderProduct(products);
+
+
+renderProduct(products);
+
+// Lọc theo category
+const checkBoxCategory = document.querySelectorAll('.checkbox-category');
+let productFilterCategory = []
+let checkedNumberCategory = 0;
+Array.from(checkBoxCategory).forEach((ele) => {
+    ele.addEventListener('change', (e) => {
+        let inputValue = e.target.value
+    if(e.target.checked == true){
+      checkedNumberCategory ++
+      let productFilterTrue = products.filter((p) =>{
+        return p.category == inputValue
+      })
+      productFilterCategory = productFilterCategory.concat(productFilterTrue)
+      renderProduct(productFilterCategory)
+    } else{
+      checkedNumberCategory --
+      productFilterCategory = productFilterCategory.filter((p) =>{
+        return p.category != inputValue
+      })
+      renderProduct(productFilterCategory)
+    }
+
+    if(checkedNumberCategory == 0){
+      renderProduct(products)
+    }
+    })
+})
+
+// sắp xếp giá 
+const selectSort = document.querySelector(".select-sort")
+selectSort.addEventListener("change", (e) =>{
+  if(e.target.value == 1){
+    let productSortUp = products.sort((a,b) =>{
+      return a.price - b.price
+    }) 
+    renderProduct(productSortUp)
+  } else if(e.target.value == 2){
+    let productSortDown = products.sort((a,b) =>{
+      return b.price - a.price
+    })
+    renderProduct(productSortDown)
+  } else if(e.target.value == 0){
+    let productDefault = products.sort((a,b) =>{
+        return a.id - b.id
+    });
+    renderProduct(productDefault)
+  }
+})
+
+// Lọc theo tag
+const btnTags = document.querySelectorAll('.btn-tags');
+let productFilterTag = []
+let checkedNumberTag = 0
+Array.from(btnTags).forEach((ele) =>{
+  ele.addEventListener("click",(e) =>{
+    let inputValue = e.target.value
+    if(e.target.dataset == true){
+      checkedNumberTag ++
+      let productFilterTrue = products.filter((p) =>{
+        return p.tag == inputValue
+      })
+      productFilterTag = productFilterTag.concat(productFilterTrue)
+      renderProduct(productFilterTag)
+    } else{
+      checkedNumberTag --
+      productFilterTag = productFilterTag.filter((p) =>{
+        return p.tag != inputValue
+      })
+      renderProduct(productFilterTag)
+    }
+
+    if(checkedNumberTag == 0){
+      renderProduct(products)
+    }
+    })
+})
+
+const productLists = document.querySelector(".product-lists");
+// Lấy ra sản phẩm có trong giỏ hàng
+let items = getDataFromLocalStorage();
+
+//  Hiển thị danh sách ra ngoài giao diện
+const renderProduct1 = () => {
+ 
+  let html = "";
+  items.forEach((p) => {
+      html += `<div class="shopping-cart-mid-item">
+      <div class="row">
+        <div class="col-4">
+          <div class="shopping-cart-image">
+            <img src="${p.image}" alt="${p.name}">
+          </div>
+        </div>
+        <div class="col-7">
+          <p>${p.name} (${p.size})</p>
+          <p>Số lượng: ${p.count}</p>
+          <p>${formatMoney(p.price)}</p>
+        </div>
+        <div class="col-1">
+          <span><i class="fa-solid fa-trash-can" onclick="(deleteProducts(${p.id}, '${p.size}'))"></i></span>
+        </div>
+      </div>
+    </div>`;
+    });
+  
+    productLists.innerHTML = html;
+  
+};
+
+
+
+//  Xóa sản phẩm
+const deleteProducts = (id, size) => {
+    let isConfirm = confirm("Bạn có muốn xóa không?");
+  
+    if (isConfirm) {
+      // Tìm kiếm sản phẩm trùng id và size
+      items = items.filter((p) => p.id != id || p.size != size);
+  
+      // Lưu lại vào localStorage
+      setDataFromLocalStorage(items);
+  
+      // Cập nhật lại số lượng
+      updateTotalCart();
+  
+      // Hiển thị lại giao diện
+      renderProduct(items);
+
+      totalProduct();
+    }
+  };
+
+renderProduct1(items);
+
+//Tính tiền
+const totalMoneys = document.querySelector(".total-moneys");
+
+const totalProduct = () => {
+    let total = 0;
+    items.map(e => {
+      total += e.count * e.price
+    })
+    console.log(total);
+    totalMoneys.innerText = formatMoney(total);
+    
+  }
+  totalProduct();
+  
+
+
+
+
 $(document).ready(function () {
     $('.quickview').slick({
         slidesToShow: 1,
@@ -16,6 +211,8 @@ $(document).ready(function () {
     });
 
 });
+
+
 
 /************menu******************/
 $(".logo-menu").click(function () {
@@ -184,45 +381,3 @@ $(".quickview-overlay").click(function () {
 })
 
 
-/**********************Truy cập vào các phần tử *****************************/
-const productsListEl = document.querySelector(".products-list")
-console.log(productsListEl);
-
-/*******************Hiển thị danh sách sản phẩm********************/
-
-const renderProduct = (arr) => {
-    productsListEl.innerHTML = "";
-
-    // Hiển thị sản phẩm nếu có 
-    let html = "";
-    arr.forEach((p) => {
-        html += `<div class="col-6 col-md-4 col-lg-3">
-        <div class="product-item">
-            <div class="product-image">
-              <a href="chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
-              <div class="product-icon">
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-              </div>
-            </div>
-            <div class="product-content">
-              <a href="chi-tiet-sp.html">
-                <h3>${p.name}</h3>
-              </a>
-              <p>${formatMoney(p.price)}</p>
-            </div>
-          </div>
-    </div>`
-    });
-    productsListEl.innerHTML = html;
-};
-
-// 3. Format tiền VND
-const formatMoney = (number) => {
-    return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
-  };
-  
-  renderProduct(products);
-
-
-renderProduct(products);

@@ -459,6 +459,14 @@ header {
   bottom: 0;
 }
 
+.btn-view-cart a {
+  color: #161616;
+}
+
+.btn-buy a {
+  color: #161616;
+}
+
 .shopping-cart-bottom .total {
   display: flex;
   justify-content: space-between;
@@ -751,6 +759,14 @@ header {
 
 .detail-container {
   margin: 0 20px;
+}
+
+.breadcrumb a {
+  margin-right: 10px;
+}
+
+.breadcrumb span i {
+  margin-right: 10px;
 }
 
 .slick-prev {

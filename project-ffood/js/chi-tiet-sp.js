@@ -5,7 +5,7 @@ console.log(id);
 
 // Truy cập các thành phần 
 
-const breadCrumb = document.querySelector('.breadcrumb');
+const breadCrumb = document.querySelector('.breadcrumbs');
 const nameEl = document.querySelector('.detail-name');
 const priceEl = document.querySelector('.detail-price');
 const sizeEl = document.querySelector('.detail-size');
@@ -21,8 +21,21 @@ const formatMoney = (number) => {
   };
 
   // Biến để lưu thông tin sản phẩm theo id
-let product = products.find((p) => p.id == id);
+let product;
 
+// 1. Kiểm tra xem id có tồn tại trên URL hay không, nếu không có thì 404
+if (id) {
+    product = products.find((p) => p.id == id);
+  
+    if (!product) {
+      window.location.href = "./404.html";
+    }
+  
+    document.title = product.name;
+    breadCrumb.innerText = product.name;
+  } else {
+    window.location.href = "./404.html";
+  }
 
 
 // 2. Hiển thị thông tin sản phẩm
@@ -116,6 +129,77 @@ btnAddToCart.addEventListener("click", () => {
 
 
 renderProduct(product);
+
+const productLists = document.querySelector(".product-lists");
+// Lấy ra sản phẩm có trong giỏ hàng
+let items = getDataFromLocalStorage();
+
+//  Hiển thị danh sách ra ngoài giao diện
+const renderProduct1 = () => {
+ 
+  let html = "";
+  items.forEach((p) => {
+      html += `<div class="shopping-cart-mid-item">
+      <div class="row">
+        <div class="col-4">
+          <div class="shopping-cart-image">
+            <img src="${p.image}" alt="${p.name}">
+          </div>
+        </div>
+        <div class="col-7">
+          <p>${p.name} (${p.size})</p>
+          <p>Số lượng: ${p.count}</p>
+          <p>${formatMoney(p.price)}</p>
+        </div>
+        <div class="col-1">
+          <span><i class="fa-solid fa-trash-can" onclick="(deleteProducts(${p.id}, '${p.size}'))"></i></span>
+        </div>
+      </div>
+    </div>`;
+    });
+  
+    productLists.innerHTML = html;
+  
+};
+
+
+//  Xóa sản phẩm
+const deleteProducts = (id, size) => {
+    let isConfirm = confirm("Bạn có muốn xóa không?");
+  
+    if (isConfirm) {
+      // Tìm kiếm sản phẩm trùng id và size
+      items = items.filter((p) => p.id != id || p.size != size);
+  
+      // Lưu lại vào localStorage
+      setDataFromLocalStorage(items);
+  
+      // Cập nhật lại số lượng
+      updateTotalCart();
+  
+      // Hiển thị lại giao diện
+      renderProduct(items);
+
+      totalProduct();
+    }
+  };
+
+renderProduct1(items);
+
+//Tính tiền
+const totalMoneys = document.querySelector(".total-moneys");
+
+const totalProduct = () => {
+    let total = 0;
+    items.map(e => {
+      total += e.count * e.price
+    })
+    console.log(total);
+    totalMoneys.innerText = formatMoney(total);
+    
+  }
+  totalProduct();
+  
 
 /************menu******************/
 $(".logo-menu").click(function () {

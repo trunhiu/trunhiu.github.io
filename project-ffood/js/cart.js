@@ -41,7 +41,11 @@ const addItemToCart = (item) => {
   
     // Cập nhật số lượng trên giao diện
     updateTotalCart();
+
+    
   };
+
+  
 
 // 4. Cập nhật số lượng cart
 const updateTotalCart = () => {
@@ -51,3 +55,6 @@ const updateTotalCart = () => {
   };
   
   updateTotalCart();
+
+
+

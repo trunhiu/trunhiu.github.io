@@ -14,7 +14,7 @@ let products = [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4.jpg?v=1652778776",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_7b819dd3-f42f-4ead-8092-d9c46bb815c6.jpg?v=1652782514",
         ],
-        rating: 4.9,
+        rating: 4,
         price: 100000,
         description: "Một chiếch burger cỡ bự đầy ắp toppings dành cho bạn và gia đình",
     },
@@ -206,7 +206,7 @@ let products = [
         description: "Một cốc chanh dây thơm ngon dành cho bạn và gia đình",
     },
     {
-        id: 12,
+        id: 13,
         name: "Cocacola",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ uống",
@@ -223,7 +223,7 @@ let products = [
         description: "Một cốc cocacola thơm ngon dành cho bạn và gia đình",
     },
     {
-        id: 12,
+        id: 14,
         name: "Sprite",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ uống",
@@ -240,7 +240,7 @@ let products = [
         description: "Một cốc sprite thơm ngon dành cho bạn và gia đình",
     },
     {
-        id: 13,
+        id: 15,
         name: "Combo burger siêu to khổng lồ",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
@@ -257,7 +257,7 @@ let products = [
         description: "Combo burger siêu to khổng lồ sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 14,
+        id: 16,
         name: "Combo burger phô mai",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
@@ -274,7 +274,7 @@ let products = [
         description: "Combo burger phô mai thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 15,
+        id: 17,
         name: "Combo gà Nuggets",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
@@ -291,7 +291,7 @@ let products = [
         description: "Combo gà Nuggets thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 16,
+        id: 18,
         name: "Combo bánh kẹp gà",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
@@ -308,7 +308,7 @@ let products = [
         description: "Combo bánh kẹp gà thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 17,
+        id: 19,
         name: "Combo gà siu cay",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
@@ -325,7 +325,7 @@ let products = [
         description: "Combo gà siu cay thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 18,
+        id: 20,
         name: "Pizza thịt nguội",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
@@ -342,7 +342,7 @@ let products = [
         description: "Pizza thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 19,
+        id: 21,
         name: "Mỳ Ý",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
@@ -359,7 +359,7 @@ let products = [
         description: "Mỳ Ý thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 20,
+        id: 22,
         name: "Cánh gà chiên nước mắm",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
@@ -376,7 +376,7 @@ let products = [
         description: "Cánh gà chiên nước mắm thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 21,
+        id: 23,
         name: "Sandwich bơ béo ngậy",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
@@ -393,7 +393,7 @@ let products = [
         description: "Một chiếc Sandwich bơ béo ngậy thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
     {
-        id: 22,
+        id: 24,
         name: "Khoai tây chiên",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
@@ -410,7 +410,7 @@ let products = [
         description: "Khoai tây chiên không thể thiếu trong thực đơn của bạn và gia đình",
     },
     {
-        id: 23,
+        id: 25,
         name: "Bánh mì kẹp xúc xích",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
