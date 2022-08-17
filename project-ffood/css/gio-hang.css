@@ -794,6 +794,9 @@ header {
   margin: 10px;
 }
 
+@media (max-width: 600px) {
+}
+
 .table-responsive .shopping-cart-image img {
   height: 100%;
   width: 100%;

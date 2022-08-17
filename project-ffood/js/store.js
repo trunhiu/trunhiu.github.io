@@ -69,6 +69,51 @@ Array.from(checkBoxCategory).forEach((ele) => {
     })
 })
 
+// Lọc theo tag
+const checkBoxTags = document.querySelectorAll('.checkbox-tags');
+let productFilterTag = []
+let checkedNumberTag = 0
+Array.from(checkBoxTags).forEach((ele) =>{
+  ele.addEventListener('change',(e) =>{
+    let inputValue = e.target.value
+    if(e.target.checked == true){
+      checkedNumberTag ++
+      let productFilterTrue = products.filter((p) =>{
+        return p.tag == inputValue
+      })
+      productFilterTag = productFilterTag.concat(productFilterTrue)
+      renderProduct(productFilterTag)
+    } else{
+      checkedNumberTag --
+      productFilterTag = productFilterTag.filter((p) =>{
+        return p.tag != inputValue
+      })
+      renderProduct(productFilterTag)
+    }
+
+    if(checkedNumberTag == 0){
+      renderProduct(products)
+    }
+    })
+})
+
+// Lọc theo price
+const checkBoxPrice = document.querySelectorAll('.checkbox-price');
+let productFilterPrice = []
+let checkedNumberPrice = 0
+function filterPrice(price1, price2){
+  
+    let productFillterTrue;
+    productFillterTrue = products.filter (p => p.price >= price1 && p.price <= price2);
+    renderProduct(productFillterTrue)
+  
+
+  
+}
+
+
+
+
 // sắp xếp giá 
 const selectSort = document.querySelector(".select-sort")
 selectSort.addEventListener("change", (e) =>{
@@ -90,33 +135,6 @@ selectSort.addEventListener("change", (e) =>{
   }
 })
 
-// Lọc theo tag
-const btnTags = document.querySelectorAll('.btn-tags');
-let productFilterTag = []
-let checkedNumberTag = 0
-Array.from(btnTags).forEach((ele) =>{
-  ele.addEventListener("click",(e) =>{
-    let inputValue = e.target.value
-    if(e.target.dataset == true){
-      checkedNumberTag ++
-      let productFilterTrue = products.filter((p) =>{
-        return p.tag == inputValue
-      })
-      productFilterTag = productFilterTag.concat(productFilterTrue)
-      renderProduct(productFilterTag)
-    } else{
-      checkedNumberTag --
-      productFilterTag = productFilterTag.filter((p) =>{
-        return p.tag != inputValue
-      })
-      renderProduct(productFilterTag)
-    }
-
-    if(checkedNumberTag == 0){
-      renderProduct(products)
-    }
-    })
-})
 
 const productLists = document.querySelector(".product-lists");
 // Lấy ra sản phẩm có trong giỏ hàng
@@ -167,7 +185,7 @@ const deleteProducts = (id, size) => {
       updateTotalCart();
   
       // Hiển thị lại giao diện
-      renderProduct(items);
+      renderProduct1(items);
 
       totalProduct();
     }
@@ -380,4 +398,22 @@ $(".quickview-overlay").click(function () {
     $(".short-view-content").css("top", "0px");
 })
 
+/**************************fillter Sidebar************************/
+
+$(".fillter-product-sidebar").click(function () {
+  $(".fillter").css("left", "0");
+  $(".fillter-overlay").css("display", "block");
+})
+
+$(".fillter-overlay").click(function () {
+  $(".fillter").css("left", "-300px");
+  $(".fillter-overlay").css("display", "none");
+})
+
+$(window).resize(() => {
+  if ($(window).innerWidth() > 992) {
+    $(".fillter").css("left", "-300px");
+    $(".fillter-overlay").css("display", "none");
+  }
+});
 

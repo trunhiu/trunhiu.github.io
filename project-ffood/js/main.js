@@ -1,3 +1,196 @@
+const productLists = document.querySelector(".product-lists");
+// Lấy ra sản phẩm có trong giỏ hàng
+let items = getDataFromLocalStorage();
+
+//  Hiển thị danh sách ra ngoài giao diện
+const renderProduct = () => {
+ 
+  let html = "";
+  items.forEach((p) => {
+      html += `<div class="shopping-cart-mid-item">
+      <div class="row">
+        <div class="col-4">
+          <div class="shopping-cart-image">
+            <img src="${p.image}" alt="${p.name}">
+          </div>
+        </div>
+        <div class="col-7">
+          <p>${p.name} (${p.size})</p>
+          <p>Số lượng: ${p.count}</p>
+          <p>${formatMoney(p.price)}</p>
+        </div>
+        <div class="col-1">
+          <span><i class="fa-solid fa-trash-can" onclick="(deleteProducts(${p.id}, '${p.size}'))"></i></span>
+        </div>
+      </div>
+    </div>`;
+    });
+  
+    productLists.innerHTML = html;
+  
+};
+
+  // Format tiền VND
+const formatMoney = (number) => {
+    return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
+  };
+
+
+//  Xóa sản phẩm
+const deleteProducts = (id, size) => {
+    let isConfirm = confirm("Bạn có muốn xóa không?");
+  
+    if (isConfirm) {
+      // Tìm kiếm sản phẩm trùng id và size
+      items = items.filter((p) => p.id != id || p.size != size);
+  
+      // Lưu lại vào localStorage
+      setDataFromLocalStorage(items);
+  
+      // Cập nhật lại số lượng
+      updateTotalCart();
+  
+      // Hiển thị lại giao diện
+      renderProduct(items);
+
+      totalProduct();
+    }
+  };
+
+renderProduct(items);
+
+//Tính tiền
+const totalMoneys = document.querySelector(".total-moneys");
+
+const totalProduct = () => {
+    let total = 0;
+    items.map(e => {
+      total += e.count * e.price
+    })
+    console.log(total);
+    totalMoneys.innerText = formatMoney(total);
+    
+  }
+  totalProduct();
+
+const productsListNew = document.querySelector(".products-list-new");
+const productsListHot = document.querySelector(".products-list-hot");
+const productsListLove = document.querySelector(".products-list-love");
+
+const productNew = products.filter ((p) => {
+    return p.tags == "NEW";
+});
+
+
+const renderCartNew = (arr) => {
+    productsListNew.innerHTML = "";
+    let html =  "";
+    arr.forEach((p) => {
+        html += `<div class="col-6 col-md-4 col-lg-3">
+        <div class="product-item">
+          <div class="product-image">
+            <a href="page/chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
+            <span class="news-product">${p.tags}</span>
+            <div class="product-icon">
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="star">
+              <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
+                  class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
+                  class="fa-solid fa-star"></i></span>
+            </div>
+            <a href="page/chi-tiet-sp.html">
+              <h3>${p.name}</h3>
+            </a>
+            <p>${formatMoney(p.price)}</p>
+          </div>
+        </div>
+      </div>`
+    })
+    productsListNew.innerHTML = html;
+}
+
+renderCartNew (productNew);
+
+const productHot = products.filter ((p) => {
+    return p.tags == "HOT";
+});
+
+
+const renderCartHot = (arr) => {
+    productsListHot.innerHTML = "";
+    let html =  "";
+    arr.forEach((p) => {
+        html += `<div class="col-6 col-md-4 col-lg-3">
+        <div class="product-item">
+          <div class="product-image">
+            <a href="page/chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
+            <span class="hots-product">${p.tags}</span>
+            <div class="product-icon">
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="star">
+              <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
+                  class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
+                  class="fa-solid fa-star"></i></span>
+            </div>
+            <a href="page/chi-tiet-sp.html">
+              <h3>${p.name}</h3>
+            </a>
+            <p>${formatMoney(p.price)}</p>
+          </div>
+        </div>
+      </div>`
+    })
+    productsListHot.innerHTML = html;
+}
+
+renderCartHot (productHot);
+
+const productLove = products.filter ((p) => {
+    return p.tags == "LOVE";
+});
+
+
+const renderCartLove = (arr) => {
+    productsListLove.innerHTML = "";
+    let html =  "";
+    arr.forEach((p) => {
+        html += `<div class="col-6 col-md-4 col-lg-3">
+        <div class="product-item">
+          <div class="product-image">
+            <a href="page/chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
+            <span class="loves-product">${p.tags}</span>
+            <div class="product-icon">
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="star">
+              <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
+                  class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
+                  class="fa-solid fa-star"></i></span>
+            </div>
+            <a href="page/chi-tiet-sp.html">
+              <h3>${p.name}</h3>
+            </a>
+            <p>${formatMoney(p.price)}</p>
+          </div>
+        </div>
+      </div>`
+    })
+    productsListLove.innerHTML = html;
+}
+
+renderCartLove (productLove);
+
 $(document).ready(function () {
     $('#banner').slick({
         speed: 500,
@@ -391,78 +584,3 @@ $(".quickview-overlay").click(function () {
 })
 
 
-const productLists = document.querySelector(".product-lists");
-// Lấy ra sản phẩm có trong giỏ hàng
-let items = getDataFromLocalStorage();
-
-//  Hiển thị danh sách ra ngoài giao diện
-const renderProduct = () => {
- 
-  let html = "";
-  items.forEach((p) => {
-      html += `<div class="shopping-cart-mid-item">
-      <div class="row">
-        <div class="col-4">
-          <div class="shopping-cart-image">
-            <img src="${p.image}" alt="${p.name}">
-          </div>
-        </div>
-        <div class="col-7">
-          <p>${p.name} (${p.size})</p>
-          <p>Số lượng: ${p.count}</p>
-          <p>${formatMoney(p.price)}</p>
-        </div>
-        <div class="col-1">
-          <span><i class="fa-solid fa-trash-can" onclick="(deleteProducts(${p.id}, '${p.size}'))"></i></span>
-        </div>
-      </div>
-    </div>`;
-    });
-  
-    productLists.innerHTML = html;
-  
-};
-
-  // Format tiền VND
-const formatMoney = (number) => {
-    return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
-  };
-
-
-//  Xóa sản phẩm
-const deleteProducts = (id, size) => {
-    let isConfirm = confirm("Bạn có muốn xóa không?");
-  
-    if (isConfirm) {
-      // Tìm kiếm sản phẩm trùng id và size
-      items = items.filter((p) => p.id != id || p.size != size);
-  
-      // Lưu lại vào localStorage
-      setDataFromLocalStorage(items);
-  
-      // Cập nhật lại số lượng
-      updateTotalCart();
-  
-      // Hiển thị lại giao diện
-      renderProduct(items);
-
-      totalProduct();
-    }
-  };
-
-renderProduct(items);
-
-//Tính tiền
-const totalMoneys = document.querySelector(".total-moneys");
-
-const totalProduct = () => {
-    let total = 0;
-    items.map(e => {
-      total += e.count * e.price
-    })
-    console.log(total);
-    totalMoneys.innerText = formatMoney(total);
-    
-  }
-  totalProduct();
-  

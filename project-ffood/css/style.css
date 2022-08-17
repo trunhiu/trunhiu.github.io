@@ -1061,6 +1061,17 @@ header {
   left: 20px;
 }
 
+.product-image .loves-product {
+  position: absolute;
+  font-size: 10px;
+  color: #fff;
+  padding: 6px 12px;
+  background-color: #ffc0cb;
+  border: 1px solid #ffc0cb;
+  top: 20px;
+  left: 20px;
+}
+
 .product-icon {
   position: absolute;
   right: 20px;

@@ -55,7 +55,7 @@ const renderProduct = () => {
           </div>
         </div>
         <div class="col-7">
-          <p>${p.name} (${p.size})</p>
+          <p class="products-title">${p.name} (${p.size})</p>
           <p>Số lượng: ${p.count}</p>
           <p>${formatMoney(p.price)}</p>
         </div>

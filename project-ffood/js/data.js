@@ -7,6 +7,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Burger",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_20186aba-b1e8-4a29-be3a-f1784dcb45ab.jpg?v=1652778775",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_da0df197-dfaf-4f8b-943f-a8abcc8aae45.jpg?v=1652778775",
@@ -24,6 +25,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Burger",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_7b819dd3-f42f-4ead-8092-d9c46bb815c6.jpg?v=1652782514",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_87f4c2b4-982e-4d90-bf19-8f344b23d32d.jpg?v=1652782513",
@@ -41,6 +43,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Burger",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_8c69141d-f04c-4cd2-9ed5-dab630c9ad8b.jpg?v=1652779500",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500",
@@ -58,6 +61,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Burger",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_ec3880f7-e6e0-405e-9b3c-0cde10fc33d1.jpg?v=1652778446",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500",
@@ -75,6 +79,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Burger",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_23b3939e-e4d9-4264-b05f-8f029c1be18b.jpg?v=1652779281",
@@ -92,6 +97,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Burger",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_35b6d543-fecd-43b3-b142-b241a20e711e.jpg?v=1652778917",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281",
@@ -109,6 +115,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Burger",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_800c0bcb-4341-4882-87d5-3370c8a29736.jpg?v=1652779402",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_4f3d5a80-51e9-4bfe-907e-928ac81e193d.jpg?v=1652779402",
@@ -126,6 +133,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ uống",
         tag: "Đồ uống",
+        tags: "NEW",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8.jpg?v=1652780320",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_501a018f-8e18-4e2e-8479-bfadaa62def8.jpg?v=1652780320",
@@ -143,6 +151,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Sinh tố",
         tag: "Sinh tố",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_cd32e705-3b29-45c6-85cf-3784c54eeb13.jpg?v=1652779666",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_17625efa-09b2-40a1-a579-c43b01dd3269.jpg?v=1652779666",
@@ -160,6 +169,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Sinh tố",
         tag: "Sinh tố",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6.jpg?v=1652776618",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7.jpg?v=1652776618",
@@ -177,6 +187,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ uống",
         tag: "Đồ uống",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933",
@@ -194,6 +205,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ uống",
         tag: "Đồ uống",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
@@ -211,6 +223,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ uống",
         tag: "Đồ uống",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
@@ -228,6 +241,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ uống",
         tag: "Đồ uống",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933",
@@ -245,6 +259,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
         tag: "Combo",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_6770495e-fe41-4ce1-89b0-29858291c16a.jpg?v=1652780709",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_fcd80748-78aa-4790-b1bd-a0d9d4c2cd53.jpg?v=1652780710",
@@ -262,6 +277,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
         tag: "Combo",
+        tags: "HOT",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_12c2f10f-a047-4d6d-a081-8a15b177c142.jpg?v=1652781741",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_3cf1801a-aef1-422b-b4c1-c4589d8f4c3d.jpg?v=1652781742",
@@ -279,6 +295,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
         tag: "Combo",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_f8831e76-6dc8-4eec-82e2-776f28da8f18.jpg?v=1652782391",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8_28e3b037-5594-4310-9c9e-2c5a0b756cf5.jpg?v=1652782392",
@@ -296,6 +313,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
         tag: "Combo",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_ca38190e-52cd-477a-b790-79e3e8d5c7f7.jpg?v=1652782138",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6_ef42b1ba-b30c-467b-a74a-058229ef53ab.jpg?v=1652782138",
@@ -313,6 +331,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Combo",
         tag: "Combo",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8_16b6de2d-da40-41cc-ae9b-7c30c88adcc7.jpg?v=1652782138",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_d67ff138-f281-411b-bd2c-0ef7672f4d1f.jpg?v=1652782137",
@@ -330,6 +349,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Pizza",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-22.jpg?v=1653361630",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-23.jpg?v=1653361630",
@@ -347,6 +367,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Pasta",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-24.jpg?v=1653361630",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
@@ -364,6 +385,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Đồ ăn nhanh",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-25.jpg?v=1653361630",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-25.jpg?v=1653361630",
@@ -381,6 +403,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Sandwich",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-26.jpg?v=1653361630",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-19jpg.jpg?v=1653361630",
@@ -398,6 +421,7 @@ let products = [
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
         tag: "Đồ ăn nhanh",
+        tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-22.jpg?v=1653361630",
