@@ -824,6 +824,10 @@ header {
   margin: auto;
 }
 
+.formcontact-info-content a {
+  color: #161616;
+}
+
 .formcontact-info {
   background: #f7f7f7;
 }
@@ -859,6 +863,7 @@ header {
 
 .formcontact-info .icon span i {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .formcontact-info-content {
@@ -944,7 +949,6 @@ header {
 
 @media (max-width: 768px) {
   .formcontact-info-image {
-    margin-top: 50px;
     width: 100%;
   }
 
@@ -953,6 +957,14 @@ header {
     height: 100%;
     object-fit: cover;
   }
+}
+
+.formcontact-info-image {
+  height: 100%;
+}
+
+.map-us {
+  height: 100%;
 }
 
 /****************************************emailcontact ***********************/
@@ -1136,6 +1148,10 @@ header {
 footer {
   margin-bottom: 50px;
   border-top: 1px solid #16161659;
+}
+
+footer a {
+  color: #161616;
 }
 
 .footer-container {

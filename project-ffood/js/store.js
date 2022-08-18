@@ -4,6 +4,7 @@ console.log(productsListEl);
 
 /*******************Hiển thị danh sách sản phẩm********************/
 
+
 const renderProduct = (arr) => {
     productsListEl.innerHTML = "";
 
@@ -20,7 +21,7 @@ const renderProduct = (arr) => {
               </div>
             </div>
             <div class="product-content">
-              <a href="chi-tiet-sp.html">
+              <a href="chi-tiet-sp.html?id=${p.id}">
                 <h3>${p.name}</h3>
               </a>
               <p>${formatMoney(p.price)}</p>
@@ -110,8 +111,6 @@ function filterPrice(price1, price2){
 
   
 }
-
-
 
 
 // sắp xếp giá 
@@ -207,7 +206,6 @@ const totalProduct = () => {
   }
   totalProduct();
   
-
 
 
 

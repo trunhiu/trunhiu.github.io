@@ -1207,6 +1207,10 @@ footer {
   border-top: 1px solid #16161659;
 }
 
+footer a {
+  color: #161616;
+}
+
 .footer-container {
   padding: 0 30px;
 }
