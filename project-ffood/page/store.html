@@ -230,90 +230,79 @@
                             <div></div>
                             <p>Các sản phẩm</p>
                         </div>
-                        <div>
-                          <input type="checkbox" id="checkbox1" value="Đồ ăn nhanh" class="checkbox-category">
-                          <label for="checkbox1">Đồ ăn nhanh</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox2" value="Đồ uống" class="checkbox-category">
-                          <label for="checkbox2">Đồ uống</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox3" value="Sinh tố" class="checkbox-category">
-                          <label for="checkbox3">Sinh tố</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox4" value="Combo" class="checkbox-category">
-                          <label for="checkbox4">Combo</label>
+                        <div class="fillter-categorys">
+                          <div>
+                            <input type="checkbox" id="checkbox1" value="Đồ ăn nhanh" class="checkbox-category">
+                            <label for="checkbox1">Đồ ăn nhanh</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox2" value="Đồ uống" class="checkbox-category">
+                            <label for="checkbox2">Đồ uống</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox3" value="Sinh tố" class="checkbox-category">
+                            <label for="checkbox3">Sinh tố</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox4" value="Combo" class="checkbox-category">
+                            <label for="checkbox4">Combo</label>
+                          </div>
                         </div>
                         <div class="fillter-title">   
                             <div></div>
                             <p>Giá</p>
-                        </div>
-                        <!-- <div class="fillter-checkbox">
-                            <input type="radio" id="price-1" value="50000" class="checkbox-price" onchange="fillterPrice(10000,50000)">
-                            <label for="price-1">10.000 vnđ - 50.000 vnđ</label>
-                        </div>
-                        <div class="fillter-checkbox">
-                            <input type="radio" id="price-2" value="2" class="checkbox-price">
-                            <label for="price-2">50.000 vnđ - 100.000 vnđ</label>
-                        </div>
-                        <div class="fillter-checkbox">
-                            <input type="radio" id="price-3" value="3" class="checkbox-price">
-                            <label for="price-3">100.000 vnđ - 150.000 vnđ</label>
-                        </div>
-                        <div class="fillter-checkbox">
-                            <input type="radio" id="price-4" value="4" class="checkbox-price">
-                            <label for="price-4">150.000 vnđ - 200.000 vnđ</label>
-                        </div>
-                        <div class="fillter-checkbox">
-                            <input type="radio" id="price-5" value="5" class="checkbox-price">
-                            <label for="price-5">200.000 vnđ - 250.000 vnđ</label>
-                        </div> -->
-                        <form class="fillter">
-                          <li>
-                            <label for="price"><input onchange="filterPrice(10000,50000)" type="checkbox" name="price" value="100000" class="price-radio" id="price">Dưới 100.000đ</label>
-                          </li>
-                          <li>
-                            <label for="price2"><input onchange="filterPrice(50000,100000)" type="checkbox" name="price" class="price-radio" value="250000" id="price2">100.000đ - 250.000đ</label>
-                          </li>
-                          <li>
-                            <label for="price3"><input onchange="filterPrice(100000,150000)" type="checkbox" name="price" class="price-radio" value="500.000" id="price3">250.000đ - 500.000đ</label>
-                          </li>
-                          <li>
-                            <label for="price4"><input onchange="filterPrice(150000,200000)" type="checkbox" name="price" class="price-radio" value="800000" id="price4">500.000đ - 800.000đ</label>
-                          </li>
-                          <li>
-                            <label for="price5"><input onchange="filterPrice(200000,250000)" type="checkbox" name="price" class="price-radio" value="800000" id="price5">800.000đ Trở lên</label>
-                          </li>
+                        </div>                       
+                        <form class="fillter-prices">
+                          <div>
+                            <input onchange="filterPrice(10000,50000)" type="checkbox" name="price" value="100000" class="price-radio" id="price">
+                            <label for="price">10.000đ - 50.000đ</label>                          
+                          </div>
+                          <div>
+                            <input onchange="filterPrice(50000,100000)" type="checkbox" name="price" class="price-radio" value="250000" id="price2">   
+                            <label for="price2">50.000đ - 100.000đ</label>                                                  
+                          </div>
+                          <div>
+                            <input onchange="filterPrice(100000,150000)" type="checkbox" name="price" class="price-radio" value="500.000" id="price3">
+                            <label for="price3">100.000đ - 150.000đ</label>                         
+                          </div>
+                          <div>
+                              <input onchange="filterPrice(150000,200000)" type="checkbox" name="price" class="price-radio" value="800000" id="price4">   
+                            <label for="price4">150.000đ - 200.000đ</label>                                                 
+                          </div>
+                          <div>
+                            <input onchange="filterPrice(200000,250000)" type="checkbox" name="price" class="price-radio" value="800000" id="price5">
+                            <label for="price5">200.000đ - 250.000</label>                         
+                          </div>
                         </form>
                         <div class="fillter-title">   
                             <div></div>
                             <p>Các thẻ</p>
                         </div>
-                        <div>
-                          <input type="checkbox" id="checkbox1" value="Burger" class="checkbox-tags">
-                          <label for="checkbox1">Burger</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox2" value="Đồ uống" class="checkbox-tags">
-                          <label for="checkbox2">Đồ uống</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox3" value="Combo" class="checkbox-tags">
-                          <label for="checkbox3">Combo</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox4" value="Sinh tố" class="checkbox-tags">
-                          <label for="checkbox4">Sinh tố</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox5" value="Pasta" class="checkbox-tags">
-                          <label for="checkbox5">Pasta</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="checkbox6" value="Sandwich" class="checkbox-tags">
-                          <label for="checkbox6">Sandwich</label>
+                        <div class="fillter-tags">
+                          <div>
+                            <input type="checkbox" id="checkbox5" value="Burger" class="checkbox-tags">
+                            <label for="checkbox5">Burger</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox6" value="Đồ uống" class="checkbox-tags">
+                            <label for="checkbox6">Đồ uống</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox7" value="Combo" class="checkbox-tags">
+                            <label for="checkbox7">Combo</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox8" value="Sinh tố" class="checkbox-tags">
+                            <label for="checkbox8">Sinh tố</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox9" value="Pasta" class="checkbox-tags">
+                            <label for="checkbox9">Pasta</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="checkbox0" value="Sandwich" class="checkbox-tags">
+                            <label for="checkbox0">Sandwich</label>
+                          </div>
                         </div>
                         <div class="fillter-title">   
                             <div></div>

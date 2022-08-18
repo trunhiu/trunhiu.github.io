@@ -36,6 +36,7 @@ const formatMoney = (number) => {
   };
 
 
+renderProduct(items);
 //  Xóa sản phẩm
 const deleteProducts = (id, size) => {
     let isConfirm = confirm("Bạn có muốn xóa không?");
@@ -56,8 +57,7 @@ const deleteProducts = (id, size) => {
       totalProduct();
     }
   };
-
-renderProduct(items);
+  
 
 //Tính tiền
 const totalMoneys = document.querySelector(".total-moneys");
@@ -86,7 +86,7 @@ const renderCartNew = (arr) => {
     productsListNew.innerHTML = "";
     let html =  "";
     arr.forEach((p) => {
-        html += `<div class="col-6 col-md-4 col-lg-3">
+        html += `<div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="product-item">
           <div class="product-image">
             <a href="page/chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
@@ -190,6 +190,8 @@ const renderCartLove = (arr) => {
 }
 
 renderCartLove (productLove);
+
+
 
 $(document).ready(function () {
     $('#banner').slick({
@@ -342,7 +344,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 550,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

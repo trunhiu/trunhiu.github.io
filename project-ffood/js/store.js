@@ -101,8 +101,8 @@ Array.from(checkBoxTags).forEach((ele) =>{
 const checkBoxPrice = document.querySelectorAll('.checkbox-price');
 let productFilterPrice = []
 let checkedNumberPrice = 0
+
 function filterPrice(price1, price2){
-  
     let productFillterTrue;
     productFillterTrue = products.filter (p => p.price >= price1 && p.price <= price2);
     renderProduct(productFillterTrue)

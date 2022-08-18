@@ -880,6 +880,7 @@ header {
     top: 0;
     left: -300px;
   }
+
   .fillter-product-sidebar span i {
     display: block;
   }
@@ -932,21 +933,27 @@ header {
   margin-bottom: 20px;
 }
 
-.fillter-checkbox {
-  margin-bottom: 10px;
-}
-
-.fillter-checkbox input {
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.fillter-checkbox label {
+.fillter-categorys label {
   cursor: pointer;
   transition: all 0.5s;
 }
 
-.fillter-checkbox label:hover {
+.fillter-categorys label:hover {
+  color: #ff871d;
+}
+
+.fillter-prices input {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.fillter-prices label {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.fillter-prices label:hover {
   color: #ff871d;
 }
 
@@ -956,6 +963,15 @@ header {
   background-color: #ff871d;
   border: 1px solid #ff871d;
   transition: all 0.5s;
+}
+
+.fillter-tags label {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.fillter-tags label:hover {
+  color: #ff871d;
 }
 
 .fillter-size button:hover {

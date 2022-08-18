@@ -299,12 +299,12 @@ a {
 .checkout-sidebar-price-subtotal {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .checkout-sidebar-price-shipping {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .checkout-sidebar-total {
