@@ -86,7 +86,7 @@ const renderCartNew = (arr) => {
     productsListNew.innerHTML = "";
     let html =  "";
     arr.forEach((p) => {
-        html += `<div class="col-12 col-sm-6 col-md-4 col-lg-3>
+        html += `<div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="product-item">
           <div class="product-image">
             <a href="page/chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
@@ -162,7 +162,7 @@ const renderCartLove = (arr) => {
     productsListLove.innerHTML = "";
     let html =  "";
     arr.forEach((p) => {
-        html += `<div class="col-6 col-md-4 col-lg-3>
+        html += `<div class="col-6 col-md-4 col-lg-3">
         <div class="product-item">
           <div class="product-image">
             <a href="page/chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
