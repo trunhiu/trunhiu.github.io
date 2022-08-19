@@ -270,4 +270,21 @@ const totalProduct = () => {
     
   }
   totalProduct();
-  
+
+  // Back to top 
+
+const backToTop = document.querySelector('.noselect');
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= 1000) {
+        $('.scroll-to-top').css("display", "block");
+    } else {
+        $('.scroll-to-top').css("display", "none"); 
+    }
+});
+
+backToTop.addEventListener('click', function(e) {
+    $('html,body').animate({
+        scrollTop: 0
+    }, 'fast');
+})
