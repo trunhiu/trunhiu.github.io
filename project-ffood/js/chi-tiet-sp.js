@@ -104,7 +104,7 @@ btnMinusCount.addEventListener("click", () => {
 });
 
 // Thêm vào giỏ hàng
-
+let items = getDataFromLocalStorage();
 btnAddToCart.addEventListener("click", () => {
     // Kiểm tra xem đã chọn size chưa
     const sizeSelectedEl = document.querySelector(".detail-size .selected");
@@ -126,24 +126,21 @@ btnAddToCart.addEventListener("click", () => {
   
     addItemToCart(item)
     alert("Thêm vào giỏ hàng thành công")
-
-    let productCartSidebar = getDataFromLocalStorage();
     
-renderProduct1(productCartSidebar);
-      // Cập nhật lại số lượng
-      updateTotalCart();
+    getDataFromLocalStorage()
+    renderProduct1(item);
 
-     
-    
-  });
-
+    // Cập nhật lại số lượng
+    updateTotalCart();
+  
+});
 
 renderProduct(product);
 
 
 const productLists = document.querySelector(".product-lists");
 // Lấy ra sản phẩm có trong giỏ hàng
-let items = getDataFromLocalStorage();
+
 
 //  Hiển thị danh sách ra ngoài giao diện
 const renderProduct1 = () => {
@@ -460,7 +457,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 550,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

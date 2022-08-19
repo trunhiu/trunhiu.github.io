@@ -316,5 +316,12 @@ a {
 @media (max-width: 992px) {
   .checkout-sidebar-container {
     border: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-sidebar-container {
+    padding: 0;
   }
 }

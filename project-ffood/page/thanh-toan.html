@@ -167,7 +167,7 @@
             <div class="checkout-sidebar">
               <div class="checkout-sidebar-container">
                 <div class="checkout-sidebar-content">
-                  <div class="checkout-sidebar-content-products">
+                  <!-- <div class="checkout-sidebar-content-products">
                     <div class="checkout-sidebar-content-products-content">
                       <div class="checkout-sidebar-content-image">
                         <img src="../img/banhkepga.webp" alt="banhkepga" />
@@ -194,16 +194,20 @@
                     <span class="checkout-sidebar-content-products-price"
                       >80.000 vnđ</span
                     >
-                  </div>
+                  </div> -->
                 </div>
                 <div class="checkout-sidebar-code">
-                  <input type="text" placeholder="Áp dụng mã giảm giá" />
-                  <button>Sử dụng</button>
+                  <input
+                    type="text"
+                    placeholder="Áp dụng mã giảm giá"
+                    id="discount-form-input"
+                  />
+                  <button id="btn-apply">Sử dụng</button>
                 </div>
                 <div class="checkout-sidebar-price">
                   <div class="checkout-sidebar-price-shipping">
                     <div>Giảm giá</div>
-                    <div>0đ</div>
+                    <div id="discount-money">0đ</div>
                   </div>
                   <div class="checkout-sidebar-price-shipping">
                     <div>Phí vận chuyển</div>
@@ -211,12 +215,12 @@
                   </div>
                   <div class="checkout-sidebar-price-subtotal">
                     <div>Tạm tính</div>
-                    <div>180.000 vnđ</div>
+                    <div id="sub-total-money">180.000 vnđ</div>
                   </div>
                 </div>
                 <div class="checkout-sidebar-total">
                   <div>Tổng cộng</div>
-                  <div>180.000 vnđ</div>
+                  <div id="total-money">180.000 vnđ</div>
                 </div>
               </div>
             </div>
@@ -238,6 +242,7 @@
       src="/project-ffood/lib/slick-1.8.1/slick/slick.min.js"
     ></script>
     <script src="/project-ffood/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart.js"></script>
     <script src="../js/thanh-toan.js"></script>
   </body>
 </html>

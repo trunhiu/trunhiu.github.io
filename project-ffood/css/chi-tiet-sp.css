@@ -989,7 +989,8 @@ header {
 }
 
 .detail-info-container {
-  padding: 0 150px;
+  width: 80%;
+  margin: auto;
 }
 
 .detail-info-heading {
