@@ -227,6 +227,8 @@ backToTop.addEventListener('click', function(e) {
     }, 'fast');
 })
 
+// alert 
+
 /************menu******************/
 $(".logo-menu").click(function () {
     $(".menu-sidebar").css("left", "0");

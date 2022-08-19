@@ -136,3 +136,15 @@ function renderCity(data) {
     }
   };
 }
+
+//show code 
+
+$(".discount-icon").click(function () {
+  $(".discount-list").css("display", "block");
+  $(".discount-overlay").css("pointer-events", "all");
+})
+
+$(".discount-overlay").click(function () {
+  $(".discount-list").css("display", "none");
+  $(".discount-overlay").css("pointer-events", "none");
+})
