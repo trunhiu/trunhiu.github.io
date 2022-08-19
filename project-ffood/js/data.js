@@ -384,7 +384,7 @@ let products = [
         name: "Cánh gà chiên nước mắm",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
-        tag: "Đồ ăn nhanh",
+        tag: "Chicken",
         tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-25.jpg?v=1653361630",
@@ -420,7 +420,7 @@ let products = [
         name: "Khoai tây chiên",
         sizes: ["Nhỏ", "Vừa", "Lớn"],
         category: "Đồ ăn nhanh",
-        tag: "Đồ ăn nhanh",
+        tag: "French-friesh",
         tags: "LOVE",
         images: [
             "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
@@ -449,5 +449,22 @@ let products = [
         rating: 4.9,
         price: 140000,
         description: "Một chiếc bánh mì kẹp xúc xích đầy đủ toppings thơm ngon không thể thiếu trong thực đơn của bạn và gia đình",
+    },
+    {
+        id: 26,
+        name: "Salat trứng",
+        sizes: ["Nhỏ", "Vừa", "Lớn"],
+        category: "Đồ ăn nhanh",
+        tag: "Salat",
+        images: [
+            "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630",
+            "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-19jpg.jpg?v=1653361630",
+            "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630",
+            "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
+            "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-21.jpg?v=1653361630",
+        ],
+        rating: 4.8,
+        price: 190000,
+        description: "Một đĩa Salat trứng thơm ngon sẽ giúp bạn và gia đình no căng bụng",
     },
 ];

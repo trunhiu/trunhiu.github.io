@@ -10,8 +10,9 @@ const renderProduct = (arr) => {
 
     // Hiển thị sản phẩm nếu có 
     let html = "";
-    arr.forEach((p) => {
-        html += `<div class="col-6 col-md-4 col-lg-3">
+    arr.forEach((p, index) => {
+        if (index >= start && index < end) {
+          html += `<div class="col-6 col-md-4 col-lg-3">
         <div class="product-item">
             <div class="product-image">
               <a href="chi-tiet-sp.html?id=${p.id}"><img src="${p.images[0]}" alt="${p.name}"></a>
@@ -28,6 +29,7 @@ const renderProduct = (arr) => {
             </div>
           </div>
     </div>`
+        }
     });
     productsListEl.innerHTML = html;
 };
@@ -37,7 +39,83 @@ const formatMoney = (number) => {
     return number.toLocaleString("it-IT", { style: "currency", currency: "VND" });
   };
   
-  renderProduct(products);
+// pagination
+let btnNext = document.querySelector(".btn-next")
+let btnPrev = document.querySelector(".btn-prev")
+
+let perPage = 12;
+let currentPage = 1
+let start = 0
+let end = perPage 
+let totalPage = Math.ceil(products.length / perPage)
+
+
+let renderListPage = () =>{
+  for(i=1; i <= totalPage; i++){
+    btnNext.insertAdjacentHTML("beforebegin",`<li class="pagination-item pagination-page ${i == 1 ? 'pagination-item-active' :''}">${i}
+    </li>`)
+  }
+}
+renderListPage()
+
+
+let btnPage = document.querySelectorAll(".pagination-page")
+
+Array.from(btnPage).forEach((page,i) =>{
+  page.addEventListener("click", (e) => {
+    let pageActive = document.querySelectorAll(".pagination-item-active")
+    Array.from(pageActive).forEach((p) =>{
+      p.classList.remove("pagination-item-active")
+    })
+    e.target.classList.add("pagination-item-active")
+    currentPage = i+1
+    start = (currentPage - 1)*perPage
+    end = currentPage*perPage
+    renderProduct(products)
+  })
+})
+
+
+btnNext.addEventListener("click", (e) =>{
+  currentPage++
+  if(currentPage > totalPage){
+    currentPage = totalPage
+  }
+
+  Array.from(btnPage).forEach((page,i) =>{
+    if(i == currentPage-1){
+      page.classList.add("pagination-item-active")
+    }else{
+      page.classList.remove("pagination-item-active")
+    }
+  })
+
+  start = (currentPage - 1)*perPage
+  end = currentPage*perPage
+  renderProduct(products)
+})
+
+btnPrev.addEventListener("click", (e) =>{
+  currentPage--
+  if(currentPage <= 1){
+    currentPage = 1
+  }
+
+  Array.from(btnPage).forEach((page,i) =>{
+    if(i == currentPage-1){
+      page.classList.add("pagination-item-active")
+    }else{
+      page.classList.remove("pagination-item-active")
+    }
+  })
+
+  start = (currentPage - 1)*perPage
+  end = currentPage*perPage
+  renderProduct(products)
+})
+
+renderProduct(products)
+
 
 
 renderProduct(products);
@@ -206,6 +284,27 @@ const totalProduct = () => {
   }
   totalProduct();
   
+//Lọc sp
+
+const getUrl = () => {
+  const tag = window.location.hash.slice(1).split("&")
+  const data = products.filter((p) =>{
+    if(tag.length == 2){
+      return p.tag == tag[0] || p.tag == tag[1]
+    } else if (tag.length == 1 && tag[0] !== '') {
+      return p.tag.toLowerCase() == tag[0].toLowerCase();
+    } else {
+      return true;
+    }
+  })
+  renderProduct(data) 
+}
+getUrl();
+
+
+
+
+
 
 
 
@@ -227,8 +326,6 @@ $(document).ready(function () {
     });
 
 });
-
-
 
 /************menu******************/
 $(".logo-menu").click(function () {

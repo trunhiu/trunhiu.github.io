@@ -194,6 +194,8 @@ renderCartLove (productLove);
 
 
 
+
+
 $(document).ready(function () {
     $('#banner').slick({
         speed: 500,

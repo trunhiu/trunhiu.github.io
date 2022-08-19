@@ -67,11 +67,10 @@ let discountCode = {
     let data = checkDiscountCode();
     if (data) {
         discount = (totalMoney * data) / 100;
-    //   discountBox.classList.remove("d-none");
       discountMoneyEl.innerText = formatMoney(discount);
       totalMoneyEl.innerText = formatMoney(totalMoney - discount);
     } else {
-    //   discountBox.classList.add("d-none");
+
     }
   };
   

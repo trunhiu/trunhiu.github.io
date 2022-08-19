@@ -1007,6 +1007,7 @@ header {
   height: 219px;
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .product-image img {
@@ -1208,6 +1209,30 @@ header {
 .quickview-info .quickview-buy .btn-quickview-add:hover {
   background-color: #161616;
   border: 1px solid #161616;
+}
+
+.products-list {
+  margin-bottom: 20px;
+}
+
+.shop-panigation {
+  width: 100%;
+}
+
+.shop-paginate {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 20px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-item-active {
+  background-color: #ff871d;
 }
 
 /******************************footer *************************/
