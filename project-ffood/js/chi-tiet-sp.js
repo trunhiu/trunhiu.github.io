@@ -135,6 +135,38 @@ btnAddToCart.addEventListener("click", () => {
   
 });
 
+const btnBuy = document.querySelector('.btn-buys');
+console.log(btnBuy);
+btnBuy.addEventListener("click", () => {
+    // Kiểm tra xem đã chọn size chưa
+    const sizeSelectedEl = document.querySelector(".detail-size .selected");
+  
+    if (!sizeSelectedEl) {
+      alert("Vui lòng chọn size");
+      return;
+    }
+  
+    // Cấu trúc item thêm vào giỏ hàng
+    let item = {
+      id: product.id,
+      name: product.name,
+      image: product.images[0],
+      price: product.price,
+      count: count,
+      size: sizeSelectedEl.innerText,
+    };
+  
+    addItemToCart(item)
+    window.location.assign("../page/thanh-toan.html")
+    
+    getDataFromLocalStorage()
+    renderProduct1(item);
+
+    // Cập nhật lại số lượng
+    updateTotalCart();
+  
+});
+
 renderProduct(product);
 
 

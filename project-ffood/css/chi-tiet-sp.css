@@ -962,11 +962,11 @@ header {
 }
 
 .detail-content .detail-size button {
-  padding: 5px 10px;
-  margin-right: 10px;
+  padding: 10px 20px;
+  margin-right: 20px;
   font-size: 15px;
   line-height: 18px;
-
+  border-radius: 4px;
   color: #ffffff;
   background-color: #fd7e14;
   border: 1px solid #fd7e14;
@@ -989,7 +989,7 @@ header {
   font-size: 20px;
   line-height: 23px;
   cursor: pointer;
-
+  border-radius: 5px;
   color: #ffffff;
   transition: all 0.3s;
 }
@@ -1003,7 +1003,7 @@ header {
 }
 
 .detail-content .detail-amount .number {
-  padding: 22px 35px;
+  padding: 15px 25px;
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #000000;
@@ -1013,7 +1013,7 @@ header {
 
 .detail-content .detail-amount .icon span {
   display: flex;
-  padding: 10px 25px;
+  padding: 7px 15px;
   border: 1px solid #161616;
   cursor: pointer;
 }
@@ -1022,9 +1022,9 @@ header {
   color: #fff;
 }
 
-.detail-content .btn-buy {
+.detail-content .btn-buys {
   margin-top: 37px;
-  padding: 22px 35px;
+  padding: 15px 35px;
   color: #fff;
   background-color: #000000;
   width: 40%;
@@ -1034,6 +1034,7 @@ header {
   align-items: center;
   transition: all 0.5s;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .detail-content .btn-buy:hover {
