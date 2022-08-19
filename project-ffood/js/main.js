@@ -193,7 +193,23 @@ renderCartLove (productLove);
 
 
 
+// Back to top 
 
+const backToTop = document.querySelector('.noselect');
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= 1500) {
+        $('.scroll-to-top').css("display", "block");
+    } else {
+        $('.scroll-to-top').css("display", "none"); 
+    }
+});
+
+backToTop.addEventListener('click', function(e) {
+    $('html,body').animate({
+        scrollTop: 0
+    }, 'fast');
+})
 
 
 $(document).ready(function () {

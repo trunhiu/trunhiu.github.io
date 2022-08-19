@@ -63,31 +63,30 @@
                   <h3>Địa chỉ giao hàng</h3>
                   <input type="text" placeholder="Họ và tên" />
                   <input type="text" placeholder="Địa chỉ chi tiết" />
-                  <div class="checkout-main-content-shipping-location">
-                    <div>
-                      <select
-                        name="shipping-location-city"
-                        id="shipping-location-city"
-                      >
-                        <option>Tỉnh/Thành</option>
-                      </select>
-                    </div>
-                    <div>
-                      <select
-                        name="shipping-location-district"
-                        id="shipping-location-district"
-                      >
-                        <option>Quận/Huyện</option>
-                      </select>
-                    </div>
-                    <div>
-                      <select
-                        name="shipping-location-ward"
-                        id="shipping-location-ward"
-                      >
-                        <option>Xã/Phường</option>
-                      </select>
-                    </div>
+                  <div class="col-md-auto chose-location">
+                    <select
+                      class="form-select form-select-sm mb-3"
+                      id="city"
+                      aria-label=".form-select-sm"
+                    >
+                      <option value="" selected>Chọn tỉnh thành</option>
+                    </select>
+
+                    <select
+                      class="form-select form-select-sm mb-3"
+                      id="district"
+                      aria-label=".form-select-sm"
+                    >
+                      <option value="" selected>Chọn quận huyện</option>
+                    </select>
+
+                    <select
+                      class="form-select form-select-sm"
+                      id="ward"
+                      aria-label=".form-select-sm"
+                    >
+                      <option value="" selected>Chọn phường xã</option>
+                    </select>
                   </div>
                   <textarea
                     name=""
@@ -242,6 +241,7 @@
       src="/project-ffood/lib/slick-1.8.1/slick/slick.min.js"
     ></script>
     <script src="/project-ffood/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="../js/cart.js"></script>
     <script src="../js/thanh-toan.js"></script>
   </body>
