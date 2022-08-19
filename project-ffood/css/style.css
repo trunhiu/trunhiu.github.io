@@ -1724,7 +1724,6 @@ header {
 }
 
 .news-image img:hover {
-  filter: grayscale(100%);
 }
 
 @media (max-width: 428px) {
