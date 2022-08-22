@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liên hệ</title>
 
-       <!-- /************favicon***********/ -->
-  <link rel="shortcut icon" type="image/png" href="/project-ffood/img/your-logo.ico"/>
+    <!-- /************favicon***********/ -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/project-ffood/img/your-logo.ico"
+    />
 
     <link
       rel="stylesheet"
@@ -32,428 +36,475 @@
       href="/project-ffood/lib/slick-1.8.1/slick/slick-theme.css"
     />
 
-    <link rel="stylesheet" href="/project-ffood/css/lien-he.css">
-
-</head>
-<body>
-  <header>
-    <div class="header">
-      <div class="logo">
-        <a href="../index.html"
-          ><img src="../img/Logo_black.webp" alt="logo"
-        /></a>
-      </div>
-      <ul>
-        <li><a href="../index.html">Trang chủ</a></li>
-        <li><a href="../page/store.html">Cửa hàng</a></li>
-        <li><a href="../page/gioi-thieu.html">Giới thiệu</a></li>
-        <li><a href="../page/tin-tuc.html">Tin tức</a></li>
-        <li><a href="#">Liên hệ</a></li>
-      </ul>
-      <div class="logo-menu">
-        <span><i class="fa-solid fa-bars"></i></span>
-      </div>
-      <div class="header-icon">
-        <div class="header-item header-search">
-          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+    <link rel="stylesheet" href="/project-ffood/css/lien-he.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../img/Logo_black.webp" alt="logo"
+          /></a>
         </div>
-        <div class="header-item header-login">
-          <span><i class="fa-solid fa-user-tie"></i></span>
-        </div>
-        <div class="header-item header-shoppingcart">
-          <span><i class="fa-solid fa-cart-shopping"></i></span>
-          <span class="cart-count bg-white px-1 rounded-2 border"></span>
-        </div>
-      </div>
-    </div>
-    <div class="menu-sidebar">
-      <div class="menu-sidebar-top">
-        <div class="menu-sidebar-top-list">
+        <ul>
+          <li><a href="../index.html">Trang chủ</a></li>
+          <li><a href="../page/store.html">Cửa hàng</a></li>
+          <li><a href="../page/gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="../page/tin-tuc.html">Tin tức</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+        <div class="logo-menu">
           <span><i class="fa-solid fa-bars"></i></span>
-          <p class="menu-sidebar-list">Danh sách</p>
         </div>
-        <div class="menu-sidebar-top-login">
-          <span><i class="fa-solid fa-user-tie"></i></span>
-          <p class="menu-sidebar-login">Đăng nhập</p>
-        </div>
-      </div>
-      <div class="menu-sidebar-mid">
-        <div><a href="../index.html">Trang chủ</a></div>
-        <div><a href="../page/store.html">Cửa hàng</a></div>
-        <div><a href="../page/gioi-thieu.html">Giới thiệu</a></div>
-        <div><a href="../page/tin-tuc.html">Tin tức</a></div>
-        <div><a href="#">Liên hệ</a></div>
-      </div>
-      <div class="login-sidebar-mid">
-        <input type="text" placeholder="Địa chỉ email của bạn" />
-        <input type="password" placeholder="Mật khẩu của bạn" />
-        <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
-        <button class="btn-login-sidebar-mid">Đăng nhập</button>
-        <div class="login-sidebar-mid-line">
-          <div>Hoặc</div>
-        </div>
-        <div class="login-sidebar-mid-register">Đăng ký ngay</div>
-      </div>
-      <div class="register-sidebar-mid">
-        <h3>Đăng ký</h3>
-        <input type="text" placeholder="Địa chỉ email của bạn" />
-        <input type="password" placeholder="Mật khẩu của bạn" />
-        <button class="btn-register-sidebar-mid">Đăng nhập</button>
-        <div class="register-sidebar-mid-line">
-          <div>Hoặc</div>
-        </div>
-        <div class="register-sidebar-mid-register">Quay trở lại</div>
-      </div>
-      <div class="forgotpw-sidebar-mid">
-        <h3>Lấy lại mật khẩu</h3>
-        <input type="text" placeholder="Địa chỉ email của bạn" />
-        <button class="btn-forgotpw-sidebar-mid">Gửi</button>
-        <div class="forgotpw-sidebar-mid-register">Hủy</div>
-      </div>
-      <div class="menu-sidebar-bottom">
-        <button class="btn-menu-cancel">Đóng</button>
-      </div>
-    </div>
-    <div class="overlay"></div>
-    <div class="header-shopping-cart">
-      <div class="shopping-cart-sidebar">
-        <div class="shopping-cart-sidebar-top">
-          <div class="btn-cancel">
-            <span><i class="fa-solid fa-xmark"></i></span>
+        <div class="header-icon">
+          <div class="header-item header-search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
           </div>
-          <div>
-            <p>Giỏ hàng</p>
+          <div class="header-item header-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
           </div>
-          <div class="shopping-cart-sidebar-top-number">
-            <p>2</p>
-          </div>
-        </div>
-        <div class="shopping-cart-mid">
-          <div class="shopping-cart-mid-container product-lists"></div>
-        </div>
-        <div class="shopping-cart-bottom">
-          <div class="total">
-            <p>Tổng:</p>
-            <p class="total-moneys">180.000 vnđ</p>
-          </div>
-          <div class="shopping-cart-bottom-button">
-            <div class="btn-view-cart">
-              <a href="gio-hang.html">Xem giỏ hàng</a>
-            </div>
-            <div class="btn-buy">
-              <a href="thanh-toan.html">Thanh toán ngay</a>
-            </div>
+          <div class="header-item header-shoppingcart">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span class="cart-count bg-white px-1 rounded-2 border"></span>
           </div>
         </div>
       </div>
-    </div>
-    <div class="login">
-      <div class="login-overlay"></div>
-      <div class="login-content">
-        <div class="login-content-container">
-          <div class="login-page">
-            <div class="btn-login-cancel">
+      <div class="menu-sidebar">
+        <div class="menu-sidebar-top">
+          <div class="menu-sidebar-top-list">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <p class="menu-sidebar-list">Danh sách</p>
+          </div>
+          <div class="menu-sidebar-top-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
+            <p class="menu-sidebar-login">Đăng nhập</p>
+          </div>
+        </div>
+        <div class="menu-sidebar-mid">
+          <div><a href="../index.html">Trang chủ</a></div>
+          <div><a href="../page/store.html">Cửa hàng</a></div>
+          <div><a href="../page/gioi-thieu.html">Giới thiệu</a></div>
+          <div><a href="../page/tin-tuc.html">Tin tức</a></div>
+          <div><a href="#">Liên hệ</a></div>
+        </div>
+        <div class="login-sidebar-mid">
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <input type="password" placeholder="Mật khẩu của bạn" />
+          <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
+          <button class="btn-login-sidebar-mid">Đăng nhập</button>
+          <div class="login-sidebar-mid-line">
+            <div>Hoặc</div>
+          </div>
+          <div class="login-sidebar-mid-register">Đăng ký ngay</div>
+        </div>
+        <div class="register-sidebar-mid">
+          <h3>Đăng ký</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <input type="password" placeholder="Mật khẩu của bạn" />
+          <button class="btn-register-sidebar-mid">Đăng nhập</button>
+          <div class="register-sidebar-mid-line">
+            <div>Hoặc</div>
+          </div>
+          <div class="register-sidebar-mid-register">Quay trở lại</div>
+        </div>
+        <div class="forgotpw-sidebar-mid">
+          <h3>Lấy lại mật khẩu</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <button class="btn-forgotpw-sidebar-mid">Gửi</button>
+          <div class="forgotpw-sidebar-mid-register">Hủy</div>
+        </div>
+        <div class="menu-sidebar-bottom">
+          <button class="btn-menu-cancel">Đóng</button>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="header-shopping-cart">
+        <div class="shopping-cart-sidebar">
+          <div class="shopping-cart-sidebar-top">
+            <div class="btn-cancel">
               <span><i class="fa-solid fa-xmark"></i></span>
             </div>
-            <div class="login-image">
-              <img src="../img/Logo_black.webp" alt="logo" />
+            <div>
+              <p>Giỏ hàng</p>
             </div>
-            <div class="login-line"></div>
-            <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
-            <input type="text" placeholder="Địa chỉ email của bạn" />
-            <input type="password" placeholder="Mật khẩu của bạn" />
-            <p class="forgot-pw">Bạn quên mật khẩu?</p>
-            <button class="btn-login">Đăng nhập</button>
-            <div class="login-register">
-              <span>Bạn không có tải khoản? </span>
-              <div class="goto-register">Đăng ký ngay</div>
+            <div class="shopping-cart-sidebar-top-number">
+              <p>2</p>
             </div>
           </div>
-          <div class="register-page">
-            <h2>Đăng ký tài khoản</h2>
-            <input type="text" placeholder="Địa chỉ email của bạn" />
-            <input type="text" placeholder="Mật khẩu của bạn" />
-            <input type="text" placeholder="Địa chỉ email của bạn" />
-            <input type="password" placeholder="Mật khẩu của bạn" />
-            <button class="btn-register">Đăng nhập</button>
-            <button class="btn-goback">Quay lại trang đăng nhập</button>
+          <div class="shopping-cart-mid">
+            <div class="shopping-cart-mid-container product-lists"></div>
           </div>
-          <div class="forgot-password">
-            <h2>Đăng ký tài khoản</h2>
-            <input type="text" placeholder="Địa chỉ email của bạn" />
-            <button class="btn-sendemail">Gửi</button>
-            <button class="btn-forgotpw-goback">Hủy</button>
+          <div class="shopping-cart-bottom">
+            <div class="total">
+              <p>Tổng:</p>
+              <p class="total-moneys">180.000 vnđ</p>
+            </div>
+            <div class="shopping-cart-bottom-button">
+              <div class="btn-view-cart">
+                <a href="gio-hang.html">Xem giỏ hàng</a>
+              </div>
+              <div class="btn-buy">
+                <a href="thanh-toan.html">Thanh toán ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        <div class="login-overlay"></div>
+        <div class="login-content">
+          <div class="login-content-container">
+            <div class="login-page">
+              <div class="btn-login-cancel">
+                <span><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="login-image">
+                <img src="../img/Logo_black.webp" alt="logo" />
+              </div>
+              <div class="login-line"></div>
+              <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <input type="password" placeholder="Mật khẩu của bạn" />
+              <p class="forgot-pw">Bạn quên mật khẩu?</p>
+              <button class="btn-login">Đăng nhập</button>
+              <div class="login-register">
+                <span>Bạn không có tải khoản? </span>
+                <div class="goto-register">Đăng ký ngay</div>
+              </div>
+            </div>
+            <div class="register-page">
+              <h2>Đăng ký tài khoản</h2>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <input type="text" placeholder="Mật khẩu của bạn" />
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <input type="password" placeholder="Mật khẩu của bạn" />
+              <button class="btn-register">Đăng nhập</button>
+              <button class="btn-goback">Quay lại trang đăng nhập</button>
+            </div>
+            <div class="forgot-password">
+              <h2>Đăng ký tài khoản</h2>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <button class="btn-sendemail">Gửi</button>
+              <button class="btn-forgotpw-goback">Hủy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-overlay"></div>
+    </header>
+    <div id="banner">
+      <div class="banner-item">
+        <div class="banner-image">
+          <img src="/project-ffood/img/banner-10.webp" alt="banner1" />
+          <div class="header-text">
+            <h1>Liên hệ</h1>
+            <div>
+              <a href="/project-ffood/index.html">
+                <p>Trang chủ</p>
+              </a>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+              <p>Liên hệ</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="header-overlay"></div>
-  </header>
-      <div id="banner">
-        <div class="banner-item">
-          <div class="banner-image">
-            <img src="/project-ffood/img/banner-10.webp" alt="banner1">
-            <div class="header-text">             
-              <h1>Liên hệ</h1>
-              <div>
-                  <a href="/project-ffood/index.html">
-                      <p>Trang chủ</p>
-                  </a>
-                  <span><i class="fa-solid fa-angle-right"></i></span>
-                  <p>Liên hệ</p>
-              </div>     
-            </div>
-          </div> 
-        </div>
-        
-      </div>
-      <div class="scroll-to-top">
-        <button class="noselect"><span><i class="fa-solid fa-angle-up"></i></span></button>
-      </div>
-      <div id="formcontact">
-        <div class="formcontact-container">
-            <div class="formcontact-info">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <div class="formcontact-info-content">
-                            <h5>Thông tin liên hệ</h5>
-                            <div class="line"></div>
-                            <p>Các cơ sở của chúng tôi:</p>
-                            <ul>
-                                <a href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1">
-                                  <li>HH4C, Linh đàm, Hoàng liệt, Hoàng Mai</li>
-                                </a>
-                                <a href="https://www.google.com/maps/place/128+P.+%C4%90%E1%BA%A1i+La,+%C4%90%E1%BB%93ng+T%C3%A2m,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9972091,105.8421855,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac71cd31d38b:0xd57b08a4e72b28ea!8m2!3d20.9972091!4d105.8443742">
-                                  <li>128 Đại la, Hai Bà Trưng</li>
-                                </a>
-                                <a href="https://www.google.com/maps/place/48+P.+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9981588,105.7898267,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba7ddb0f43:0xe7d7c05f85f830a!8m2!3d20.9981589!4d105.7943114">
-                                  <li>48 Tố Hữu, Lê Văn Lương kéo dài</li>
-                                </a>
-                            </ul>
-                            <div class="line"></div>
-                            <p>Hoặc có thể liên hệ với chúng tôi qua:</p>
-                            <ul>
-                                <a href="#">
-                                  <li>Gmail: buihieu3008@gmail.com</li>
-                                </a>
-                                <a href="#">
-                                  <li>Sđt: 012345678</li>
-                                </a>
-                            </ul>
-                            <div class="line"></div>
-                            <p>Theo dõi chúng tôi tại:</p>
-                            <div class="icon">
-                                <span><a href="#"><i class="fa-brands fa-twitter"></a></i></span>
-                                <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
-                                <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
-                                <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="formcontact-info-image">
-                          <div class="map-us my-4">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8622335644855!2d105.78982672479975!3d20.998158841283654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acba7ddb0f43%3A0xe7d7c05f85f830a!2zNDggUC4gVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1660792588958!5m2!1svi!2s" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="formcontact-form">
-                <h3>Liên hệ</h3>
-                <div class="line"></div>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <label>Họ và tên:</label>
-                        <div class="input">
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <label>Địa chỉ Email:</label>
-                        <div class="input">
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 note">
-                        <label>Ghi chú:</label>
-                        <div class="input">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <button>Xác nhận</button>
-            </div>
-        </div>
-      </div>
-      <div id="emailcontact">
-        <div class="emailcontact-image">
-            <div class="emailcontact-content">
-                <div class="emailcontact-content-container">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="text">
-                                <span><i class="fa-solid fa-envelope-open-text"></i></span>
-                                <div>
-                                    <p>THƯ</p>
-                                    <p>LIÊN HỆ!</p>
-                                    <p>Chỉ mất một vài giây bạn có thể tìm thấy tin tức mới nhất về chúng tôi</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="emailcontact-input">
-                                <input type="text" placeholder="Địa chỉ email của bạn">                           
-                                <button>Xác nhận</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div id="instagram">
-        <div class="instagram-slider">
-            <div class="instagram-image">
-                <a href="https://www.instagram.com/"><img src="/project-ffood/img/instagram3.webp" alt="instagram 1"></a>
-            </div>
-            <div class="instagram-image">
-                <a href="https://www.instagram.com/"><img src="/project-ffood/img/instagram4.webp" alt="instagram 2"></a>
-            </div>
-            <div class="instagram-image">
-                <a href="https://www.instagram.com/"><img src="/project-ffood/img/instagram5.webp" alt="instagram 3"></a>
-            </div>
-            <div class="instagram-image">
-                <a href="https://www.instagram.com/"><img src="/project-ffood/img/instagram6.webp" alt="instagram 4"></a>
-            </div>
-            <div class="instagram-image">
-                <a href="https://www.instagram.com/"><img src="/project-ffood/img/instagram7.webp" alt="instagram 5"></a>
-            </div>
-            <div class="instagram-image">
-                <a href="https://www.instagram.com/"><img src="/project-ffood/img/instagram1.webp" alt="instagram 6"></a>
-            </div>
-            <div class="instagram-image">
-                <a href="https://www.instagram.com/"><img src="/project-ffood/img/instagram2.webp" alt="instagram 7"></a>
-            </div>           
-        </div>
-         <div class="instagram-flus">
-                <div class="instagram-flus-image">
-                    <img src="/project-ffood/img/938790b17acb5b3b8236d65ce8c4fc45.jpg" alt="">
-                </div>
-                <p>Follow Us On Instagram</p>
-            </div>
-      </div>
-    
-
-      <footer>
-        <div class="footer-container">
+    <div class="scroll-to-top">
+      <button class="noselect">
+        <span><i class="fa-solid fa-angle-up"></i></span>
+      </button>
+    </div>
+    <div id="formcontact">
+      <div class="formcontact-container">
+        <div class="formcontact-info">
           <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="footer-item">
-                <div class="footer-image">
-                  <a href=""><img src="../img/Logo_black.webp" alt="logo" /></a>
-                </div>
-                <p>Theo dõi chúng tôi để được giảm giá 30%</p>
-  
-                <div class="footer-content">
-                  <div class="footer-input">
-                    <div>
-                      <input type="text" placeholder="Email của bạn..." />
-                    </div>
-                    <button>
-                      <span><i class="fa-solid fa-paper-plane"></i></span>
-                    </button>
-                  </div>
-                  <div>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-twitter"></i></a
-                    ></span>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-facebook-f"></i></a
-                    ></span>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-instagram"></i></a
-                    ></span>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-youtube"></i></a
-                    ></span>
-                  </div>
+            <div class="col-12 col-lg-6">
+              <div class="formcontact-info-content">
+                <h5>Thông tin liên hệ</h5>
+                <div class="line"></div>
+                <p>Các cơ sở của chúng tôi:</p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1"
+                      >HH4C, Linh đàm, Hoàng liệt, Hoàng Mai</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/place/128+P.+%C4%90%E1%BA%A1i+La,+%C4%90%E1%BB%93ng+T%C3%A2m,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9972091,105.8421855,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac71cd31d38b:0xd57b08a4e72b28ea!8m2!3d20.9972091!4d105.8443742"
+                      >128 Đại la, Hai Bà Trưng</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/place/48+P.+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9981588,105.7898267,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba7ddb0f43:0xe7d7c05f85f830a!8m2!3d20.9981589!4d105.7943114"
+                      >48 Tố Hữu, Lê Văn Lương kéo dài</a
+                    >
+                  </li>
+                </ul>
+                <div class="line"></div>
+                <p>Hoặc có thể liên hệ với chúng tôi qua:</p>
+                <ul>
+                  <a href="#">
+                    <li>Gmail: buihieu3008@gmail.com</li>
+                  </a>
+                  <a href="#">
+                    <li>Sđt: 012345678</li>
+                  </a>
+                </ul>
+                <div class="line"></div>
+                <p>Theo dõi chúng tôi tại:</p>
+                <div class="icon">
+                  <span
+                    ><a href="#"><i class="fa-brands fa-twitter"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-instagram"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-facebook"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-youtube"></i></a
+                  ></span>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <h3>Trụ sở chính FFOOD</h3>
-              <div class="footer-location">
-                <span><i class="fa-solid fa-location-dot"></i></span>
-                <a
-                  href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1"
-                >
-                  <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
-                </a>
+            <div class="col-12 col-lg-6">
+              <div class="formcontact-info-image">
+                <div class="map-us my-4">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8622335644855!2d105.78982672479975!3d20.998158841283654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acba7ddb0f43%3A0xe7d7c05f85f830a!2zNDggUC4gVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1660792588958!5m2!1svi!2s"
+                    width="100%"
+                    height="90%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
-              <div class="footer-location">
-                <span><i class="fa-solid fa-phone"></i></span>
-                <a href="#">
-                  <p>0845.069.061</p>
-                </a>
-              </div>
-              <div class="footer-location">
-                <span><i class="fa-solid fa-envelope"></i></span>
-                <a href="#">
-                  <p>buihieu3008@gmail.com</p>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <h3>Chính sách của cửa hàng</h3>
-  
-              <a href="#">
-                <p>Chính sách thanh toán</p>
-              </a>
-              <a href="#">
-                <p>Chính sách đổi trả</p>
-              </a>
-              <a href="#">
-                <p>Chính sách vận chuyển</p>
-              </a>
-              <a href="#">
-                <p>Chính sách bảo mật</p>
-              </a>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <h3>Mạng xã hội</h3>
-              <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-facebook-f"></i></span>
-                  <p>Facebook</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-instagram"></i></span>
-                  <p>Instagram</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-youtube"></i></span>
-                  <p>Youtube</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-twitter"></i></span>
-                  <p>Twitter</p>
-                </div>
-              </a>
             </div>
           </div>
         </div>
-      </footer>
-    
-    
+        <div class="formcontact-form">
+          <h3>Liên hệ</h3>
+          <div class="line"></div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <label>Họ và tên:</label>
+              <div class="input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label>Địa chỉ Email:</label>
+              <div class="input">
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 note">
+              <label>Ghi chú:</label>
+              <div class="input">
+                <textarea
+                  name="ghichu"
+                  id="textarea"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button>Xác nhận</button>
+        </div>
+      </div>
+    </div>
+    <div id="emailcontact">
+      <div class="emailcontact-image">
+        <div class="emailcontact-content">
+          <div class="emailcontact-content-container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="text">
+                  <span><i class="fa-solid fa-envelope-open-text"></i></span>
+                  <div>
+                    <p>THƯ</p>
+                    <p>LIÊN HỆ!</p>
+                    <p>
+                      Chỉ mất một vài giây bạn có thể tìm thấy tin tức mới nhất
+                      về chúng tôi
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="emailcontact-input">
+                  <input type="text" placeholder="Địa chỉ email của bạn" />
+                  <button>Xác nhận</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="instagram">
+      <div class="instagram-slider">
+        <div class="instagram-image">
+          <a href="https://www.instagram.com/"
+            ><img src="/project-ffood/img/instagram3.webp" alt="instagram 1"
+          /></a>
+        </div>
+        <div class="instagram-image">
+          <a href="https://www.instagram.com/"
+            ><img src="/project-ffood/img/instagram4.webp" alt="instagram 2"
+          /></a>
+        </div>
+        <div class="instagram-image">
+          <a href="https://www.instagram.com/"
+            ><img src="/project-ffood/img/instagram5.webp" alt="instagram 3"
+          /></a>
+        </div>
+        <div class="instagram-image">
+          <a href="https://www.instagram.com/"
+            ><img src="/project-ffood/img/instagram6.webp" alt="instagram 4"
+          /></a>
+        </div>
+        <div class="instagram-image">
+          <a href="https://www.instagram.com/"
+            ><img src="/project-ffood/img/instagram7.webp" alt="instagram 5"
+          /></a>
+        </div>
+        <div class="instagram-image">
+          <a href="https://www.instagram.com/"
+            ><img src="/project-ffood/img/instagram1.webp" alt="instagram 6"
+          /></a>
+        </div>
+        <div class="instagram-image">
+          <a href="https://www.instagram.com/"
+            ><img src="/project-ffood/img/instagram2.webp" alt="instagram 7"
+          /></a>
+        </div>
+      </div>
+      <div class="instagram-flus">
+        <div class="instagram-flus-image">
+          <img
+            src="/project-ffood/img/938790b17acb5b3b8236d65ce8c4fc45.jpg"
+            alt=""
+          />
+        </div>
+        <p>Follow Us On Instagram</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-item">
+              <div class="footer-image">
+                <a href=""><img src="../img/Logo_black.webp" alt="logo" /></a>
+              </div>
+              <p>Theo dõi chúng tôi để được giảm giá 30%</p>
+
+              <div class="footer-content">
+                <div class="footer-input">
+                  <div>
+                    <input type="text" placeholder="Email của bạn..." />
+                  </div>
+                  <button>
+                    <span><i class="fa-solid fa-paper-plane"></i></span>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-twitter"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-facebook-f"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-instagram"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-youtube"></i></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Trụ sở chính FFOOD</h3>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <a
+                href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1"
+              >
+                <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
+              </a>
+            </div>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="#">
+                <p>0845.069.061</p>
+              </a>
+            </div>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="#">
+                <p>buihieu3008@gmail.com</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Chính sách của cửa hàng</h3>
+
+            <a href="#">
+              <p>Chính sách thanh toán</p>
+            </a>
+            <a href="#">
+              <p>Chính sách đổi trả</p>
+            </a>
+            <a href="#">
+              <p>Chính sách vận chuyển</p>
+            </a>
+            <a href="#">
+              <p>Chính sách bảo mật</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Mạng xã hội</h3>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <p>Facebook</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <p>Instagram</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <p>Youtube</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <p>Twitter</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       type="text/javascript"
@@ -471,5 +522,5 @@
     <script src="../js/data.js"></script>
     <script src="../js/cart.js"></script>
     <script src="/project-ffood/js/lien-he.js"></script>
-</body>
+  </body>
 </html>
