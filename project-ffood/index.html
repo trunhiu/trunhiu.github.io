@@ -1,652 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang chủ</title>
+    <!-- /************favicon***********/ -->
+    <link rel="shortcut icon" type="image/png" href="img/your-logo.ico" />
 
-  <!-- /************favicon***********/ -->
-  <link rel="shortcut icon" type="image/png" href="img/your-logo.ico"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="lib/font/font.css" />
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="lib/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="lib/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="lib/font/font.css" />
-  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="lib/slick-1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="css/style.css" />
-
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <div class="logo">
-        <a href="index.html"><img src="img/Logo_black.webp" alt="logo" /></a>
-      </div>
-      <ul>        
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="img/Logo_black.webp" alt="logo" /></a>
+        </div>
+        <ul>
           <li><a href="#">Trang chủ</a></li>
           <li><a href="page/store.html">Cửa hàng</a></li>
-          <li><a href="page/gioi-thieu.html">Giới thiệu</a></li>      
+          <li><a href="page/gioi-thieu.html">Giới thiệu</a></li>
           <li><a href="page/tin-tuc.html">Tin tức</a></li>
           <li><a href="page/lien-he.html">Liên hệ</a></li>
-      </ul>
-      <div class="logo-menu">
-        <span><i class="fa-solid fa-bars"></i></span>
-      </div>  
-      <div class="header-icon">
-        <div class="header-item header-search">
-          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </ul>
+        <div class="logo-menu">
+          <span><i class="fa-solid fa-bars"></i></span>
         </div>
-        <div class="header-item header-login">
-          <span><i class="fa-solid fa-user-tie"></i></span>
+        <div class="header-icon">
+          <div class="header-item header-search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="header-item header-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
+          </div>
+          <div class="header-item header-shoppingcart">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span class="cart-count bg-white px-1 rounded-2 border"></span>
+          </div>
         </div>
-        <div class="header-item header-shoppingcart">               
-          <span><i class="fa-solid fa-cart-shopping"></i></i></span>
-          <span
-          class="cart-count bg-white px-1 rounded-2 border"
-          ></span>
-      </div>  
-      </div>       
-    </div>
-  <div class="menu-sidebar">
-    <div class="menu-sidebar-top">
-      <div class="menu-sidebar-top-list">
-        <span><i class="fa-solid fa-bars"></i></span>
-        <p class="menu-sidebar-list">Danh sách</p>
       </div>
-      <div class="menu-sidebar-top-login">
-        <span><i class="fa-solid fa-user-tie"></i></span>
-        <p class="menu-sidebar-login">Đăng nhập</p>
+      <div class="menu-sidebar">
+        <div class="menu-sidebar-top">
+          <div class="menu-sidebar-top-list">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <p class="menu-sidebar-list">Danh sách</p>
+          </div>
+          <div class="menu-sidebar-top-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
+            <p class="menu-sidebar-login">Đăng nhập</p>
+          </div>
+        </div>
+        <div class="menu-sidebar-mid">
+          <div><a href="#">Trang chủ</a></div>
+          <div><a href="page/store.html">Cửa hàng</a></div>
+          <div><a href="page/gioi-thieu.html">Giới thiệu</a></div>
+          <div><a href="page/tin-tuc.html">Tin tức</a></div>
+          <div><a href="page/lien-he.html">Liên hệ</a></div>
+        </div>
+        <div class="login-sidebar-mid">
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <input type="password" placeholder="Mật khẩu của bạn" />
+          <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
+          <button class="btn-login-sidebar-mid">Đăng nhập</button>
+          <div class="login-sidebar-mid-line">
+            <div>Hoặc</div>
+          </div>
+          <div class="login-sidebar-mid-register">Đăng ký ngay</div>
+        </div>
+        <div class="register-sidebar-mid">
+          <h3>Đăng ký</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <input type="password" placeholder="Mật khẩu của bạn" />
+          <button class="btn-register-sidebar-mid">Đăng nhập</button>
+          <div class="register-sidebar-mid-line">
+            <div>Hoặc</div>
+          </div>
+          <div class="register-sidebar-mid-register">Quay trở lại</div>
+        </div>
+        <div class="forgotpw-sidebar-mid">
+          <h3>Lấy lại mật khẩu</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <button class="btn-forgotpw-sidebar-mid">Gửi</button>
+          <div class="forgotpw-sidebar-mid-register">Hủy</div>
+        </div>
+        <div class="menu-sidebar-bottom">
+          <button class="btn-menu-cancel">Đóng</button>
+        </div>
       </div>
-    </div>
-    <div class="menu-sidebar-mid">
-      <div><a href="#">Trang chủ</a></div>
-      <div><a href="page/store.html">Cửa hàng</a></div>
-      <div><a href="page/gioi-thieu.html">Giới thiệu</a></div>
-      <div><a href="page/tin-tuc.html">Tin tức</a></div>
-      <div><a href="page/lien-he.html">Liên hệ</a></div>
-    </div>
-    <div class="login-sidebar-mid">
-      <input type="text" placeholder="Địa chỉ email của bạn">
-      <input type="password" placeholder="Mật khẩu của bạn">
-      <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
-      <button class="btn-login-sidebar-mid">Đăng nhập</button>
-      <div class="login-sidebar-mid-line">
-          <div>Hoặc</div>
+      <div class="overlay"></div>
+      <div class="header-shopping-cart">
+        <div class="shopping-cart-sidebar">
+          <div class="shopping-cart-sidebar-top">
+            <div class="btn-cancel">
+              <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div>
+              <p>Giỏ hàng</p>
+            </div>
+            <div class="shopping-cart-sidebar-top-number">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="shopping-cart-mid">
+            <div class="shopping-cart-mid-container product-lists"></div>
+          </div>
+          <div class="shopping-cart-bottom">
+            <div class="total">
+              <p>Tổng:</p>
+              <p class="total-moneys">180.000 vnđ</p>
+            </div>
+            <div class="shopping-cart-bottom-button">
+              <div class="btn-view-cart">
+                <a href="page/gio-hang.html">Xem giỏ hàng</a>
+              </div>
+              <div class="btn-buy">
+                <a href="page/thanh-toan.html">Thanh toán ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="login-sidebar-mid-register">Đăng ký ngay</div>
-
-    </div>
-    <div class="register-sidebar-mid">
-      <h3>Đăng ký</h3>
-      <input type="text" placeholder="Địa chỉ email của bạn">
-      <input type="password" placeholder="Mật khẩu của bạn">
-      <button class="btn-register-sidebar-mid">Đăng nhập</button>
-      <div class="register-sidebar-mid-line">
-          <div>Hoặc</div>
-      </div>
-      <div class="register-sidebar-mid-register">Quay trở lại</div>
-
-    </div>
-    <div class="forgotpw-sidebar-mid">
-      <h3>Lấy lại mật khẩu</h3>
-      <input type="text" placeholder="Địa chỉ email của bạn">
-      <button class="btn-forgotpw-sidebar-mid">Gửi</button>
-      <div class="forgotpw-sidebar-mid-register">Hủy</div>
-
-    </div>
-    <div class="menu-sidebar-bottom">
-      <button class="btn-menu-cancel">Đóng</button>
-    </div>
-  </div>
-  <div class="overlay"></div>
-  <div class="header-shopping-cart">
-          <div class="shopping-cart-sidebar">
-            <div class="shopping-cart-sidebar-top">
-              <div class="btn-cancel">
+      <div class="login">
+        <div class="login-overlay"></div>
+        <div class="login-content">
+          <div class="login-content-container">
+            <div class="login-page">
+              <div class="btn-login-cancel">
                 <span><i class="fa-solid fa-xmark"></i></span>
               </div>
-              <div>
-                <p>Giỏ hàng</p>
+              <div class="login-image">
+                <img src="img/Logo_black.webp" alt="logo" />
               </div>
-              <div class="shopping-cart-sidebar-top-number">
-                <p>2</p>
+              <div class="login-line"></div>
+              <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <input type="password" placeholder="Mật khẩu của bạn" />
+              <p class="forgot-pw">Bạn quên mật khẩu?</p>
+              <button class="btn-login">Đăng nhập</button>
+              <div class="login-register">
+                <span>Bạn không có tải khoản? </span>
+                <div class="goto-register">Đăng ký ngay</div>
               </div>
             </div>
-            <div class="shopping-cart-mid">
-              <div class="shopping-cart-mid-container product-lists">
-              
-              </div>
+            <div class="register-page">
+              <h2>Đăng ký tài khoản</h2>
+              <input type="text" placeholder="Tài khoản của bạn" />
+              <input type="text" placeholder="Tên người dùng" />
+              <input type="password" placeholder="Mật khẩu của bạn" />
+              <input type="password" placeholder="Nhập lại mật khẩu của bạn" />
+              <button class="btn-register">Đăng nhập</button>
+              <button class="btn-goback">Quay lại trang đăng nhập</button>
             </div>
-            <div class="shopping-cart-bottom">
-              <div class="total">
-                <p>Tổng:</p>
-                <p class="total-moneys">180.000 vnđ</p>
-              </div>
-              <div class="shopping-cart-bottom-button">
-                <div class="btn-view-cart">
-                  <a href="page/gio-hang.html">Xem giỏ hàng</a>
-                </div>
-                <div class="btn-buy">
-                  <a href="page/thanh-toan.html">Thanh toán ngay</a>
-                </div>
-              </div>
+            <div class="forgot-password">
+              <h2>Quên mật khẩu</h2>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <button class="btn-sendemail">Gửi</button>
+              <button class="btn-forgotpw-goback">Hủy</button>
             </div>
           </div>
-        </div> 
-  <div class="login">
-          <div class="login-overlay"></div>
-          <div class="login-content">
-              <div class="login-content-container">
-                <div class="login-page">
-                  <div class="btn-login-cancel">
-                    <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+      <div class="header-overlay"></div>
+    </header>
+    <div id="banner">
+      <div class="banner-item">
+        <div class="banner-image">
+          <a href="page/store.html"
+            ><img src="img/banner-1.webp" alt="banner1"
+          /></a>
+          <div class="header-text">
+            <p>Hãy tự thưởng cho bản thân một bữa ăn tuyệt vời</p>
+            <h1>BURGUR CỠ BỰ</h1>
+            <p>
+              Bạn tự hỏi bạn có gì cho bữa ăn? Hãy đến với chúng tôi và thưởng
+              thức một chiếc bánh mì kẹp thịt cỡ bự để lấp đầy và thoả mãn dạ
+              dày của bạn
+            </p>
+            <a href="page/store.html">Sản phẩm</a>
+          </div>
+        </div>
+      </div>
+      <div class="banner-item">
+        <div class="banner-image">
+          <a href="page/store.html"><img src="img/banner-2.webp" alt="" /></a>
+          <div class="header-text">
+            <p>Hãy tự thưởng cho bản thân một bữa ăn tuyệt vời</p>
+            <h1>PIZZA CỠ BỰ</h1>
+            <p>
+              Bạn tự hỏi bạn có gì cho bữa ăn? Hãy đến với chúng tôi và thưởng
+              thức một chiếc pizza nấm thịt cỡ bự để lấp đầy và thoả mãn dạ dày
+              của bạn
+            </p>
+            <a href="page/store.html">Sản phẩm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-to-top">
+      <button class="noselect">
+        <span><i class="fa-solid fa-angle-up"></i></span>
+      </button>
+    </div>
+    <div id="logo">
+      <div class="logo-container">
+        <div class="logo-slider">
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="logo-item">
+              <div class="logo-image">
+                <img src="img/anhlogobody/advice-black.webp" alt="logo1" />
+              </div>
+              <h3>HỖ TRỢ NHIỆT TÌNH 24/7</h3>
+              <p>
+                Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 7 ngày trong tuần
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="logo-item">
+              <div class="logo-image">
+                <img src="img/anhlogobody/shipping2-black.webp" alt="logo2" />
+              </div>
+              <h3>MIỄN PHÍ GIAO HÀNG</h3>
+              <p>Miễn phí giao hàng với các đơn trong phạm vi 5km</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="logo-item">
+              <div class="logo-image">
+                <img src="img/anhlogobody/returning-black.webp" alt="logo3" />
+              </div>
+              <h3>HOÀN TRẢ</h3>
+              <p>
+                Nếu sản phẩm của chúng tôi không giống với mô tả có thể đổi 1:1
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="logo-item">
+              <div class="logo-image">
+                <img src="img/anhlogobody/secure2-black.webp" alt="logo4" />
+              </div>
+              <h3>ĐẢM BẢO CHẤT LƯỢNG</h3>
+              <p>Chúng tôi cam kết sản phẩm của chúng tôi là tốt nhất</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="products">
+      <div class="products-title">
+        <h2>Một số sản phẩm của cửa hàng</h2>
+        <div></div>
+        <button class="btn-products-new">MÓN MỚI</button>
+        <button class="btn-products-hots">BÁN CHẠY</button>
+        <button class="btn-products-luv">YÊU THÍCH</button>
+      </div>
+      <div class="products-container">
+        <div class="products-new">
+          <div class="row products-list-new"></div>
+        </div>
+        <div class="products-hots">
+          <div class="row products-list-hot">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <a href="page/chi-tiet-sp.html"
+                    ><img src="img/combophomai.webp" alt="combophomai"
+                  /></a>
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                   </div>
-                  <div class="login-image">
-                    <img src="img/Logo_black.webp" alt="logo">
-                  </div>
-                  <div class="login-line"></div>
-                  <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
-                  <input type="text" placeholder="Địa chỉ email của bạn">
-                  <input type="password" placeholder="Mật khẩu của bạn">
-                  <p class="forgot-pw">Bạn quên mật khẩu?</p>
-                  <button class="btn-login">Đăng nhập</button>
-                  <div class="login-register">
-                    <span>Bạn không có tải khoản? </span>
-                    <div class="goto-register">Đăng ký ngay</div>
-                  </div>
                 </div>
-                <div class="register-page">   
-                  <h2>Đăng ký tài khoản</h2>          
-                  <input type="text" placeholder="Tài khoản của bạn">
-                  <input type="text" placeholder="Tên người dùng">
-                  <input type="password" placeholder="Mật khẩu của bạn">
-                  <input type="password" placeholder="Nhập lại mật khẩu của bạn">
-                  <button class="btn-register">Đăng nhập</button>
-                  <button class="btn-goback">Quay lại trang đăng nhập</button>
-                </div>
-                <div class="forgot-password">
-                  <h2>Quên mật khẩu</h2>          
-                  <input type="text" placeholder="Địa chỉ email của bạn">
-                  <button class="btn-sendemail">Gửi</button>
-                  <button class="btn-forgotpw-goback">Hủy</button>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <a href="page/chi-tiet-sp.html">
+                    <h3>Sinh tố xoài dứa</h3>
+                  </a>
+                  <p>50.000 vnđ</p>
                 </div>
               </div>
             </div>
-      </div>
-  <div class="header-overlay"></div>   
-  </header>
-  <div id="banner">
-    <div class="banner-item">
-      <div class="banner-image">
-        <a href="page/store.html"><img src="img/banner-1.webp" alt="banner1"></a>
-        <div class="header-text">
-          <p>Hãy tự thưởng cho bản thân một bữa ăn tuyệt vời</p>
-          <h1>BURGUR CỠ BỰ</h1>
-          <p>Bạn tự hỏi bạn có gì cho bữa ăn? Hãy đến với chúng tôi và thưởng thức một chiếc bánh mì kẹp thịt cỡ bự để
-            lấp đầy và thoả mãn dạ dày của bạn</p>
-          <a href="page/store.html">Sản phẩm</a>
-        </div>
-      </div>
-    </div>
-    <div class="banner-item">
-      <div class="banner-image">
-        <a href="page/store.html"><img src="img/banner-2.webp" alt=""></a>
-        <div class="header-text">
-          <p>Hãy tự thưởng cho bản thân một bữa ăn tuyệt vời</p>
-          <h1>PIZZA CỠ BỰ</h1>
-          <p>Bạn tự hỏi bạn có gì cho bữa ăn? Hãy đến với chúng tôi và thưởng thức một chiếc pizza nấm thịt cỡ bự để
-            lấp đầy và thoả mãn dạ dày của bạn</p>
-          <a href="page/store.html">Sản phẩm</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-to-top">
-    <button class="noselect"><span><i class="fa-solid fa-angle-up"></i></span></button>
-  </div>
-  <div id="logo">
-    <div class="logo-container">
-      <div class="logo-slider">
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="logo-item">
-            <div class="logo-image">
-              <img src="img/anhlogobody/advice-black.webp" alt="logo1">
-            </div>
-            <h3>HỖ TRỢ NHIỆT TÌNH 24/7</h3>
-            <p>Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ bạn 7 ngày trong tuần</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="logo-item">
-            <div class="logo-image">
-              <img src="img/anhlogobody/shipping2-black.webp" alt="logo2">
-            </div>
-            <h3>MIỄN PHÍ GIAO HÀNG</h3>
-            <p>Miễn phí giao hàng với các đơn trong phạm vi 5km</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="logo-item">
-            <div class="logo-image">
-              <img src="img/anhlogobody/returning-black.webp" alt="logo3">
-            </div>
-            <h3>HOÀN TRẢ</h3>
-            <p>Nếu sản phẩm của chúng tôi không giống với mô tả có thể đổi 1:1</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="logo-item">
-            <div class="logo-image">
-              <img src="img/anhlogobody/secure2-black.webp" alt="logo4">
-            </div>
-            <h3>ĐẢM BẢO CHẤT LƯỢNG</h3>
-            <p>Chúng tôi cam kết sản phẩm của chúng tôi là tốt nhất </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="products">
-    <div class="products-title">
-      <h2>Một số sản phẩm của cửa hàng</h2>
-      <div></div>
-      <button class="btn-products-new">MÓN MỚI</button>
-      <button class="btn-products-hots">BÁN CHẠY</button>
-      <button class="btn-products-luv">YÊU THÍCH</button>
-    </div>
-    <div class="products-container">
-      <div class="products-new">
-        <div class="row products-list-new">
-          
-        </div>
-      </div>
-      <div class="products-hots">
-        <div class="row products-list-hot">
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <a href="page/chi-tiet-sp.html"><img src="img/combophomai.webp" alt="combophomai"></a>
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <a href="page/chi-tiet-sp.html"
+                    ><img src="img/Combobanhkep.webp" alt="Combobanhkep"
+                  /></a>
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Bánh burger phô mai x2</h3>
+                  <p>60.000 vnđ</p>
                 </div>
               </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img
+                    src="img/Comboburgersieuto.webp"
+                    alt="Comboburgersieuto"
+                  />
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-                <a href="page/chi-tiet-sp.html">
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Quarter Pounder với phô mai</h3>
+                  <p>65.000 vnđ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/CombogaNugget.webp" alt="CombogaNuggets" />
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Quarter Pounder</h3>
+                  <p>70.000 vnđ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/banhkepga.webp" alt="banhkepga" />
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Quarter Pounder x2</h3>
+                  <p>75.000 vnđ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/burgersieuto.webp" alt="burgersieuto" />
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Burgur siêu to khổng lồ</h3>
+                  <p>80.000 vnđ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/sinhtodauchuoi.webp" alt="sinhtodauchuoi" />
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Bánh burgur phô mai</h3>
+                  <p>90.000 vnđ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/sinhtoxoaidua.webp" alt="sinhtoxoaidua" />
+                  <span class="hots-product">HOT</span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Sinh tố dâu chuối</h3>
+                  <p>50.000 vnđ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-luv">
+          <div class="row products-list-love">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/sinhtodauchuoi.webp" alt="sinhtodauchuoi" />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
                   <h3>Sinh tố xoài dứa</h3>
-                </a>
-                <p>50.000 vnđ</p>
+                  <p>50.000 vnđ</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <a href="page/chi-tiet-sp.html"><img src="img/Combobanhkep.webp" alt="Combobanhkep"></a>
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/sinhtoxoaidua.webp" alt="sinhtoxoaidua" />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Bánh burger phô mai x2</h3>
+                  <p>60.000 vnđ</p>
                 </div>
-                <h3>Bánh burger phô mai x2 </h3>
-                <p>60.000 vnđ</p>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/Comboburgersieuto.webp" alt="Comboburgersieuto">
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/quater.webp" alt="quater" />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Quarter Pounder với phô mai</h3>
+                  <p>65.000 vnđ</p>
                 </div>
-                <h3>Quarter Pounder với phô mai</h3>
-                <p>65.000 vnđ</p>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/CombogaNugget.webp" alt="CombogaNuggets">
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/quarterx2phomai.webp" alt="quarterx2phomai" />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Quarter Pounder</h3>
+                  <p>70.000 vnđ</p>
                 </div>
-                <h3>Quarter Pounder</h3>
-                <p>70.000 vnđ</p>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/banhkepga.webp" alt="banhkepga">
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/combophomai.webp" alt="combophomai" />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Quarter Pounder x2</h3>
+                  <p>75.000 vnđ</p>
                 </div>
-                <h3>Quarter Pounder x2</h3>
-                <p>75.000 vnđ</p>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/burgersieuto.webp" alt="burgersieuto">
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/Combobanhkep.webp" alt="Combobanhkep" />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Burgur siêu to khổng lồ</h3>
+                  <p>80.000 vnđ</p>
                 </div>
-                <h3>Burgur siêu to khổng lồ</h3>
-                <p>80.000 vnđ</p>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/sinhtodauchuoi.webp" alt="sinhtodauchuoi">
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img
+                    src="img/Comboburgersieuto.webp"
+                    alt="Comboburgersieuto"
+                  />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Bánh burgur phô mai</h3>
+                  <p>90.000 vnđ</p>
                 </div>
-                <h3>Bánh burgur phô mai</h3>
-                <p>90.000 vnđ</p>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/sinhtoxoaidua.webp" alt="sinhtoxoaidua">
-                <span class="hots-product">HOT</span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="img/CombogaNugget.webp" alt="CombogaNuggets" />
+                  <span class="luv-product"
+                    ><i class="fa-solid fa-heart"></i
+                  ></span>
+                  <div class="product-icon">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="product-icon-quickview">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
+                <div class="product-content">
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span
+                    ><span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <h3>Sinh tố dâu chuối</h3>
+                  <p>50.000 vnđ</p>
                 </div>
-                <h3>Sinh tố dâu chuối</h3>
-                <p>50.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="products-luv">
-        <div class="row products-list-love">
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/sinhtodauchuoi.webp" alt="sinhtodauchuoi">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Sinh tố xoài dứa</h3>
-                <p>50.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/sinhtoxoaidua.webp" alt="sinhtoxoaidua">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Bánh burger phô mai x2 </h3>
-                <p>60.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/quater.webp" alt="quater">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Quarter Pounder với phô mai</h3>
-                <p>65.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/quarterx2phomai.webp" alt="quarterx2phomai">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Quarter Pounder</h3>
-                <p>70.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/combophomai.webp" alt="combophomai">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Quarter Pounder x2</h3>
-                <p>75.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/Combobanhkep.webp" alt="Combobanhkep">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Burgur siêu to khổng lồ</h3>
-                <p>80.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/Comboburgersieuto.webp" alt="Comboburgersieuto">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Bánh burgur phô mai</h3>
-                <p>90.000 vnđ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="product-item">
-              <div class="product-image">
-                <img src="img/CombogaNugget.webp" alt="CombogaNuggets">
-                <span class="luv-product"><i class="fa-solid fa-heart"></i></span>
-                <div class="product-icon">
-                  <div><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="product-icon-quickview"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-              </div>
-              <div class="product-content">
-                <div class="star">
-                  <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                      class="fa-solid fa-star"></i></span>
-                </div>
-                <h3>Sinh tố dâu chuối</h3>
-                <p>50.000 vnđ</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
-  <div id="short-view">
-    <div class="quickview-overlay"></div>
-    <div class="short-view-content">
+    <div id="short-view">
+      <div class="quickview-overlay"></div>
+      <div class="short-view-content">
         <div class="short-view-content-container">
           <div class="row">
             <div class="col-6">
               <div class="quickview">
                 <div class="quickview-image">
-                  <img src="img/combophomai.webp" alt="combophomai">
+                  <img src="img/combophomai.webp" alt="combophomai" />
                 </div>
                 <div class="quickview-image">
-                  <img src="img/Combobanhkep.webp" alt="combophomai">
+                  <img src="img/Combobanhkep.webp" alt="combophomai" />
                 </div>
                 <div class="quickview-image">
-                  <img src="img/Comboburgersieuto.webp" alt="combophomai">
+                  <img src="img/Comboburgersieuto.webp" alt="combophomai" />
                 </div>
                 <div class="quickview-image">
-                  <img src="img/CombogaNugget.webp" alt="combophomai">
+                  <img src="img/CombogaNugget.webp" alt="combophomai" />
                 </div>
               </div>
               <div class="quickview-slider">
                 <div class="quickview-slider-image">
-                  <img src="img/combophomai.webp" alt="combophomai">
+                  <img src="img/combophomai.webp" alt="combophomai" />
                 </div>
                 <div class="quickview-slider-image">
-                  <img src="img/Combobanhkep.webp" alt="combophomai">
+                  <img src="img/Combobanhkep.webp" alt="combophomai" />
                 </div>
                 <div class="quickview-slider-image">
-                  <img src="img/Comboburgersieuto.webp" alt="combophomai">
+                  <img src="img/Comboburgersieuto.webp" alt="combophomai" />
                 </div>
                 <div class="quickview-slider-image">
-                  <img src="img/CombogaNugget.webp" alt="combophomai">
+                  <img src="img/CombogaNugget.webp" alt="combophomai" />
                 </div>
               </div>
             </div>
@@ -655,7 +758,11 @@
                 <h4>Double Cheeseburger</h4>
                 <p class="quickview-price">100.000 vnđ</p>
                 <div class="quick-view-info-line"></div>
-                <p class="quickview-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text...</p>
+                <p class="quickview-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text...
+                </p>
                 <div class="quickview-buy">
                   <div class="quickview-amount">
                     <div class="number">1</div>
@@ -670,107 +777,108 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
-  <div id="shortcut">
-    <div class="shortcut-container">
-      <div class="shortcut-slider">
-        <div class="col-12 col-md-4">
-          <div class="shortcut-item">
-            <div class="shortcut-image">
-              <img src="img/banner-4.webp" alt="pizza">
-              <div class="shortcut-text">
-                <h3>Pizza</h3>
-                <div class="short">
-                  <a href="page/store.html#Pizza">
-                    <p>Xem thêm</p>
-                  </a>
-                  <span><i class="fa-solid fa-angles-right"></i></span>
+    <div id="shortcut">
+      <div class="shortcut-container">
+        <div class="shortcut-slider">
+          <div class="col-12 col-md-4">
+            <div class="shortcut-item">
+              <div class="shortcut-image">
+                <img src="img/banner-4.webp" alt="pizza" />
+                <div class="shortcut-text">
+                  <h3>Pizza</h3>
+                  <div class="short">
+                    <a href="page/store.html#Pizza">
+                      <p>Xem thêm</p>
+                    </a>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="shortcut-item">
-            <div class="shortcut-image">
-              <img src="img/banner-5.webp" alt="ga ran">
-              <div class="shortcut-overlay"></div>
-              <div class="shortcut-text">
-                <h3>Gà rán</h3>
-                <div class="short">
-                  <a href="page/store.html#Chicken">
-                    <p>Xem thêm</p>
-                  </a>
-                  <span><i class="fa-solid fa-angles-right"></i></span>
+          <div class="col-12 col-md-4">
+            <div class="shortcut-item">
+              <div class="shortcut-image">
+                <img src="img/banner-5.webp" alt="ga ran" />
+                <div class="shortcut-overlay"></div>
+                <div class="shortcut-text">
+                  <h3>Gà rán</h3>
+                  <div class="short">
+                    <a href="page/store.html#Chicken">
+                      <p>Xem thêm</p>
+                    </a>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="shortcut-item">
-            <div class="shortcut-image">
-              <img src="img/banner-3.webp" alt="burger">
-              <div class="shortcut-overlay"></div>
-              <div class="shortcut-text">
-                <h3>Burger</h3>
-                <div class="short">
-                  <a href="page/store.html#Burger">
-                    <p>Xem thêm</p>
-                  </a>
-                  <span><i class="fa-solid fa-angles-right"></i></span>
+          <div class="col-12 col-md-4">
+            <div class="shortcut-item">
+              <div class="shortcut-image">
+                <img src="img/banner-3.webp" alt="burger" />
+                <div class="shortcut-overlay"></div>
+                <div class="shortcut-text">
+                  <h3>Burger</h3>
+                  <div class="short">
+                    <a href="page/store.html#Burger">
+                      <p>Xem thêm</p>
+                    </a>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="shortcut-item">
-            <div class="shortcut-image">
-              <img src="img/banner-7.webp" alt="khoai tay chien">
-              <div class="shortcut-overlay"></div>
-              <div class="shortcut-text">
-                <h3>Đồ chiên</h3>
-                <div class="short">
-                  <a href="page/store.html#French-friesh">
-                    <p>Xem thêm</p>
-                  </a>
-                  <span><i class="fa-solid fa-angles-right"></i></span>
+          <div class="col-12 col-md-4">
+            <div class="shortcut-item">
+              <div class="shortcut-image">
+                <img src="img/banner-7.webp" alt="khoai tay chien" />
+                <div class="shortcut-overlay"></div>
+                <div class="shortcut-text">
+                  <h3>Đồ chiên</h3>
+                  <div class="short">
+                    <a href="page/store.html#French-friesh">
+                      <p>Xem thêm</p>
+                    </a>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="shortcut-item">
-            <div class="shortcut-image">
-              <img src="img/banner-6.webp" alt="mi y">
-              <div class="shortcut-overlay"></div>
-              <div class="shortcut-text">
-                <h3>Mì xào</h3>
-                <div class="short">
-                  <a href="page/store.html#Pasta">
-                    <p>Xem thêm</p>
-                  </a>
-                  <span><i class="fa-solid fa-angles-right"></i></span>
+          <div class="col-12 col-md-4">
+            <div class="shortcut-item">
+              <div class="shortcut-image">
+                <img src="img/banner-6.webp" alt="mi y" />
+                <div class="shortcut-overlay"></div>
+                <div class="shortcut-text">
+                  <h3>Mì xào</h3>
+                  <div class="short">
+                    <a href="page/store.html#Pasta">
+                      <p>Xem thêm</p>
+                    </a>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="shortcut-item">
-            <div class="shortcut-image">
-              <img src="img/banner-8.webp" alt="khai vi">
-              <div class="shortcut-overlay"></div>
-              <div class="shortcut-text">
-                <h3>Khai vị</h3>
-                <div class="short">
-                  <a href="page/store.html#Salat">
-                    <p>Xem thêm</p>
-                  </a>
-                  <span><i class="fa-solid fa-angles-right"></i></span>
+          <div class="col-12 col-md-4">
+            <div class="shortcut-item">
+              <div class="shortcut-image">
+                <img src="img/banner-8.webp" alt="khai vi" />
+                <div class="shortcut-overlay"></div>
+                <div class="shortcut-text">
+                  <h3>Khai vị</h3>
+                  <div class="short">
+                    <a href="page/store.html#Salat">
+                      <p>Xem thêm</p>
+                    </a>
+                    <span><i class="fa-solid fa-angles-right"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -778,325 +886,387 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="feedback">
-    <div class="feedback-item">
-      <div class="feedback-image">
-        <img src="img/banner-2.webp" alt="feedback">
-        <div class="feedback-info">
-          <h2>PHẢN HỒI</h2>
-          <div class="feedback-line"></div>
-          <p>Saved our business! We have no regrets! Thanks for the great service. FFOOD is worth much much more than I
-            paid Saved our business! We have no regrets! Thanks for the great service. F Food is worth much more!</p>
-          <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span>
-          <div class="image-user">
-            <img src="img/t-icon-1.webp" alt="user1">
+    <div id="feedback">
+      <div class="feedback-item">
+        <div class="feedback-image">
+          <img src="img/banner-2.webp" alt="feedback" />
+          <div class="feedback-info">
+            <h2>PHẢN HỒI</h2>
+            <div class="feedback-line"></div>
+            <p>
+              Saved our business! We have no regrets! Thanks for the great
+              service. FFOOD is worth much much more than I paid Saved our
+              business! We have no regrets! Thanks for the great service. F Food
+              is worth much more!
+            </p>
+            <span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span>
+            <div class="image-user">
+              <img src="img/t-icon-1.webp" alt="user1" />
+            </div>
+            <h4>SƠN TÙNG MTP</h4>
+            <p>Ca sĩ</p>
           </div>
-          <h4>SƠN TÙNG MTP</h4>
-          <p>Ca sĩ</p>
         </div>
       </div>
-    </div>
-    <div class="feedback-item">
-      <div class="feedback-image">
-        <img src="img/banner-2.webp" alt="feedback">
-        <div class="feedback-info">
-          <h2>PHẢN HỒI</h2>
-          <div class="feedback-line"></div>
-          <p>Saved our business! We have no regrets! Thanks for the great service. FFOOD is worth much much more than I
-            paid Saved our business! We have no regrets! Thanks for the great service. F Food is worth much more!</p>
-          <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span>
-          <div class="image-user">
-            <img src="img/t-icon-2.webp" alt="user1">
+      <div class="feedback-item">
+        <div class="feedback-image">
+          <img src="img/banner-2.webp" alt="feedback" />
+          <div class="feedback-info">
+            <h2>PHẢN HỒI</h2>
+            <div class="feedback-line"></div>
+            <p>
+              Saved our business! We have no regrets! Thanks for the great
+              service. FFOOD is worth much much more than I paid Saved our
+              business! We have no regrets! Thanks for the great service. F Food
+              is worth much more!
+            </p>
+            <span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span>
+            <div class="image-user">
+              <img src="img/t-icon-2.webp" alt="user1" />
+            </div>
+            <h4>SƠN TÙNG MTP</h4>
+            <p>Ca sĩ</p>
           </div>
-          <h4>SƠN TÙNG MTP</h4>
-          <p>Ca sĩ</p>
         </div>
       </div>
-    </div>
-    <div class="feedback-item">
-      <div class="feedback-image">
-        <img src="img/banner-2.webp" alt="feedback">
-        <div class="feedback-info">
-          <h2>PHẢN HỒI</h2>
-          <div class="feedback-line"></div>
-          <p>Saved our business! We have no regrets! Thanks for the great service. FFOOD is worth much much more than I
-            paid Saved our business! We have no regrets! Thanks for the great service. F Food is worth much more!</p>
-          <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span>
-          <div class="image-user">
-            <img src="img/t-icon-3.webp" alt="user1">
+      <div class="feedback-item">
+        <div class="feedback-image">
+          <img src="img/banner-2.webp" alt="feedback" />
+          <div class="feedback-info">
+            <h2>PHẢN HỒI</h2>
+            <div class="feedback-line"></div>
+            <p>
+              Saved our business! We have no regrets! Thanks for the great
+              service. FFOOD is worth much much more than I paid Saved our
+              business! We have no regrets! Thanks for the great service. F Food
+              is worth much more!
+            </p>
+            <span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span>
+            <div class="image-user">
+              <img src="img/t-icon-3.webp" alt="user1" />
+            </div>
+            <h4>SƠN TÙNG MTP</h4>
+            <p>Ca sĩ</p>
           </div>
-          <h4>SƠN TÙNG MTP</h4>
-          <p>Ca sĩ</p>
         </div>
       </div>
-    </div>
-    <div class="feedback-item">
-      <div class="feedback-image">
-        <img src="img/banner-2.webp" alt="feedback">
-        <div class="feedback-info">
-          <h2>PHẢN HỒI</h2>
-          <div class="feedback-line"></div>
-          <p>Saved our business! We have no regrets! Thanks for the great service. FFOOD is worth much much more than I
-            paid Saved our business! We have no regrets! Thanks for the great service. F Food is worth much more!</p>
-          <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-              class="fa-solid fa-star"></i></span>
-          <div class="image-user">
-            <img src="img/t-icon-4.webp" alt="user1">
-          </div>
-          <h4>SƠN TÙNG MTP</h4>
-          <p>Ca sĩ</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="hotproduct">
-    <div class="products-title">
-      <h2>Combo bán chạy</h2>
-      <div></div>
-    </div>
-    <div class="products-container1">
-      <div class="hotproduct-slider">
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="product-item1">
-            <div class="product-image1">
-              <img src="img/CombogaNugget.webp" alt="CombogaNuggets">
-              <div class="product-icon1">
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-              </div>
+      <div class="feedback-item">
+        <div class="feedback-image">
+          <img src="img/banner-2.webp" alt="feedback" />
+          <div class="feedback-info">
+            <h2>PHẢN HỒI</h2>
+            <div class="feedback-line"></div>
+            <p>
+              Saved our business! We have no regrets! Thanks for the great
+              service. FFOOD is worth much much more than I paid Saved our
+              business! We have no regrets! Thanks for the great service. F Food
+              is worth much more!
+            </p>
+            <span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span
+            ><span><i class="fa-solid fa-star"></i></span>
+            <div class="image-user">
+              <img src="img/t-icon-4.webp" alt="user1" />
             </div>
-            <div class="product-content1">
-              <div class="star">
-                <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span>
-              </div>
-              <h3>Quarter Pounder x2</h3>
-              <p>175.000 vnđ</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="product-item1">
-            <div class="product-image1">
-              <img src="img/Combobanhkep.webp" alt="Combobanhkep">
-              <div class="product-icon1">
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-              </div>
-            </div>
-            <div class="product-content1">
-              <div class="star">
-                <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span>
-              </div>
-              <h3>Burgur siêu to khổng lồ</h3>
-              <p>180.000 vnđ</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="product-item1">
-            <div class="product-image1">
-              <img src="img/combophomai.webp" alt="Comboburgerphomai">
-              <div class="product-icon1">
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-              </div>
-            </div>
-            <div class="product-content1">
-              <div class="star">
-                <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span>
-              </div>
-              <h3>Bánh burgur phô mai</h3>
-              <p>190.000 vnđ</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="product-item1">
-            <div class="product-image1">
-              <img src="img/Comboburgersieuto.webp" alt="Comboburgersieuto">
-              <div class="product-icon1">
-                <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-              </div>
-            </div>
-            <div class="product-content1">
-              <div class="star">
-                <span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i
-                    class="fa-solid fa-star"></i></span>
-              </div>
-              <h3>Sinh tố dâu chuối</h3>
-              <p>195.000 vnđ</p>
-            </div>
+            <h4>SƠN TÙNG MTP</h4>
+            <p>Ca sĩ</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="news">
-    <div class="products-title">
-      <h2>Tin tức</h2>
-      <div></div>
+    <div id="hotproduct">
+      <div class="products-title">
+        <h2>Combo bán chạy</h2>
+        <div></div>
+      </div>
+      <div class="products-container1">
+        <div class="hotproduct-slider">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-item1">
+              <div class="product-image1">
+                <img src="img/CombogaNugget.webp" alt="CombogaNuggets" />
+                <div class="product-icon1">
+                  <div><i class="fa-solid fa-cart-shopping"></i></div>
+                  <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+              </div>
+              <div class="product-content1">
+                <div class="star">
+                  <span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <h3>Quarter Pounder x2</h3>
+                <p>175.000 vnđ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-item1">
+              <div class="product-image1">
+                <img src="img/Combobanhkep.webp" alt="Combobanhkep" />
+                <div class="product-icon1">
+                  <div><i class="fa-solid fa-cart-shopping"></i></div>
+                  <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+              </div>
+              <div class="product-content1">
+                <div class="star">
+                  <span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <h3>Burgur siêu to khổng lồ</h3>
+                <p>180.000 vnđ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-item1">
+              <div class="product-image1">
+                <img src="img/combophomai.webp" alt="Comboburgerphomai" />
+                <div class="product-icon1">
+                  <div><i class="fa-solid fa-cart-shopping"></i></div>
+                  <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+              </div>
+              <div class="product-content1">
+                <div class="star">
+                  <span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <h3>Bánh burgur phô mai</h3>
+                <p>190.000 vnđ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-item1">
+              <div class="product-image1">
+                <img src="img/Comboburgersieuto.webp" alt="Comboburgersieuto" />
+                <div class="product-icon1">
+                  <div><i class="fa-solid fa-cart-shopping"></i></div>
+                  <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+              </div>
+              <div class="product-content1">
+                <div class="star">
+                  <span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span
+                  ><span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <h3>Sinh tố dâu chuối</h3>
+                <p>195.000 vnđ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="news-container">
-      <div class="news-item">
-        <div class="row item1">
-          <div class="col-12 col-md-5">
-            <div class="news-info">             
+    <div id="news">
+      <div class="products-title">
+        <h2>Tin tức</h2>
+        <div></div>
+      </div>
+      <div class="news-container">
+        <div class="news-item">
+          <div class="row item1">
+            <div class="col-12 col-md-5">
+              <div class="news-info">
                 <h3>Top 10 địa điểm bán Hamburger ngon nhất tại Sài Gòn</h3>
-              <p>Bánh Hamburger là món ăn nhanh được ưa chuộng của người dân phương Tây cách đây khá lâu. Nó được sử
-                dụng cho bữa sáng, kèm với một ly sữa nóng. Hamburger xuất hiện ở Việt Nam từ khi ẩm thực phương Tây
-                tràn vào nước ta, và hiện nay đây vẫn là món bánh được ưa chuộng không chỉ ...</p>
-              <a href="page/bai-viet-1.html" class="btn-4">XEM THÊM</a>
+                <p>
+                  Bánh Hamburger là món ăn nhanh được ưa chuộng của người dân
+                  phương Tây cách đây khá lâu. Nó được sử dụng cho bữa sáng, kèm
+                  với một ly sữa nóng. Hamburger xuất hiện ở Việt Nam từ khi ẩm
+                  thực phương Tây tràn vào nước ta, và hiện nay đây vẫn là món
+                  bánh được ưa chuộng không chỉ ...
+                </p>
+                <a href="page/bai-viet-1.html" class="btn-4">XEM THÊM</a>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-7">
-            <div class="news-image">
-              <a href="page/bai-viet-1.html"><img src="img/instagram4.webp" alt="news1"></a>
+            <div class="col-12 col-md-7">
+              <div class="news-image">
+                <a href="page/bai-viet-1.html"
+                  ><img src="img/instagram4.webp" alt="news1"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="news-item">
-        <div class="row">
-          <div class="col-12 col-md-7">
-            <div class="news-image">
-              <a href="page/bai-viet-3.html"><img src="img/blog-4_1024x1024.webp" alt="news2"></a>
+        <div class="news-item">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <div class="news-image">
+                <a href="page/bai-viet-3.html"
+                  ><img src="img/blog-4_1024x1024.webp" alt="news2"
+                /></a>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-5">
-            <div class="news-info">
-              <h3>Hãng đồ ăn nhanh đề nghị gắn tên với CLB lừng danh của Nga</h3>
-              <p>“Đội bóng hàng đầu của Nga, Zenit St Petersburg, được cho là mới nhận được một bức thư đề nghị hợp tác
-                tài trợ từ hãng đồ ăn nhanh của Mỹ. Nếu đồng ý với khoản đầu tư 7,6 triệu đôla, CLB sẽ đổi tên thành
-                Zenit Burger King”, tờ Sun đưa tin hôm 2/9...</p>
-              <a href="page/bai-viet-3.html" class="btn-4">XEM THÊM</a>
+            <div class="col-12 col-md-5">
+              <div class="news-info">
+                <h3>
+                  Hãng đồ ăn nhanh đề nghị gắn tên với CLB lừng danh của Nga
+                </h3>
+                <p>
+                  “Đội bóng hàng đầu của Nga, Zenit St Petersburg, được cho là
+                  mới nhận được một bức thư đề nghị hợp tác tài trợ từ hãng đồ
+                  ăn nhanh của Mỹ. Nếu đồng ý với khoản đầu tư 7,6 triệu đôla,
+                  CLB sẽ đổi tên thành Zenit Burger King”, tờ Sun đưa tin hôm
+                  2/9...
+                </p>
+                <a href="page/bai-viet-3.html" class="btn-4">XEM THÊM</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
- 
-  <footer>
-    <div class="footer-container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <div class="footer-item">
-            <div class="footer-image">
-              <a href=""><img src="img/Logo_black.webp" alt="logo"></a>
-            </div>
-            <p>Theo dõi chúng tôi để được giảm giá 30%</p>
-            
-            <div class="footer-content">
-              
-              <div class="footer-input">
-                <div><input type="text" placeholder="Email của bạn..."></div>
-                <button><span><i class="fa-solid fa-paper-plane"></i></span></button>
+
+    <footer>
+      <div class="footer-container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-item">
+              <div class="footer-image">
+                <a href=""><img src="img/Logo_black.webp" alt="logo" /></a>
               </div>
-              <div>
-                <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
+              <p>Theo dõi chúng tôi để được giảm giá 30%</p>
+
+              <div class="footer-content">
+                <div class="footer-input">
+                  <div>
+                    <input type="text" placeholder="Email của bạn..." />
+                  </div>
+                  <button>
+                    <span><i class="fa-solid fa-paper-plane"></i></span>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-twitter"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-facebook-f"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-instagram"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-youtube"></i></a
+                  ></span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h3>Trụ sở chính FFOOD</h3>
-          <div class="footer-location">
-            <span><i class="fa-solid fa-location-dot"></i></span>
-            <a href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1">
-              <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
-            </a>
-          </div>
-          <div class="footer-location">
-            <span><i class="fa-solid fa-phone"></i></span>
-            <a href="#">
-              <p>0845.069.061</p>
-            </a>
-          </div>
-          <div class="footer-location">
-            <span><i class="fa-solid fa-envelope"></i></span>
-            <a href="#">
-              <p>buihieu3008@gmail.com</p>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          
-            <h3>Chính sách của cửa hàng</h3>
-          
-          <a href="#">
-            <p>Chính sách thanh toán</p>
-          </a>
-          <a href="#">
-            <p>Chính sách đổi trả</p>
-          </a>
-          <a href="#">
-            <p>Chính sách vận chuyển</p>
-          </a>
-          <a href="#">
-            <p>Chính sách bảo mật</p>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h3>Mạng xã hội</h3>
-          <a href="#">
+          <div class="col-lg-3 col-sm-6">
+            <h3>Trụ sở chính FFOOD</h3>
             <div class="footer-location">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <a
+                href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1"
+              >
+                <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
+              </a>
+            </div>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="#">
+                <p>0845.069.061</p>
+              </a>
+            </div>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="#">
+                <p>buihieu3008@gmail.com</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Chính sách của cửa hàng</h3>
+
+            <a href="#">
+              <p>Chính sách thanh toán</p>
+            </a>
+            <a href="#">
+              <p>Chính sách đổi trả</p>
+            </a>
+            <a href="#">
+              <p>Chính sách vận chuyển</p>
+            </a>
+            <a href="#">
+              <p>Chính sách bảo mật</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Mạng xã hội</h3>
+            <a href="#">
+              <div class="footer-location">
                 <span><i class="fa-brands fa-facebook-f"></i></span>
                 <p>Facebook</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="footer-location">
-              <span><i class="fa-brands fa-instagram"></i></span>
-              <p>Instagram</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="footer-location">
-              <span><i class="fa-brands fa-youtube"></i></span>
-              <p>Youtube</p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="footer-location">
-              <span><i class="fa-brands fa-twitter"></i></span>
-              <p>Twitter</p>
-            </div>
-          </a>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <p>Instagram</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <p>Youtube</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <p>Twitter</p>
+              </div>
+            </a>
+          </div>
         </div>
-
       </div>
-    </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.6.0.min.js"></script>
-  <script type="text/javascript" src="lib/slick-1.8.1/slick/slick.min.js"></script>
-  <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- <script src="lib/jQuery/jquery-3.6.0.min.js"></script> -->
-  <script src="js/data.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/main.js"></script>
-  
-</body>
-
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="lib/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- <script src="lib/jQuery/jquery-3.6.0.min.js"></script> -->
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
