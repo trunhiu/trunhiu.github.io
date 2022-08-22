@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tin tức</title>
-     <!-- /************favicon***********/ -->
-  <link rel="shortcut icon" type="image/png" href="/project-ffood/img/your-logo.ico"/>
+    <!-- /************favicon***********/ -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/project-ffood/img/your-logo.ico"
+    />
 
     <link
       rel="stylesheet"
@@ -31,485 +35,519 @@
       href="/project-ffood/lib/slick-1.8.1/slick/slick-theme.css"
     />
 
-    <link rel="stylesheet" href="/project-ffood/css/tin-tuc.css">
-
-</head>
-<body>
-
-  <header>
-    <div class="header">
-      <div class="logo">
-        <a href="../index.html"><img src="../img/Logo_black.webp" alt="logo" /></a>
-      </div>
-      <ul>
-        <a href="../index.html">
-          <li>Trang chủ</li>
-        </a>
-        <a href="../page/store.html">
-          <li>Cửa hàng</li>
-        </a>
-        <a href="../page/gioi-thieu.html">
-          <li>Giới thiệu</li>
-        </a>
-        <a href="#">
-          <li>Tin tức</li>
-        </a>
-        <a href="../page/lien-he.html">
-          <li>Liên hệ</li>
-        </a>
-      </ul>
-      <div class="logo-menu">
-        <span><i class="fa-solid fa-bars"></i></span>
-      </div>  
-      <div class="header-icon">
-        <div class="header-item header-search">
-          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+    <link rel="stylesheet" href="/project-ffood/css/tin-tuc.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../img/Logo_black.webp" alt="logo"
+          /></a>
         </div>
-        <div class="header-item header-login">
-          <span><i class="fa-solid fa-user-tie"></i></span>
+        <ul>
+          <li><a href="../index.html">Trang chủ</a></li>
+          <li><a href="../page/store.html">Cửa hàng</a></li>
+          <li><a href="../page/gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="#">Tin tức</a></li>
+          <li><a href="../page/lien-he.html">Liên hệ</a></li>
+        </ul>
+        <div class="logo-menu">
+          <span><i class="fa-solid fa-bars"></i></span>
         </div>
-        <div class="header-item header-shoppingcart">               
-          <span><i class="fa-solid fa-cart-shopping"></i></i></span>
-          <span
-          class="cart-count bg-white px-1 rounded-2 border"
-          ></span>
-      </div>   
-      </div>       
-    </div>
-  <div class="menu-sidebar">
-    <div class="menu-sidebar-top">
-      <div class="menu-sidebar-top-list">
-        <span><i class="fa-solid fa-bars"></i></span>
-        <p class="menu-sidebar-list">Danh sách</p>
+        <div class="header-icon">
+          <div class="header-item header-search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="header-item header-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
+          </div>
+          <div class="header-item header-shoppingcart">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span class="cart-count bg-white px-1 rounded-2 border"></span>
+          </div>
+        </div>
       </div>
-      <div class="menu-sidebar-top-login">
-        <span><i class="fa-solid fa-user-tie"></i></span>
-        <p class="menu-sidebar-login">Đăng nhập</p>
+      <div class="menu-sidebar">
+        <div class="menu-sidebar-top">
+          <div class="menu-sidebar-top-list">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <p class="menu-sidebar-list">Danh sách</p>
+          </div>
+          <div class="menu-sidebar-top-login">
+            <span><i class="fa-solid fa-user-tie"></i></span>
+            <p class="menu-sidebar-login">Đăng nhập</p>
+          </div>
+        </div>
+        <div class="menu-sidebar-mid">
+          <div><a href="../index.html">Trang chủ</a></div>
+          <div><a href="../page/store.html">Cửa hàng</a></div>
+          <div><a href="../page/gioi-thieu.html">Giới thiệu</a></div>
+          <div><a href="#">Tin tức</a></div>
+          <div><a href="../page/lien-he.html">Liên hệ</a></div>
+        </div>
+        <div class="login-sidebar-mid">
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <input type="password" placeholder="Mật khẩu của bạn" />
+          <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
+          <button class="btn-login-sidebar-mid">Đăng nhập</button>
+          <div class="login-sidebar-mid-line">
+            <div>Hoặc</div>
+          </div>
+          <div class="login-sidebar-mid-register">Đăng ký ngay</div>
+        </div>
+        <div class="register-sidebar-mid">
+          <h3>Đăng ký</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <input type="password" placeholder="Mật khẩu của bạn" />
+          <button class="btn-register-sidebar-mid">Đăng nhập</button>
+          <div class="register-sidebar-mid-line">
+            <div>Hoặc</div>
+          </div>
+          <div class="register-sidebar-mid-register">Quay trở lại</div>
+        </div>
+        <div class="forgotpw-sidebar-mid">
+          <h3>Lấy lại mật khẩu</h3>
+          <input type="text" placeholder="Địa chỉ email của bạn" />
+          <button class="btn-forgotpw-sidebar-mid">Gửi</button>
+          <div class="forgotpw-sidebar-mid-register">Hủy</div>
+        </div>
+        <div class="menu-sidebar-bottom">
+          <button class="btn-menu-cancel">Đóng</button>
+        </div>
       </div>
-    </div>
-    <div class="menu-sidebar-mid">
-      <div><a href="../index.html">Trang chủ</a></div>
-      <div><a href="../page/store.html">Cửa hàng</a></div>
-      <div><a href="../page/gioi-thieu.html">Giới thiệu</a></div>
-      <div><a href="#">Tin tức</a></div>
-      <div><a href="../page/lien-he.html">Liên hệ</a></div>
-    </div>
-    <div class="login-sidebar-mid">
-      <input type="text" placeholder="Địa chỉ email của bạn">
-      <input type="password" placeholder="Mật khẩu của bạn">
-      <p class="login-sidebar-mid-forgot">Bạn quên mật khẩu?</p>
-      <button class="btn-login-sidebar-mid">Đăng nhập</button>
-      <div class="login-sidebar-mid-line">
-          <div>Hoặc</div>
+      <div class="overlay"></div>
+      <div class="header-shopping-cart">
+        <div class="shopping-cart-sidebar">
+          <div class="shopping-cart-sidebar-top">
+            <div class="btn-cancel">
+              <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div>
+              <p>Giỏ hàng</p>
+            </div>
+            <div class="shopping-cart-sidebar-top-number">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="shopping-cart-mid">
+            <div class="shopping-cart-mid-container product-lists"></div>
+          </div>
+          <div class="shopping-cart-bottom">
+            <div class="total">
+              <p>Tổng:</p>
+              <p class="total-moneys">180.000 vnđ</p>
+            </div>
+            <div class="shopping-cart-bottom-button">
+              <div class="btn-view-cart">
+                <a href="gio-hang.html">Xem giỏ hàng</a>
+              </div>
+              <div class="btn-buy">
+                <a href="thanh-toan.html">Thanh toán ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="login-sidebar-mid-register">Đăng ký ngay</div>
-
-    </div>
-    <div class="register-sidebar-mid">
-      <h3>Đăng ký</h3>
-      <input type="text" placeholder="Địa chỉ email của bạn">
-      <input type="password" placeholder="Mật khẩu của bạn">
-      <button class="btn-register-sidebar-mid">Đăng nhập</button>
-      <div class="register-sidebar-mid-line">
-          <div>Hoặc</div>
-      </div>
-      <div class="register-sidebar-mid-register">Quay trở lại</div>
-
-    </div>
-    <div class="forgotpw-sidebar-mid">
-      <h3>Lấy lại mật khẩu</h3>
-      <input type="text" placeholder="Địa chỉ email của bạn">
-      <button class="btn-forgotpw-sidebar-mid">Gửi</button>
-      <div class="forgotpw-sidebar-mid-register">Hủy</div>
-
-    </div>
-    <div class="menu-sidebar-bottom">
-      <button class="btn-menu-cancel">Đóng</button>
-    </div>
-  </div>
-  <div class="overlay"></div>
-  <div class="header-shopping-cart">
-          <div class="shopping-cart-sidebar">
-            <div class="shopping-cart-sidebar-top">
-              <div class="btn-cancel">
+      <div class="login">
+        <div class="login-overlay"></div>
+        <div class="login-content">
+          <div class="login-content-container">
+            <div class="login-page">
+              <div class="btn-login-cancel">
                 <span><i class="fa-solid fa-xmark"></i></span>
               </div>
-              <div>
-                <p>Giỏ hàng</p>
+              <div class="login-image">
+                <img src="../img/Logo_black.webp" alt="logo" />
               </div>
-              <div class="shopping-cart-sidebar-top-number">
-                <p>2</p>
+              <div class="login-line"></div>
+              <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <input type="password" placeholder="Mật khẩu của bạn" />
+              <p class="forgot-pw">Bạn quên mật khẩu?</p>
+              <button class="btn-login">Đăng nhập</button>
+              <div class="login-register">
+                <span>Bạn không có tải khoản? </span>
+                <div class="goto-register">Đăng ký ngay</div>
               </div>
             </div>
-            <div class="shopping-cart-mid">
-              <div class="shopping-cart-mid-container product-lists">
-                
-              </div>
+            <div class="register-page">
+              <h2>Đăng ký tài khoản</h2>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <input type="text" placeholder="Mật khẩu của bạn" />
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <input type="password" placeholder="Mật khẩu của bạn" />
+              <button class="btn-register">Đăng nhập</button>
+              <button class="btn-goback">Quay lại trang đăng nhập</button>
             </div>
-            <div class="shopping-cart-bottom">
-              <div class="total">
-                <p>Tổng:</p>
-                <p class="total-moneys">180.000 vnđ</p>
-              </div>
-              <div class="shopping-cart-bottom-button">
-                <div class="btn-view-cart">
-                  <a href="gio-hang.html">Xem giỏ hàng</a>
-                </div>
-                <div class="btn-buy">
-                  <a href="thanh-toan.html">Thanh toán ngay</a>
-                </div>
-              </div>
+            <div class="forgot-password">
+              <h2>Đăng ký tài khoản</h2>
+              <input type="text" placeholder="Địa chỉ email của bạn" />
+              <button class="btn-sendemail">Gửi</button>
+              <button class="btn-forgotpw-goback">Hủy</button>
             </div>
           </div>
-        </div> 
-  <div class="login">
-          <div class="login-overlay"></div>
-          <div class="login-content">
-              <div class="login-content-container">
-                <div class="login-page">
-                  <div class="btn-login-cancel">
-                    <span><i class="fa-solid fa-xmark"></i></span>
-                  </div>
-                  <div class="login-image">
-                    <img src="../img/Logo_black.webp" alt="logo">
-                  </div>
-                  <div class="login-line"></div>
-                  <p class="comback">Thật tuyệt khi bạn quay trở lại</p>
-                  <input type="text" placeholder="Địa chỉ email của bạn">
-                  <input type="password" placeholder="Mật khẩu của bạn">
-                  <p class="forgot-pw">Bạn quên mật khẩu?</p>
-                  <button class="btn-login">Đăng nhập</button>
-                  <div class="login-register">
-                    <span>Bạn không có tải khoản? </span>
-                    <div class="goto-register">Đăng ký ngay</div>
-                  </div>
-                </div>
-                <div class="register-page">   
-                  <h2>Đăng ký tài khoản</h2>          
-                  <input type="text" placeholder="Địa chỉ email của bạn">
-                  <input type="text" placeholder="Mật khẩu của bạn">
-                  <input type="text" placeholder="Địa chỉ email của bạn">
-                  <input type="password" placeholder="Mật khẩu của bạn">
-                  <button class="btn-register">Đăng nhập</button>
-                  <button class="btn-goback">Quay lại trang đăng nhập</button>
-                </div>
-                <div class="forgot-password">
-                  <h2>Đăng ký tài khoản</h2>          
-                  <input type="text" placeholder="Địa chỉ email của bạn">
-                  <button class="btn-sendemail">Gửi</button>
-                  <button class="btn-forgotpw-goback">Hủy</button>
-                </div>
+        </div>
+      </div>
+      <div class="header-overlay"></div>
+    </header>
+    <div id="banner">
+      <div class="banner-item">
+        <div class="banner-image">
+          <img src="/project-ffood/img/banner-10.webp" alt="banner1" />
+          <div class="header-text">
+            <h1>Tin tức</h1>
+            <div>
+              <a href="/project-ffood/index.html">
+                <p>Trang chủ</p>
+              </a>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+              <p>Tin tức</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-to-top">
+      <button class="noselect">
+        <span><i class="fa-solid fa-angle-up"></i></span>
+      </button>
+    </div>
+    <div id="news">
+      <div class="news-container">
+        <div class="news-item">
+          <div class="news-item-image">
+            <a href="bai-viet-1.html"
+              ><img src="/project-ffood/img/instagram4.webp" alt="burger"
+            /></a>
+          </div>
+          <div class="title">
+            <div class="news-item-date">
+              <span>18</span>
+              <div></div>
+              <span>MAY</span>
+            </div>
+            <div class="news-item-title">
+              <p>MỚI</p>
+              <a href="bai-viet-1.html">
+                <h3>Top 10 địa điểm bán Hamburger ngon nhất tại Sài Gòn</h3>
+              </a>
+            </div>
+          </div>
+          <p class="text">
+            Bánh Hamburger là món ăn nhanh được ưa chuộng của người dân phương
+            Tây cách đây khá lâu. Nó được sử dụng cho bữa sáng, kèm với một ly
+            sữa nóng. Hamburger xuất hiện ở Việt Nam từ khi ẩm thực phương Tây
+            tràn vào nước ta, và hiện nay đây vẫn là món bánh được ưa chuộng
+            không chỉ với các em nhỏ, mà kể cả đối với dân văn phòng hay công
+            chức thì đây vẫn là một món ăn phù hợp bởi nó không những ngon miệng
+            mà còn tiện lợi. Dưới đây là những cửa hàng bán bánh Hamburger nổi
+            tiếng ở Sài Gòn mà bạn nên đến thử một lần cho biết.
+          </p>
+          <div class="news-item-icon">
+            <div class="icon-user">
+              <span><i class="fa-solid fa-user"></i></span>
+              <p>Trung hiếu</p>
+            </div>
+            <div class="icon-comment">
+              <span><i class="fa-solid fa-comment"></i></span>
+              <p>0 bình luận</p>
+            </div>
+          </div>
+          <div class="news-item-readmore">
+            <a href="bai-viet-1.html">Đọc thêm</a>
+            <div class="news-item-line"></div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-item-image">
+            <a href="bai-viet-2.html"
+              ><img src="/project-ffood/img/blog-1_1024x1024.webp" alt="fried"
+            /></a>
+          </div>
+          <div class="title">
+            <div class="news-item-date">
+              <span>18</span>
+              <div></div>
+              <span>MAY</span>
+            </div>
+            <div class="news-item-title">
+              <p>MỚI</p>
+              <a href="bai-viet-2.html">
+                <h3>Burger King tạo sức ép lên thị trường thức ăn nhanh</h3>
+              </a>
+            </div>
+          </div>
+          <p class="text">
+            Burger King chính thức khai trương cửa hàng tại TP HCM, còn
+            McDonalds đang có nhiều động thái thăm dò thị trường Việt Nam. Hai
+            cái tên lớn nhất trong thị trường thức ăn nhanh (fast food) tạo thêm
+            sức ép cho các đối thủ tại Việt Nam phải đẩy nhanh hơn nỗ lực giành
+            thị phần. Burger King chính thức khai trương cửa hàng tại TP HCM,
+            còn McDonalds đang có nhiều động thái thăm dò thị trường Việt Nam.
+            Hai cái tên lớn nhất trong thị trường thức ăn nhanh (fast food) tạo
+            thêm sức ép cho các đối thủ tại Việt Nam phải đẩy nhanh hơn nỗ lực
+            giành thị phần. Với mục tiêu mở rộng mạng lưới rộng khắp thị trường
+            Việt Nam càng nhanh càng tốt, từ nay đến cuối năm sẽ mở 12 cửa hàng
+            và sẽ tăng hơn nữa khi tìm được mặt bằng tốt, có vẻ Burger King đang
+            rất nóng lòng trước các đối thủ đi trước.
+          </p>
+          <div class="news-item-icon">
+            <div class="icon-user">
+              <span><i class="fa-solid fa-user"></i></span>
+              <p>Trung hiếu</p>
+            </div>
+            <div class="icon-comment">
+              <span><i class="fa-solid fa-comment"></i></span>
+              <p>0 bình luận</p>
+            </div>
+          </div>
+          <div class="news-item-readmore">
+            <a href="bai-viet-2.html">Đọc thêm</a>
+            <div class="news-item-line"></div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-item-image">
+            <a href="bai-viet-3.html"
+              ><img src="/project-ffood/img/blog-4_1024x1024.webp" alt="cake"
+            /></a>
+          </div>
+          <div class="title">
+            <div class="news-item-date">
+              <span>18</span>
+              <div></div>
+              <span>MAY</span>
+            </div>
+            <div class="news-item-title">
+              <p>MỚI</p>
+              <a href="bai-viet-3.html">
+                <h3>
+                  Hãng đồ ăn nhanh đề nghị gắn tên với CLB lừng danh của Nga
+                </h3>
+              </a>
+            </div>
+          </div>
+          <p class="text">
+            “Đội bóng hàng đầu của Nga, Zenit St Petersburg, được cho là mới
+            nhận được một bức thư đề nghị hợp tác tài trợ từ hãng đồ ăn nhanh
+            của Mỹ. Nếu đồng ý với khoản đầu tư 7,6 triệu đôla, CLB sẽ đổi tên
+            thành Zenit Burger King”, tờ Sun đưa tin hôm 2/9. Một bức ảnh chụp
+            lại thư đề nghị viết bằng tiếng Nga, gửi từ trụ sở của Burger King
+            tại Mỹ, đã lan truyền trên các trang mạng xã hội của Nga. Khoản tiền
+            hãng đồ ăn nhanh nổi tiếng này hứa tài trợ là 500 triệu rúp, khoảng
+            7,6 triệu đôla.
+          </p>
+          <div class="news-item-icon">
+            <div class="icon-user">
+              <span><i class="fa-solid fa-user"></i></span>
+              <p>Trung hiếu</p>
+            </div>
+            <div class="icon-comment">
+              <span><i class="fa-solid fa-comment"></i></span>
+              <p>0 bình luận</p>
+            </div>
+          </div>
+          <div class="news-item-readmore">
+            <a href="bai-viet-3.html">Đọc thêm</a>
+            <div class="news-item-line"></div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-item-image">
+            <a href="bai-viet-4.html"
+              ><img src="/project-ffood/img/instagram6.webp" alt="pizza"
+            /></a>
+          </div>
+          <div class="title">
+            <div class="news-item-date">
+              <span>18</span>
+              <div></div>
+              <span>MAY</span>
+            </div>
+            <div class="news-item-title">
+              <p>MỚI</p>
+              <a href="bai-viet-4.html">
+                <h3>Burger King muốn ngừng bán gà bị ngược đãi</h3>
+              </a>
+            </div>
+          </div>
+          <p class="text">
+            "Cô nàng" robot thông minh sẽ giúp những giây phút chờ đợi món ăn
+            của thực khách rút ngắn lại và bữa ăn thêm phần vui vẻ.Lần đầu tiên,
+            Pizza Hut đưa về Việt Nam "cô nàng" robot HutGirl với khả năng lưu
+            trữ thông tin, nhảy múa trên nền nhạc và tương tác với khách hàng.
+            Với sự xuất hiện của robot thông minh này, bữa ăn của thực khách sẽ
+            thêm phần sinh động, thú vị và bất ngờ.
+          </p>
+          <div class="news-item-icon">
+            <div class="icon-user">
+              <span><i class="fa-solid fa-user"></i></span>
+              <p>Trung hiếu</p>
+            </div>
+            <div class="icon-comment">
+              <span><i class="fa-solid fa-comment"></i></span>
+              <p>0 bình luận</p>
+            </div>
+          </div>
+          <div class="news-item-readmore">
+            <a href="bai-viet-4.html">Đọc thêm</a>
+            <div class="news-item-line"></div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-item-image">
+            <a href="bai-viet-5.html"
+              ><img
+                src="/project-ffood/img/blog-2_1024x1024.webp"
+                alt="chicken"
+            /></a>
+          </div>
+          <div class="title">
+            <div class="news-item-date">
+              <span>18</span>
+              <div></div>
+              <span>MAY</span>
+            </div>
+            <div class="news-item-title">
+              <p>MỚI</p>
+              <a href="bai-viet-5.html">
+                <h3>Các chuỗi pizza, burger kinh doanh thế nào</h3>
+              </a>
+            </div>
+          </div>
+          <p class="text">
+            Quy mô doanh thu khiêm tốn hơn các chuỗi gà rán nhưng tăng trưởng
+            của những cửa hàng pizza đều ở ngưỡng hai con số.Là một nhánh của
+            lĩnh vực kinh doanh đồ ăn nhanh (fastfood), doanh thu các các chuỗi
+            nhà hàng pizza, burger các năm gần đây liên tục tăng. Xét về quy mô,
+            chuỗi nhà hàng này vẫn xếp sau các chuỗi gà rán, nhưng mức tăng
+            trưởng lại cao hơn hẳn.
+          </p>
+          <div class="news-item-icon">
+            <div class="icon-user">
+              <span><i class="fa-solid fa-user"></i></span>
+              <p>Trung hiếu</p>
+            </div>
+            <div class="icon-comment">
+              <span><i class="fa-solid fa-comment"></i></span>
+              <p>0 bình luận</p>
+            </div>
+          </div>
+          <div class="news-item-readmore">
+            <a href="bai-viet-5.html">Đọc thêm</a>
+            <div class="news-item-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-item">
+              <div class="footer-image">
+                <a href=""><img src="../img/Logo_black.webp" alt="logo" /></a>
               </div>
-            </div>
-      </div>
-  <div class="header-overlay"></div>   
-  </header>
-      <div id="banner">
-        <div class="banner-item">
-          <div class="banner-image">
-            <img src="/project-ffood/img/banner-10.webp" alt="banner1">
-            <div class="header-text">             
-              <h1>Tin tức</h1>
-              <div>
-                  <a href="/project-ffood/index.html">
-                      <p>Trang chủ</p>
-                  </a>
-                  <span><i class="fa-solid fa-angle-right"></i></span>
-                  <p>Tin tức</p>
-              </div>     
-            </div>
-          </div> 
-        </div>
-        
-      </div>
-      <div class="scroll-to-top">
-        <button class="noselect"><span><i class="fa-solid fa-angle-up"></i></span></button>
-      </div>
-      <div id="news">
-        <div class="news-container">
-            <div class="news-item">
-                <div class="news-item-image">
-                    <a href="bai-viet-1.html"><img src="/project-ffood/img/instagram4.webp" alt="burger"></a>
-                </div>
-                <div class="title">
-                    <div class="news-item-date">
-                        <span>18</span>
-                        <div></div>
-                        <span>MAY</span>
-                    </div>
-                    <div class="news-item-title">
-                        <p>MỚI</p>
-                        <a href="bai-viet-1.html">
-                            <h3>Top 10 địa điểm bán Hamburger ngon nhất tại Sài Gòn</h3>
-                        </a>
-                    </div>
-                </div>
-                <p class="text">Bánh Hamburger là món ăn nhanh được ưa chuộng của người dân phương Tây cách đây khá lâu. Nó được sử dụng cho bữa sáng, kèm với một ly sữa nóng. Hamburger xuất hiện ở Việt Nam từ khi ẩm thực phương Tây tràn vào nước ta, và hiện nay đây vẫn là món bánh được ưa chuộng không chỉ với các em nhỏ, mà kể cả đối với dân văn phòng hay công chức thì đây vẫn là một món ăn phù hợp bởi nó không những ngon miệng mà còn tiện lợi. Dưới đây là những cửa hàng bán bánh Hamburger nổi tiếng ở Sài Gòn mà bạn nên đến thử một lần cho biết.</p>
-                <div class="news-item-icon">
-                    <div class="icon-user">
-                        <span><i class="fa-solid fa-user"></i></span>
-                        <p>Trung hiếu</p>
-                    </div>
-                    <div class="icon-comment">
-                        <span><i class="fa-solid fa-comment"></i></span>
-                        <p>0 bình luận</p>
-                    </div>
-                </div>
-                <div class="news-item-readmore">
-                    <a href="bai-viet-1.html">Đọc thêm</a>
-                    <div class="news-item-line"></div>
-                </div>
-            </div>
-            <div class="news-item">
-                <div class="news-item-image">
-                    <a href="bai-viet-2.html"><img src="/project-ffood/img/blog-1_1024x1024.webp" alt="fried"></a>
-                </div>
-                <div class="title">
-                    <div class="news-item-date">
-                        <span>18</span>
-                        <div></div>
-                        <span>MAY</span>
-                    </div>
-                    <div class="news-item-title">
-                        <p>MỚI</p>
-                        <a href="bai-viet-2.html">
-                            <h3>Burger King tạo sức ép lên thị trường thức ăn nhanh</h3>
-                        </a>
-                    </div>
-                </div>
-                <p class="text">Burger King chính thức khai trương cửa hàng tại TP HCM, còn McDonalds đang có nhiều động thái thăm dò thị trường Việt Nam. Hai cái tên lớn nhất trong thị trường thức ăn nhanh (fast food) tạo thêm sức ép cho các đối thủ tại Việt Nam phải đẩy nhanh hơn nỗ lực giành thị phần. Burger King chính thức khai trương cửa hàng tại TP HCM, còn McDonalds đang có nhiều động thái thăm dò thị trường Việt Nam. Hai cái tên lớn nhất trong thị trường thức ăn nhanh (fast food) tạo thêm sức ép cho các đối thủ tại Việt Nam phải đẩy nhanh hơn nỗ lực giành thị phần.
+              <p>Theo dõi chúng tôi để được giảm giá 30%</p>
 
-                    Với mục tiêu mở rộng mạng lưới rộng khắp thị trường Việt Nam càng nhanh càng tốt, từ nay đến cuối năm sẽ mở 12 cửa hàng và sẽ tăng hơn nữa khi tìm được mặt bằng tốt, có vẻ Burger King đang rất nóng lòng trước các đối thủ đi trước.
-                </p>
-                <div class="news-item-icon">
-                    <div class="icon-user">
-                        <span><i class="fa-solid fa-user"></i></span>
-                        <p>Trung hiếu</p>
-                    </div>
-                    <div class="icon-comment">
-                        <span><i class="fa-solid fa-comment"></i></span>
-                        <p>0 bình luận</p>
-                    </div>
-                </div>
-                <div class="news-item-readmore">
-                    <a href="bai-viet-2.html">Đọc thêm</a>
-                    <div class="news-item-line"></div>
-                </div>
-            </div>
-            <div class="news-item">
-                <div class="news-item-image">
-                    <a href="bai-viet-3.html"><img src="/project-ffood/img/blog-4_1024x1024.webp" alt="cake"></a>
-                </div>
-                <div class="title">
-                    <div class="news-item-date">
-                        <span>18</span>
-                        <div></div>
-                        <span>MAY</span>
-                    </div>
-                    <div class="news-item-title">
-                        <p>MỚI</p>
-                        <a href="bai-viet-3.html">
-                            <h3>Hãng đồ ăn nhanh đề nghị gắn tên với CLB lừng danh của Nga</h3>
-                        </a>
-                    </div>
-                </div>
-                <p class="text">“Đội bóng hàng đầu của Nga, Zenit St Petersburg, được cho là mới nhận được một bức thư đề nghị hợp tác tài trợ từ hãng đồ ăn nhanh của Mỹ. Nếu đồng ý với khoản đầu tư 7,6 triệu đôla, CLB sẽ đổi tên thành Zenit Burger King”, tờ Sun đưa tin hôm 2/9.
-                    Một bức ảnh chụp lại thư đề nghị viết bằng tiếng Nga, gửi từ trụ sở của Burger King tại Mỹ, đã lan truyền trên các trang mạng xã hội của Nga. Khoản tiền hãng đồ ăn nhanh nổi tiếng này hứa tài trợ là 500 triệu rúp, khoảng 7,6 triệu đôla.
-
-                </p>
-                <div class="news-item-icon">
-                    <div class="icon-user">
-                        <span><i class="fa-solid fa-user"></i></span>
-                        <p>Trung hiếu</p>
-                    </div>
-                    <div class="icon-comment">
-                        <span><i class="fa-solid fa-comment"></i></span>
-                        <p>0 bình luận</p>
-                    </div>
-                </div>
-                <div class="news-item-readmore">
-                    <a href="bai-viet-3.html">Đọc thêm</a>
-                    <div class="news-item-line"></div>
-                </div>
-            </div>
-            <div class="news-item">
-                <div class="news-item-image">
-                    <a href="bai-viet-4.html"><img src="/project-ffood/img/instagram6.webp" alt="pizza"></a>
-                </div>
-                <div class="title">
-                    <div class="news-item-date">
-                        <span>18</span>
-                        <div></div>
-                        <span>MAY</span>
-                    </div>
-                    <div class="news-item-title">
-                        <p>MỚI</p>
-                        <a href="bai-viet-4.html">
-                            <h3>Burger King muốn ngừng bán gà bị ngược đãi</h3>
-                        </a>
-                    </div>
-                </div>
-                <p class="text">"Cô nàng" robot thông minh sẽ giúp những giây phút chờ đợi món ăn của thực khách rút ngắn lại và bữa ăn thêm phần vui vẻ.Lần đầu tiên, Pizza Hut đưa về Việt Nam "cô nàng" robot HutGirl với khả năng lưu trữ thông tin, nhảy múa trên nền nhạc và tương tác với khách hàng. Với sự xuất hiện của robot thông minh này, bữa ăn của thực khách sẽ thêm phần sinh động, thú vị và bất ngờ.
-                </p>
-                <div class="news-item-icon">
-                    <div class="icon-user">
-                        <span><i class="fa-solid fa-user"></i></span>
-                        <p>Trung hiếu</p>
-                    </div>
-                    <div class="icon-comment">
-                        <span><i class="fa-solid fa-comment"></i></span>
-                        <p>0 bình luận</p>
-                    </div>
-                </div>
-                <div class="news-item-readmore">
-                    <a href="bai-viet-4.html">Đọc thêm</a>
-                    <div class="news-item-line"></div>
-                </div>
-            </div>
-            <div class="news-item">
-                <div class="news-item-image">
-                    <a href="bai-viet-5.html"><img src="/project-ffood/img/blog-2_1024x1024.webp" alt="chicken"></a>
-                </div>
-                <div class="title">
-                    <div class="news-item-date">
-                        <span>18</span>
-                        <div></div>
-                        <span>MAY</span>
-                    </div>
-                    <div class="news-item-title">
-                        <p>MỚI</p>
-                        <a href="bai-viet-5.html">
-                            <h3>Các chuỗi pizza, burger kinh doanh thế nào</h3>
-                        </a>
-                    </div>
-                </div>
-                <p class="text">Quy mô doanh thu khiêm tốn hơn các chuỗi gà rán nhưng tăng trưởng của những cửa hàng pizza đều ở ngưỡng hai con số.Là một nhánh của lĩnh vực kinh doanh đồ ăn nhanh (fastfood), doanh thu các các chuỗi nhà hàng pizza, burger các năm gần đây liên tục tăng. Xét về quy mô, chuỗi nhà hàng này vẫn xếp sau các chuỗi gà rán, nhưng mức tăng trưởng lại cao hơn hẳn.
-                </p>
-                <div class="news-item-icon">
-                    <div class="icon-user">
-                        <span><i class="fa-solid fa-user"></i></span>
-                        <p>Trung hiếu</p>
-                    </div>
-                    <div class="icon-comment">
-                        <span><i class="fa-solid fa-comment"></i></span>
-                        <p>0 bình luận</p>
-                    </div>
-                </div>
-                <div class="news-item-readmore">
-                    <a href="bai-viet-5.html">Đọc thêm</a>
-                    <div class="news-item-line"></div>
-                </div>
-            </div>
-        </div>
-      </div>
-      <footer>
-        <div class="footer-container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="footer-item">
-                <div class="footer-image">
-                  <a href=""><img src="../img/Logo_black.webp" alt="logo" /></a>
-                </div>
-                <p>Theo dõi chúng tôi để được giảm giá 30%</p>
-  
-                <div class="footer-content">
-                  <div class="footer-input">
-                    <div>
-                      <input type="text" placeholder="Email của bạn..." />
-                    </div>
-                    <button>
-                      <span><i class="fa-solid fa-paper-plane"></i></span>
-                    </button>
-                  </div>
+              <div class="footer-content">
+                <div class="footer-input">
                   <div>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-twitter"></i></a
-                    ></span>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-facebook-f"></i></a
-                    ></span>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-instagram"></i></a
-                    ></span>
-                    <span
-                      ><a href="#"><i class="fa-brands fa-youtube"></i></a
-                    ></span>
+                    <input type="text" placeholder="Email của bạn..." />
                   </div>
+                  <button>
+                    <span><i class="fa-solid fa-paper-plane"></i></span>
+                  </button>
+                </div>
+                <div>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-twitter"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-facebook-f"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-instagram"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa-brands fa-youtube"></i></a
+                  ></span>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <h3>Trụ sở chính FFOOD</h3>
-              <div class="footer-location">
-                <span><i class="fa-solid fa-location-dot"></i></span>
-                <a
-                  href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1"
-                >
-                  <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
-                </a>
-              </div>
-              <div class="footer-location">
-                <span><i class="fa-solid fa-phone"></i></span>
-                <a href="#">
-                  <p>0845.069.061</p>
-                </a>
-              </div>
-              <div class="footer-location">
-                <span><i class="fa-solid fa-envelope"></i></span>
-                <a href="#">
-                  <p>buihieu3008@gmail.com</p>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <h3>Chính sách của cửa hàng</h3>
-  
-              <a href="#">
-                <p>Chính sách thanh toán</p>
-              </a>
-              <a href="#">
-                <p>Chính sách đổi trả</p>
-              </a>
-              <a href="#">
-                <p>Chính sách vận chuyển</p>
-              </a>
-              <a href="#">
-                <p>Chính sách bảo mật</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Trụ sở chính FFOOD</h3>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <a
+                href="https://www.google.com/maps/search/hh4c+linh+%C4%91%C3%A0m/@20.963552,105.8238372,17z/data=!3m1!4b1"
+              >
+                <p>Toà nhà HH4C, Linh Đàm, Hoàng Liệt, Hoàng Mai</p>
               </a>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <h3>Mạng xã hội</h3>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-phone"></i></span>
               <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-facebook-f"></i></span>
-                  <p>Facebook</p>
-                </div>
+                <p>0845.069.061</p>
               </a>
+            </div>
+            <div class="footer-location">
+              <span><i class="fa-solid fa-envelope"></i></span>
               <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-instagram"></i></span>
-                  <p>Instagram</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-youtube"></i></span>
-                  <p>Youtube</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="footer-location">
-                  <span><i class="fa-brands fa-twitter"></i></span>
-                  <p>Twitter</p>
-                </div>
+                <p>buihieu3008@gmail.com</p>
               </a>
             </div>
           </div>
-        </div>
-      </footer>
-    
+          <div class="col-lg-3 col-sm-6">
+            <h3>Chính sách của cửa hàng</h3>
 
-      <script
+            <a href="#">
+              <p>Chính sách thanh toán</p>
+            </a>
+            <a href="#">
+              <p>Chính sách đổi trả</p>
+            </a>
+            <a href="#">
+              <p>Chính sách vận chuyển</p>
+            </a>
+            <a href="#">
+              <p>Chính sách bảo mật</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Mạng xã hội</h3>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <p>Facebook</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <p>Instagram</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <p>Youtube</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer-location">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <p>Twitter</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
     ></script>
@@ -524,6 +562,5 @@
     <script src="/project-ffood/lib/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../js/cart.js"></script>
     <script src="/project-ffood/js/tin-tuc.js"></script>
-    
-</body>
+  </body>
 </html>
