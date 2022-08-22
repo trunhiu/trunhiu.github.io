@@ -62,7 +62,7 @@ header {
   margin-bottom: 0;
 }
 
-.header ul a:nth-child(5) {
+.header ul li:nth-child(5) a {
   color: #ff871d;
 }
 
