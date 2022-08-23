@@ -15,3 +15,25 @@ overlay.addEventListener('click', () => {
     menuButton.classList.toggle('open');
     overlay.classList.toggle('show');
 });
+
+
+//  scroll reveal 
+
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2000,
+    reset: true,
+});
+
+sr.reveal(`.banner__social`,{
+    origin: 'top',
+    interval: 100,
+})
+
+sr.reveal(`.banner__img, .scroll2, .crollright`,{
+    origin: 'right',
+})
+
+sr.reveal(`.banner__heading, .scroll1, .scroll3, .crollleft, .footer__heading`,{
+    origin: 'left',
+})

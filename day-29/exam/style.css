@@ -163,7 +163,7 @@ header {
 @media (max-width: 992px) {
   .header-image {
     height: 250px;
-    bottom: -20%;
+    bottom: -5%;
     left: 15%;
   }
 
@@ -179,7 +179,7 @@ header {
 @media (max-width: 768px) {
   .header-image {
     height: 100px;
-    bottom: 0%;
+    bottom: -5%;
     left: 5%;
   }
 
@@ -195,7 +195,7 @@ header {
 @media (max-width: 660px) {
   .header-image {
     height: 50px;
-    bottom: 10%;
+    bottom: -5%;
     left: 5%;
   }
 
