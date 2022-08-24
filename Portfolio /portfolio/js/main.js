@@ -21,19 +21,21 @@ overlay.addEventListener('click', () => {
 
 const sr = ScrollReveal({
     distance: '60px',
-    duration: 2000,
+    duration: 1500,
     reset: true,
 });
 
-sr.reveal(`.banner__social`,{
+sr.reveal(`.banner__social, .scroll2,.banner__img`,{
     origin: 'top',
     interval: 100,
 })
 
-sr.reveal(`.banner__img, .scroll2, .crollright`,{
-    origin: 'right',
-})
-
-sr.reveal(`.banner__heading, .scroll1, .scroll3, .crollleft, .footer__heading`,{
+sr.reveal(`.banner__heading, .scroll1, .scroll3, .footer__heading`,{
     origin: 'left',
 })
+
+sr.reveal(`.crollright, .crollleft`,{
+    origin: 'bottom',
+    interval: 100,
+})
+
