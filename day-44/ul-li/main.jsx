@@ -36,7 +36,6 @@ const ListJob = () => {
 
   return (
     <React.Fragment>
-      <button onClick={btnChange}>{btnText}</button>
       <button onClick={btnAdd}>Add</button>
       <input
         type="text"
@@ -45,6 +44,7 @@ const ListJob = () => {
         value={newJob}
       />
       <button onClick={btnRemove}>Remove</button>
+      <button onClick={btnChange}>{btnText}</button>
       <ul id="list" style={{ display: ulstyle }}>
         {listJob.map((job, index) => (
           <li key={index}>{job}</li>
