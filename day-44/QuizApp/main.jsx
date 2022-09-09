@@ -8,7 +8,6 @@ const QuizGame = () => {
         { answer: "Hà Nội", correct: true },
         { answer: "Đà Nẵng", correct: false },
       ],
-      number: "Question 1",
     },
     {
       title: "1+2 = ?",
@@ -18,7 +17,6 @@ const QuizGame = () => {
         { answer: "3", correct: true },
         { answer: "5", correct: false },
       ],
-      number: "Question 2",
     },
     {
       title: "Tỉnh có nhiều thành Phố nhất?",
@@ -28,7 +26,6 @@ const QuizGame = () => {
         { answer: "Thừa Thiên Huế", correct: false },
         { answer: "Cần Thơ", correct: false },
       ],
-      number: "Question 3",
     },
     {
       title: "Mặt trời mọc hướng nào?",
@@ -38,7 +35,6 @@ const QuizGame = () => {
         { answer: "Đông", correct: true },
         { answer: "Nam", correct: false },
       ],
-      number: "Question 4",
     },
   ];
 
@@ -66,7 +62,7 @@ const QuizGame = () => {
         <React.Fragment>
           <div className="question-section">
             <div className="question-count">
-              <span>{questionBanks[questionDefault].number}</span>/4
+              <span>{questionDefault + 1}</span>/4
             </div>
             <div className="question-text">
               {questionBanks[questionDefault].title}
