@@ -14,10 +14,6 @@ const ListJob = () => {
     }
   };
 
-  const onChangeNewJob = (e) => {
-    setNewJob(e.currentTarget.value);
-  };
-
   const btnRemove = () => {
     let newListJob = [...listJob];
     newListJob.pop(newListJob);
@@ -40,7 +36,7 @@ const ListJob = () => {
       <input
         type="text"
         placeholder="Thêm nội dung vào đây"
-        onChange={onChangeNewJob}
+        onChange={(e) => onChangeNewJob(e.target.value)}
         value={newJob}
       />
       <button onClick={btnRemove}>Remove</button>
