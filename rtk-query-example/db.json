@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 4,
+      "title": "Ocicat",
+      "status": false
+    },
+    {
+      "id": 5,
+      "title": "LaPerm",
+      "status": true
+    },
+    {
+      "id": 6,
+      "title": "Ojos Azules",
+      "status": true
+    },
+    {
+      "id": 7,
+      "title": "Birman",
+      "status": true
+    },
+    {
+      "id": 8,
+      "title": "British Shorthair",
+      "status": false
+    },
+    {
+      "id": 9,
+      "title": "Chausie",
+      "status": true
+    },
+    {
+      "id": 10,
+      "title": "Norwegian Forest Cat",
+      "status": true
+    }
+  ]
+}

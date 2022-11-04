@@ -1,0 +1,104 @@
+/***********************************Short cut *****************************/
+
+#shortcut {
+  margin-top: 40px;
+}
+
+.shortcut-container {
+  margin: 0 19px;
+}
+
+.shortcut-item {
+  margin: 10px 10px 10px 10px;
+}
+
+.shortcut-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.shortcut-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+
+.shortcut-image::after {
+  content: "";
+  position: absolute;
+
+  background-color: #d9d9d9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.5s linear;
+}
+
+.shortcut-image:hover::after {
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0.8;
+  visibility: visible;
+  transform: unset;
+}
+
+.shortcut-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 4;
+}
+
+.shortcut-text h3 {
+  font-size: 0px;
+  font-weight: 600;
+  color: #ff871d;
+  transition: all 1s ease;
+}
+
+.short {
+  display: flex;
+}
+
+.short p {
+  margin: 0 5px;
+  font-size: 0px;
+  font-weight: 500;
+  color: #161616;
+  transition: all 1s ease;
+}
+
+.short span i {
+  font-size: 0px;
+  transition: all 1s ease;
+}
+
+.shortcut-item:hover img {
+  transform: scale(1.2);
+}
+
+.shortcut-item:hover .shortcut-overlay {
+  transform: scale(1);
+  opacity: 0.9;
+}
+
+.shortcut-item:hover .shortcut-text h3 {
+  font-size: 32px;
+}
+
+.shortcut-item:hover .short p {
+  font-size: 18px;
+}
+
+.shortcut-item:hover .short span i {
+  font-size: 10px;
+}

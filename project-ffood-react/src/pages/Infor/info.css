@@ -1,0 +1,170 @@
+/*********************************info********************************/
+
+.info-container {
+  padding: 0 57px;
+}
+
+.info-main {
+  margin: 80px 0 83px;
+}
+
+.info-main h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #161616;
+  text-align: center;
+}
+
+.info-main ul {
+  list-style-type: disc;
+  margin-top: 40px;
+}
+
+.info-main ul li {
+  margin-bottom: 10px;
+}
+
+.info-main .info-image-first {
+  height: 550px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.info-main .info-image-first img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-main .info-image-second {
+  height: 550px;
+  width: 100%;
+}
+
+.info-main .info-image-second img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 428px) {
+  .info-main ul li {
+    word-wrap: break-word;
+  }
+  .info-main .info-image-first {
+    height: 200px;
+    width: 100%;
+  }
+
+  .info-main .info-image-second {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/*********************************info-contact ********************/
+
+#info-contact {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.info-contact-container {
+  padding: 60px 129px;
+}
+
+.info-contact-main {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .info-contact-container {
+    padding: 40px 80px;
+  }
+
+  .info-contact-main {
+    display: block;
+  }
+  .info-contact-form {
+    width: 100%;
+  }
+  .info-contact-phone {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-contact-container {
+    padding: 40px 100px;
+  }
+
+  .info-contact-main {
+    display: block;
+  }
+  .info-contact-form {
+    width: 100%;
+  }
+  .info-contact-phone {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 428px) {
+  .info-contact-container {
+    padding: 40px 50px;
+  }
+
+  .info-contact-main {
+    display: block;
+  }
+  .info-contact-form {
+    width: 100%;
+  }
+
+  .info-contact-form div input {
+    padding: 25px 0 25px 10px;
+    font-size: 14px;
+  }
+
+  .info-contact-phone {
+    margin-top: 20px;
+  }
+}
+
+.info-contact-email {
+  display: flex;
+}
+
+.info-contact-email span {
+  margin-right: 15px;
+}
+
+.info-contact-form {
+  display: flex;
+  width: 90%;
+}
+
+.info-contact-form div {
+  width: 100%;
+}
+
+.info-contact-form div input {
+  padding: 25px 0 25px 44px;
+  width: 100%;
+}
+
+.info-contact-form button {
+  width: 40%;
+  font-size: 14px;
+  background-color: #ff871d;
+  color: #fff;
+  border: 1px solid #ff871d;
+}
+
+.info-contact-phone {
+  display: flex;
+}
+
+.info-contact-phone span {
+  margin-right: 15px;
+}

@@ -1,0 +1,41 @@
+import { ADD_COUNT, SUBTRACT_COUNT, DELETE_COUNT } from "./constants";
+import { data } from "./data";
+//1. Tạo state
+
+export const initialState = [...data];
+
+//2. Tạo reducer
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case ADD_COUNT: {
+      const { id } = action.payload;
+      let newState = state.map((product) => {
+        if (product.id === id) {
+          return { ...product, count: product.count + 1 };
+        }
+        return product;
+      });
+      return newState;
+    }
+    case SUBTRACT_COUNT: {
+      const { id } = action.payload;
+      let newState = state.map((product) => {
+        if (product.id === id) {
+          return { ...product, count: product.count - 1 };
+        }
+        return product;
+      });
+      return newState;
+    }
+    case DELETE_COUNT: {
+      const { id } = action.payload;
+      return state.filter((product) => product.id !== id);
+    }
+    default: {
+      return state;
+    }
+  }
+};
+
+export default reducer;

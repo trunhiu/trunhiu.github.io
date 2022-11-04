@@ -1,0 +1,289 @@
+/********************************detail content********************************/
+
+.slick-dots {
+  bottom: inherit;
+}
+
+.slick-thumb li {
+  width: 60px;
+}
+
+.breadcrumb {
+  margin-top: 100px;
+}
+
+#detail .breadcrumb a {
+  color: #ff871d;
+}
+
+.detail-slider {
+  margin-top: 100px;
+}
+
+.detail-content {
+  margin-top: 100px;
+}
+
+.detail-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161616;
+}
+
+.detail-content .detail-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #fd7e14;
+  margin-bottom: 20px;
+}
+
+.detail-content .star {
+  color: #ffc107;
+}
+
+.detail-content .detail-line {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 30px 0 35px;
+}
+
+.detail-content .detail-description {
+  color: #8a8a8a;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.detail-content .detail-offer {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #fd7e14;
+}
+
+.detail-content .special-offer {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 15px 0 0 25px;
+  margin-bottom: 35px;
+}
+
+.detail-content .special-offer ul {
+  list-style-type: disc;
+}
+
+.detail-content .special-offer ul li {
+  color: #161616;
+  margin-bottom: 5px;
+}
+
+.detail-content .size {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #161616;
+}
+
+.detail-content .detail-size button {
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #fd7e14;
+  border: 1px solid #fd7e14;
+  transition: all 0.3s;
+  margin-bottom: 50px;
+}
+
+.detail-content .detail-buy {
+  display: flex;
+}
+
+.detail-content .detail-buy .btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 33px;
+  width: 80%;
+  background-color: #fd7e14;
+  border: 1px solid #fd7e14;
+  font-size: 20px;
+  line-height: 23px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.detail-content .detail-buy .btn-add:hover {
+  background: #e96d00;
+}
+
+.detail-content .detail-amount {
+  display: flex;
+}
+
+.detail-content .detail-amount .number {
+  padding: 15px 25px;
+  border-width: 1px 0px 1px 1px;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.detail-content .detail-amount .icon span {
+  display: flex;
+  padding: 7px 15px;
+  border: 1px solid #161616;
+  cursor: pointer;
+}
+
+.detail-content .btn-buy a {
+  color: #fff;
+}
+
+.detail-content .btn-buys {
+  margin-top: 37px;
+  padding: 15px 35px;
+  color: #fff;
+  background-color: #000000;
+  width: 40%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.detail-content .btn-buy:hover {
+  background-color: #fd7e14;
+}
+
+/***********************************detail-logo***********************/
+
+.detail-logo-container {
+  margin: 70px 20px;
+}
+
+.detail-logo-item {
+  height: 120px;
+  padding: 20px 10px 10px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+.detail-logo-item span i {
+  color: #fd7e14;
+  font-size: 20px;
+}
+
+.detail-logo-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+/****************************detail-info****************************/
+#detail-info {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.detail-info-container {
+  width: 80%;
+  margin: auto;
+}
+
+.detail-info-heading {
+  text-align: center;
+  margin: 20px 0 60px;
+}
+
+#detail-info h3 {
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #161616;
+}
+
+#detail-info .detail-info-line {
+  width: 10%;
+  border: 1px solid #ff871d;
+  margin: auto;
+}
+
+#detail-info .text-top {
+  line-height: 25px;
+
+  color: #8a8a8a;
+  margin-bottom: 30px;
+}
+
+#detail-info .detail-info-image {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+#detail-info .detail-info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+}
+
+#detail-info .detail-info-image img:hover {
+  transform: scale(1.2);
+}
+
+#detail-info .col-lg-7 h4 {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #161616;
+}
+
+#detail-info .col-lg-7 div {
+  border: 1px solid #161616;
+  width: 15%;
+  margin-bottom: 20px;
+}
+
+#detail-info .col-lg-7 p {
+  line-height: 25px;
+
+  color: #8a8a8a;
+}
+
+#detail-info .deatail-info-icon {
+  margin: 100px 0 20px;
+
+  text-align: center;
+}
+
+#detail-info .deatail-info-icon i {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 10px;
+  transition: all 0.2s;
+}
+
+#detail-info .deatail-info-icon i:hover {
+  color: #fff;
+  background-color: #fd7e14;
+  border: 1px solid #fd7e14;
+}
+
+/*************************** San pham khac ****************************/
