@@ -1,10 +1,63 @@
-import React from "react";
-import { products } from "../../../../data/products";
+import React, { useCallback, useEffect, useState } from "react";
 import { formatMoney } from "../../../../utils/utils";
 import banner from "../../../../image/banner/banner-65.jpg";
 import { Link } from "react-router-dom";
+import Pagination from "../../../../components/pagination/Pagination";
+
+import { useDispatch, useSelector } from "react-redux";
+import {
+  fetchProducts,
+  fetchProductsSort,
+} from "../../../../redux/productsSlice";
+import { useMemo } from "react";
 
 const Product = () => {
+  let PageSize = 12;
+  const sorts = [
+    {
+      option: "Mặc định",
+      value: "",
+    },
+    {
+      option: "Từ thấp đến cap",
+      value: "asc",
+    },
+    {
+      option: "Từ cao đến thấp",
+      value: "desc",
+    },
+  ];
+  const products = useSelector((state) => state.products.products);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
+
+  const handleChange = (e) => {
+    if (!e.target.value) {
+      dispatch(fetchProducts());
+    } else {
+      dispatch(fetchProductsSort(e.target.value));
+    }
+  };
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [currentTableData, setCurrentTableData] = useState([]);
+  console.log(currentTableData);
+  useEffect(() => {
+    if (!products.length) {
+      return;
+    }
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    const proTemp = products.slice(firstPageIndex, lastPageIndex);
+    setCurrentTableData(proTemp);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }, [currentPage, products]);
+
   return (
     <div className="col-lg-9">
       <div className="products-image">
@@ -18,15 +71,22 @@ const Product = () => {
         </div>
         <div className="products-sort">
           <label htmlFor="option">Sắp xếp giá:</label>
-          <select className="select-sort" id="option">
-            <option value="0">Mặc định</option>
-            <option value="1">Từ thấp đến cao</option>
-            <option value="2">Từ cao đến thấp</option>
+          <select
+            className="select-sort"
+            id="option"
+            // value={selectedIndex}
+            onChange={handleChange}
+          >
+            {sorts.map((sort, index) => (
+              <option key={index} value={sort.value}>
+                {sort.option}
+              </option>
+            ))}
           </select>
         </div>
       </div>
       <div className="row products-list">
-        {products.map((product) => (
+        {currentTableData.map((product) => (
           <div className="col-6 col-md-4 col-lg-3" key={product.id}>
             <div className="product-item">
               <div className="product-image">
@@ -55,14 +115,13 @@ const Product = () => {
       <div className="shop-panigation row">
         <div className="col-lg-12">
           <div className="shop-paginate">
-            <ul className="pagination">
-              <li className="pagination-item btn-prev">
-                <i className="fa-solid fa-angle-left"></i>
-              </li>
-              <li className="pagination-item btn-next">
-                <i className="fa-solid fa-angle-right"></i>
-              </li>
-            </ul>
+            <Pagination
+              className="pagination-bar"
+              currentPage={currentPage}
+              totalCount={products.length}
+              pageSize={PageSize}
+              onPageChange={(page) => setCurrentPage(page)}
+            ></Pagination>
           </div>
         </div>
       </div>

@@ -2,9 +2,10 @@ import "./hotproducts.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
-import { products } from "../../../data/products";
+import React, { useEffect } from "react";
 import { formatMoney } from "../../../utils/utils";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../../../redux/productsSlice";
 
 const HotProducts = () => {
   const settings = {
@@ -41,9 +42,13 @@ const HotProducts = () => {
       },
     ],
   };
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.products.products);
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
   let combo = products.filter((product) => product.category === "Combo");
   let hotCombo = combo.filter((product) => product.tags === "HOT");
-  console.log(hotCombo);
   return (
     <div id="hotproduct">
       <div className="products-title">

@@ -1,6 +1,6 @@
 import React from "react";
+
 import Slider from "react-slick";
-import { products } from "../../../data/products";
 
 const DetailSlick = (props) => {
   const { images } = props.product;

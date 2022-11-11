@@ -1,0 +1,782 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Burger siêu to khổng lồ",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_20186aba-b1e8-4a29-be3a-f1784dcb45ab.jpg?v=1652778775",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_da0df197-dfaf-4f8b-943f-a8abcc8aae45.jpg?v=1652778775",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3.jpg?v=1652778775",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4.jpg?v=1652778776",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_7b819dd3-f42f-4ead-8092-d9c46bb815c6.jpg?v=1652782514"
+      ],
+      "rating": 4,
+      "count": 1,
+      "price": 100000,
+      "description": "Một chiếch burger cỡ bự đầy ắp toppings dành cho bạn và gia đình"
+    },
+    {
+      "id": 2,
+      "name": "Bánh kẹp gà",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_7b819dd3-f42f-4ead-8092-d9c46bb815c6.jpg?v=1652782514",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_87f4c2b4-982e-4d90-bf19-8f344b23d32d.jpg?v=1652782513",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_7eb79d2d-764a-4059-8da7-908b874fb416.jpg?v=1652782514",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_00f192f6-939c-4a13-b384-620e32d9816c.jpg?v=1652782513",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_9f89fa81-9e2f-4806-90a6-c462a793a81c.jpg?v=1652782514"
+      ],
+      "rating": 4.7,
+      "count": 1,
+      "price": 80000,
+      "description": "Một chiếc bánh kẹp gà nóng hổi được chế biến từ những con gà tốt nhất của chúng tôi"
+    },
+    {
+      "id": 3,
+      "name": "Burger phô mai x2",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_8c69141d-f04c-4cd2-9ed5-dab630c9ad8b.jpg?v=1652779500",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_42910893-e3b4-4ed1-aed1-6e8bedf839aa.jpg?v=1652779501",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_3e070358-0f22-4c50-a87a-4f76d3062705.jpg?v=1652779501",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 90000,
+      "description": "Một chiếc bánh burger gấp đôi phô mai dành cho bạn và gia đình"
+    },
+    {
+      "id": 4,
+      "name": "Burger phô mai",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_ec3880f7-e6e0-405e-9b3c-0cde10fc33d1.jpg?v=1652778446",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_42910893-e3b4-4ed1-aed1-6e8bedf839aa.jpg?v=1652779501",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_ec3880f7-e6e0-405e-9b3c-0cde10fc33d1.jpg?v=1652778446",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500"
+      ],
+      "rating": 4.6,
+      "count": 1,
+      "price": 70000,
+      "description": "Một chiếc bánh burger phô mai dành cho bạn và gia đình"
+    },
+    {
+      "id": 5,
+      "name": "Quarter pounder",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_23b3939e-e4d9-4264-b05f-8f029c1be18b.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_9bf1d5e0-d6c3-4471-913e-50c3c45cb8c5.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 80000,
+      "description": "Một chiếc bánh quarter pounder dành cho bạn và gia đình"
+    },
+    {
+      "id": 6,
+      "name": "Quarter pounder x2",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_35b6d543-fecd-43b3-b142-b241a20e711e.jpg?v=1652778917",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_23b3939e-e4d9-4264-b05f-8f029c1be18b.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 100000,
+      "description": "Một chiếc bánh quarter pounder x2 dành cho bạn và gia đình"
+    },
+    {
+      "id": 7,
+      "name": "Quarter pounder phô mai",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_800c0bcb-4341-4882-87d5-3370c8a29736.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_4f3d5a80-51e9-4bfe-907e-928ac81e193d.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6_3236e56d-bf6c-4fe0-be1e-8d73bc255331.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_8987063e-4f1d-409a-8287-63420ac637a9.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_800c0bcb-4341-4882-87d5-3370c8a29736.jpg?v=1652779402"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 100000,
+      "description": "Một chiếc bánh quarter pounder phô mai dành cho bạn và gia đình"
+    },
+    {
+      "id": 8,
+      "name": "Socola nóng",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ uống",
+      "tag": "Đồ uống",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8.jpg?v=1652780320",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_501a018f-8e18-4e2e-8479-bfadaa62def8.jpg?v=1652780320",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_a9363b8c-1ec7-4703-ac3c-0ee8ae6230e2.jpg?v=1652780321",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_143ccf60-30c8-407d-a070-fcd54376b7f1.jpg?v=1652780321",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8.jpg?v=1652780320"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 50000,
+      "description": "Một cốc socola nóng trong mùa đông dành cho bạn và gia đình"
+    },
+    {
+      "id": 9,
+      "name": "Sinh tố xoài dứa",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Sinh tố",
+      "tag": "Sinh tố",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_cd32e705-3b29-45c6-85cf-3784c54eeb13.jpg?v=1652779666",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_17625efa-09b2-40a1-a579-c43b01dd3269.jpg?v=1652779666",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_3dce7b12-6b18-4879-90e4-a8d3c977823a.jpg?v=1652779666",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6_7abec14c-d588-4eac-b0fa-ad25c3fe5086.jpg?v=1652779666",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_cd32e705-3b29-45c6-85cf-3784c54eeb13.jpg?v=1652779666"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 55000,
+      "description": "Một cốc sinh tố xoài dứa thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 10,
+      "name": "Sinh tố dâu chuối",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Sinh tố",
+      "tag": "Sinh tố",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6.jpg?v=1652776618"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 50000,
+      "description": "Một cốc sinh tố dâu chuối thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 11,
+      "name": "Dâu dưa slushie",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ uống",
+      "tag": "Đồ uống",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 60000,
+      "description": "Một cốc Dâu dưa slushie thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 12,
+      "name": "Chanh dây",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ uống",
+      "tag": "Đồ uống",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933"
+      ],
+      "rating": 4.6,
+      "count": 1,
+      "price": 57000,
+      "description": "Một cốc chanh dây thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 13,
+      "name": "Cocacola",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ uống",
+      "tag": "Đồ uống",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 50000,
+      "description": "Một cốc cocacola thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 14,
+      "name": "Sprite",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ uống",
+      "tag": "Đồ uống",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 50000,
+      "description": "Một cốc sprite thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 15,
+      "name": "Combo burger siêu to khổng lồ",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Combo",
+      "tag": "Combo",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_6770495e-fe41-4ce1-89b0-29858291c16a.jpg?v=1652780709",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_fcd80748-78aa-4790-b1bd-a0d9d4c2cd53.jpg?v=1652780710",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_d943d3f2-d9f0-4834-90f9-d10ac0c89796.jpg?v=1652780710",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_1e60cfd2-a155-453e-8d5b-a94e4519cf82.jpg?v=1652780710",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_60462940-3f49-459e-863b-c672fac9bd82.jpg?v=1652780710"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 250000,
+      "description": "Combo burger siêu to khổng lồ sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 16,
+      "name": "Combo burger phô mai",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Combo",
+      "tag": "Combo",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_12c2f10f-a047-4d6d-a081-8a15b177c142.jpg?v=1652781741",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_3cf1801a-aef1-422b-b4c1-c4589d8f4c3d.jpg?v=1652781742",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_d370d65d-6a4a-4670-9512-cd8c9a1182f1.jpg?v=1652781742",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_4222e4d2-652d-43b0-be99-10c354331e60.jpg?v=1652781742",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6_e4e855a5-17a6-4a7e-80dd-d8c4ea453b33.jpg?v=1652781742"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 200000,
+      "description": "Combo burger phô mai thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 17,
+      "name": "Combo gà Nuggets",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Combo",
+      "tag": "Combo",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_f8831e76-6dc8-4eec-82e2-776f28da8f18.jpg?v=1652782391",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8_28e3b037-5594-4310-9c9e-2c5a0b756cf5.jpg?v=1652782392",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_23883377-067f-4a23-8392-2d28576910d4.jpg?v=1652782391",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_daac56ac-62de-492c-bbe2-a72b4ce73149.jpg?v=1652782391",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_69417321-7222-4ff4-8f33-1d459e08c44d.jpg?v=1652782392"
+      ],
+      "rating": 4.7,
+      "count": 1,
+      "price": 220000,
+      "description": "Combo gà Nuggets thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 18,
+      "name": "Combo bánh kẹp gà",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Combo",
+      "tag": "Combo",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_ca38190e-52cd-477a-b790-79e3e8d5c7f7.jpg?v=1652782138",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6_ef42b1ba-b30c-467b-a74a-058229ef53ab.jpg?v=1652782138",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_39d8c3f0-07c5-4f47-8069-e71e578ea8ad.jpg?v=1652782138",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8_16b6de2d-da40-41cc-ae9b-7c30c88adcc7.jpg?v=1652782138",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_d67ff138-f281-411b-bd2c-0ef7672f4d1f.jpg?v=1652782137"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 230000,
+      "description": "Combo bánh kẹp gà thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 19,
+      "name": "Combo gà siu cay",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Combo",
+      "tag": "Combo",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8_16b6de2d-da40-41cc-ae9b-7c30c88adcc7.jpg?v=1652782138",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_d67ff138-f281-411b-bd2c-0ef7672f4d1f.jpg?v=1652782137",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_39d8c3f0-07c5-4f47-8069-e71e578ea8ad.jpg?v=1652782138",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6_ef42b1ba-b30c-467b-a74a-058229ef53ab.jpg?v=1652782138",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_ca38190e-52cd-477a-b790-79e3e8d5c7f7.jpg?v=1652782138"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 230000,
+      "description": "Combo gà siu cay thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 20,
+      "name": "Pizza thịt nguội",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Pizza",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-22.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-23.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-25.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 240000,
+      "description": "Pizza thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 21,
+      "name": "Mỳ Ý",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Pasta",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-24.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-21.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-26.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-23.jpg?v=1653361630"
+      ],
+      "rating": 4.5,
+      "count": 1,
+      "price": 170000,
+      "description": "Mỳ Ý thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 22,
+      "name": "Cánh gà chiên nước mắm",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Chicken",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-25.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-25.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-21.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-26.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630"
+      ],
+      "rating": 4.6,
+      "count": 1,
+      "price": 150000,
+      "description": "Cánh gà chiên nước mắm thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 23,
+      "name": "Sandwich bơ béo ngậy",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Sandwich",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-26.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-19jpg.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-21.jpg?v=1653361630"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 190000,
+      "description": "Một chiếc Sandwich bơ béo ngậy thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 24,
+      "name": "Khoai tây chiên",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "French-friesh",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-22.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-23.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-25.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 100000,
+      "description": "Khoai tây chiên không thể thiếu trong thực đơn của bạn và gia đình"
+    },
+    {
+      "id": 25,
+      "name": "Bánh mì kẹp xúc xích",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Đồ ăn nhanh",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-23.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-22.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-24.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-21.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 140000,
+      "description": "Một chiếc bánh mì kẹp xúc xích đầy đủ toppings thơm ngon không thể thiếu trong thực đơn của bạn và gia đình"
+    },
+    {
+      "id": 26,
+      "name": "Salat trứng",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Salat",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-19jpg.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-21.jpg?v=1653361630"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 190000,
+      "description": "Một đĩa Salat trứng thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "name": "Top 10 địa điểm bán Hamburger ngon nhất tại Sài Gòn",
+      "image": "https://images.unsplash.com/photo-1426869981800-95ebf51ce900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhc3QlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "day": 18,
+      "month": "May",
+      "tag": "Mới",
+      "description": "Bánh Hamburger là món ăn nhanh được ưa chuộng của người dân phương Tây cách đây khá lâu. Nó được sử dụng cho bữa sáng, kèm với một ly sữa nóng. Hamburger xuất hiện ở Việt Nam từ khi ẩm thực phương Tây tràn vào nước ta, và hiện nay đây vẫn là món bánh được ưa chuộng không chỉ với các em nhỏ, mà kể cả đối với dân văn phòng hay công chức thì đây vẫn là một món ăn phù hợp bởi nó không những ngon miệng mà còn tiện lợi. Dưới đây là những cửa hàng bán bánh Hamburger nổi tiếng ở Sài Gòn mà bạn nên đến thử một lần cho biết."
+    },
+    {
+      "id": 2,
+      "name": "Burger King tạo sức ép lên thị trường thức ăn nhanh",
+      "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZhc3QlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "day": 17,
+      "month": "May",
+      "tag": "Mới",
+      "description": "Burger King chính thức khai trương cửa hàng tại TP HCM, còn McDonalds đang có nhiều động thái thăm dò thị trường Việt Nam. Hai cái tên lớn nhất trong thị trường thức ăn nhanh (fast food) tạo thêm sức ép cho các đối thủ tại Việt Nam phải đẩy nhanh hơn nỗ lực giành thị phần. Burger King chính thức khai trương cửa hàng tại TP HCM, còn McDonalds đang có nhiều động thái thăm dò thị trường Việt Nam. Hai cái tên lớn nhất trong thị trường thức ăn nhanh (fast food) tạo thêm sức ép cho các đối thủ tại Việt Nam phải đẩy nhanh hơn nỗ lực giành thị phần. Với mục tiêu mở rộng mạng lưới rộng khắp thị trường Việt Nam càng nhanh càng tốt, từ nay đến cuối năm sẽ mở 12 cửa hàng và sẽ tăng hơn nữa khi tìm được mặt bằng tốt, có vẻ Burger King đang rất nóng lòng trước các đối thủ đi trước."
+    },
+    {
+      "id": 3,
+      "name": "Hãng đồ ăn nhanh đề nghị gắn tên với CLB lừng danh của Nga",
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZhc3QlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "day": 16,
+      "month": "May",
+      "tag": "Mới",
+      "description": "“Đội bóng hàng đầu của Nga, Zenit St Petersburg, được cho là mới nhận được một bức thư đề nghị hợp tác tài trợ từ hãng đồ ăn nhanh của Mỹ. Nếu đồng ý với khoản đầu tư 7,6 triệu đôla, CLB sẽ đổi tên thành Zenit Burger King”, tờ Sun đưa tin hôm 2/9. Một bức ảnh chụp lại thư đề nghị viết bằng tiếng Nga, gửi từ trụ sở của Burger King tại Mỹ, đã lan truyền trên các trang mạng xã hội của Nga. Khoản tiền hãng đồ ăn nhanh nổi tiếng này hứa tài trợ là 500 triệu rúp, khoảng 7,6 triệu đôla."
+    },
+    {
+      "id": 4,
+      "name": "Burger King muốn ngừng bán gà bị ngược đãi",
+      "image": "https://images.unsplash.com/photo-1613319300832-a105da5bd34e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhc3QlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "day": 15,
+      "month": "May",
+      "tag": "Mới",
+      "description": "Cô nàng robot thông minh sẽ giúp những giây phút chờ đợi món ăn của thực khách rút ngắn lại và bữa ăn thêm phần vui vẻ.Lần đầu tiên, Pizza Hut đưa về Việt Nam cô nàng robot HutGirl với khả năng lưu trữ thông tin, nhảy múa trên nền nhạc và tương tác với khách hàng. Với sự xuất hiện của robot thông minh này, bữa ăn của thực khách sẽ thêm phần sinh động, thú vị và bất ngờ."
+    },
+    {
+      "id": 5,
+      "name": "Các chuỗi pizza, burger kinh doanh thế nào",
+      "image": "https://images.unsplash.com/photo-1610614991969-ceeb293e7ff5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGZhc3QlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "day": 14,
+      "month": "May",
+      "tag": "Mới",
+      "description": "Quy mô doanh thu khiêm tốn hơn các chuỗi gà rán nhưng tăng trưởng của những cửa hàng pizza đều ở ngưỡng hai con số.Là một nhánh của lĩnh vực kinh doanh đồ ăn nhanh (fastfood), doanh thu các các chuỗi nhà hàng pizza, burger các năm gần đây liên tục tăng. Xét về quy mô, chuỗi nhà hàng này vẫn xếp sau các chuỗi gà rán, nhưng mức tăng trưởng lại cao hơn hẳn."
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Burger siêu to khổng lồ",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_20186aba-b1e8-4a29-be3a-f1784dcb45ab.jpg?v=1652778775",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_da0df197-dfaf-4f8b-943f-a8abcc8aae45.jpg?v=1652778775",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3.jpg?v=1652778775",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4.jpg?v=1652778776",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_7b819dd3-f42f-4ead-8092-d9c46bb815c6.jpg?v=1652782514"
+      ],
+      "rating": 4,
+      "count": 1,
+      "price": 100000,
+      "description": "Một chiếch burger cỡ bự đầy ắp toppings dành cho bạn và gia đình"
+    },
+    {
+      "id": 8,
+      "name": "Socola nóng",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ uống",
+      "tag": "Đồ uống",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8.jpg?v=1652780320",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_501a018f-8e18-4e2e-8479-bfadaa62def8.jpg?v=1652780320",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_a9363b8c-1ec7-4703-ac3c-0ee8ae6230e2.jpg?v=1652780321",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_143ccf60-30c8-407d-a070-fcd54376b7f1.jpg?v=1652780321",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-8.jpg?v=1652780320"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 50000,
+      "description": "Một cốc socola nóng trong mùa đông dành cho bạn và gia đình"
+    },
+    {
+      "id": 6,
+      "name": "Quarter pounder x2",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_35b6d543-fecd-43b3-b142-b241a20e711e.jpg?v=1652778917",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_23b3939e-e4d9-4264-b05f-8f029c1be18b.jpg?v=1652779281",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_5aed4a57-1f33-4e23-97ef-e956f7a0113e.jpg?v=1652779281"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 100000,
+      "description": "Một chiếc bánh quarter pounder x2 dành cho bạn và gia đình"
+    },
+    {
+      "id": 15,
+      "name": "Combo burger siêu to khổng lồ",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Combo",
+      "tag": "Combo",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_6770495e-fe41-4ce1-89b0-29858291c16a.jpg?v=1652780709",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_fcd80748-78aa-4790-b1bd-a0d9d4c2cd53.jpg?v=1652780710",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_d943d3f2-d9f0-4834-90f9-d10ac0c89796.jpg?v=1652780710",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_1e60cfd2-a155-453e-8d5b-a94e4519cf82.jpg?v=1652780710",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_60462940-3f49-459e-863b-c672fac9bd82.jpg?v=1652780710"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 250000,
+      "description": "Combo burger siêu to khổng lồ sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "id": 14,
+      "name": "Sprite",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ uống",
+      "tag": "Đồ uống",
+      "tags": "LOVE",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_dd0f7974-514e-495d-9684-988526212f7f.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_13594774-04ad-41cf-ae7d-e1b3e2898a2c.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1_11f72f86-5bf8-4a70-8172-45d8e6a6d68b.jpg?v=1652779933",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_75ec7113-97b6-4a70-bb34-a931c19cd206.jpg?v=1652779933"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 50000,
+      "description": "Một cốc sprite thơm ngon dành cho bạn và gia đình"
+    }
+  ],
+  "users": [
+    {
+      "name": "Trung Hiếu",
+      "email": "buihieu3008@gmail.com",
+      "password": "123456a@",
+      "confirmPassword": "123456a@",
+      "phone": "0855281463",
+      "id": 1
+    },
+    {
+      "name": "Trung Hiếu",
+      "email": "buihieu3008@gmail.comg",
+      "password": "123456a@",
+      "confirmPassword": "123456a@",
+      "phone": "0855281463",
+      "id": 2
+    }
+  ]
+}

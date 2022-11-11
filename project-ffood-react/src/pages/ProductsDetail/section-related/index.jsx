@@ -1,11 +1,18 @@
 // import "./hotproducts.css";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Slider from "react-slick";
-import React, { useContext } from "react";
-import { formatMoney } from "../../../utils/utils";
-import Context from "../../../context/Context";
+import { fetchProductsHotCombo } from "../../../redux/productsSlice";
 
-const RelatedProducts = () => {
-  const { products } = useContext(Context);
+import { formatMoney } from "../../../utils/utils";
+
+const RelatedProducts = (props) => {
+  const { product } = props.product;
+  const dispatch = useDispatch();
+  const { hotComboProducts } = useSelector((state) => state.products);
+  useEffect(() => {
+    dispatch(fetchProductsHotCombo());
+  }, []);
   const settings = {
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -40,8 +47,7 @@ const RelatedProducts = () => {
       },
     ],
   };
-  let combo = products.filter((product) => product.category === "Combo");
-  let hotCombo = combo.filter((product) => product.tags === "HOT");
+
   return (
     <div id="hotproduct">
       <div className="products-title">
@@ -51,7 +57,7 @@ const RelatedProducts = () => {
       <div className="products-container1">
         <div className="hotproduct-slider">
           <Slider {...settings}>
-            {hotCombo.map((product) => (
+            {hotComboProducts.map((product) => (
               <div className="products-item" key={product.id}>
                 <div className="product-item1">
                   <div className="product-image1">

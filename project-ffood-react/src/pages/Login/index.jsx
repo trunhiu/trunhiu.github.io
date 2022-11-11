@@ -1,7 +1,79 @@
+import "./login.css";
 import React from "react";
+import * as Yup from "yup";
+import { useFormik } from "formik";
+import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-  return <div>Login</div>;
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string()
+        .required("")
+        .matches(
+          /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+          "Vui lòng điền địa chỉ email hợp lệ"
+        ),
+    }),
+
+    onSubmit: (values, { resetForm }) => {
+      toast.success("Đăng nhập thành công");
+      console.log(values);
+      resetForm({ values: "" });
+    },
+  });
+
+  // console.log(formik);
+
+  return (
+    <>
+      <div className="login-form">
+        <form className="infoform" onSubmit={formik.handleSubmit}>
+          <div className="signup-title">Đăng nhập</div>
+          <label className="label-signup"> Email </label>
+          <input
+            className="input-signup"
+            type="text"
+            id="email"
+            name="email"
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            placeholder="Vui lòng điền email..."
+          />
+          {formik.errors.email && (
+            <p className="errorMsg">{formik.errors.email}</p>
+          )}
+
+          <label className="label-signup"> Mật khẩu </label>
+          <input
+            className="input-signup"
+            type="password"
+            id="password"
+            name="password"
+            value={formik.values.password}
+            onChange={formik.handleChange}
+            placeholder="Mật khẩu của bạn..."
+          />
+          {formik.errors.password && (
+            <p className="errorMsg">{formik.errors.password}</p>
+          )}
+          <button type="submit" className="btn-login">
+            Đăng nhập
+          </button>
+          <button type="submit" className="btn-su">
+            <Link to="/signup">Chưa có tài khoản đăng ký ngay</Link>
+          </button>
+          <button type="submit" className="btn-home">
+            <Link to="/">Quay lại trang chủ</Link>
+          </button>
+        </form>
+      </div>
+    </>
+  );
 };
 
 export default Login;

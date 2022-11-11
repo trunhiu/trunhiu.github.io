@@ -1,22 +1,31 @@
-import React, { useState } from "react";
-import { products } from "../../../data/products";
+import React, { useEffect, useState } from "react";
 import { formatMoney } from "../../../utils/utils";
 import "./products.css";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  fetchHotProducts,
+  fetchLoveProducts,
+  fetchNewProducts,
+} from "../../../redux/productsSlice";
 
 const Products = () => {
+  const { newProducts, hotProducts, loveProducts } = useSelector(
+    (state) => state.products
+  );
+  const dispatch = useDispatch();
   const [tags, setTags] = useState("NEW");
 
-  let newProducts = products.filter((product) => {
-    return product.tags === "NEW";
-  });
+  useEffect(() => {
+    dispatch(fetchNewProducts());
+  }, []);
 
-  let hotProducts = products.filter((product) => {
-    return product.tags === "HOT";
-  });
+  useEffect(() => {
+    dispatch(fetchHotProducts());
+  }, []);
 
-  let loveProducts = products.filter((product) => {
-    return product.tags === "LOVE";
-  });
+  useEffect(() => {
+    dispatch(fetchLoveProducts());
+  }, []);
 
   const handleNew = () => {
     setTags("NEW");

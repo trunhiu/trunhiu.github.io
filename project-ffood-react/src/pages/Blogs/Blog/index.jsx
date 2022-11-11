@@ -1,16 +1,24 @@
-import React from "react";
-import { blogs } from "../../../data/blogs";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { fetchBlogs } from "../../../redux/blogsSlice";
 
 const Blog = () => {
+  const dispatch = useDispatch();
+  const blogs = useSelector((state) => state.blogs.blogs);
+
+  useEffect(() => {
+    dispatch(fetchBlogs());
+  }, []);
   return (
     <div id="news">
       <div className="new-container">
         {blogs.map((blog) => (
           <div className="news-item" key={blog.id}>
             <div className="news-item-image">
-              <a href="bai-viet-1.html">
+              <Link to={`${blog.id}`}>
                 <img src={blog.image} alt={blog.name} />
-              </a>
+              </Link>
             </div>
             <div className="title">
               <div className="news-item-date">

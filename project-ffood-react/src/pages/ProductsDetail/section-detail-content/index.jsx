@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  addProductToCart,
+  addToCart,
+  decrementCart,
+  getCounter,
+} from "../../../redux/cartSlice";
 import { formatMoney } from "../../../utils/utils";
+import { toast } from "react-toastify";
 
 const DetailContent = (props) => {
-  console.log(props);
+  const product = props.product;
+
+  const cart = useSelector((state) => state.cart.carts);
+
+  const [counter, setCounter] = useState(1);
   const { name, price, description, sizes } = props.product;
+  const dispatch = useDispatch();
+  // const counter = useSelector(getCounter);
+
+  const handleInCrement = () => {
+    dispatch(addProductToCart(product));
+    setCounter((pre) => pre + 1);
+  };
+
+  const handleDecrement = () => {
+    if (counter === 1) {
+      return;
+    }
+
+    setCounter((pre) => pre - 1);
+
+    dispatch(decrementCart(product));
+  };
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(product));
+    dispatch(addProductToCart(product));
+    toast.success(`${product.name} đã được thêm vào giỏ hàng. `, {
+      position: "top-right",
+      autoClose: 2000,
+      theme: "colored",
+    });
+  };
+
   return (
     <div className="col-12 col-lg-6">
       <div className="detail-content">
@@ -41,24 +81,21 @@ const DetailContent = (props) => {
         <div className="size">
           <p>Kích thước</p>
         </div>
-        <div className="detail-size">
-          {sizes.map((size, index) => (
-            <button key={index}>{size}</button>
-          ))}
-        </div>
         <div className="detail-buy">
           <div className="detail-amount">
-            <div className="number">1</div>
+            <div className="number">{counter}</div>
             <div className="icon">
-              <span className="btn-plus-count">
+              <span className="btn-plus-count" onClick={handleInCrement}>
                 <i className="fa-solid fa-caret-up"></i>
               </span>
-              <span className="btn-minus-count">
+              <span className="btn-minus-count" onClick={handleDecrement}>
                 <i className="fa-solid fa-caret-down"></i>
               </span>
             </div>
           </div>
-          <div className="btn-add">Thêm vào giỏ hàng</div>
+          <div className="btn-add" onClick={handleAddToCart}>
+            Thêm vào giỏ hàng
+          </div>
         </div>
         <div className="btn-buys">Mua ngay</div>
       </div>

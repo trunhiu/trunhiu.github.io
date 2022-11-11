@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import payment1 from "../../../image/payment/vnpay_new.svg";
 import payment2 from "../../../image/payment/shopeepay_new.svg";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchApiCity } from "../../../redux/apiSlice";
 
 const Contact = () => {
+  const callApiCity = useSelector((state) => state.api.apiCity);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchApiCity());
+  }, []);
   return (
     <div className="col-12 col-lg-6">
       <div className="checkout-main">
@@ -36,9 +44,9 @@ const Contact = () => {
                 id="city"
                 aria-label=".form-select-sm"
               >
-                <option value="" selected>
-                  Chọn tỉnh thành
-                </option>
+                {callApiCity.map((api) => (
+                  <option key={api.code}>{api.name}</option>
+                ))}
               </select>
 
               <select
@@ -46,9 +54,7 @@ const Contact = () => {
                 id="district"
                 aria-label=".form-select-sm"
               >
-                <option value="" selected>
-                  Chọn quận huyện
-                </option>
+                <option>Chọn quận huyện</option>
               </select>
 
               <select
@@ -56,9 +62,7 @@ const Contact = () => {
                 id="ward"
                 aria-label=".form-select-sm"
               >
-                <option value="" selected>
-                  Chọn phường xã
-                </option>
+                <option>Chọn phường xã</option>
               </select>
             </div>
             <textarea
