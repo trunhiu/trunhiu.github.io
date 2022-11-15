@@ -9,7 +9,6 @@ import {
   fetchProducts,
   fetchProductsSort,
 } from "../../../../redux/productsSlice";
-import { useMemo } from "react";
 
 const Product = () => {
   let PageSize = 12;
@@ -91,7 +90,7 @@ const Product = () => {
             <div className="product-item">
               <div className="product-image">
                 <Link to={`/cua-hang/${product.id}`}>
-                  <img src={product.images} alt={product.name} />
+                  <img src={product.images[0]} alt={product.name} />
                 </Link>
                 <div className="product-icon">
                   <div className="product-icon-addtocart">

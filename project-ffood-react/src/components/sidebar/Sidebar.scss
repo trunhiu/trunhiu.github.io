@@ -1,0 +1,52 @@
+.side-bar {
+    flex: 1;
+    border-right: 0.5px solid rgb(231, 227, 227); 
+    min-height: 100vh;
+    background-color: #fff;
+    .top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.5px solid rgb(207, 196, 196);
+
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff871d;
+        }
+    }
+    .center {
+        padding-left: 10px;
+        li {
+            margin: 10px 0;
+            cursor: pointer;
+            margin: 10px;
+
+            &:hover {
+                background-color: lightblue;
+                transition: all 0.8s ease-in;
+            }
+
+            span {
+                margin-left: 15px;
+                font-size: 14px;
+                color: #888;
+                font-weight: 600;
+            }
+            
+            a {
+                margin-left: 15px;
+                font-size: 14px;
+                color: #888;
+                font-weight: 600;
+            }
+
+            .icon {
+                font-size: 18px;
+                color: #ff871d;
+            }
+        }
+    }
+}

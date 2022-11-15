@@ -2,16 +2,14 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchBlogs = createAsyncThunk("blogs/fetchBlogs", async () => {
-  const res = await axios.get("https://ffood-reactjs.herokuapp.com/blogs");
+  const res = await axios.get("http://localhost:3001/blogs");
   return res.data;
 });
 
 export const fetchBlogsById = createAsyncThunk(
   "products/fetchBlogsById",
   async (id) => {
-    const res = await axios.get(
-      `https://ffood-reactjs.herokuapp.com/blogs/${id}`
-    );
+    const res = await axios.get(`http://localhost:3001/blogs/${id}`);
     console.log(res.data);
     return res.data;
   }

@@ -4,8 +4,12 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/signupSlice";
 
 const Login = () => {
+  const dispatch = useDispatch();
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -21,8 +25,9 @@ const Login = () => {
     }),
 
     onSubmit: (values, { resetForm }) => {
+      dispatch(login(values));
       toast.success("Đăng nhập thành công");
-      console.log(values);
+      console.log(login);
       resetForm({ values: "" });
     },
   });

@@ -1,0 +1,48 @@
+.createUser {
+    height: 410px;
+    width: 100%;
+    padding: 20px;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        h2 {
+            color: gray;
+            
+        }
+
+        p {
+            font-size: 20px;
+            color: #ff871d;
+        }
+    }
+    .cellAvatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: darkblue;
+            border: 1px dotted rgb(48, 48, 230);
+        }
+        .deleteButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: crimson;
+            border: 1px dotted rgb(253, 19, 66);
+        }
+    }
+    
+}

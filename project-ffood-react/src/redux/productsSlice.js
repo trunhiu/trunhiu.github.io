@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
-    const res = await axios.get("https://ffood-reactjs.herokuapp.com/products");
+    const res = await axios.get("http://localhost:3001/products");
     return res.data;
   }
 );
@@ -12,9 +12,7 @@ export const fetchProducts = createAsyncThunk(
 export const fetchNewProducts = createAsyncThunk(
   "products/fetchNewProducts",
   async () => {
-    const res = await axios.get(
-      "https://ffood-reactjs.herokuapp.com/products?tags=NEW"
-    );
+    const res = await axios.get("http://localhost:3001/products?tags=NEW");
     return res.data;
   }
 );
@@ -22,9 +20,7 @@ export const fetchNewProducts = createAsyncThunk(
 export const fetchHotProducts = createAsyncThunk(
   "products/fetchHotProducts",
   async () => {
-    const res = await axios.get(
-      "https://ffood-reactjs.herokuapp.com/products?tags=HOT"
-    );
+    const res = await axios.get("http://localhost:3001/products?tags=HOT");
     return res.data;
   }
 );
@@ -32,9 +28,7 @@ export const fetchHotProducts = createAsyncThunk(
 export const fetchLoveProducts = createAsyncThunk(
   "products/fetchLoveProducts",
   async () => {
-    const res = await axios.get(
-      "https://ffood-reactjs.herokuapp.com/products?tags=NEW"
-    );
+    const res = await axios.get("http://localhost:3001/products?tags=LOVE");
     return res.data;
   }
 );
@@ -42,9 +36,7 @@ export const fetchLoveProducts = createAsyncThunk(
 export const fetchProductsById = createAsyncThunk(
   "products/fetchProductsById",
   async (id) => {
-    const res = await axios.get(
-      `https://ffood-reactjs.herokuapp.com/products/${id}`
-    );
+    const res = await axios.get(`http://localhost:3001/products/${id}`);
     return res.data;
   }
 );
@@ -53,7 +45,7 @@ export const fetchProductsSort = createAsyncThunk(
   "products/fetchProductsSort",
   async (type) => {
     const res = await axios.get(
-      `https://ffood-reactjs.herokuapp.com/products?_sort=price&_order=${type}`
+      `http://localhost:3001/products?_sort=price&_order=${type}`
     );
     return res.data;
   }
@@ -63,7 +55,7 @@ export const fetchProductsHotCombo = createAsyncThunk(
   "products/fetchProductsHotCombo",
   async () => {
     const res = await axios.get(
-      "https://ffood-reactjs.herokuapp.com/products?tag=Combo&tags=HOT"
+      "http://localhost:3001/products?tag=Combo&tags=HOT"
     );
     return res.data;
   }
@@ -72,9 +64,16 @@ export const fetchProductsHotCombo = createAsyncThunk(
 export const fetchproductsSearch = createAsyncThunk(
   "products/fetchproductsSearch",
   async (value) => {
-    const res = await axios.get(
-      `https://ffood-reactjs.herokuapp.com/products?q=${value}`
-    );
+    const res = await axios.get(`http://localhost:3001/products?q=${value}`);
+    return res.data;
+  }
+);
+
+export const addNewProduct = createAsyncThunk(
+  "products/addNewProduct",
+  async (data) => {
+    const res = await axios.post("http://localhost:3001/products", data);
+    console.log(res.data);
     return res.data;
   }
 );
@@ -131,6 +130,11 @@ const productsSlice = createSlice({
     builder.addCase(fetchproductsSearch.fulfilled, (state, action) => {
       state.status = "success";
       state.productsSearch = action.payload;
+    });
+    builder.addCase(addNewProduct.fulfilled, (state, action) => {
+      state.status = "success";
+      state.products.push(action.payload);
+      console.log(action.payload);
     });
   },
 });

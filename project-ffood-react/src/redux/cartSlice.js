@@ -3,18 +3,22 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 export const addToCart = createAsyncThunk("carts/addToCart", async (data) => {
-  const res = await axios.post(
-    "https://ffood-reactjs.herokuapp.com/cart",
-    data,
-    {
-      headers: {
-        // Overwrite Axios's automatically set Content-Type
-        "Content-Type": "application/json",
-      },
-    }
-  );
+  const res = await axios.post("http://localhost:3001/cart", data, {
+    headers: {
+      // Overwrite Axios's automatically set Content-Type
+      "Content-Type": "application/json",
+    },
+  });
   return res.data;
 });
+
+export const fetchCartProduct = createAsyncThunk(
+  "carts/fetchCartProduct",
+  async () => {
+    const res = await axios.get("http://localhost:3001/cart");
+    return res.data;
+  }
+);
 
 const cartSlice = createSlice({
   name: "carts",
@@ -89,6 +93,10 @@ const cartSlice = createSlice({
         state.status = "success";
         state.carts.push(action.payload);
       }
+    });
+    builder.addCase(fetchCartProduct.fulfilled, (state, action) => {
+      state.status = "success";
+      state.carts = action.payload;
     });
   },
 });

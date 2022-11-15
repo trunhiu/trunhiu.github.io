@@ -80,7 +80,7 @@ const Products = () => {
                 <div className="col-6 col-md-4 col-lg-3" key={product.id}>
                   <div className="product-item">
                     <div className="product-image">
-                      <a href="page/chi-tiet-sp.html">
+                      <a href={`/cua-hang/${product.id}`}>
                         <img src={product.images} alt={product.name} />
                       </a>
                       <span className="news-product">{product.tags}</span>
@@ -129,7 +129,9 @@ const Products = () => {
                 <div className="col-6 col-md-4 col-lg-3" key={product.id}>
                   <div className="product-item">
                     <div className="product-image">
-                      <img src={product.images} alt={product.name} />
+                      <a href={`/cua-hang/${product.id}`}>
+                        <img src={product.images} alt={product.name} />
+                      </a>
                       <span className="hots-product">{product.tags}</span>
                       <div className="product-icon">
                         <div>
@@ -174,7 +176,10 @@ const Products = () => {
                 <div className="col-6 col-md-4 col-lg-3" key={product.id}>
                   <div className="product-item">
                     <div className="product-image">
-                      <img src={product.images} alt={product.name} />
+                      <a href={`/cua-hang/${product.id}`}>
+                        <img src={product.images} alt={product.name} />
+                      </a>
+
                       <span className="luv-product">
                         <i className="fa-solid fa-heart"></i>
                       </span>

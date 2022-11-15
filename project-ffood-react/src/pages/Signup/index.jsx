@@ -5,13 +5,12 @@ import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchDataUsers, postDataUsers } from "../../redux/signupSlice";
+import { postDataUsers } from "../../redux/signupSlice";
 import { checkEmail } from "../../services/checkEmail";
 
 const SignUp = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users.users);
-  console.log(users);
 
   console.log({ checkEmail });
 

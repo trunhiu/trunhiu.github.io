@@ -12,6 +12,17 @@ import ProductDetail from "../pages/ProductsDetail";
 import ShoppingCart from "../pages/ShoppingCart";
 import Stores from "../pages/Stores";
 import SignUp from "../pages/Signup";
+import Admin from "../pages/Admin/Admin";
+import HomePage from "../pages/Admin/HomePage/HomePage";
+import CreateUser from "../pages/Admin/CreateUser/CreateUser";
+import CreateProducts from "../pages/Admin/CreateProducts/CreateProducts";
+import CreateBlogs from "../pages/Admin/CreateBlogs/CreateBlogs";
+import DetailUser from "../pages/Admin/DetailUser/DetailUser";
+import DetailProduct from "../pages/Admin/DetailProduct/DetailProduct";
+import DetailBlog from "../pages/Admin/DetailBlog/DetailBlog";
+import Create from "../pages/Admin/New/Create";
+import CreateP from "../pages/Admin/CreateP/CreateP";
+import CreateB from "../pages/Admin/CreateB/CreateB";
 
 const router = () => [
   {
@@ -80,6 +91,66 @@ const router = () => [
   {
     path: "thanh-toan",
     element: <Checkout />,
+  },
+  {
+    path: "admin",
+    element: <HomePage />,
+    children: [
+      {
+        path: "users",
+        element: <Outlet />,
+        children: [
+          {
+            path: "",
+            element: <CreateUser />,
+          },
+          {
+            path: "createU",
+            element: <Create />,
+          },
+          {
+            path: ":userId",
+            element: <DetailUser />,
+          },
+        ],
+      },
+      {
+        path: "products",
+        element: <Outlet />,
+        children: [
+          {
+            path: "",
+            element: <CreateProducts />,
+          },
+          {
+            path: "createP",
+            element: <CreateP />,
+          },
+          {
+            path: ":productId",
+            element: <DetailProduct />,
+          },
+        ],
+      },
+      {
+        path: "blogs",
+        element: <Outlet />,
+        children: [
+          {
+            path: "",
+            element: <CreateBlogs />,
+          },
+          {
+            path: "createB",
+            element: <CreateB />,
+          },
+          {
+            path: ":blogId",
+            element: <DetailBlog />,
+          },
+        ],
+      },
+    ],
   },
 ];
 
