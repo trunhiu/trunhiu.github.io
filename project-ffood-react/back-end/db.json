@@ -595,6 +595,118 @@
       "count": 1,
       "price": 190000,
       "description": "Một đĩa Salat trứng thơm ngon sẽ giúp bạn và gia đình no căng bụng"
+    },
+    {
+      "images": [
+        "279371297_3230579807192480_6145106286056110216_n.jpeg"
+      ],
+      "name": "hieu",
+      "price": "1000000",
+      "tag": "hieu",
+      "category": "hieu",
+      "count": 1,
+      "description": "hieu",
+      "id": 27
+    },
+    {
+      "images": [
+        "burgerphomai.webp"
+      ],
+      "name": "burgur",
+      "price": "1000000",
+      "tag": "burgur",
+      "category": "burgur",
+      "count": 1,
+      "description": "burgur",
+      "id": 28
+    },
+    {
+      "images": [
+        "burgerphomai.webp"
+      ],
+      "name": "burgur",
+      "price": "1000000",
+      "tag": "burgur",
+      "category": "burgur",
+      "count": 1,
+      "description": "burgur",
+      "id": 29
+    },
+    {
+      "images": [
+        "burgerphomai.webp"
+      ],
+      "name": "burgur",
+      "price": "1000000",
+      "tag": "burgur",
+      "category": "burgur",
+      "count": 1,
+      "description": "burgur",
+      "id": 30
+    },
+    {
+      "images": [
+        "photo-1544038659-12337883d216.avif"
+      ],
+      "name": "haha",
+      "price": "100000000",
+      "tag": "dfdfgdg",
+      "category": "sdgsfg",
+      "count": 1,
+      "description": "sdf",
+      "id": 31
+    },
+    {
+      "images": [
+        "279371297_3230579807192480_6145106286056110216_n.jpeg"
+      ],
+      "name": "dfgdfgdf",
+      "price": "dfdfg",
+      "tag": "dfgdfgdfd",
+      "category": "dfgdfg",
+      "count": 1,
+      "description": "dfgdfgdfgdf",
+      "id": 32
+    },
+    {
+      "images": [
+        "279371297_3230579807192480_6145106286056110216_n.jpeg"
+      ],
+      "name": "ẻtret",
+      "price": "345ểtrt",
+      "tag": "456456456",
+      "category": "456456",
+      "count": 1,
+      "description": "56465",
+      "id": 33
+    },
+    {
+      "images": [
+        "http://103.237.147.34:8888/api/v1/users/1/files/32"
+      ],
+      "name": "ertretertrere",
+      "price": "ertertree",
+      "tag": "ertet",
+      "category": "rtertert",
+      "count": 1,
+      "description": "ert",
+      "id": 34
+    },
+    {
+      "images": [
+        "http://103.237.147.34:8888/api/v1/users/1/files/33",
+        "http://103.237.147.34:8888/api/v1/users/1/files/33",
+        "http://103.237.147.34:8888/api/v1/users/1/files/33",
+        "http://103.237.147.34:8888/api/v1/users/1/files/33",
+        "http://103.237.147.34:8888/api/v1/users/1/files/33"
+      ],
+      "name": "sdfdsf",
+      "price": "sdfdsf",
+      "tag": "sdfsdf",
+      "category": "dssdfsdf",
+      "count": 1,
+      "description": "sdfdsf",
+      "id": 35
     }
   ],
   "blogs": [
@@ -759,11 +871,103 @@
       "count": 1,
       "price": 50000,
       "description": "Một cốc sprite thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 3,
+      "name": "Burger phô mai x2",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_8c69141d-f04c-4cd2-9ed5-dab630c9ad8b.jpg?v=1652779500",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-3_42910893-e3b4-4ed1-aed1-6e8bedf839aa.jpg?v=1652779501",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_3e070358-0f22-4c50-a87a-4f76d3062705.jpg?v=1652779501",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2_e40c9d40-2df9-48b1-9fb2-b036ca78aaf0.jpg?v=1652779500"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 90000,
+      "description": "Một chiếc bánh burger gấp đôi phô mai dành cho bạn và gia đình"
+    },
+    {
+      "id": 10,
+      "name": "Sinh tố dâu chuối",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Sinh tố",
+      "tag": "Sinh tố",
+      "tags": "HOT",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-1.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-2.jpg?v=1652776618",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6.jpg?v=1652776618"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 50000,
+      "description": "Một cốc sinh tố dâu chuối thơm ngon dành cho bạn và gia đình"
+    },
+    {
+      "id": 7,
+      "name": "Quarter pounder phô mai",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Burger",
+      "tags": "NEW",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_800c0bcb-4341-4882-87d5-3370c8a29736.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-4_4f3d5a80-51e9-4bfe-907e-928ac81e193d.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-6_3236e56d-bf6c-4fe0-be1e-8d73bc255331.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-7_8987063e-4f1d-409a-8287-63420ac637a9.jpg?v=1652779402",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/products/img-5_800c0bcb-4341-4882-87d5-3370c8a29736.jpg?v=1652779402"
+      ],
+      "rating": 4.9,
+      "count": 1,
+      "price": 100000,
+      "description": "Một chiếc bánh quarter pounder phô mai dành cho bạn và gia đình"
+    },
+    {
+      "id": 26,
+      "name": "Salat trứng",
+      "sizes": [
+        "Nhỏ",
+        "Vừa",
+        "Lớn"
+      ],
+      "category": "Đồ ăn nhanh",
+      "tag": "Salat",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-19jpg.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-27.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-20.jpg?v=1653361630",
+        "https://cdn.shopify.com/s/files/1/0617/1928/1842/files/banner-21.jpg?v=1653361630"
+      ],
+      "rating": 4.8,
+      "count": 1,
+      "price": 190000,
+      "description": "Một đĩa Salat trứng thơm ngon sẽ giúp bạn và gia đình no căng bụng"
     }
   ],
   "users": [
     {
       "name": "Trung Hiếu",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       "email": "buihieu3008@gmail.com",
       "password": "123456a@",
       "confirmPassword": "123456a@",
@@ -772,11 +976,31 @@
     },
     {
       "name": "Trung Hiếu",
+      "image": "https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
       "email": "buihieu3008@gmail.comg",
       "password": "123456a@",
       "confirmPassword": "123456a@",
       "phone": "0855281463",
       "id": 2
+    },
+    {
+      "name": "Thu Thủy",
+      "email": "thuthuy@gmail.com",
+      "password": "hahaha123a@",
+      "confirmPassword": "hahaha123a@",
+      "phone": "1234567890",
+      "id": 3
+    },
+    {
+      "image": [
+        "http://103.237.147.34:8888/api/v1/users/1/files/34"
+      ],
+      "name": "bui hieu",
+      "email": "buihieu3008@gmail.com",
+      "phone": "1232435",
+      "password": "123456",
+      "address": "ha noi",
+      "id": 4
     }
   ]
 }
