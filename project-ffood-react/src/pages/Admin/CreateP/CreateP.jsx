@@ -4,9 +4,12 @@ import UploadFileIcon from "@mui/icons-material/UploadFile";
 import { useDispatch } from "react-redux";
 import { addNewProduct } from "../../../redux/productsSlice";
 import upLoadImage from "../../../services/upLoadImage";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const CreateP = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [image, setImage] = useState("");
   const [inputProduct, setInputProduct] = useState("");
@@ -34,7 +37,12 @@ const CreateP = () => {
       count: 1,
       description: inputDes,
     };
-    dispatch(addNewProduct(newP));
+    if ((inputProduct, inputPrice, inputTag, inputCategory, inputDes)) {
+      dispatch(addNewProduct(newP));
+      toast.success("Tạo sản phẩm thành công");
+    } else {
+      toast.error("Vui lòng nhập đủ các ô");
+    }
   };
 
   const handleSubmit = (e) => {

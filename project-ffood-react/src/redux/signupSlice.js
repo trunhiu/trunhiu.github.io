@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import useLocalStorage from "../Hook/useLocalStorage";
+import { toast } from "react-toastify";
 
 export const fetchDataUsers = createAsyncThunk(
   "signup/fetchDataUsers",
@@ -20,6 +20,19 @@ export const postDataUsers = createAsyncThunk(
   }
 );
 
+export const fetchUsersById = createAsyncThunk(
+  "signup/fetchUsersById",
+  async (id) => {
+    const res = await axios.get(`http://localhost:3001/users/${id}`);
+    return res.data;
+  }
+);
+
+export const editUser = createAsyncThunk("signup/editUser", async (data) => {
+  const res = await axios.put(`http://localhost:3001/users/${data.id}`, data);
+  return res.data;
+});
+
 export const checkLogin = createAsyncThunk(
   "signup/checkLogin",
   async (email, password) => {
@@ -35,16 +48,18 @@ export const login = createAsyncThunk(
   "signup/login",
   async (data, thunkAPI) => {
     const { email, password, checked = false } = data;
+    console.log(data);
     const res = await axios.get(
       `http://localhost:3001/users?email=${email}&password=${password}`
     );
 
     if (res.data.length === 0) {
-      return thunkAPI.rejectWithValue("dang nhap that bai");
+      return thunkAPI.rejectWithValue("Tài khoản hoặc mật khẩu chưa chính xác");
     } else {
       if (checked) {
         window.localStorage.setItem("user", JSON.stringify(res.data[0]));
       }
+
       return thunkAPI.fulfillWithValue(res.data[0]);
     }
   }
@@ -72,14 +87,23 @@ const signupSlice = createSlice({
       state.status = "success";
       state.users = action.payload;
     });
+    builder.addCase(fetchUsersById.fulfilled, (state, action) => {
+      state.status = "success";
+      state.user = action.payload;
+    });
+    builder.addCase(editUser.fulfilled, (state, action) => {
+      state.status = "success";
+      let index = state.users.findIndex((i) => i.id === action.payload.id);
+      state.users[index] = action.payload;
+    });
     builder.addCase(login.fulfilled, (state, action) => {
-      console.log(action);
+      toast.success("Đăng nhập thành công");
       state.status = "success";
       state.isLogin = true;
       state.user = action.payload;
     });
     builder.addCase(login.rejected, (state, action) => {
-      console.log(action);
+      toast.error(action.payload);
       state.status = "fail";
       state.isLogin = false;
     });

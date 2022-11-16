@@ -3,12 +3,18 @@ import { DataGrid } from "@mui/x-data-grid";
 import "./CreateProducts.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../../redux/productsSlice";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CreateUser = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const productsRow = useSelector((state) => state.products.products);
-  console.log(productsRow);
+
+  const handleEdit = (id) => {
+    navigate(`${id}`);
+  };
+
+  const handleDelete = (id) => {};
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -34,6 +40,29 @@ const CreateUser = () => {
     { field: "name", headerName: "Tên sản phẩm", width: 250 },
     { field: "price", headerName: "Giá sản phẩm", width: 200 },
     { field: "description", headerName: "Mô tả chi tiết sản phẩm", width: 300 },
+    {
+      field: "action",
+      headerName: "Xem/Sửa",
+      width: 200,
+      renderCell: (params) => {
+        return (
+          <div className="cellAction">
+            <div
+              className="viewButton"
+              onClick={() => handleEdit(params.row.id)}
+            >
+              Xem
+            </div>
+            <div
+              className="deleteButton"
+              onClick={() => handleDelete(params.row.id)}
+            >
+              Xoá
+            </div>
+          </div>
+        );
+      },
+    },
   ];
 
   return (

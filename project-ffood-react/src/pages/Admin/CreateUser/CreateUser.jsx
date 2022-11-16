@@ -3,7 +3,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import "./CreateUser.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDataUsers } from "../../../redux/signupSlice";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CreateUser = () => {
   const dispatch = useDispatch();
@@ -12,6 +12,12 @@ const CreateUser = () => {
   useEffect(() => {
     dispatch(fetchDataUsers());
   }, []);
+
+  const navigate = useNavigate();
+
+  const handleEdit = (id) => {
+    navigate(`${id}`);
+  };
 
   const columns = [
     { field: "id", headerName: "ID", width: 70 },
@@ -36,11 +42,15 @@ const CreateUser = () => {
       field: "action",
       headerName: "Xem/Sửa",
       width: 200,
-      renderCell: () => {
+      renderCell: (params) => {
         return (
           <div className="cellAction">
-            <div className="viewButton">Xem</div>
-            <div className="deleteButton">Xóa</div>
+            <div
+              className="viewButton"
+              onClick={() => handleEdit(params.row.id)}
+            >
+              Xem
+            </div>
           </div>
         );
       },

@@ -78,6 +78,17 @@ export const addNewProduct = createAsyncThunk(
   }
 );
 
+export const editProduct = createAsyncThunk(
+  "products/editProduct",
+  async (data) => {
+    const res = await axios.put(
+      `http://localhost:3001/products/${data.id}`,
+      data
+    );
+    return res.data;
+  }
+);
+
 const productsSlice = createSlice({
   name: "products",
   initialState: {
@@ -135,6 +146,11 @@ const productsSlice = createSlice({
       state.status = "success";
       state.products.push(action.payload);
       console.log(action.payload);
+    });
+    builder.addCase(editProduct.fulfilled, (state, action) => {
+      state.status = "success";
+      let index = state.products.findIndex((i) => i.id === action.payload.id);
+      state.products[index] = action.payload;
     });
   },
 });

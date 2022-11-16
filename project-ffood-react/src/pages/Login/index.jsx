@@ -1,14 +1,18 @@
 import "./login.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../redux/signupSlice";
 
 const Login = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const isUser = useSelector((state) => state.users.user);
+  // const [isCheck, setIsCheck] = useState(false);
+  // console.log(isCheck);
 
   const formik = useFormik({
     initialValues: {
@@ -26,13 +30,17 @@ const Login = () => {
 
     onSubmit: (values, { resetForm }) => {
       dispatch(login(values));
-      toast.success("Đăng nhập thành công");
-      console.log(login);
+      console.log(values.email);
+      if (
+        isUser.email === values.email &&
+        isUser.password === values.password
+      ) {
+        navigate("/");
+      }
+
       resetForm({ values: "" });
     },
   });
-
-  // console.log(formik);
 
   return (
     <>
@@ -66,6 +74,15 @@ const Login = () => {
           {formik.errors.password && (
             <p className="errorMsg">{formik.errors.password}</p>
           )}
+          <label>
+            <input
+              type="checkbox"
+              className="input-checkbox"
+              // value={isCheck}
+              // onChange={(e) => setIsCheck(!isCheck)}
+            />
+            Ghi nhớ mật khẩu.
+          </label>
           <button type="submit" className="btn-login">
             Đăng nhập
           </button>

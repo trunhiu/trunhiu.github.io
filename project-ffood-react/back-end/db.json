@@ -598,115 +598,50 @@
     },
     {
       "images": [
-        "279371297_3230579807192480_6145106286056110216_n.jpeg"
+        "http://103.237.147.34:8888/api/v1/users/1/files/94",
+        "http://103.237.147.34:8888/api/v1/users/1/files/94",
+        "http://103.237.147.34:8888/api/v1/users/1/files/94",
+        "http://103.237.147.34:8888/api/v1/users/1/files/94",
+        "http://103.237.147.34:8888/api/v1/users/1/files/94"
       ],
-      "name": "hieu",
-      "price": "1000000",
-      "tag": "hieu",
-      "category": "hieu",
-      "count": 1,
-      "description": "hieu",
-      "id": 27
+      "id": 27,
+      "name": "cho ngu",
+      "price": "100",
+      "category": "cho ",
+      "tag": "cho",
+      "description": "hahaha"
     },
     {
       "images": [
-        "burgerphomai.webp"
+        "http://103.237.147.34:8888/api/v1/users/1/files/116",
+        "http://103.237.147.34:8888/api/v1/users/1/files/116",
+        "http://103.237.147.34:8888/api/v1/users/1/files/116",
+        "http://103.237.147.34:8888/api/v1/users/1/files/116",
+        "http://103.237.147.34:8888/api/v1/users/1/files/116"
       ],
-      "name": "burgur",
-      "price": "1000000",
-      "tag": "burgur",
-      "category": "burgur",
+      "name": "Meo ngu",
+      "price": "1000",
+      "tag": "ha hahah",
+      "category": "Meo",
       "count": 1,
-      "description": "burgur",
+      "description": "Meo day",
       "id": 28
     },
     {
       "images": [
-        "burgerphomai.webp"
+        "http://103.237.147.34:8888/api/v1/users/1/files/119",
+        "http://103.237.147.34:8888/api/v1/users/1/files/119",
+        "http://103.237.147.34:8888/api/v1/users/1/files/119",
+        "http://103.237.147.34:8888/api/v1/users/1/files/119",
+        "http://103.237.147.34:8888/api/v1/users/1/files/119"
       ],
-      "name": "burgur",
-      "price": "1000000",
-      "tag": "burgur",
-      "category": "burgur",
+      "name": "Meo Ngu",
+      "price": "1000",
+      "tag": "12121212",
+      "category": "Meo",
       "count": 1,
-      "description": "burgur",
+      "description": "Meo day",
       "id": 29
-    },
-    {
-      "images": [
-        "burgerphomai.webp"
-      ],
-      "name": "burgur",
-      "price": "1000000",
-      "tag": "burgur",
-      "category": "burgur",
-      "count": 1,
-      "description": "burgur",
-      "id": 30
-    },
-    {
-      "images": [
-        "photo-1544038659-12337883d216.avif"
-      ],
-      "name": "haha",
-      "price": "100000000",
-      "tag": "dfdfgdg",
-      "category": "sdgsfg",
-      "count": 1,
-      "description": "sdf",
-      "id": 31
-    },
-    {
-      "images": [
-        "279371297_3230579807192480_6145106286056110216_n.jpeg"
-      ],
-      "name": "dfgdfgdf",
-      "price": "dfdfg",
-      "tag": "dfgdfgdfd",
-      "category": "dfgdfg",
-      "count": 1,
-      "description": "dfgdfgdfgdf",
-      "id": 32
-    },
-    {
-      "images": [
-        "279371297_3230579807192480_6145106286056110216_n.jpeg"
-      ],
-      "name": "ẻtret",
-      "price": "345ểtrt",
-      "tag": "456456456",
-      "category": "456456",
-      "count": 1,
-      "description": "56465",
-      "id": 33
-    },
-    {
-      "images": [
-        "http://103.237.147.34:8888/api/v1/users/1/files/32"
-      ],
-      "name": "ertretertrere",
-      "price": "ertertree",
-      "tag": "ertet",
-      "category": "rtertert",
-      "count": 1,
-      "description": "ert",
-      "id": 34
-    },
-    {
-      "images": [
-        "http://103.237.147.34:8888/api/v1/users/1/files/33",
-        "http://103.237.147.34:8888/api/v1/users/1/files/33",
-        "http://103.237.147.34:8888/api/v1/users/1/files/33",
-        "http://103.237.147.34:8888/api/v1/users/1/files/33",
-        "http://103.237.147.34:8888/api/v1/users/1/files/33"
-      ],
-      "name": "sdfdsf",
-      "price": "sdfdsf",
-      "tag": "sdfsdf",
-      "category": "dssdfsdf",
-      "count": 1,
-      "description": "sdfdsf",
-      "id": 35
     }
   ],
   "blogs": [
@@ -972,7 +907,9 @@
       "password": "123456a@",
       "confirmPassword": "123456a@",
       "phone": "0855281463",
-      "id": 1
+      "id": 1,
+      "requestId": "8Lp97PNnVxNzwFP6djSqg",
+      "signal": {}
     },
     {
       "name": "Trung Hiếu",
@@ -984,23 +921,48 @@
       "id": 2
     },
     {
-      "name": "Thu Thủy",
-      "email": "thuthuy@gmail.com",
-      "password": "hahaha123a@",
-      "confirmPassword": "hahaha123a@",
-      "phone": "1234567890",
+      "image": [
+        "http://103.237.147.34:8888/api/v1/users/1/files/36"
+      ],
+      "name": "Bui Hieu",
+      "email": "buihieu@gmail.com",
+      "phone": "1234567",
+      "password": "123456",
+      "address": "Ha noi",
       "id": 3
     },
     {
+      "id": 4,
       "image": [
-        "http://103.237.147.34:8888/api/v1/users/1/files/34"
+        "http://103.237.147.34:8888/api/v1/users/1/files/102"
       ],
-      "name": "bui hieu",
-      "email": "buihieu3008@gmail.com",
-      "phone": "1232435",
+      "name": "Meo ngu",
+      "email": "meongu@gmail.com",
+      "phone": "12345",
+      "password": "11111",
+      "address": "Ha noi"
+    },
+    {
+      "image": [
+        "http://103.237.147.34:8888/api/v1/users/1/files/38"
+      ],
+      "name": "Thu Thủy",
+      "email": "thuthuy@gmail.com",
+      "phone": "1234567",
       "password": "123456",
-      "address": "ha noi",
-      "id": 4
+      "address": "Hà Nội",
+      "id": 5
+    },
+    {
+      "image": [
+        "http://103.237.147.34:8888/api/v1/users/1/files/58"
+      ],
+      "name": "gdfg",
+      "email": "dfgfdg",
+      "phone": "dfgdfg",
+      "password": "dfgdfgdf",
+      "address": "dfgdfg",
+      "id": 6
     }
   ]
 }

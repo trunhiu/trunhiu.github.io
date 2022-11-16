@@ -4,6 +4,7 @@ import UploadFileIcon from "@mui/icons-material/UploadFile";
 import { useDispatch } from "react-redux";
 import upLoadImage from "../../../services/upLoadImage";
 import { postDataUsers } from "../../../redux/signupSlice";
+import { toast } from "react-toastify";
 
 const Create = () => {
   const dispatch = useDispatch();
@@ -13,8 +14,6 @@ const Create = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [address, setAddress] = useState("");
-
-  console.log(name);
 
   const handleAddUser = async () => {
     const resImageUrl = await upLoadImage(image);
@@ -28,7 +27,12 @@ const Create = () => {
       password: password,
       address: address,
     };
-    dispatch(postDataUsers(newU));
+    if ((name, email, password, phone, address)) {
+      dispatch(postDataUsers(newU));
+      toast.success("Tạo tài khoản thành công");
+    } else {
+      toast.error("Vui lòng điền đủ các ô");
+    }
   };
 
   const handleSubmit = (e) => {
