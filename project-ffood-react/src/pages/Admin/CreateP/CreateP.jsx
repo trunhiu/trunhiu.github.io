@@ -21,11 +21,11 @@ const CreateP = () => {
   const handleAddproduct = async () => {
     const resImageUrl = await upLoadImage(image);
     let imageUrl = [
-      `http://103.237.147.34:8888${resImageUrl}`,
-      `http://103.237.147.34:8888${resImageUrl}`,
-      `http://103.237.147.34:8888${resImageUrl}`,
-      `http://103.237.147.34:8888${resImageUrl}`,
-      `http://103.237.147.34:8888${resImageUrl}`,
+      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
+      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
+      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
+      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
+      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
     ];
     console.log(resImageUrl);
     let newP = {

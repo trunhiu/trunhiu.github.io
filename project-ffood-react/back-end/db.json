@@ -963,6 +963,17 @@
       "password": "dfgdfgdf",
       "address": "dfgdfg",
       "id": 6
+    },
+    {
+      "image": [
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/129"
+      ],
+      "name": "Cho",
+      "email": "cho@gmail.com",
+      "phone": "12345",
+      "password": "123456",
+      "address": "HA noi",
+      "id": 7
     }
   ]
 }
