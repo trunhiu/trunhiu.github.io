@@ -2,6 +2,44 @@ header {
   height: 91px;
 }
 
+.image-user {
+  width: 40px !important;
+  height: 25px !important;
+  position: relative;
+}
+
+.image-user img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+}
+
+.table-user {
+  position: absolute;
+  bottom: -50;
+  left: -120px;
+  background-color: #ff871d;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.table-user-admin {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+.table-user-logout {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
 .header {
   padding: 0 20px;
   width: 100%;
@@ -379,6 +417,10 @@ header {
   }
   .header-icon {
     order: 3;
+  }
+
+  .image-user {
+    display: none;
   }
 
   .header-search {

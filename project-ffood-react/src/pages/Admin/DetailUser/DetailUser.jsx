@@ -36,6 +36,7 @@ const DetailUser = () => {
 
     if ((name, email, password, address, phone)) {
       dispatch(editUser(newUser));
+      localStorage.setItem("userLocal", JSON.stringify(newUser));
       toast.success("Thay đổi thành công");
     } else {
       setName("");

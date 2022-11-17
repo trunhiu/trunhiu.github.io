@@ -6,18 +6,21 @@ import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../redux/signupSlice";
+import { isEmpty } from "../../utils/utils";
 
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const isUser = useSelector((state) => state.users.user);
-  // const [isCheck, setIsCheck] = useState(false);
-  // console.log(isCheck);
+  const [isCheck, setIsCheck] = useState(true);
+  const isLogin = useSelector((state) => state.users.isLogin);
+  console.log(isLogin);
 
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
+      checked: isCheck,
     },
     validationSchema: Yup.object({
       email: Yup.string()
@@ -29,18 +32,17 @@ const Login = () => {
     }),
 
     onSubmit: (values, { resetForm }) => {
-      dispatch(login(values));
-      console.log(values.email);
-      if (
-        isUser.email === values.email &&
-        isUser.password === values.password
-      ) {
+      dispatch(login(values, isCheck));
+      // if (isEmpty(isUser)) {
+      //   return;
+      // }
+      if (isLogin === true) {
         navigate("/");
       }
-
-      resetForm({ values: "" });
     },
   });
+
+  useEffect(() => {}, []);
 
   return (
     <>
@@ -78,8 +80,8 @@ const Login = () => {
             <input
               type="checkbox"
               className="input-checkbox"
-              // value={isCheck}
-              // onChange={(e) => setIsCheck(!isCheck)}
+              value={isCheck}
+              onChange={(e) => setIsCheck(!isCheck)}
             />
             Ghi nhớ mật khẩu.
           </label>

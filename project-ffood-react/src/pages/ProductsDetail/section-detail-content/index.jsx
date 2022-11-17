@@ -13,7 +13,6 @@ const DetailContent = (props) => {
   const product = props.product;
 
   const cart = useSelector((state) => state.cart.carts);
-  console.log(cart);
 
   useEffect(() => {
     dispatch(fetchCartProduct());

@@ -921,48 +921,37 @@
       "id": 2
     },
     {
+      "id": 3,
       "image": [
-        "http://103.237.147.34:8888/api/v1/users/1/files/36"
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/130"
       ],
-      "name": "Bui Hieu",
-      "email": "buihieu@gmail.com",
-      "phone": "1234567",
+      "name": "Bùi Hiếu",
+      "email": "buihieu3008@gmail.com",
+      "phone": "123456789",
       "password": "123456",
-      "address": "Ha noi",
-      "id": 3
+      "address": "Ha Noi"
     },
     {
       "id": 4,
       "image": [
-        "http://103.237.147.34:8888/api/v1/users/1/files/102"
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/132"
       ],
-      "name": "Meo ngu",
-      "email": "meongu@gmail.com",
-      "phone": "12345",
-      "password": "11111",
+      "name": "Thuoc lao",
+      "email": "thuoclao@gmail.com",
+      "phone": "12346",
+      "password": "123456",
       "address": "Ha noi"
     },
     {
+      "id": 6,
       "image": [
-        "http://103.237.147.34:8888/api/v1/users/1/files/38"
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/139"
       ],
-      "name": "Thu Thủy",
-      "email": "thuthuy@gmail.com",
-      "phone": "1234567",
+      "name": "Trun Hiu",
+      "email": "trunhiu@gmail.com",
+      "phone": "123456789",
       "password": "123456",
-      "address": "Hà Nội",
-      "id": 5
-    },
-    {
-      "image": [
-        "http://103.237.147.34:8888/api/v1/users/1/files/58"
-      ],
-      "name": "gdfg",
-      "email": "dfgfdg",
-      "phone": "dfgdfg",
-      "password": "dfgdfgdf",
-      "address": "dfgdfg",
-      "id": 6
+      "address": "Ha Noi"
     },
     {
       "image": [
@@ -974,6 +963,28 @@
       "password": "123456",
       "address": "HA noi",
       "id": 7
+    },
+    {
+      "id": 8,
+      "image": [
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/142"
+      ],
+      "name": "Thu Thuy",
+      "email": "thuthuy@gmail.com",
+      "phone": "1234567",
+      "password": "123456",
+      "address": "Ha Noi"
+    },
+    {
+      "id": 9,
+      "image": [
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/143"
+      ],
+      "name": "Hiuuu",
+      "email": "trunhiu3008@gmail.com",
+      "phone": "1234567890",
+      "password": "123456",
+      "address": "HA Noi"
     }
   ]
 }

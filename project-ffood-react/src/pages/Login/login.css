@@ -5,7 +5,7 @@
 }
 .signup-title {
   font-size: 1.5rem;
-  color: rgb(119, 119, 252);
+  color: #ff871d;
   font-weight: 700;
 
   margin: auto;
@@ -56,7 +56,7 @@
   cursor: pointer;
   /* align-self: flex-end; */
   padding: 0.5rem;
-  background-color: rgb(104, 187, 255);
+  background-color: #ff871d;
   color: white;
   border: none;
   font-size: 1rem;
@@ -69,10 +69,18 @@
   /* align-self: flex-end; */
   padding: 0.5rem;
   background-color: white;
-  color: rgb(104, 187, 255);
+  color: #ff871d;
   border: none;
   font-size: 1rem;
   border-radius: 8px;
+}
+
+.btn-su a {
+  color: #ff871d;
+}
+
+.btn-home {
+  background-color: #ff871d;
 }
 
 .errorMsg {

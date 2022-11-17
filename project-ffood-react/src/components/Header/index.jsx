@@ -6,8 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchproductsSearch } from "../../redux/productsSlice";
 import useDebounce from "../../Hook/useDebounce";
 import { formatMoney } from "../../utils/utils";
+import { fetchDataUsers, logout } from "../../redux/signupSlice";
 
 const Header = () => {
+  const user = useSelector((state) => state.users.user);
+  const userLocal = JSON.parse(localStorage.getItem("userLocal"));
+
+  console.log(userLocal);
+
   const cart = useSelector((state) => state.cart.cartItems);
   const dispatch = useDispatch();
   const { productsSearch } = useSelector((state) => state.products);
@@ -15,6 +21,11 @@ const Header = () => {
   const [input, setInput] = useState("");
   const ref = useRef();
   const navigate = useNavigate();
+  const [showTable, setShowTable] = useState(false);
+
+  useEffect(() => {
+    dispatch(fetchDataUsers());
+  }, []);
 
   const debounce = useDebounce(input, 700);
 
@@ -26,13 +37,26 @@ const Header = () => {
   }, [debounce]);
 
   const handleProductsSearch = (id) => {
-    console.log(id);
     navigate(`/cua-hang/${id}`);
   };
 
   const handleClick = () => {
     setIsShow(!isShow);
   };
+
+  const handleUserClick = () => {
+    setShowTable(!showTable);
+  };
+
+  const handleAdminClick = () => {
+    navigate("/admin");
+  };
+
+  const handleLogout = () => {
+    // dispatch(logout(user.id));
+  };
+  console.log(userLocal.image);
+
   return (
     <div className="header">
       <div className="logo">
@@ -107,13 +131,36 @@ const Header = () => {
           </span>
         </div>
 
-        <div className="header-item header-login">
-          <Link to="/login">
-            <span>
-              <i className="fa-solid fa-user-tie"></i>
-            </span>
-          </Link>
-        </div>
+        {userLocal ? (
+          <div className="image-user" onClick={handleUserClick}>
+            <img
+              src={
+                userLocal.image
+                  ? userLocal.image
+                  : "https://taytou.com/wp-content/uploads/2022/08/Avatar-mac-dinh-ngau-trang-den-cho-nam.jpg"
+              }
+              alt={userLocal.name}
+            />
+            {showTable && (
+              <div className="table-user">
+                <div className="table-user-admin" onClick={handleAdminClick}>
+                  Admin
+                </div>
+                <div className="table-user-logout" onClick={handleLogout}>
+                  Logout
+                </div>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="header-item header-login">
+            <Link to="/login">
+              <span>
+                <i className="fa-solid fa-user-tie"></i>
+              </span>
+            </Link>
+          </div>
+        )}
         <div className="header-item header-shoppingcart">
           <Link to="gio-hang">
             <span>

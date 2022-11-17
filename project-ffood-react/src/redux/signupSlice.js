@@ -10,6 +10,11 @@ export const fetchDataUsers = createAsyncThunk(
   }
 );
 
+export const fetchLogin = createAsyncThunk("signup/fetchLogin", async () => {
+  const res = await axios.get("http://localhost:3001/users");
+  return res.data;
+});
+
 export const postDataUsers = createAsyncThunk(
   "signup/postDataUsers",
   async (data) => {
@@ -27,6 +32,11 @@ export const fetchUsersById = createAsyncThunk(
     return res.data;
   }
 );
+
+export const logout = createAsyncThunk("signup/logout", async (id) => {
+  const res = await axios.delete(`http://localhost:3001/users/${id}`);
+  return res.data;
+});
 
 export const editUser = createAsyncThunk("signup/editUser", async (data) => {
   const res = await axios.put(`http://localhost:3001/users/${data.id}`, data);
@@ -47,8 +57,8 @@ export const checkLogin = createAsyncThunk(
 export const login = createAsyncThunk(
   "signup/login",
   async (data, thunkAPI) => {
-    const { email, password, checked = false } = data;
-    console.log(data);
+    const { email, password, checked } = data;
+    console.log(data, checked);
     const res = await axios.get(
       `http://localhost:3001/users?email=${email}&password=${password}`
     );
@@ -57,7 +67,7 @@ export const login = createAsyncThunk(
       return thunkAPI.rejectWithValue("Tài khoản hoặc mật khẩu chưa chính xác");
     } else {
       if (checked) {
-        window.localStorage.setItem("user", JSON.stringify(res.data[0]));
+        window.localStorage.setItem("userLocal", JSON.stringify(res.data[0]));
       }
 
       return thunkAPI.fulfillWithValue(res.data[0]);
@@ -68,16 +78,26 @@ export const login = createAsyncThunk(
 const signupSlice = createSlice({
   name: "signup",
   initialState: {
+    userLocal: {},
     status: "idle",
     users: [],
     user: {},
     isLogin: false,
   },
-  reducers: {},
+  reducers: {
+    logout(state, action) {
+      state.userLocal = {};
+      localStorage.setItem("userLocal", JSON.stringify(state.userLocal));
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchDataUsers.fulfilled, (state, action) => {
       state.status = "success";
       state.users = action.payload;
+    });
+    builder.addCase(fetchLogin.fulfilled, (state, action) => {
+      state.status = "success";
+      state.user = action.payload;
     });
     builder.addCase(postDataUsers.fulfilled, (state, action) => {
       state.status = "success";
@@ -106,6 +126,10 @@ const signupSlice = createSlice({
       toast.error(action.payload);
       state.status = "fail";
       state.isLogin = false;
+    });
+    builder.addCase(logout.fulfilled, (state, action) => {
+      state.status = "success";
+      state.user = {};
     });
   },
 });

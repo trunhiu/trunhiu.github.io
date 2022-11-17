@@ -18,6 +18,7 @@ import Stores from "./pages/Stores";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import router from "./router";
+import { useSelector } from "react-redux";
 
 function App() {
   const routes = useRoutes(router());

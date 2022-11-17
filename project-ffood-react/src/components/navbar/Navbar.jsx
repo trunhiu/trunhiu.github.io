@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.scss";
 import SearchIcon from "@mui/icons-material/Search";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchDataUsers } from "../../redux/signupSlice";
 
 const Navbar = () => {
+  const user = useSelector((state) => state.users.user);
+  const userLocal = JSON.parse(localStorage.getItem("userLocal"));
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchDataUsers());
+  }, []);
+  console.log(userLocal.image);
   return (
     <div className="nav-bar">
       <div className="search">
@@ -11,8 +21,11 @@ const Navbar = () => {
       </div>
       <div className="avatar">
         <img
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          alt="avata"
+          src={
+            userLocal.image
+              ? userLocal.image
+              : "https://taytou.com/wp-content/uploads/2022/08/Avatar-mac-dinh-ngau-trang-den-cho-nam.jpg"
+          }
           className="avt"
         />
       </div>

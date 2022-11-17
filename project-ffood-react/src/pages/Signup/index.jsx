@@ -12,8 +12,6 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users.users);
 
-  console.log({ checkEmail });
-
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -21,6 +19,7 @@ const SignUp = () => {
       password: "",
       confirmPassword: "",
       phone: "",
+      SOLES: "USER",
     },
     validationSchema: Yup.object({
       name: Yup.string().required("").min(4, "Tên phải dài hơn 4 ký tự"),
@@ -47,7 +46,6 @@ const SignUp = () => {
         ),
     }),
     onSubmit: async (values, { resetForm }) => {
-      // console.log(values);
       // resetForm({ values: "" });
       const resEmail = await checkEmail(values.email);
       console.log(!!resEmail.length);
