@@ -12,7 +12,7 @@ const Header = () => {
   const user = useSelector((state) => state.users.user);
   const userLocal = JSON.parse(localStorage.getItem("userLocal"));
 
-  console.log(userLocal);
+  // console.log(userLocal);
 
   const cart = useSelector((state) => state.cart.cartItems);
   const dispatch = useDispatch();
@@ -59,7 +59,7 @@ const Header = () => {
   const handleProfile = () => {
     navigate("ho-so");
   };
-  console.log(userLocal.image);
+  // console.log(userLocal.image);
 
   return (
     <div className="header">
@@ -135,7 +135,15 @@ const Header = () => {
           </span>
         </div>
 
-        {userLocal ? (
+        {userLocal.length === 0 ? (
+          <div className="header-item header-login">
+            <Link to="/login">
+              <span>
+                <i className="fa-solid fa-user-tie"></i>
+              </span>
+            </Link>
+          </div>
+        ) : (
           <div className="image-user" onClick={handleUserClick}>
             <img
               src={
@@ -160,14 +168,6 @@ const Header = () => {
                 </div>
               </div>
             )}
-          </div>
-        ) : (
-          <div className="header-item header-login">
-            <Link to="/login">
-              <span>
-                <i className="fa-solid fa-user-tie"></i>
-              </span>
-            </Link>
           </div>
         )}
         <div className="header-item header-shoppingcart">
