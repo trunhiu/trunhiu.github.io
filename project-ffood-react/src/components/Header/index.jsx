@@ -135,7 +135,7 @@ const Header = () => {
           </span>
         </div>
 
-        {userLocal.length === 0 ? (
+        {!userLocal ? (
           <div className="header-item header-login">
             <Link to="/login">
               <span>
