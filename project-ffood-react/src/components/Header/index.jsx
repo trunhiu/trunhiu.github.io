@@ -59,6 +59,10 @@ const Header = () => {
   const handleProfile = () => {
     navigate("ho-so");
   };
+
+  const handleSecurityAccount = () => {
+    navigate("security-account");
+  };
   // console.log(userLocal.image);
 
   return (
@@ -162,6 +166,12 @@ const Header = () => {
                 )}
                 <div className="table-user-profile" onClick={handleProfile}>
                   Profile
+                </div>
+                <div
+                  className="table-user-security-account"
+                  onClick={handleSecurityAccount}
+                >
+                  SecurityAccount
                 </div>
                 <div className="table-user-logout" onClick={handleLogout}>
                   Logout

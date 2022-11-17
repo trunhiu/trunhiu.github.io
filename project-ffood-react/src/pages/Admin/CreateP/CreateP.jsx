@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 
 const CreateP = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const [image, setImage] = useState("");
   const [inputProduct, setInputProduct] = useState("");
@@ -31,7 +30,7 @@ const CreateP = () => {
     let newP = {
       images: imageUrl,
       name: inputProduct,
-      price: inputPrice,
+      price: Number(inputPrice),
       tag: inputTag,
       category: inputCategory,
       count: 1,

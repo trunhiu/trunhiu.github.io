@@ -2,11 +2,9 @@ import "./login.css";
 import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../redux/signupSlice";
-import { isEmpty } from "../../utils/utils";
 
 const Login = () => {
   const dispatch = useDispatch();

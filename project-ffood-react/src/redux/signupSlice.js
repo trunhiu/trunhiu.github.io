@@ -43,6 +43,17 @@ export const editUser = createAsyncThunk("signup/editUser", async (data) => {
   return res.data;
 });
 
+export const editProfile = createAsyncThunk(
+  "signup/editProfile",
+  async (data) => {
+    const res = await axios.patch(
+      `http://localhost:3001/users/${data.id}`,
+      data
+    );
+    return res.data;
+  }
+);
+
 export const checkLogin = createAsyncThunk(
   "signup/checkLogin",
   async (email, password) => {
@@ -86,12 +97,7 @@ const signupSlice = createSlice({
     user: {},
     isLogin: false,
   },
-  reducers: {
-    logout(state, action) {
-      state.userLocal = {};
-      localStorage.setItem("userLocal", JSON.stringify(state.userLocal));
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchDataUsers.fulfilled, (state, action) => {
       state.status = "success";
@@ -114,6 +120,11 @@ const signupSlice = createSlice({
       state.user = action.payload;
     });
     builder.addCase(editUser.fulfilled, (state, action) => {
+      state.status = "success";
+      let index = state.users.findIndex((i) => i.id === action.payload.id);
+      state.users[index] = action.payload;
+    });
+    builder.addCase(editProfile.fulfilled, (state, action) => {
       state.status = "success";
       let index = state.users.findIndex((i) => i.id === action.payload.id);
       state.users[index] = action.payload;

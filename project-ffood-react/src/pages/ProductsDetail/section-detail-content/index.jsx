@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addProductToCart,
-  addToCart,
   decrementCart,
   fetchCartProduct,
 } from "../../../redux/cartSlice";
@@ -11,8 +10,6 @@ import { toast } from "react-toastify";
 
 const DetailContent = (props) => {
   const product = props.product;
-
-  const cart = useSelector((state) => state.cart.carts);
 
   useEffect(() => {
     dispatch(fetchCartProduct());
@@ -39,13 +36,6 @@ const DetailContent = (props) => {
   };
 
   const handleAddToCart = () => {
-    const isExist = cart.some((p) => p.id === +product.id);
-
-    if (isExist) {
-      toast.warning("Sản phẩm đã có trong giỏ hàng");
-      return;
-    }
-    dispatch(addToCart(product));
     dispatch(addProductToCart(product));
     toast.success(`${product.name} đã được thêm vào giỏ hàng. `, {
       position: "top-right",

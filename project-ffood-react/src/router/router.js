@@ -24,7 +24,7 @@ import Create from "../pages/Admin/New/Create";
 import CreateP from "../pages/Admin/CreateP/CreateP";
 import CreateB from "../pages/Admin/CreateB/CreateB";
 import Profile from "../pages/Profile/Profile";
-import SecurityAcount from "../components/SecurityAccount/SecurityAcount";
+import SecurityAcount from "../pages/SecurityAccount/SecurityAcount";
 
 const router = () => [
   {

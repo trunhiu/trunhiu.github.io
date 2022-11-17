@@ -17,7 +17,6 @@ const DetailUser = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [address, setAddress] = useState("");
-  console.log(user.image);
 
   const handleEditUser = async () => {
     const resImageUrl = await upLoadImage(image);
@@ -47,8 +46,6 @@ const DetailUser = () => {
       toast.error("Vui lòng điền đủ các trường");
     }
   };
-
-  console.log(user.image);
 
   const handleSubmit = (e) => {
     e.preventDefault();

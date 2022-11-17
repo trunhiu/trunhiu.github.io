@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CreateIcon from "@mui/icons-material/Create";
 import "./profile.scss";
+import upLoadImage from "../../services/upLoadImage";
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { editProfile } from "../../redux/signupSlice";
 
 const Profile = () => {
   const userLocal = JSON.parse(localStorage.getItem("userLocal"));
@@ -10,10 +14,30 @@ const Profile = () => {
   const [name, setName] = useState(userLocal.name);
   const [phone, setPhone] = useState(userLocal.phone);
   const [address, setAddress] = useState(userLocal.address);
+  const dispatch = useDispatch();
 
-  console.log(name);
+  const handleUpdateProfile = async () => {
+    const resImageUrl = await upLoadImage(image);
+    let imageUrl = [
+      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
+    ];
 
-  console.log(userLocal);
+    let newProfile = {
+      id: userLocal.id,
+      image: imageUrl,
+      name: name,
+      email: userLocal.email,
+      phone: phone,
+      address: address,
+    };
+    if ((name, phone, address)) {
+      dispatch(editProfile(newProfile));
+      toast.success("Thay đổi thông tin thành công");
+      localStorage.setItem("userLocal", JSON.stringify(newProfile));
+    } else {
+      toast.error("Vui lòng điền đủ các ô");
+    }
+  };
 
   return (
     <section className="py-5">
@@ -87,7 +111,7 @@ const Profile = () => {
               <button
                 className="btn btn-primary"
                 id="btn-save"
-                //   onClick={handleUpdateProfile}
+                onClick={handleUpdateProfile}
               >
                 Cập nhật thông tin
               </button>

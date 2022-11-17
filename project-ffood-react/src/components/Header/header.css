@@ -32,6 +32,14 @@ header {
   cursor: pointer;
 }
 
+.table-user-security-account {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
 .table-user-admin {
   text-align: center;
   padding: 10px;

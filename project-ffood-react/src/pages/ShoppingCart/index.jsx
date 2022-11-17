@@ -5,7 +5,6 @@ import { toast } from "react-toastify";
 import {
   addProductToCart,
   decrementCart,
-  getCounter,
   getTotal,
   shoppingCartRemove,
 } from "../../redux/cartSlice";
@@ -16,8 +15,6 @@ const ShoppingCart = () => {
   const shoppingCart = useSelector((state) => state.cart.cartItems);
   const total = useSelector((state) => state.total.cartTotalAmount);
   const dispatch = useDispatch();
-
-
 
   useEffect(() => {
     dispatch(getTotal());

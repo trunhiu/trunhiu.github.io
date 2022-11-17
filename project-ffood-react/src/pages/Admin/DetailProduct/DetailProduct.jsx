@@ -36,7 +36,7 @@ const DetailProduct = () => {
       images: imageUrl,
       id: productId,
       name: name,
-      price: price,
+      price: Number(price),
       category: category,
       tag: tag,
       description: description,

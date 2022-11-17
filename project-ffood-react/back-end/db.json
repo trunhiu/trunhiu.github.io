@@ -642,6 +642,37 @@
       "count": 1,
       "description": "Meo day",
       "id": 29
+    },
+    {
+      "images": [
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186"
+      ],
+      "name": "Cho ngu",
+      "price": "1000",
+      "tag": "Con Cho ngu",
+      "category": "Cho",
+      "count": 1,
+      "description": "Cho",
+      "id": 30
+    },
+    {
+      "images": [
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188"
+      ],
+      "id": 31,
+      "name": "Doge",
+      "price": 10000,
+      "category": "doge",
+      "tag": "doge",
+      "description": "doge"
     }
   ],
   "blogs": [
@@ -959,16 +990,15 @@
       "ROLES": "USER"
     },
     {
+      "id": 7,
       "image": [
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/129"
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/179"
       ],
       "name": "Cho",
       "email": "cho@gmail.com",
       "phone": "12345",
-      "password": "123456",
-      "address": "HA noi",
-      "id": 7,
-      "ROLES": "USER"
+      "address": "Ha Noi",
+      "password": "123456"
     },
     {
       "id": 8,
