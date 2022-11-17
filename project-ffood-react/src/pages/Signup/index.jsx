@@ -19,7 +19,7 @@ const SignUp = () => {
       password: "",
       confirmPassword: "",
       phone: "",
-      SOLES: "USER",
+      ROLES: "USER",
     },
     validationSchema: Yup.object({
       name: Yup.string().required("").min(4, "Tên phải dài hơn 4 ký tự"),

@@ -55,6 +55,10 @@ const Header = () => {
   const handleLogout = () => {
     // dispatch(logout(user.id));
   };
+
+  const handleProfile = () => {
+    navigate("ho-so");
+  };
   console.log(userLocal.image);
 
   return (
@@ -143,8 +147,13 @@ const Header = () => {
             />
             {showTable && (
               <div className="table-user">
-                <div className="table-user-admin" onClick={handleAdminClick}>
-                  Admin
+                {userLocal.ROLES === "ADMIN" && (
+                  <div className="table-user-admin" onClick={handleAdminClick}>
+                    Admin
+                  </div>
+                )}
+                <div className="table-user-profile" onClick={handleProfile}>
+                  Profile
                 </div>
                 <div className="table-user-logout" onClick={handleLogout}>
                   Logout

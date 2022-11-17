@@ -23,6 +23,8 @@ import DetailBlog from "../pages/Admin/DetailBlog/DetailBlog";
 import Create from "../pages/Admin/New/Create";
 import CreateP from "../pages/Admin/CreateP/CreateP";
 import CreateB from "../pages/Admin/CreateB/CreateB";
+import Profile from "../pages/Profile/Profile";
+import SecurityAcount from "../components/SecurityAccount/SecurityAcount";
 
 const router = () => [
   {
@@ -33,6 +35,7 @@ const router = () => [
         path: "",
         element: <Home />,
       },
+
       {
         path: "cua-hang",
         element: <Outlet />,
@@ -91,6 +94,14 @@ const router = () => [
   {
     path: "thanh-toan",
     element: <Checkout />,
+  },
+  {
+    path: "ho-so",
+    element: <Profile />,
+  },
+  {
+    path: "security-account",
+    element: <SecurityAcount />,
   },
   {
     path: "admin",

@@ -11,10 +11,8 @@ import { isEmpty } from "../../utils/utils";
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const isUser = useSelector((state) => state.users.user);
   const [isCheck, setIsCheck] = useState(true);
   const isLogin = useSelector((state) => state.users.isLogin);
-  console.log(isLogin);
 
   const formik = useFormik({
     initialValues: {
@@ -33,16 +31,18 @@ const Login = () => {
 
     onSubmit: (values, { resetForm }) => {
       dispatch(login(values, isCheck));
-      // if (isEmpty(isUser)) {
-      //   return;
-      // }
-      if (isLogin === true) {
-        navigate("/");
+
+      if (!!isLogin === true) {
+        return navigate("/");
       }
     },
   });
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (isLogin === true) {
+      navigate("/");
+    }
+  }, [isLogin]);
 
   return (
     <>

@@ -79,8 +79,22 @@
   color: #ff871d;
 }
 
+.btn-home:hover {
+  color: #ff871d;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+
 .btn-home {
   background-color: #ff871d;
+}
+
+.btn-home a {
+  color: #fff;
+  transition: all 0.5s linear;
+}
+.btn-home a:hover {
+  color: #ff871d;
 }
 
 .errorMsg {

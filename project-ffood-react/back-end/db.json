@@ -909,7 +909,8 @@
       "phone": "0855281463",
       "id": 1,
       "requestId": "8Lp97PNnVxNzwFP6djSqg",
-      "signal": {}
+      "signal": {},
+      "ROLES": "USER"
     },
     {
       "name": "Trung Hiếu",
@@ -918,7 +919,8 @@
       "password": "123456a@",
       "confirmPassword": "123456a@",
       "phone": "0855281463",
-      "id": 2
+      "id": 2,
+      "ROLES": "USER"
     },
     {
       "id": 3,
@@ -929,7 +931,8 @@
       "email": "buihieu3008@gmail.com",
       "phone": "123456789",
       "password": "123456",
-      "address": "Ha Noi"
+      "address": "Ha Noi",
+      "ROLES": "ADMIN"
     },
     {
       "id": 4,
@@ -940,7 +943,8 @@
       "email": "thuoclao@gmail.com",
       "phone": "12346",
       "password": "123456",
-      "address": "Ha noi"
+      "address": "Ha noi",
+      "ROLES": "USER"
     },
     {
       "id": 6,
@@ -951,7 +955,8 @@
       "email": "trunhiu@gmail.com",
       "phone": "123456789",
       "password": "123456",
-      "address": "Ha Noi"
+      "address": "Ha Noi",
+      "ROLES": "USER"
     },
     {
       "image": [
@@ -962,7 +967,8 @@
       "phone": "12345",
       "password": "123456",
       "address": "HA noi",
-      "id": 7
+      "id": 7,
+      "ROLES": "USER"
     },
     {
       "id": 8,
@@ -973,7 +979,8 @@
       "email": "thuthuy@gmail.com",
       "phone": "1234567",
       "password": "123456",
-      "address": "Ha Noi"
+      "address": "Ha Noi",
+      "ROLES": "USER"
     },
     {
       "id": 9,
@@ -984,7 +991,16 @@
       "email": "trunhiu3008@gmail.com",
       "phone": "1234567890",
       "password": "123456",
-      "address": "HA Noi"
+      "address": "HA Noi",
+      "ROLES": "USER"
+    },
+    {
+      "name": "hieu",
+      "email": "hieu@gmail.com",
+      "phone": "",
+      "avatar": "https://media.techmaster.vn/api/static/crop/bv9jp4k51co7nj2mhht0",
+      "password": "123456",
+      "id": 10
     }
   ]
 }

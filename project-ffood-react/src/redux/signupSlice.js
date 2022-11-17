@@ -78,7 +78,9 @@ export const login = createAsyncThunk(
 const signupSlice = createSlice({
   name: "signup",
   initialState: {
-    userLocal: {},
+    userLocal: localStorage.getItem("userLocal")
+      ? JSON.parse(localStorage.getItem("userLocal"))
+      : [],
     status: "idle",
     users: [],
     user: {},
@@ -117,13 +119,17 @@ const signupSlice = createSlice({
       state.users[index] = action.payload;
     });
     builder.addCase(login.fulfilled, (state, action) => {
-      toast.success("Đăng nhập thành công");
+      toast.success("Đăng nhập thành công", {
+        autoClose: 1500,
+      });
       state.status = "success";
       state.isLogin = true;
-      state.user = action.payload;
+      state.userLocal = action.payload;
     });
     builder.addCase(login.rejected, (state, action) => {
-      toast.error(action.payload);
+      toast.error(action.payload, {
+        autoClose: 1500,
+      });
       state.status = "fail";
       state.isLogin = false;
     });
