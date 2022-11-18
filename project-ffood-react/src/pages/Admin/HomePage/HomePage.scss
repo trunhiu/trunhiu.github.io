@@ -4,5 +4,16 @@
     
     .homeContainer {
         flex: 6;
+        .admin-title {
+            font-size: 90px;
+            width: 70%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            height: 50vh;
+            font-weight: bold;
+            color: #ff871d;
+        }
     }
+
 }

@@ -6,6 +6,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FiberNewIcon from "@mui/icons-material/FiberNew";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import { Link, useNavigate } from "react-router-dom";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -35,6 +36,10 @@ const Sidebar = () => {
           <li>
             <FiberNewIcon className="icon" />
             <Link to="blogs">Blogs</Link>
+          </li>
+          <li>
+            <KeyboardReturnIcon className="icon" />
+            <Link to="/">Trở lại</Link>
           </li>
           <li>
             <ExitToAppIcon className="icon" />

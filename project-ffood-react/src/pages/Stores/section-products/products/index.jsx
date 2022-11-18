@@ -56,8 +56,8 @@ const Product = () => {
     const lastPageIndex = firstPageIndex + PageSize;
     const proTemp = products.slice(firstPageIndex, lastPageIndex);
     setCurrentTableData(proTemp);
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
   }, [currentPage, products]);
 
   return (

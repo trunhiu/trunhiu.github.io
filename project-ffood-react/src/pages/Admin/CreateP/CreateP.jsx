@@ -5,7 +5,6 @@ import { useDispatch } from "react-redux";
 import { addNewProduct } from "../../../redux/productsSlice";
 import upLoadImage from "../../../services/upLoadImage";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
 
 const CreateP = () => {
   const dispatch = useDispatch();

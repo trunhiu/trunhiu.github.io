@@ -15,7 +15,7 @@ const BlogAnother = () => {
   const settings = {
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 992,
@@ -57,8 +57,7 @@ const BlogAnother = () => {
         <div className="another-new-bottom">
           <Slider {...settings}>
             {blogs.map((blog) => (
-              <div className="another-new-item" key={blog.id}>
-                {console.log(blog)}
+              <div className="another-new-item mb-4 " key={blog.id}>
                 <div className="another-new-image">
                   <Link to={`../${blog.id}`}>
                     <img src={blog.image} alt="bai-viet-2" />

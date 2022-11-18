@@ -8,3 +8,40 @@
         object-fit: cover;
     }
 }
+
+section {
+    width: 600px;
+    margin: auto;
+
+    .container {
+        height: 100vh;
+        
+            .btn {
+                background-color: #ff871d;
+                
+            }
+        
+        
+    }
+}
+
+.bg-light {
+    position: relative;
+    .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #ff871d;
+        padding: 4px;
+        width: 30px;
+        height: 30px;
+        border-radius: 0 0 0 5px;
+        cursor: pointer;
+    }
+}
+
+.icon-edit {
+    cursor: pointer;
+    margin-left: 20px;
+    color: #ff871d;
+}

@@ -3,8 +3,13 @@ import axios from "axios";
 
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
-  async () => {
-    const res = await axios.get("http://localhost:3001/products");
+  async (data) => {
+    let res;
+    if (data) {
+      res = await axios.get("http://localhost:3001/products?" + data);
+    } else {
+      res = await axios.get("http://localhost:3001/products");
+    }
     return res.data;
   }
 );
@@ -37,6 +42,14 @@ export const fetchProductsById = createAsyncThunk(
   "products/fetchProductsById",
   async (id) => {
     const res = await axios.get(`http://localhost:3001/products/${id}`);
+    return res.data;
+  }
+);
+
+export const deleteProducts = createAsyncThunk(
+  "products/deleteProducts",
+  async (id) => {
+    const res = await axios.delete(`http://localhost:3001/products/${id}`);
     return res.data;
   }
 );
@@ -92,7 +105,7 @@ export const editProduct = createAsyncThunk(
 export const filterBurger = createAsyncThunk(
   "products/filterBurger",
   async () => {
-    const res = await axios.get("http://localhost:3001/products?tag=Burger");
+    const res = await axios.get("http://localhost:3001/products?tag=Burgers");
     return res.data;
   }
 );
@@ -108,7 +121,6 @@ const productsSlice = createSlice({
     hotProducts: [],
     loveProducts: [],
     hotComboProducts: [],
-    TagBurger: [],
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -160,10 +172,6 @@ const productsSlice = createSlice({
       state.status = "success";
       let index = state.products.findIndex((i) => i.id === action.payload.id);
       state.products[index] = action.payload;
-    });
-    builder.addCase(filterBurger.fulfilled, (state, action) => {
-      state.status = "success";
-      state.TagBurger = action.payload;
     });
   },
 });

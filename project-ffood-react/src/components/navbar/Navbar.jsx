@@ -5,14 +5,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchDataUsers } from "../../redux/signupSlice";
 
 const Navbar = () => {
-  const user = useSelector((state) => state.users.user);
   const userLocal = JSON.parse(localStorage.getItem("userLocal"));
 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchDataUsers());
   }, []);
-  console.log(userLocal.image);
   return (
     <div className="nav-bar">
       <div className="search">

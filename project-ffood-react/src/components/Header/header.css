@@ -6,6 +6,7 @@ header {
   width: 40px !important;
   height: 25px !important;
   position: relative;
+  cursor: pointer;
 }
 
 .image-user img {
@@ -16,41 +17,57 @@ header {
 
 .table-user {
   position: absolute;
-  bottom: -50;
-  left: -120px;
-  background-color: #ff871d;
-  width: 150px;
+  bottom: -40;
+  left: -180px;
+  background-color: rgb(224, 207, 207);
+  width: 200px;
   border-radius: 10px;
   font-weight: bold;
+  margin-top: 10px;
+}
+
+.table-user-image {
+  padding: 20px;
+  display: flex;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.table-user-image .table-user-name {
+  margin-left: 20px;
+  height: 100%;
+  margin: auto;
 }
 
 .table-user-profile {
   text-align: center;
   padding: 10px;
-  color: #fff;
+  color: #ff871d;
   border-bottom: 1px solid #fff;
   cursor: pointer;
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .table-user-security-account {
   text-align: center;
   padding: 10px;
-  color: #fff;
+  color: #ff871d;
   border-bottom: 1px solid #fff;
   cursor: pointer;
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .table-user-admin {
   text-align: center;
   padding: 10px;
-  color: #fff;
+  color: #ff871d;
   border-bottom: 1px solid #fff;
   cursor: pointer;
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .table-user-logout {
   text-align: center;
-  color: #fff;
+  color: #ff871d;
   padding: 10px;
   cursor: pointer;
 }
@@ -128,12 +145,16 @@ header {
 .menu-sidebar {
   position: fixed;
   top: 0;
-  left: -350px;
+  /* left: -350px; */
   width: 350px;
   height: 100vh;
   background-color: #fff;
   z-index: 1100;
   transition: all 0.5s ease-in-out;
+}
+
+.close-icon {
+  text-align: end;
 }
 
 .overlay {
