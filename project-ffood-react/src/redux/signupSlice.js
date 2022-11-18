@@ -5,13 +5,13 @@ import { toast } from "react-toastify";
 export const fetchDataUsers = createAsyncThunk(
   "signup/fetchDataUsers",
   async () => {
-    const res = await axios.get("http://localhost:3001/users");
+    const res = await axios.get("https://ffood-reactjs.herokuapp.com/users");
     return res.data;
   }
 );
 
 export const fetchLogin = createAsyncThunk("signup/fetchLogin", async () => {
-  const res = await axios.get("http://localhost:3001/users");
+  const res = await axios.get("https://ffood-reactjs.herokuapp.com/users");
   return res.data;
 });
 
@@ -19,7 +19,10 @@ export const postDataUsers = createAsyncThunk(
   "signup/postDataUsers",
   async (data) => {
     console.log(data);
-    const res = await axios.post("http://localhost:3001/users", data);
+    const res = await axios.post(
+      "https://ffood-reactjs.herokuapp.com/users",
+      data
+    );
 
     return res.data;
   }
@@ -28,18 +31,25 @@ export const postDataUsers = createAsyncThunk(
 export const fetchUsersById = createAsyncThunk(
   "signup/fetchUsersById",
   async (id) => {
-    const res = await axios.get(`http://localhost:3001/users/${id}`);
+    const res = await axios.get(
+      `https://ffood-reactjs.herokuapp.com/users/${id}`
+    );
     return res.data;
   }
 );
 
 export const logout = createAsyncThunk("signup/logout", async (id) => {
-  const res = await axios.delete(`http://localhost:3001/users/${id}`);
+  const res = await axios.delete(
+    `https://ffood-reactjs.herokuapp.com/users/${id}`
+  );
   return res.data;
 });
 
 export const editUser = createAsyncThunk("signup/editUser", async (data) => {
-  const res = await axios.put(`http://localhost:3001/users/${data.id}`, data);
+  const res = await axios.put(
+    `https://ffood-reactjs.herokuapp.com/users/${data.id}`,
+    data
+  );
   return res.data;
 });
 
@@ -47,7 +57,7 @@ export const editProfile = createAsyncThunk(
   "signup/editProfile",
   async (data) => {
     const res = await axios.patch(
-      `http://localhost:3001/users/${data.id}`,
+      `https://ffood-reactjs.herokuapp.com/users/${data.id}`,
       data
     );
     return res.data;
@@ -58,7 +68,7 @@ export const checkLogin = createAsyncThunk(
   "signup/checkLogin",
   async (email, password) => {
     const res = await axios.get(
-      `http://localhost:3001/users?email=${email}&password=${password}`
+      `https://ffood-reactjs.herokuapp.com/users?email=${email}&password=${password}`
     );
 
     return res.data;
@@ -71,7 +81,7 @@ export const login = createAsyncThunk(
     const { email, password, checked } = data;
     console.log(data, checked);
     const res = await axios.get(
-      `http://localhost:3001/users?email=${email}&password=${password}`
+      `https://ffood-reactjs.herokuapp.com/users?email=${email}&password=${password}`
     );
 
     if (res.data.length === 0) {

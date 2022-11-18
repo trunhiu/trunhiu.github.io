@@ -6,9 +6,11 @@ export const fetchProducts = createAsyncThunk(
   async (data) => {
     let res;
     if (data) {
-      res = await axios.get("http://localhost:3001/products?" + data);
+      res = await axios.get(
+        "https://ffood-reactjs.herokuapp.com/products?" + data
+      );
     } else {
-      res = await axios.get("http://localhost:3001/products");
+      res = await axios.get("https://ffood-reactjs.herokuapp.com/products");
     }
     return res.data;
   }
@@ -17,7 +19,9 @@ export const fetchProducts = createAsyncThunk(
 export const fetchNewProducts = createAsyncThunk(
   "products/fetchNewProducts",
   async () => {
-    const res = await axios.get("http://localhost:3001/products?tags=NEW");
+    const res = await axios.get(
+      "https://ffood-reactjs.herokuapp.com/products?tags=NEW"
+    );
     return res.data;
   }
 );
@@ -25,7 +29,9 @@ export const fetchNewProducts = createAsyncThunk(
 export const fetchHotProducts = createAsyncThunk(
   "products/fetchHotProducts",
   async () => {
-    const res = await axios.get("http://localhost:3001/products?tags=HOT");
+    const res = await axios.get(
+      "https://ffood-reactjs.herokuapp.com/products?tags=HOT"
+    );
     return res.data;
   }
 );
@@ -33,7 +39,9 @@ export const fetchHotProducts = createAsyncThunk(
 export const fetchLoveProducts = createAsyncThunk(
   "products/fetchLoveProducts",
   async () => {
-    const res = await axios.get("http://localhost:3001/products?tags=LOVE");
+    const res = await axios.get(
+      "https://ffood-reactjs.herokuapp.com/products?tags=LOVE"
+    );
     return res.data;
   }
 );
@@ -41,7 +49,9 @@ export const fetchLoveProducts = createAsyncThunk(
 export const fetchProductsById = createAsyncThunk(
   "products/fetchProductsById",
   async (id) => {
-    const res = await axios.get(`http://localhost:3001/products/${id}`);
+    const res = await axios.get(
+      `https://ffood-reactjs.herokuapp.com/products/${id}`
+    );
     return res.data;
   }
 );
@@ -49,7 +59,9 @@ export const fetchProductsById = createAsyncThunk(
 export const deleteProducts = createAsyncThunk(
   "products/deleteProducts",
   async (id) => {
-    const res = await axios.delete(`http://localhost:3001/products/${id}`);
+    const res = await axios.delete(
+      `https://ffood-reactjs.herokuapp.com/products/${id}`
+    );
     return res.data;
   }
 );
@@ -58,7 +70,7 @@ export const fetchProductsSort = createAsyncThunk(
   "products/fetchProductsSort",
   async (type) => {
     const res = await axios.get(
-      `http://localhost:3001/products?_sort=price&_order=${type}`
+      `https://ffood-reactjs.herokuapp.com/products?_sort=price&_order=${type}`
     );
     return res.data;
   }
@@ -68,7 +80,7 @@ export const fetchProductsHotCombo = createAsyncThunk(
   "products/fetchProductsHotCombo",
   async () => {
     const res = await axios.get(
-      "http://localhost:3001/products?tag=Combo&tags=HOT"
+      "https://ffood-reactjs.herokuapp.com/products?tag=Combo&tags=HOT"
     );
     return res.data;
   }
@@ -77,7 +89,9 @@ export const fetchProductsHotCombo = createAsyncThunk(
 export const fetchproductsSearch = createAsyncThunk(
   "products/fetchproductsSearch",
   async (value) => {
-    const res = await axios.get(`http://localhost:3001/products?q=${value}`);
+    const res = await axios.get(
+      `https://ffood-reactjs.herokuapp.com/products?q=${value}`
+    );
     return res.data;
   }
 );
@@ -85,7 +99,10 @@ export const fetchproductsSearch = createAsyncThunk(
 export const addNewProduct = createAsyncThunk(
   "products/addNewProduct",
   async (data) => {
-    const res = await axios.post("http://localhost:3001/products", data);
+    const res = await axios.post(
+      "https://ffood-reactjs.herokuapp.com/products",
+      data
+    );
     console.log(res.data);
     return res.data;
   }
@@ -95,7 +112,7 @@ export const editProduct = createAsyncThunk(
   "products/editProduct",
   async (data) => {
     const res = await axios.put(
-      `http://localhost:3001/products/${data.id}`,
+      `https://ffood-reactjs.herokuapp.com/products/${data.id}`,
       data
     );
     return res.data;
@@ -105,7 +122,9 @@ export const editProduct = createAsyncThunk(
 export const filterBurger = createAsyncThunk(
   "products/filterBurger",
   async () => {
-    const res = await axios.get("http://localhost:3001/products?tag=Burgers");
+    const res = await axios.get(
+      "https://ffood-reactjs.herokuapp.com/products?tag=Burgers"
+    );
     return res.data;
   }
 );
