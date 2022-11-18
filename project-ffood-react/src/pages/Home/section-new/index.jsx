@@ -2,8 +2,18 @@ import React from "react";
 import "./new.css";
 import new1 from "../../../image/instagram/instagram4.webp";
 import new2 from "../../../image/blogs/blog-4_1024x1024.webp";
+import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchBlogs } from "../../../redux/blogsSlice";
 
 const New = () => {
+  const dispatch = useDispatch();
+  const blog = useSelector((state) => state.blogs.blogs);
+  useEffect(() => {
+    dispatch(fetchBlogs());
+  });
+  console.log(blog);
   return (
     <div id="news">
       <div className="products-title">
@@ -23,16 +33,16 @@ const New = () => {
                   thực phương Tây tràn vào nước ta, và hiện nay đây vẫn là món
                   bánh được ưa chuộng không chỉ ...
                 </p>
-                <a href="page/bai-viet-1.html" className="btn-4">
+                <Link to="tin-tuc" className="btn-4">
                   XEM THÊM
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-7">
               <div className="news-image">
-                <a href="page/bai-viet-1.html">
+                <Link to="tin-tuc">
                   <img src={new1} alt="news1" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -41,9 +51,9 @@ const New = () => {
           <div className="row">
             <div className="col-12 col-md-7">
               <div className="news-image">
-                <a href="page/bai-viet-3.html">
+                <Link to="tin-tuc">
                   <img src={new2} alt="news2" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-5">
@@ -58,9 +68,9 @@ const New = () => {
                   CLB sẽ đổi tên thành Zenit Burger King”, tờ Sun đưa tin hôm
                   2/9...
                 </p>
-                <a href="page/bai-viet-3.html" className="btn-4">
+                <Link to="tin-tuc" className="btn-4">
                   XEM THÊM
-                </a>
+                </Link>
               </div>
             </div>
           </div>

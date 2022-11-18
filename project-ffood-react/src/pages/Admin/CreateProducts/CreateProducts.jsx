@@ -39,11 +39,11 @@ const CreateUser = () => {
     },
     { field: "name", headerName: "Tên sản phẩm", width: 250 },
     { field: "price", headerName: "Giá sản phẩm", width: 200 },
-    { field: "description", headerName: "Mô tả chi tiết sản phẩm", width: 300 },
+    { field: "description", headerName: "Mô tả chi tiết sản phẩm", width: 250 },
     {
       field: "action",
       headerName: "Xem/Sửa",
-      width: 200,
+      width: 150,
       renderCell: (params) => {
         return (
           <div className="cellAction">

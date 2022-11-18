@@ -60,9 +60,7 @@ const FilterProducts = () => {
                 <div className="shortcut-text">
                   <h3>Pizza</h3>
                   <div className="short">
-                    <a href="page/store.html#Pizza">
-                      <p>Xem thêm</p>
-                    </a>
+                    <p>Xem thêm</p>
                     <span>
                       <i className="fa-solid fa-angles-right"></i>
                     </span>
@@ -79,9 +77,7 @@ const FilterProducts = () => {
                 <div className="shortcut-text">
                   <h3>Gà rán</h3>
                   <div className="short">
-                    <a href="page/store.html#Chicken">
-                      <p>Xem thêm</p>
-                    </a>
+                    <p>Xem thêm</p>
                     <span>
                       <i className="fa-solid fa-angles-right"></i>
                     </span>
@@ -118,9 +114,7 @@ const FilterProducts = () => {
                 <div className="shortcut-text">
                   <h3>Đồ chiên</h3>
                   <div className="short">
-                    <a href="page/store.html#French-friesh">
-                      <p>Xem thêm</p>
-                    </a>
+                    <p>Xem thêm</p>
                     <span>
                       <i className="fa-solid fa-angles-right"></i>
                     </span>
@@ -137,9 +131,7 @@ const FilterProducts = () => {
                 <div className="shortcut-text">
                   <h3>Mì xào</h3>
                   <div className="short">
-                    <a href="page/store.html#Pasta">
-                      <p>Xem thêm</p>
-                    </a>
+                    <p>Xem thêm</p>
                     <span>
                       <i className="fa-solid fa-angles-right"></i>
                     </span>
@@ -156,9 +148,7 @@ const FilterProducts = () => {
                 <div className="shortcut-text">
                   <h3>Khai vị</h3>
                   <div className="short">
-                    <a href="page/store.html#Salat">
-                      <p>Xem thêm</p>
-                    </a>
+                    <p>Xem thêm</p>
                     <span>
                       <i className="fa-solid fa-angles-right"></i>
                     </span>

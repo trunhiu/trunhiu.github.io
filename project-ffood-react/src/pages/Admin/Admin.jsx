@@ -6,6 +6,7 @@ const Admin = () => {
   return (
     <>
       <HomePage />
+      <h1 className="admin-title">Welcome To Admin</h1>
     </>
   );
 };

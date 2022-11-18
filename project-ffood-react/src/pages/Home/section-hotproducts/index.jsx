@@ -6,6 +6,7 @@ import React, { useEffect } from "react";
 import { formatMoney } from "../../../utils/utils";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../../redux/productsSlice";
+import { Link } from "react-router-dom";
 
 const HotProducts = () => {
   const settings = {
@@ -62,7 +63,9 @@ const HotProducts = () => {
               <div className="products-item" key={product.id}>
                 <div className="product-item1">
                   <div className="product-image1">
-                    <img src={product.images} alt={product.name} />
+                    <Link to={`/cua-hang/${product.id}`}>
+                      <img src={product.images} alt={product.name} />
+                    </Link>
                     <div className="product-icon1">
                       <div>
                         <i className="fa-solid fa-cart-shopping"></i>

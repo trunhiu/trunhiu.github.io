@@ -41,7 +41,7 @@ const CreateUser = () => {
     {
       field: "action",
       headerName: "Xem/Sửa",
-      width: 200,
+      width: 150,
       renderCell: (params) => {
         return (
           <div className="cellAction">

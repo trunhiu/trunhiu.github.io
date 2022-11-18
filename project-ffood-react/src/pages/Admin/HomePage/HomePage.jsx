@@ -11,7 +11,6 @@ const HomePage = () => {
       <div className="homeContainer">
         <Navbar />
         <Outlet />
-        <h1 className="admin-title">Welcome To Admin</h1>
       </div>
     </div>
   );
