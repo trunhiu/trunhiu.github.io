@@ -9,8 +9,20 @@ import banner3 from "../../../image/products/banner-3.webp";
 import banner4 from "../../../image/products/banner-7.webp";
 import banner5 from "../../../image/products/banner-6.webp";
 import banner6 from "../../../image/products/banner-8.webp";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { filterBurger } from "../../../redux/productsSlice";
 
 const FilterProducts = () => {
+  const burger = useSelector((state) => state.products.TagBurger);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleBurger = () => {
+    navigate("cua-hang");
+    dispatch(filterBurger());
+  };
+
   const settings = {
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -98,9 +110,10 @@ const FilterProducts = () => {
                 <div className="shortcut-text">
                   <h3>Burger</h3>
                   <div className="short">
-                    <a href="page/store.html#Burger">
+                    <div className="Burger-filter" onClick={handleBurger}>
                       <p>Xem thêm</p>
-                    </a>
+                    </div>
+
                     <span>
                       <i className="fa-solid fa-angles-right"></i>
                     </span>

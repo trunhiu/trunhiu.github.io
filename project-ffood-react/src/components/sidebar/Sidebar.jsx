@@ -5,9 +5,15 @@ import PersonIcon from "@mui/icons-material/Person";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FiberNewIcon from "@mui/icons-material/FiberNew";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("userLocal");
+    navigate("/");
+  };
   return (
     <div className="side-bar">
       <div className="top">
@@ -32,7 +38,7 @@ const Sidebar = () => {
           </li>
           <li>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span onClick={handleLogout}>Logout</span>
           </li>
         </ul>
       </div>

@@ -6,7 +6,7 @@ function upLoadImage(file) {
     formData.append("file", file);
     axios({
       method: "post",
-      url: "http://103.237.147.34:8888/api/v1/users/1/files",
+      url: "http://103.237.147.34:8888/api/v1/users/3/files",
       headers: { "Content-Type": "multipart/form-data" },
       data: formData,
     })

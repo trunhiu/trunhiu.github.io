@@ -89,6 +89,14 @@ export const editProduct = createAsyncThunk(
   }
 );
 
+export const filterBurger = createAsyncThunk(
+  "products/filterBurger",
+  async () => {
+    const res = await axios.get("http://localhost:3001/products?tag=Burger");
+    return res.data;
+  }
+);
+
 const productsSlice = createSlice({
   name: "products",
   initialState: {
@@ -100,6 +108,7 @@ const productsSlice = createSlice({
     hotProducts: [],
     loveProducts: [],
     hotComboProducts: [],
+    TagBurger: [],
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -151,6 +160,10 @@ const productsSlice = createSlice({
       state.status = "success";
       let index = state.products.findIndex((i) => i.id === action.payload.id);
       state.products[index] = action.payload;
+    });
+    builder.addCase(filterBurger.fulfilled, (state, action) => {
+      state.status = "success";
+      state.TagBurger = action.payload;
     });
   },
 });

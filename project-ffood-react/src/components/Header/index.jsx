@@ -54,6 +54,8 @@ const Header = () => {
 
   const handleLogout = () => {
     // dispatch(logout(user.id));
+    localStorage.removeItem("userLocal");
+    navigate("/");
   };
 
   const handleProfile = () => {

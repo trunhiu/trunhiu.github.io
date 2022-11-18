@@ -8,9 +8,15 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   fetchProducts,
   fetchProductsSort,
+  filterBurger,
 } from "../../../../redux/productsSlice";
 
 const Product = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(filterBurger());
+  }, []);
   let PageSize = 12;
   const sorts = [
     {
@@ -28,8 +34,6 @@ const Product = () => {
   ];
   const products = useSelector((state) => state.products.products);
 
-  const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
@@ -44,7 +48,6 @@ const Product = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [currentTableData, setCurrentTableData] = useState([]);
-  console.log(currentTableData);
   useEffect(() => {
     if (!products.length) {
       return;
