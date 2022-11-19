@@ -3,14 +3,14 @@ import React, { useEffect } from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { postDataUsers } from "../../redux/signupSlice";
 import { checkEmail } from "../../services/checkEmail";
 
 const SignUp = () => {
   const dispatch = useDispatch();
-  const users = useSelector((state) => state.users.users);
+  const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues: {
@@ -21,6 +21,8 @@ const SignUp = () => {
       phone: "",
       ROLES: "USER",
       address: "",
+      image:
+        "https://taytou.com/wp-content/uploads/2022/08/Avatar-mac-dinh-ngau-trang-den-cho-nam.jpg",
     },
     validationSchema: Yup.object({
       name: Yup.string().required("").min(4, "Tên phải dài hơn 4 ký tự"),
@@ -56,6 +58,7 @@ const SignUp = () => {
       }
       dispatch(postDataUsers(values));
       toast.success("Đăng ký thành công");
+      navigate("/login");
       resetForm({ values: "" });
     },
   });

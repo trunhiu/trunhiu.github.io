@@ -116,9 +116,11 @@ const ShoppingCart = () => {
           )}
 
           <div className="shopping-cart-button">
-            <button className="continue-shopping">
-              <Link to="../cua-hang">Tiếp tục vào cửa hàng</Link>
-            </button>
+            {/* <button className="continue-shopping"> */}
+            <Link to="../cua-hang" className="continue-shopping">
+              Tiếp tục vào cửa hàng
+            </Link>
+            {/* </button> */}
           </div>
           <div className="shopping-cart-checkout">
             <div className="shopping-cart-checkout-title">
@@ -129,9 +131,11 @@ const ShoppingCart = () => {
               <span className="total-money">{formatMoney(total)}</span>
             </div>
           </div>
-          <button className="proceed-to-checkout">
-            <Link to="../thanh-toan">Đến trang thanh toán</Link>
-          </button>
+          {/* <button className="proceed-to-checkout"> */}
+          <Link to="../thanh-toan" className="proceed-to-checkout">
+            Đến trang thanh toán
+          </Link>
+          {/* </button> */}
         </div>
       </form>
     </>

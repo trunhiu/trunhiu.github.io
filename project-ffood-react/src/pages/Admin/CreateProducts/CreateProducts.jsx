@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import "./CreateProducts.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "../../../redux/productsSlice";
+import { deleteProducts, fetchProducts } from "../../../redux/productsSlice";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const CreateUser = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,10 @@ const CreateUser = () => {
     navigate(`${id}`);
   };
 
-  const handleDelete = (id) => {};
+  const handleDelete = (id) => {
+    dispatch(deleteProducts(id));
+    toast.success("Xoá sản phẩm thành công");
+  };
 
   useEffect(() => {
     dispatch(fetchProducts());

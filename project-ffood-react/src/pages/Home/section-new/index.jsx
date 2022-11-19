@@ -3,17 +3,8 @@ import "./new.css";
 import new1 from "../../../image/instagram/instagram4.webp";
 import new2 from "../../../image/blogs/blog-4_1024x1024.webp";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
-import { fetchBlogs } from "../../../redux/blogsSlice";
 
 const New = () => {
-  const dispatch = useDispatch();
-  const blog = useSelector((state) => state.blogs.blogs);
-  useEffect(() => {
-    dispatch(fetchBlogs());
-  });
-  console.log(blog);
   return (
     <div id="news">
       <div className="products-title">

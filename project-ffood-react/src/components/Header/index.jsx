@@ -241,19 +241,19 @@ const Header = () => {
           </div>
           <div className="menu-sidebar-mid">
             <div>
-              <a href="#">Trang chủ</a>
+              <Link to="/">Trang chủ</Link>
             </div>
             <div>
-              <a href="page/store.html">Cửa hàng</a>
+              <Link to="cua-hang">Cửa hàng</Link>
             </div>
             <div>
-              <a href="page/gioi-thieu.html">Giới thiệu</a>
+              <Link to="gioi-thieu">Giới thiệu</Link>
             </div>
             <div>
-              <a href="page/tin-tuc.html">Tin tức</a>
+              <Link to="tin-tuc">Tin tức</Link>
             </div>
             <div>
-              <a href="page/lien-he.html">Liên hệ</a>
+              <Link to="lien-he">Liên hệ</Link>
             </div>
           </div>
           <div className="login-sidebar-mid">

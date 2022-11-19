@@ -192,6 +192,11 @@ const productsSlice = createSlice({
       let index = state.products.findIndex((i) => i.id === action.payload.id);
       state.products[index] = action.payload;
     });
+    builder.addCase(deleteProducts.fulfilled, (state, action) => {
+      state.status = "success";
+      let index = state.products.findIndex((p) => p.id === action.payload);
+      state.products.splice(index, 1);
+    });
   },
 });
 

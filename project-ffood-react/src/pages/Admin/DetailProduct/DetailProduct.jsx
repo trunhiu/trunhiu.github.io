@@ -26,11 +26,11 @@ const DetailProduct = () => {
   const handleEditProduct = async () => {
     const resImageUrl = await upLoadImage(image);
     let imageUrl = [
-      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
-      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
-      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
-      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
-      `//images.weserv.nl?url=http://103.237.147.34:8888${resImageUrl}`,
+      `http://103.237.147.34:8888${resImageUrl}`,
+      `http://103.237.147.34:8888${resImageUrl}`,
+      `http://103.237.147.34:8888${resImageUrl}`,
+      `http://103.237.147.34:8888${resImageUrl}`,
+      `http://103.237.147.34:8888${resImageUrl}`,
     ];
     let newProduct = {
       images: imageUrl,

@@ -595,38 +595,6 @@
       "count": 1,
       "price": 190000,
       "description": "Một đĩa Salat trứng thơm ngon sẽ giúp bạn và gia đình no căng bụng"
-    },
-  
-    {
-      "images": [
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/186"
-      ],
-      "name": "Cho ngu",
-      "price": "1000",
-      "tag": "Con Cho ngu",
-      "category": "Cho",
-      "count": 1,
-      "description": "Cho",
-      "id": 30
-    },
-    {
-      "images": [
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188",
-        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/1/files/188"
-      ],
-      "id": 31,
-      "name": "Doge",
-      "price": 10000,
-      "category": "doge",
-      "tag": "doge",
-      "description": "doge"
     }
   ],
   "blogs": [
@@ -676,7 +644,6 @@
       "description": "Quy mô doanh thu khiêm tốn hơn các chuỗi gà rán nhưng tăng trưởng của những cửa hàng pizza đều ở ngưỡng hai con số.Là một nhánh của lĩnh vực kinh doanh đồ ăn nhanh (fastfood), doanh thu các các chuỗi nhà hàng pizza, burger các năm gần đây liên tục tăng. Xét về quy mô, chuỗi nhà hàng này vẫn xếp sau các chuỗi gà rán, nhưng mức tăng trưởng lại cao hơn hẳn."
     }
   ],
-  
   "users": [
     {
       "name": "Trung Hiếu",
@@ -770,6 +737,52 @@
       "password": "123456",
       "address": "HA Noi",
       "ROLES": "USER"
-    } 
+    },
+    {
+      "image": [
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/2/files/228"
+      ],
+      "name": "Meo",
+      "email": "meo@gmail.com",
+      "phone": "12345",
+      "password": "123456",
+      "address": "Ha Noi",
+      "id": 10
+    },
+    {
+      "image": [
+        "//images.weserv.nl?url=http://103.237.147.34:8888/api/v1/users/2/files/237"
+      ],
+      "name": "Doge",
+      "email": "haha@gmail.com",
+      "phone": "123456",
+      "password": "123456",
+      "address": "Ha Noi",
+      "id": 11
+    },
+    {
+      "name": "hiuu",
+      "email": "hiu@gmail.com",
+      "password": "123456a@",
+      "confirmPassword": "123456a@",
+      "phone": "1212121212",
+      "ROLES": "USER",
+      "address": "Ha Noi",
+      "image": [
+        "http://103.237.147.34:8888/api/v1/users/2/files/241"
+      ],
+      "id": 12
+    },
+    {
+      "image": [
+        "http://103.237.147.34:8888/api/v1/users/2/files/242"
+      ],
+      "name": "Ga",
+      "email": "1212@gmail.com",
+      "phone": "12121",
+      "password": "123456",
+      "address": "Ha Noi",
+      "id": 13
+    }
   ]
 }

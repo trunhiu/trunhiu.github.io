@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { editProfile } from "../../redux/signupSlice";
+import KeyboardReturnIcon from "@mui/icons-material/KeyboardReturn";
 
 const SecurityAcount = () => {
   const userLocal = JSON.parse(localStorage.getItem("userLocal"));
@@ -43,13 +44,18 @@ const SecurityAcount = () => {
     }
   };
 
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <section className="py-5">
       <div className="container">
         <h1 className="fs-4 mb-5">Bảo mật tài khoản</h1>
         <div className="row">
-          <div className="col-md-6">
+          <div className="">
             <div className="bg-light p-4">
+              <KeyboardReturnIcon className="icon" onClick={handleClick} />
               <div className="mb-3">
                 <label className="col-form-label">Mật khẩu cũ</label>
                 <input
