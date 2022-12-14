@@ -1,0 +1,119 @@
+.footer {
+  background-color: #272c2f;
+
+  &-col {
+    margin-bottom: 100px;
+
+    @include maxWidth(576px) {
+      text-align: center;
+    }
+  }
+
+  &-top {
+    padding: 50px 0;
+  }
+  &-logo {
+    margin-bottom: 25px;
+  }
+  &-address {
+    font-size: 14px;
+    color: #a4a9b8;
+    margin-bottom: 20px;
+    font-weight: 500;
+    p {
+      line-height: 23px;
+    }
+  }
+  &-social {
+    display: flex;
+
+    @include maxWidth(576px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      width: 35px;
+      border: 1.5px solid #55a747;
+      border-radius: 50%;
+      margin-right: 10px;
+      color: #55a747;
+      cursor: pointer;
+    }
+  }
+
+  &-quest {
+    @include maxWidth(576px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-text {
+      display: flex;
+      p {
+        margin-left: 10px;
+        font-weight: 500;
+        color: #8e9198;
+        line-height: 23px;
+      }
+    }
+    h6 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-letter {
+    h6 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #a4a9b8;
+      line-height: calc(27.8 / 13);
+      font-weight: 500;
+    }
+  }
+  &-email {
+    display: flex;
+
+    @include maxWidth(576px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    input {
+      padding: 15px 0 15px 15px;
+      width: 70%;
+      background-color: #fff;
+      border-radius: 4px;
+      &:focus {
+        outline: none;
+      }
+    }
+    div {
+      background-color: #55a747;
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto 15px;
+      cursor: pointer;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+}

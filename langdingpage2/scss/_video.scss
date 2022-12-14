@@ -1,0 +1,54 @@
+.video {
+  padding: 110px 0 10px 0;
+  margin-bottom: 25px;
+
+  &-content {
+    h2 {
+      margin-bottom: 15px;
+      font-family: $font-header;
+      font-size: 38px;
+      font-weight: 600;
+      color: $heading-color;
+    }
+  }
+
+  &-desc {
+    padding-top: 15px;
+    // margin-bottom: 20px;
+
+    p {
+      line-height: calc(23 / 13);
+      margin-bottom: 40px;
+      font-size: 12px;
+    }
+  }
+
+  .btn-play {
+    display: flex;
+    align-items: center;
+
+    i {
+      background-color: #cf2e2e;
+      padding: 15px 10px 16px;
+      color: #fff;
+    }
+
+    .btn-watch {
+      background-color: $primary-color;
+      padding: 14px 20px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  &-watch {
+    height: 100%;
+    iframe {
+      height: 100%;
+    }
+    @include maxWidth(992px) {
+      height: 500px;
+    }
+  }
+}

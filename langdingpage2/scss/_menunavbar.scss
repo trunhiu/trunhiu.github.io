@@ -1,0 +1,123 @@
+.header {
+  height: 82px;
+  margin: auto 0;
+  .container {
+    height: 100%;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+
+    span {
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    a {
+      color: #555555;
+      font-weight: 500;
+    }
+  }
+
+  &-dropdown {
+    display: flex;
+    align-items: center;
+
+    .menu {
+      &-item {
+        position: relative;
+
+        &:hover .dropdown-list {
+          bottom: -160px;
+        }
+      }
+      @include maxWidth(992px) {
+        display: none;
+      }
+    }
+
+    ul {
+      margin: 0;
+
+      .dropdown-list {
+        border-radius: 4px;
+        background-color: #1f1f1f;
+        padding: 20px;
+        width: 190px;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+
+        li {
+          color: #fff;
+          margin: 10px 0 0px 0;
+        }
+      }
+    }
+  }
+
+  &-signin {
+    background-color: $primary-color;
+    padding: 10px 15px;
+    margin-left: 40px;
+    white-space: nowrap;
+    a {
+      color: #fff;
+    }
+  }
+
+  .active {
+    transform: scale(1) translateY(0);
+    margin-bottom: 0;
+  }
+
+  .btn-sidebar {
+    position: relative;
+    background-color: $primary-color;
+    padding: 5px 10px;
+    font-size: 22px;
+    margin-left: 10px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+
+    .menu-sidebar {
+      padding: 0;
+      width: 250px;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      border-radius: 5px;
+      background: #1f1f1f;
+
+      &-none {
+        display: none;
+      }
+
+      .option {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        padding: 0 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+        &:hover {
+          background-color: #000000;
+        }
+      }
+    }
+
+    @include maxWidth(992px) {
+      display: block;
+    }
+  }
+}

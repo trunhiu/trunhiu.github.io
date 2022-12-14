@@ -1,0 +1,48 @@
+.statis {
+  padding: 135px 0 115px 0;
+  background-image: url(http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/bg-counter-img.jpg);
+  background-size: cover;
+  &-title {
+    text-align: center;
+    margin-bottom: 25px;
+
+    h2 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 38px;
+      font-family: $font-header;
+    }
+  }
+
+  &-main {
+    .statis-item {
+      text-align: center;
+      border-right: 1px solid rgb(147, 212, 236);
+      margin-bottom: 40px;
+      h3 {
+        color: #ca363a;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      @include maxWidth(992px) {
+        &:nth-of-type(even) {
+          border: none;
+        }
+      }
+
+      @include maxWidth(768px) {
+        border: none;
+      }
+    }
+  }
+}

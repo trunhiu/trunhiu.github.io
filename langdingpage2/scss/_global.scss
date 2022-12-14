@@ -1,0 +1,17 @@
+.wraper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+body {
+    font-size: $fontsize;
+    line-height: 1;
+    font-family: $font;
+    color: $text-color;
+}

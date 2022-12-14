@@ -1,0 +1,107 @@
+.search {
+  background-image: url("http://jobcareer.chimpgroup.com/jobstreet/wp-content/uploads/jobstreet-home-banner.jpg");
+  background-size: cover;
+  &-container {
+    padding: 190px 0 280px;
+  }
+
+  &-content {
+    h1 {
+      font-family: $font-header;
+      font-size: 62px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-align: center;
+      @include maxWidth(426px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 35px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  &-input {
+    background-color: #59a8c6;
+
+    &-container {
+      padding: 25px;
+      display: flex;
+      gap: 20px;
+
+      @include maxWidth(992px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .search-input-item {
+        width: 100%;
+      }
+
+      input {
+        // padding: 5px 90px 5px 0px;
+        width: 90%;
+        margin-left: 10px;
+        border: none;
+
+        @include maxWidth(1150px) {
+          width: 85%;
+        }
+
+        @include maxWidth(992px) {
+          width: 96%;
+          padding: 10px 0;
+        }
+
+        @include maxWidth(780px) {
+          width: 90%;
+          padding: 10px 0;
+        }
+
+        @include maxWidth(385px) {
+          width: 80%;
+          padding: 10px 0;
+        }
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .btn-input {
+        font-size: 17px;
+        white-space: nowrap;
+        padding: 5px 50px;
+        display: flex;
+        align-items: center;
+        background-color: $primary-color;
+        cursor: pointer;
+
+        a {
+          color: #fff;
+
+          @include maxWidth(992px) {
+            width: 100%;
+            text-align: center;
+
+            padding: 10px 0;
+          }
+        }
+
+        @include maxWidth(992px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &-item {
+      background-color: #fff;
+      padding: 10px;
+    }
+  }
+}
